@@ -8,10 +8,10 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Links -->
-    <%= link_to "Home", ideas_path, class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
-    <%= link_to "Search", search_show_path, class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
-    <%= link_to "Add Asset", new_asset_path, class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
-    <%= link_to "Dashboard", assets_path, class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
+    <%= link_to "Home", class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
+    <%= link_to "Search", class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
+    <%= link_to "Add Asset", class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
+    <%= link_to "Dashboard", class: "navbar-wagon-item navbar-wagon-link navbar-title" %>
     <% if user_signed_in? %>
       <div class="navbar-wagon-item">
         <div class="dropdown">
