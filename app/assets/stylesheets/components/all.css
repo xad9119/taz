@@ -156,7 +156,7 @@
 }
 
 .profitability {
-  text-align: Right;
+  text-align: right;
   color: #4b6a69;
 }
 
@@ -187,4 +187,54 @@
   text-decoration: none;
   color: white;
 }
+
+/* buttons */
+
+.form-input-inline {
+  display: flex;
+}
+
+
+.form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.form-component {
+  margin-right: 10px;
+}
+
+.btn-form {
+  width: 100% !important;
+}
+
+.form-inputs label {
+  font-family: $subtitle-font-family;
+  font-weight: lighter;
+  color: $gray;
+}
+
+
+.main-signup {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 35px;
+  flex-direction: column;
+  border-radius:5px;
+}
+
+.btn-form {
+  width: 100% !important;
+  display: block;
+  text-align: center;
+}
+
+
 
