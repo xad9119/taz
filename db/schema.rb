@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_03_174027) do
+ActiveRecord::Schema.define(version: 2018_12_03_181143) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 2018_12_03_174027) do
     t.integer "asset_manager_id"
     t.integer "construction_year"
     t.integer "has_icpe"
-    t.text "type"
+    t.text "asset_type"
     t.decimal "occupancy_rate"
-    t.decimal "office_share_area"
+    t.decimal "office_area_share"
     t.decimal "potential_annual_rent"
     t.decimal "potential_annual_rent_sqm"
     t.decimal "height"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2018_12_03_174027) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
-    t.string "credit_grade"
+    t.string "credit_rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -105,7 +105,7 @@ ActiveRecord::Schema.define(version: 2018_12_03_174027) do
     t.datetime "updated_at", null: false
     t.string "job_title"
     t.string "first_name"
-    t.string "first_last"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
