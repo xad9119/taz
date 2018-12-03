@@ -1,0 +1,35 @@
+.wrapper {
+  background-color: $background-color;
+}
+
+.container {
+ min-height: 80vh;
+}
+
+h1 {
+  font-weight: $title-font-weight;
+  font-size: $title-font-size;
+  font-family: $title-font-family;
+  color: $main-color;
+};
+
+h2 {
+  font-weight: $subtitle-font-weight;
+  font-size: $subtitle-font-size;
+  font-family: $subtitle-font-family;
+  color: $main-color;
+};
+
+p {
+  font-weight: $text-font-weight;
+  font-size: $text-font-size;
+  font-family: $text-font-family;
+  color: $text-color;
+};
+
+.mr {
+  margin-right:15px;
+}
+
+
+

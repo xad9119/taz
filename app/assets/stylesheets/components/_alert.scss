@@ -1,13 +1,15 @@
 
 
 .alert {
-  margin: 0;
+  margin: 0px 0px 0px 0px;
   text-align: center;
   color: white;
 }
 .alert-info {
-  background: $green;
+  background: $secondary-color;
 }
 .alert-warning {
-  background: $red;
+  background: $secondary-color;
 }
+
+
