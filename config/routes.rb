@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'transactions/create'
   get 'transactions/update'
   get 'transactions/destroy'
-  get 'transaction/:id/compare', to: 'transactions#compare', as: 'compare'
+  get 'transactions/:id/compare', to: 'transactions#compare', as: 'compare'
   get 'assets/index'
   get 'assets/show'
   get 'assets/new'
