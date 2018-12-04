@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_04_140523) do
+ActiveRecord::Schema.define(version: 2018_12_04_143418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_12_04_140523) do
     t.integer "has_icpe"
     t.text "asset_type"
     t.decimal "occupancy_rate"
-    t.decimal "office_share_area"
+    t.decimal "office_area_share"
     t.decimal "potential_annual_rent"
     t.decimal "potential_annual_rent_sqm"
     t.decimal "height"
@@ -106,6 +106,7 @@ ActiveRecord::Schema.define(version: 2018_12_04_140523) do
     t.string "job_title"
     t.string "first_name"
     t.string "last_name"
+    t.boolean "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
