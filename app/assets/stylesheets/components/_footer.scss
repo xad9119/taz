@@ -1,20 +1,19 @@
 .footer {
-  background: $background-color;
+  background: $main-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  max-height: 55px;
+  height: 80px;
+  color: white;
+  max-height: 50px;
 }
 
 .footer-links {
+  padding-left: 40px;
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: $main-color;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;

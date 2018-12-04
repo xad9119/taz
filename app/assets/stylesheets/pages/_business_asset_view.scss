@@ -1,3 +1,17 @@
-.white-box {
+.flex-boxe {
+  background: $background-color;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 9px;
+  flex: 0 0 30%;
+}
 
+.white-box {
+  background: white;
+  padding: 40px;
+  margin-top : 40px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: stretch;
 }
