@@ -17,7 +17,6 @@ users_array = [
 
 User.create!(users_array)
 
-
 p "----------- Creating Companies -----------"
 companies_array = [
   {
@@ -57,9 +56,9 @@ business_assets_array = [
     geographical_location: GeographicalLocation.first,
     construction_year: 2001,
     has_icpe: true,
-    asset_type: "warehouse",
+    asset_type: "wharehouse",
     occupancy_rate: 0.45,
-    office_area_share: 0.33,
+    office_share_area: 0.33,
     potential_annual_rent: 100000,
     potential_annual_rent_sqm: 1000,
     surface: 100,
