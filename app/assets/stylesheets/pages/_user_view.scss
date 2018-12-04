@@ -1,6 +1,23 @@
+.background-box {
+ background: $background-color;
+}
+
 .main-signup {
   padding: 40px;
   margin-top : 40px;
   align-items: center;
   max-width: 450px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: $third-color;
+}
+
+.link-devise a {
+font-family: $text-font-family;
+font-size: $text-font-size;
+font-weight: $text-font-weight;
+color: $main-color;
+}
+
+.form-inputs label {
+  color: $main-color;
 }

@@ -8,17 +8,17 @@
   <div class="navbar-taz-right hidden-xs hidden-sm">
 
     <!-- Links -->
-    <%= link_to "Home", assets_index_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
-    <%= link_to "Search", assets_index_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
-    <%= link_to "Add Asset", assets_new_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
-    <%= link_to "Dashboard", assets_new_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <%= link_to "Home", business_assets_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <%= link_to "Search", business_assets_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <%= link_to "Add Asset", new_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <%= link_to "Dashboard", business_assets_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
     <% if user_signed_in? %>
       <div class="navbar-taz-item">
         <div class="dropdown">
           <%= image_tag "admin_avatar.png", class: "main-avatar dropdown-toggle", id: "navbar-taz-menu", "data-toggle" => "dropdown", title: current_user.email %>
           <ul class="dropdown-menu dropdown-menu-right navbar-taz-dropdown-menu">
             <li>
-              <%= link_to assets_index_path do %>
+              <%= link_to business_assets_index_path do %>
                 <i class="fa fa-user"></i> Profile
               <% end %>
             </li>
