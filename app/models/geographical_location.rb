@@ -1,6 +1,6 @@
 class GeographicalLocation < ApplicationRecord
-  validates :latitude, presence: true
-  validates :longitude, presence: true
-  has_many :business_assets
-  has_many :interests
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
+  has_one :business_asset
+  has_one :interest
 end

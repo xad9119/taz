@@ -43,14 +43,20 @@ Company.create!(companies_array)
 p "----------- Creating Locations -----------"
 geographical_locations_array = [
   {
-    latitude: 48.92446,
-    longitude: 2.36016
+    address: "16 villa gaudelet"
+  },
+  {
+    address: "204 rond point du pont de sèvres"
+  },
+  {
+    address: "1 avenue des champs élysées"
   }
 ]
 GeographicalLocation.create!(geographical_locations_array)
 
 
 p "----------- Creating Assets -----------"
+
 business_assets_array = [
   {
     user: User.first,

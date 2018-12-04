@@ -1,0 +1,22 @@
+<%= simple_form_for :search, url: business_assets_path, method: :post  do |f| %>
+  <%= f.input :general_condition %>
+  <%= f.input :construction_year %>
+  <%= f.input :has_icpe %>
+  <%= f.input :business_asset_type %>
+  <%= f.input :occupancy_rate %>
+
+  <%= f.fields_for :geographical_location do |loc| %>
+    latitude  : <%= loc.text_field :latitude %>
+    longitude: <%= loc.text_field :longitude %>
+  <% end %>
+
+  <%= f.fields_for :company do |co| %>
+    company name  : <%= co.input :name %>
+    credit rating: <%= co.text_field :credit_rating %>
+  <% end %>
+
+
+
+
+  <%= f.submit "add an asset", class: "btn btn-primary" %>
+<% end %>
