@@ -1,0 +1,89 @@
+___________________ GEOGRAPHICAL_LOCATION ____________________________________
+rails g model geographical_location latitude:numeric longitude:numeric
+
+___________________ INTEREST ____________________________________
+rails g model interest geographical_location:references type:string desctription:text
+
+___________________ COMPANY ____________________________________
+rails g model company name:string credit_grade:string
+
+___________________ BUSINESS_ASSET ____________________________________
+rails g model business_asset user:references geographical_location:references business_asset_manager_id:integer construction_year:integer has_icpe:integer business_asset_type:text occupancy_rate:numeric office_share_area:numeric potential_annual_rent:numeric potential_annual_rent_sqm:numeric height:numeric land_surface:numeric surface:numeric general_condition:text description:text
+
+___________________ ATTACHMENT ____________________________________
+rails g model attachment business_asset:references attachment_type:string url:string
+
+___________________ TRANSACTION ____________________________________
+rails g model transaction business_asset:references buyer_id:integer seller_id:integer price:numeric date:date
+
+___________________ RENTAL ____________________________________
+rails g model rental business_asset:references tenant_id:integer annual_rent:numeric annual_rent_sqm:numeric start_date:date end_date:date break_date_1:date break_date_2 break_date_3:date
+
+
+
+___________________ CONTROLLERS ____________________________________
+
+rails g controller business_assets index show new create edit update destroy
+
+rails g controller transactions create update destroy compare
+
+rails g controller rentals create update destroy
+
+rails g controller companies index show new create edit update destroy
+
+rails g controller geographical_locations create update destroy
+
+rails g controller interests create update destroy
+
+
+___________________ MODELS ____________________________________
+
+___________________ BUSINESS_ASSET
+  belongs_to :user
+  belongs_to :geographical_location
+  has_many :transactions
+  has_many :rentals
+  has_many :attachments
+  belongs_to :asset_manager, class_name: "Company"
+
+___________________ ATTACHMENT
+  belongs_to :business_asset
+  validates :type, presence: true
+  validates :url, presence: true
+
+___________________ COMPANY
+  has_many :business_assets
+  has_many :transactions
+  has_many :rentals
+  validates :name, presence: true
+
+___________________ INTEREST
+  belongs_to :geographical_location
+  validates :type, presence: true
+  validates :description, presence: true
+
+___________________ RENTAL
+  belongs_to :business_asset
+  belongs_to :tenant, class_name: "Company"
+
+  validates :start_date, presence: true
+  validates :end_date, presence: true
+
+  validates :break_date_1, presence: true
+  validates :annual_rent, presence: true
+
+___________________ TRANSACTION
+  belongs_to :business_asset
+  belongs_to :buyer, class_name: "Company"
+  belongs_to :seller, class_name: "Company"
+  validates :date, presence: true
+  validates :price, presence: true
+
+
+___________________ USER
+  validates :email, uniqueness: true, presence: true
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+

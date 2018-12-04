@@ -1,32 +1,6 @@
 Rails.application.routes.draw do
-  get 'interests/create'
-  get 'interests/update'
-  get 'interests/destroy'
-  get 'locations/create'
-  get 'locations/update'
-  get 'locations/destroy'
-  get 'companies/index'
-  get 'companies/show'
-  get 'companies/new'
-  get 'companies/create'
-  get 'companies/edit'
-  get 'companies/update'
-  get 'companies/destroy'
-  get 'rentals/create'
-  get 'rentals/update'
-  get 'rentals/destroy'
-  get 'transactions/create'
-  get 'transactions/update'
-  get 'transactions/destroy'
-  get 'transactions/:id/compare', to: 'transactions#compare', as: 'compare'
-  get 'assets/index'
-  get 'assets/show'
-  get 'assets/new'
-  get 'assets/create'
-  get 'assets/edit'
-  get 'assets/update'
-  get 'assets/destroy'
   devise_for :users
   root to: 'pages#home'
+  resources :business_assets
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

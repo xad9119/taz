@@ -10,15 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_03_181143) do
+ActiveRecord::Schema.define(version: 2018_12_04_140523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "assets", force: :cascade do |t|
+  create_table "attachments", force: :cascade do |t|
+    t.bigint "business_asset_id"
+    t.string "type"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["business_asset_id"], name: "index_attachments_on_business_asset_id"
+  end
+
+  create_table "business_assets", force: :cascade do |t|
     t.bigint "user_id"
-    t.bigint "location_id"
-    t.integer "asset_manager_id"
+    t.bigint "geographical_location_id"
+    t.integer "business_asset_manager_id"
     t.integer "construction_year"
     t.integer "has_icpe"
     t.text "asset_type"
@@ -33,17 +42,8 @@ ActiveRecord::Schema.define(version: 2018_12_03_181143) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["location_id"], name: "index_assets_on_location_id"
-    t.index ["user_id"], name: "index_assets_on_user_id"
-  end
-
-  create_table "attachments", force: :cascade do |t|
-    t.bigint "asset_id"
-    t.string "type"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["asset_id"], name: "index_attachments_on_asset_id"
+    t.index ["geographical_location_id"], name: "index_business_assets_on_geographical_location_id"
+    t.index ["user_id"], name: "index_business_assets_on_user_id"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -53,24 +53,24 @@ ActiveRecord::Schema.define(version: 2018_12_03_181143) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "interests", force: :cascade do |t|
-    t.bigint "location_id"
-    t.string "type"
-    t.text "desctription"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["location_id"], name: "index_interests_on_location_id"
-  end
-
-  create_table "locations", force: :cascade do |t|
+  create_table "geographical_locations", force: :cascade do |t|
     t.decimal "latitude"
     t.decimal "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "interests", force: :cascade do |t|
+    t.bigint "geographical_location_id"
+    t.string "type"
+    t.text "desctription"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["geographical_location_id"], name: "index_interests_on_geographical_location_id"
+  end
+
   create_table "rentals", force: :cascade do |t|
-    t.bigint "asset_id"
+    t.bigint "business_asset_id"
     t.integer "tenant_id"
     t.decimal "annual_rent"
     t.decimal "annual_rent_sqm"
@@ -81,18 +81,18 @@ ActiveRecord::Schema.define(version: 2018_12_03_181143) do
     t.date "break_date_3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["asset_id"], name: "index_rentals_on_asset_id"
+    t.index ["business_asset_id"], name: "index_rentals_on_business_asset_id"
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.bigint "asset_id"
+    t.bigint "business_asset_id"
     t.integer "buyer_id"
     t.integer "seller_id"
     t.decimal "price"
     t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["asset_id"], name: "index_transactions_on_asset_id"
+    t.index ["business_asset_id"], name: "index_transactions_on_business_asset_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -110,10 +110,10 @@ ActiveRecord::Schema.define(version: 2018_12_03_181143) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "assets", "locations"
-  add_foreign_key "assets", "users"
-  add_foreign_key "attachments", "assets"
-  add_foreign_key "interests", "locations"
-  add_foreign_key "rentals", "assets"
-  add_foreign_key "transactions", "assets"
+  add_foreign_key "attachments", "business_assets"
+  add_foreign_key "business_assets", "geographical_locations"
+  add_foreign_key "business_assets", "users"
+  add_foreign_key "interests", "geographical_locations"
+  add_foreign_key "rentals", "business_assets"
+  add_foreign_key "transactions", "business_assets"
 end
