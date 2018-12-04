@@ -1,8 +1,19 @@
 p "----------- Destroying everything -----------"
+Transaction.destroy_all
 BusinessAsset.destroy_all
 GeographicalLocation.destroy_all
 Company.destroy_all
 User.destroy_all
+
+p "----------- Creating Locations -----------"
+locations_array = [
+  {
+    latitude: 48.92446,
+    longitude: 2.36016
+  }
+]
+Location.create!(locations_array)
+>>>>>>> master
 
 p "----------- Creating Users -----------"
 users_array = [
@@ -66,4 +77,23 @@ business_assets_array = [
   }
 ]
 
+<<<<<<< HEAD
 BusinessAsset.create!(business_assets_array)
+=======
+Asset.create!(assets_array)
+
+
+p "----------- Creating Transactions -----------"
+assets_array = [
+  {
+    asset: Asset.first,
+    buyer: Company.first,
+    seller: Company.first,
+    price: 1000,
+    date: Date.today()
+  }
+]
+
+Transaction.create!(assets_array)
+=======
+>>>>>>> master
