@@ -5,15 +5,6 @@ GeographicalLocation.destroy_all
 Company.destroy_all
 User.destroy_all
 
-p "----------- Creating Locations -----------"
-locations_array = [
-  {
-    latitude: 48.92446,
-    longitude: 2.36016
-  }
-]
-Location.create!(locations_array)
->>>>>>> master
 
 p "----------- Creating Users -----------"
 users_array = [
@@ -69,7 +60,7 @@ business_assets_array = [
     has_icpe: true,
     asset_type: "wharehouse",
     occupancy_rate: 0.45,
-    office_share_area: 0.33,
+    office_area_share: 0.33,
     potential_annual_rent: 100000,
     potential_annual_rent_sqm: 1000,
     surface: 100,
@@ -77,16 +68,13 @@ business_assets_array = [
   }
 ]
 
-<<<<<<< HEAD
 BusinessAsset.create!(business_assets_array)
-=======
-Asset.create!(assets_array)
 
 
 p "----------- Creating Transactions -----------"
-assets_array = [
+transaction_array = [
   {
-    asset: Asset.first,
+    business_asset: BusinessAsset.first,
     buyer: Company.first,
     seller: Company.first,
     price: 1000,
@@ -94,6 +82,4 @@ assets_array = [
   }
 ]
 
-Transaction.create!(assets_array)
-=======
->>>>>>> master
+Transaction.create!(transaction_array)
