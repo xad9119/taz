@@ -8,7 +8,7 @@ class CreateAssets < ActiveRecord::Migration[5.2]
       t.integer :has_icpe
       t.text :type
       t.numeric :occupancy_rate
-      t.numeric :office_share_area
+      t.numeric :office_area_share
       t.numeric :potential_annual_rent
       t.numeric :potential_annual_rent_sqm
       t.numeric :height
