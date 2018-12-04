@@ -1,0 +1,20 @@
+<div class="tr-card">
+  <div class="tr-card-picture">
+    <img alt="Photo" src="/assets/images/logo.jpg" />
+  </div>
+  <div class="tr-card-info">
+    <div class="tr-card-type">
+      <%= @business_asset.asset_type %>
+    </div>
+    <div class="tr-card-address">
+      <%= @business_asset.geographical_location %>
+    </div>
+    <ul class="tr-card-feature-list">
+      <li><%= @transaction.price %> €</li>
+      <li><%= @business_asset.surface %> m2</li>
+    </ul>
+  </div>
+  <div class="tr-card-return">
+    <p><%= @rental ? @rental.annual_rent + 0.0 / @transaction.price : 0 %> %</p>
+  </div>
+</div>

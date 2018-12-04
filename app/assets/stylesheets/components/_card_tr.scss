@@ -11,26 +11,34 @@
 .tr-card-picture {
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 30%;
+  height: 150px;
+  width: 25%;
   padding: 15px;
+}
+
+.tr-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  padding: 10px;
 }
 
 .tr-card-type {
   text-transform: uppercase;
-  padding: 15px;
+  padding: 10px;
 }
 
 .tr-card-address {
   text-transform: capitalize;
-  padding: 15px;
+  padding: 10px;
 }
 
 .tr-card-feature-list {
   text-align: left;
   margin: 0 !important;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
   li {
     background-color: #fff;
     border: 1px solid #e2e2e2;
@@ -43,5 +51,15 @@
     line-height: 2rem;
     margin: .5rem .3rem 0;
     padding: 0 .6rem;
+  }
+}
+
+.tr-card-return {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fafafa;
+  p {
+    color: black;
   }
 }
