@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_12_04_143418) do
     t.integer "has_icpe"
     t.text "asset_type"
     t.decimal "occupancy_rate"
-    t.decimal "office_area_share"
+    t.decimal "office_share_area"
     t.decimal "potential_annual_rent"
     t.decimal "potential_annual_rent_sqm"
     t.decimal "height"
