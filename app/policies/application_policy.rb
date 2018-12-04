@@ -35,6 +35,9 @@ class ApplicationPolicy
     true
   end
 
+  def compare?
+    true
+  end
 
   class Scope
     attr_reader :user, :scope
