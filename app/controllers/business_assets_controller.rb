@@ -9,6 +9,8 @@ class BusinessAssetsController < ApplicationController
   end
 
   def new
+    @business_asset = BusinessAsset.new
+    authorize @business_asset
   end
 
   def create
@@ -26,6 +28,7 @@ class BusinessAssetsController < ApplicationController
 private
   def set_business_asset
     @business_asset = policy_scope(BusinessAsset).find(params[:id])
+    authorize @business_asset
   end
 
   def business_asset_params
