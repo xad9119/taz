@@ -1,9 +1,9 @@
 p "----------- Destroying everything -----------"
+Transaction.destroy_all
+Asset.destroy_all
 User.destroy_all
 Company.destroy_all
 Location.destroy_all
-Asset.destroy_all
-Transaction.destroy_all
 
 p "----------- Creating Users -----------"
 users_array = [
