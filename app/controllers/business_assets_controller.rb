@@ -9,9 +9,22 @@ class BusinessAssetsController < ApplicationController
   end
 
   def new
+    @business_asset = BusinessAsset.new
+    authorize @business_asset
   end
 
   def create
+    latitude = params['search']['geographical_location']['latitude']
+    longitude = params['search']['geographical_location']['longitude']
+    @business_asset = BusinessAsset.new
+    GeographicalLocation.create!(
+      latitude: latitude,
+      longitude: longitude
+      )
+    authorize @business_asset
+
+    redirect_to business_assets_path
+
   end
 
   def edit

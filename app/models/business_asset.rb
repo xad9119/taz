@@ -5,4 +5,7 @@ class BusinessAsset < ApplicationRecord
   has_many :rentals
   has_many :attachments
   belongs_to :business_asset_manager, class_name: "Company"
+  accepts_nested_attributes_for :geographical_location
+
+
 end
