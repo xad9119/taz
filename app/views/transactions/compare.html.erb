@@ -5,4 +5,14 @@
   <div class="container--row">
     <%= render 'estimate' %>
   </div>
+  <div class="container--row">
+    <div class="comparable-list">
+      <% @comparables.each do |c| %>
+        <%= render 'estimate(c)' %>
+      <% end %>
+    </div>
+    <div class="comparable-map">
+      <%= render 'comparable_map' %>
+    </div>
+  </div>
 </div>
