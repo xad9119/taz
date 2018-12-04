@@ -1,9 +1,19 @@
 p "----------- Destroying everything -----------"
+
 Transaction.destroy_all
 Asset.destroy_all
 User.destroy_all
 Company.destroy_all
 Location.destroy_all
+
+p "----------- Creating Locations -----------"
+locations_array = [
+  {
+    latitude: 48.92446,
+    longitude: 2.36016
+  }
+]
+Location.create!(locations_array)
 
 p "----------- Creating Users -----------"
 users_array = [
@@ -17,7 +27,6 @@ users_array = [
 ]
 
 User.create!(users_array)
-
 
 p "----------- Creating Companies -----------"
 companies_array = [
@@ -40,15 +49,6 @@ companies_array = [
 
 Company.create!(companies_array)
 
-p "----------- Creating Locations -----------"
-locations_array = [
-  {
-    latitude: 48.92446,
-    longitude: 2.36016
-  }
-]
-Location.create!(locations_array)
-
 
 p "----------- Creating Assets -----------"
 assets_array = [
@@ -58,9 +58,9 @@ assets_array = [
     location: Location.first,
     construction_year: 2001,
     has_icpe: true,
-    asset_type: "warehouse",
+    asset_type: "wharehouse",
     occupancy_rate: 0.45,
-    office_area_share: 0.33,
+    office_share_area: 0.33,
     potential_annual_rent: 100000,
     potential_annual_rent_sqm: 1000,
     surface: 100,
@@ -83,3 +83,4 @@ assets_array = [
 ]
 
 Transaction.create!(assets_array)
+=======

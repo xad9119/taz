@@ -27,6 +27,21 @@ p {
   color: $text-color;
 };
 
+
+a {
+  font-weight: $subtitle-font-weight;
+  font-size: $subtitle-font-size;
+  font-family: $subtitle-font-family;
+  color: $main-color;
+  padding: 12px;
+};
+
+a:hover, a:focus, a:active {
+  color: $secondary-color;
+  border-bottom: 1px solid $secondary-color;
+  text-decoration: none;
+}
+
 .mr {
   margin-right:15px;
 }
