@@ -1,9 +1,10 @@
 p "----------- Destroying everything -----------"
+
+Transaction.destroy_all
 Asset.destroy_all
+User.destroy_all
 Company.destroy_all
 Location.destroy_all
-User.destroy_all
-
 
 p "----------- Creating Locations -----------"
 locations_array = [
@@ -70,3 +71,16 @@ assets_array = [
 Asset.create!(assets_array)
 
 
+p "----------- Creating Transactions -----------"
+assets_array = [
+  {
+    asset: Asset.first,
+    buyer: Company.first,
+    seller: Company.first,
+    price: 1000,
+    date: Date.today()
+  }
+]
+
+Transaction.create!(assets_array)
+=======
