@@ -1,16 +1,20 @@
 <div class="card">
   <div class="card-main" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1524214786335-66456317bde6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81c0d1a541bf9c4857daa8b6c79bffda&auto=format&fit=crop&w=750&q=80');">
-    <div class="asset-category">Entrepôt</div>
+    <div class="asset-category"><%= business_asset.asset_type %></div>
   </div>
   <div class="card-information">
     <div class="first-line">
       <div class="address"><p> <%= business_asset.geographical_location.address %></p></div>
       <div class="occupancy">
-        <% if  %>
-          <% business_asset.occupancy_rate > 0.8 %>
-          <i class="fas fa-circle" style="color: green"></i>
+        <% if business_asset.occupancy_rate %>
+          <% if  %>
+            <% business_asset.occupancy_rate > 0.8 %>
+            <i class="fas fa-circle" style="color: green"></i>
+            <% else %>
+              <i class="fas fa-circle" style="color: red"></i>
+          <% end %>
           <% else %>
-            <i class="fas fa-circle" style="color: red"></i>
+          <p>no data</p>
         <% end %>
 
       </div>

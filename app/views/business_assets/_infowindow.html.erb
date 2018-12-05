@@ -1,2 +1,17 @@
-<p><%= business_asset.geographical_location.address %></p>
-<p><%= business_asset.surface.round %></p>
+<% if business_asset.geographical_location.address %>
+    <p><%= business_asset.geographical_location.address %></p>
+  <% else %>
+    <p>No Address Available</p>
+<% end %>
+
+<% if business_asset.surface %>
+  <p>Surface: <%= business_asset.surface.round %> m2</p>
+  <% else %>
+  <p></p>
+<% end %>
+
+<% if business_asset.potential_annual_rent_sqm %>
+    <p><%= business_asset.potential_annual_rent_sqm.round %>/ €an/m2</p>
+  <% else %>
+  <p></p>
+<% end %>
