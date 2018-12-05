@@ -1,10 +1,12 @@
 <div class="main-container">
   <div class="container">
-    <% @business_assets.each do |business_asset| %>
-      <div class="col-xs-12 col-sm-4">
-        <%= render 'shared/card', business_asset: business_asset  %>
-      </div>
-    <% end %>
+    <div class="row">
+      <% @business_assets.each do |business_asset| %>
+        <div class="col-xs-12 col-sm-4">
+          <%= render 'shared/card', business_asset: business_asset  %>
+        </div>
+      <% end %>
+    </div>
   </div>
   <div
     id="map"

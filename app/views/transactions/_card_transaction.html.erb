@@ -7,7 +7,7 @@
       <%= @business_asset.asset_type %>
     </div>
     <div class="tr-card-address">
-      <%= @business_asset.geographical_location %>
+      <%= @business_asset.geographical_location.address %>
     </div>
     <ul class="tr-card-feature-list">
       <li><%= @transaction.price %> €</li>
@@ -15,6 +15,6 @@
     </ul>
   </div>
   <div class="tr-card-return">
-    <p><%= @rental ? @rental.annual_rent + 0.0 / @transaction.price : 0 %> %</p>
+    <p><%= @rental ? (100 * (@rental.annual_rent + 0.0) / @transaction.price).round(1) : 0 %> %</p>
   </div>
 </div>
