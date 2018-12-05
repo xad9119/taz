@@ -1,21 +1,37 @@
 <div class= "container" >
-  <div class= "flex-boxe" >
-    <div class= "white-box" >
-      <h3><%= @business_asset.construction_year %></h3>
-      <h3><%= @business_asset.asset_type %></h3>
-      <h3><%= @business_asset.surface %></h3>
-      <h3><%= @business_asset.land_surface %></h3>
-      <h3><%= @business_asset.general_condition %></h3>
-      <h3><%= @business_asset.description %></h3>
-      <h3><%= @business_asset.height %></h3>
-      <h3><%= @business_asset.office_area_share %></h3>
-      <h3><%= @business_asset.occupancy_rate %></h3>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
-        <label class="custom-control-label" for="customCheckDisabled">ICPE</label>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <%= image_tag "Lynx.jpg", class: "lynx" %>
       </div>
     </div>
-  </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <p><%= @business_asset.construction_year %></p>
+        <p><%= @business_asset.asset_type %></p>
+        <p><%= @business_asset.surface %></p>
+        <p><%= @business_asset.land_surface %></p>
+        <p><%= @business_asset.general_condition %></p>
+        <p><%= @business_asset.description %></p>
+        <p><%= @business_asset.height %></p>
+        <p><%= @business_asset.office_area_share %></p>
+        <p><%= @business_asset.occupancy_rate %></p>
+          <% if @business_asset.has_icpe %>
+           <i class="fas fa-check-square"></i>Has ICPE
+          <% else %>
+           <i class="far fa-square"></i> Has ICPE
+          <% end %>
+        </div>
+      </div>
+
+    <div class="col-xs-12 col-sm-6 ">
+      <div class="white-box">
+        <h3><%= @business_asset.transactions.first.price %></h3>
+      </div>
+    </div>
+
+   </div>
 </div>
 
 
