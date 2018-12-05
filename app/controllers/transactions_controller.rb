@@ -15,5 +15,6 @@ class TransactionsController < ApplicationController
     @rental = @business_asset.rentals
                     .select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }
                     .first
+    @comparables = (1..15).to_a.map { |_| @transaction }
   end
 end
