@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_04_170227) do
+ActiveRecord::Schema.define(version: 2018_12_05_074955) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_12_04_170227) do
     t.integer "has_icpe"
     t.text "asset_type"
     t.decimal "occupancy_rate"
-    t.decimal "office_share_area"
+    t.decimal "office_area_share"
     t.decimal "potential_annual_rent"
     t.decimal "potential_annual_rent_sqm"
     t.decimal "height"
