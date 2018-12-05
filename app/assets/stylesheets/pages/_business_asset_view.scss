@@ -40,6 +40,28 @@
     font-weight: bold;
     background-color: $main-color;
     color: white;
+    border-radius: 3px;
+  }
+}
+
+.height-line-1 {
+  height: 470px;
+}
+
+.doc-attachment li {
+  display:block;
+  width: 30px;
+  height: 30px;
+  background-image: image-url("file.svg");
+  background-repeat: no-repeat;
+  padding-top: 39px;
+  padding-left: 0px;
+  a {
+    padding: 0px;
+    font-size: 15px;
+  }
+  a:hover {
+    font-weight: bolder;
   }
 }
 
