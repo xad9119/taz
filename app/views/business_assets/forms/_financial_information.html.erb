@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-xs-6">
+ <h2>Financial information</h2>
+    <h3>Business</h3>
+    <div class="form-input-title">Potential annual rent</div>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon">€</div>
+      <%= f.input :potential_annual_rent, as: :float, label: false %>
+    </div>
+
+    <h3>Rentals</h3>
+      <%= f.fields_for :rentals do |re| %>
+          <div class="form-input-title">Tenant</div>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon">€</div>
+            <%= re.input :tenant_name, as: :string, label: false %>
+          </div>
+
+          <div class="form-input-title">Annual rent</div>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon">€</div>
+            <%= re.input :annual_rent, as: :float, label: false %>
+          </div>
+
+          <div class="form-input-title">Start date</div>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <%= re.input :start_date, as: :string, label:false, input_html: {class: "datepicker"} %>
+          </div>
+
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+          <%= f.input :break_dates, as: :radio_buttons, collection: [['0', '3 - 6 - 9 '], ['1', 'other']], label_method: :second, value_method: :first %>
+
+          </div>
+
+
+          <div class="break-dates" hidden>
+            <div class="form-input-title">Break date 1</div>
+            <%= re.input :break_date_1, as: :string, label:false, input_html: {class: "datepicker"} %>
+            <div class="form-input-title">Break date 2</div>
+            <%= re.input :break_date_2, as: :string, label:false, input_html: {class: "datepicker"} %>
+            <div class="form-input-title">Break date 3</div>
+            <%= re.input :break_date_3, as: :string, label:false, input_html: {class: "datepicker"} %>
+          </div>
+
+      <% end %>
+
+
+
+
+    <h3>Transactions</h3>
+  </div>
+</div>

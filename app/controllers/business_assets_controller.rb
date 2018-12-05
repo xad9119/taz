@@ -22,6 +22,7 @@ class BusinessAssetsController < ApplicationController
   end
 
   def create
+    raise
     latitude = params['search']['geographical_location']['latitude']
     longitude = params['search']['geographical_location']['longitude']
     @business_asset = BusinessAsset.new
