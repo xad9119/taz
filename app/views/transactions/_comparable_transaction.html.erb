@@ -7,7 +7,7 @@
       <%= comparable.business_asset.asset_type %>
     </div>
     <div class="tr-card-address">
-      <%= comparable.business_asset.geographical_location %>
+      <%= comparable.business_asset.geographical_location.address %>
     </div>
     <ul class="tr-card-feature-list">
       <li><%= comparable.price %> €</li>
@@ -18,6 +18,6 @@
     <% rental = comparable.business_asset.rentals
                     .select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }
                     .first %>
-    <p><%= rental ? rental.annual_rent + 0.0 / comparable.price : 0 %> %</p>
+    <p><%= rental ? (100 * (rental.annual_rent + 0.0) / comparable.price).round(1) : 0 %> %</p>
   </div>
 </div>

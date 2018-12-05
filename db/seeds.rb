@@ -93,17 +93,23 @@ Transaction.create!(transaction_array)
 
 p "----------- Seeding from CSV -----------"
 
+i = 1
+
 filepath = File.join(Rails.root, "db", "seed_taz_c.csv")
 csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
 
 CSV.foreach(filepath, csv_options) do |row|
+
+  p "----------- Created #{i} entries from CSV -----------" if i%10 == 0
+  i += 1
+
   row = row.to_h.symbolize_keys
 
-  row_loc = row.select{ |x| GeographicalLocation.attribute_names.index(x) }
+  row_loc = row.select{ |key, _| GeographicalLocation.attribute_names.index(key.to_s) }
   location = GeographicalLocation.new(row_loc)
   location.save!
 
-  row_asset = row.select{ |x| BusinessAsset.attribute_names.index(x) }
+  row_asset = row.select{ |key, _| BusinessAsset.attribute_names.index(key.to_s) }
   asset = BusinessAsset.new(row_asset)
   asset.geographical_location = location
   asset.user = User.first
@@ -114,7 +120,7 @@ CSV.foreach(filepath, csv_options) do |row|
   tenant.name = "placeholder" unless tenant.name
   tenant.save!
 
-  row_rental = row.select{ |x| Rental.attribute_names.index(x) }
+  row_rental = row.select{ |key, _| Rental.attribute_names.index(key.to_s) }
   rental = Rental.new(row_rental)
   rental.business_asset_id = asset.id
   rental.tenant = tenant
@@ -128,7 +134,7 @@ CSV.foreach(filepath, csv_options) do |row|
   owner.name = "placeholder" unless owner.name
   owner.save!
 
-  row_tr = row.select{ |x| Transaction.attribute_names.index(x) }
+  row_tr = row.select{ |key, _| Transaction.attribute_names.index(key.to_s) }
   transaction = Transaction.new(row_tr)
   transaction.business_asset = asset
   transaction.seller = owner
