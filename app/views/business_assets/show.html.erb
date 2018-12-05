@@ -1,38 +1,101 @@
 <div class= "container" >
   <div class="row">
+
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <h3> Descriptif </h3>
+        <p> <strong> Address :</strong> <%= @business_asset.geographical_location.address %></p>
+        <p> <strong> Construction Year :</strong> <%= @business_asset.construction_year %></p>
+        <p> <strong> Asset Type :</strong> <%= @business_asset.asset_type %></p>
+        <p> <strong> Surface :</strong> <%= @business_asset.surface %> m2</p>
+        <p> <strong> Land Surface :</strong> <%= @business_asset.land_surface %></p>
+        <p> <strong> General Condition :</strong> <%= @business_asset.general_condition %></p>
+        <p> <strong> Description :</strong> <%= @business_asset.description %></p>
+        <p> <strong> Height :</strong> <%= @business_asset.height %></p>
+        <p> <strong> Office Area Share : </strong>  <%= @business_asset.office_area_share %> %</p>
+        <p> <strong> Occupancy Rate : </strong> <%= @business_asset.occupancy_rate %> %</p>
+          <% if @business_asset.has_icpe %>
+           <i class="far fa-check-square"></i> <strong>Has ICPE</strong>
+          <% else %>
+           <i class="far fa-square"></i> <strong>Has ICPE</strong>
+          <% end %>
+        </div>
+      </div>
+
     <div class="col-xs-12 col-sm-6">
       <div class= "white-box" >
         <%= image_tag "Lynx.jpg", class: "lynx" %>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6">
-      <div class= "white-box" >
-        <p><%= @business_asset.construction_year %></p>
-        <p><%= @business_asset.asset_type %></p>
-        <p><%= @business_asset.surface %></p>
-        <p><%= @business_asset.land_surface %></p>
-        <p><%= @business_asset.general_condition %></p>
-        <p><%= @business_asset.description %></p>
-        <p><%= @business_asset.height %></p>
-        <p><%= @business_asset.office_area_share %></p>
-        <p><%= @business_asset.occupancy_rate %></p>
-          <% if @business_asset.has_icpe %>
-           <i class="fas fa-check-square"></i>Has ICPE
-          <% else %>
-           <i class="far fa-square"></i> Has ICPE
-          <% end %>
-        </div>
-      </div>
-
     <div class="col-xs-12 col-sm-6 ">
       <div class="white-box">
-        <h3><%= @business_asset.transactions.first.price %></h3>
+        <h3> Last Transactions </h3>
+        <table>
+          <% @business_asset.transactions.each do |t| %>
+            <tr>
+              <th>Buyer</th>
+              <th>Seller</th>
+              <th>Date</th>
+              <th>Price (M€)</th>
+            </tr>
+            <tr>
+              <td><%= t.buyer_id %></td>
+              <td><%= t.seller_id %></td>
+              <td><%= t.date %></td>
+              <td><%= t.price %></td>
+            </tr>
+          <% end %>
+        </table>
       </div>
     </div>
 
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <h3> Localisation </h3>
+      </div>
+    </div>
+
+     <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <h3> Rentals </h3>
+         <table>
+          <% @business_asset.rentals.each do |r| %>
+            <tr>
+              <th>Tenant</th>
+              <th>Annual Rent</th>
+              <th>Annual Rent / m2</th>
+              <th>Start Date</th>
+              <th>Break 1</th>
+              <th>Break 2</th>
+              <th>Break 3</th>
+            </tr>
+            <tr>
+              <td><%= r.tenant_id %></td>
+              <td><%= r.annual_rent %></td>
+              <td><%= r.annual_rent_sqm %></td>
+              <td><%= r.start_date %></td>
+              <td><%= r.break_date_1 %></td>
+              <td><%= r.break_date_2 %></td>
+              <td><%= r.break_date_3 %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <h3> Data-room </h3>
+        <% @business_asset.attachments.each do |a| %>
+           <%= image_tag "file.svg", height: 40 %>
+           <%= link_to "a.type", a.url %>
+        <% end %>
+      </div>
+    </div>
+
+
    </div>
 </div>
-
-
 
