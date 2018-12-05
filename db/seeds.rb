@@ -107,6 +107,7 @@ CSV.foreach(filepath, csv_options) do |row|
 
   row_loc = row.select{ |key, _| GeographicalLocation.attribute_names.index(key.to_s) }
   location = GeographicalLocation.new(row_loc)
+  location.address = "#{location.address}, #{row[:code_postal]}"
   location.save!
 
   row_asset = row.select{ |key, _| BusinessAsset.attribute_names.index(key.to_s) }
