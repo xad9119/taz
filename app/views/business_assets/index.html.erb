@@ -1,6 +1,21 @@
-<h1>Assets#index</h1>
-<p>Find me in app/views/assets/index.html.erb</p>
+<div class="main-container">
+  <div class="container">
+    <div class="row">
+      <% @business_assets.each do |business_asset| %>
+        <div class="col-xs-12 col-sm-4">
+          <%= render 'shared/card', business_asset: business_asset  %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div
+    id="map"
+    style="width: 100%;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+  ></div>
+</div>
 
-<% @business_assets.each do |business_asset| %>
-<p> <%= business_asset.asset_type  %></p>
-<% end %>
+
+
+

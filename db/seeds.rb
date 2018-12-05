@@ -1,9 +1,11 @@
 p "----------- Destroying everything -----------"
+Rental.destroy_all
 Transaction.destroy_all
 BusinessAsset.destroy_all
 GeographicalLocation.destroy_all
 Company.destroy_all
 User.destroy_all
+
 
 
 p "----------- Creating Users -----------"
@@ -88,3 +90,57 @@ transaction_array = [
 ]
 
 Transaction.create!(transaction_array)
+
+p "----------- Seeding from CSV -----------"
+
+i = 1
+
+filepath = File.join(Rails.root, "db", "seed_taz_c.csv")
+csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
+
+CSV.foreach(filepath, csv_options) do |row|
+
+  p "----------- Created #{i} entries from CSV -----------" if i%10 == 0
+  i += 1
+
+  row = row.to_h.symbolize_keys
+
+  row_loc = row.select{ |key, _| GeographicalLocation.attribute_names.index(key.to_s) }
+  location = GeographicalLocation.new(row_loc)
+  location.save!
+
+  row_asset = row.select{ |key, _| BusinessAsset.attribute_names.index(key.to_s) }
+  asset = BusinessAsset.new(row_asset)
+  asset.geographical_location = location
+  asset.user = User.first
+  asset.business_asset_manager = Company.first
+  asset.save!
+
+  tenant = Company.new(name: row[:name_rent])
+  tenant.name = "placeholder" unless tenant.name
+  tenant.save!
+
+  row_rental = row.select{ |key, _| Rental.attribute_names.index(key.to_s) }
+  rental = Rental.new(row_rental)
+  rental.business_asset_id = asset.id
+  rental.tenant = tenant
+  rental.annual_rent = 0 unless rental.annual_rent
+  rental.start_date = DateTime.new(2000)
+  rental.break_date_1 = DateTime.new(2020)
+  rental.end_date = DateTime.new(2020)
+  rental.save!
+
+  owner = Company.new(name: row[:name_owner])
+  owner.name = "placeholder" unless owner.name
+  owner.save!
+
+  row_tr = row.select{ |key, _| Transaction.attribute_names.index(key.to_s) }
+  transaction = Transaction.new(row_tr)
+  transaction.business_asset = asset
+  transaction.seller = owner
+  transaction.buyer = Company.first
+  transaction.date = DateTime.new(1000) unless transaction.date
+  transaction.price = 0 unless transaction.price
+  transaction.save!
+
+end
