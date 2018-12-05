@@ -8,7 +8,7 @@ class BusinessAssetsController < ApplicationController
       {
         lng: business_asset.geographical_location.longitude,
         lat: business_asset.geographical_location.latitude,
-
+        infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
       }
     end
   end

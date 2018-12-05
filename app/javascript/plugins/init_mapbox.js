@@ -8,11 +8,11 @@ const fitMapToMarkers = (map, markers) => {
 
 const addMarkersToMap = (map, markers) => {
   markers.forEach((marker) => {
-    const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // <-- add this
+    const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
 
     new mapboxgl.Marker()
       .setLngLat([ marker.lng, marker.lat ])
-      .setPopup(popup) // <-- add this
+      .setPopup(popup)
       .addTo(map);
   });
 };
@@ -20,17 +20,30 @@ const addMarkersToMap = (map, markers) => {
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
 
-  if (mapElement) { // only build a map if there's a div#map to inject into
+  if (mapElement) {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v10'
     });
     const markers = JSON.parse(mapElement.dataset.markers);
+    const mapMarkers = [];
+      markers.forEach((marker) => {
+        mapMarkers.push(marker);
+      });
     addMarkersToMap(map, markers);
     fitMapToMarkers(map, markers);
   }
+ const cards = document.querySelectorAll('.card');
+  cards.forEach((card, index) => {
+    // Put a microphone on each card listenning for a hover event
+    card.addEventListener('mouseenter', () => {
+      // Here we trigger the display of the corresponding marker infoWindow as it is the default behavior of a click on a  marker
+      google.maps.event.trigger(mapMarkers[index], 'click');
+    });
+  });
 };
+
 
 
 
