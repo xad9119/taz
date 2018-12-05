@@ -1,21 +1,43 @@
-<%= simple_form_for :search, url: business_assets_path, method: :post  do |f| %>
-  <%= f.input :general_condition %>
-  <%= f.input :construction_year %>
-  <%= f.input :has_icpe %>
-  <%= f.input :business_asset_type %>
-  <%= f.input :occupancy_rate %>
+<%= simple_form_for :search, url: business_assets_path, method: :post, html: { class: 'form-inline' }  do |f| %>
 
-  <%= f.fields_for :geographical_location do |loc| %>
-    latitude  : <%= loc.text_field :latitude %>
-    longitude: <%= loc.text_field :longitude %>
-  <% end %>
+  <h2>Step 1 : Address</h2>
+    <%= f.fields_for :geographical_location do |loc| %>
+      address  : <%= loc.text_field :address %>
+    <% end %>
+  <h2>Step 2 : Asset type</h2>
+    <%= f.input :business_asset_type %>
+    <%= f.input :general_condition %>
+
+  <h2>Step 3 : General information</h2>
+    <%= f.input :surface, as: :float, label: 'surface',
+              input_html: { class: "recognitionStyling" }
+%>
+    <%= f.input :land_surface %>
+    <%= f.input :height %>
+    <%= f.input :construction_year, collection: 1900..2020 %>
+    <%= f.input :has_icpe, as: :radio_buttons, collection: [['0', 'yes'], ['1', 'no']], label_method: :second, value_method: :first %>
+    <%= f.input :occupancy_rate %>
+    <%= f.input :office_share_area %>
 
   <%= f.fields_for :company do |co| %>
     company name  : <%= co.input :name %>
-    credit rating: <%= co.text_field :credit_rating %>
+    credit rating: <%= co.input :credit_rating %>
   <% end %>
 
-
+ <h2>Step 4 : Asset financial information</h2>
+      <h3>Business information</h3>
+      <%= f.input :potential_annual_rent %>
+      <%= f.input :potential_annual_rent_sqm %>
+      <%= f.input :general_condition %>
+      <%= f.input :description %>
+    <h3>Rentals</h3>
+      <%= f.fields_for :rental do |re| %>
+        start date: <%= re.input :start_date %>
+        end date: <%= re.input :end_date %>
+        break date: <%= re.input :break_date_1 %>
+        annual rent: <%= re.input :annual_rent %>
+      <% end %>
+    <h3>Transactions</h3>
 
 
   <%= f.submit "add an asset", class: "btn btn-primary" %>
