@@ -2,7 +2,7 @@
   <div class="row">
 
     <div class="col-xs-12 col-sm-6">
-      <div class= "white-box" >
+      <div class= "white-box height-line-1" >
         <h3> Descriptif </h3>
         <p> <strong> Address :</strong> <%= @business_asset.geographical_location.address %></p>
         <p> <strong> Construction Year :</strong> <%= @business_asset.construction_year %></p>
@@ -14,17 +14,52 @@
         <p> <strong> Height :</strong> <%= @business_asset.height %></p>
         <p> <strong> Office Area Share : </strong>  <%= @business_asset.office_area_share %> %</p>
         <p> <strong> Occupancy Rate : </strong> <%= @business_asset.occupancy_rate %> %</p>
-          <% if @business_asset.has_icpe %>
+        <p> <% if @business_asset.has_icpe %>
            <i class="far fa-check-square"></i> <strong>Has ICPE</strong>
           <% else %>
            <i class="far fa-square"></i> <strong>Has ICPE</strong>
-          <% end %>
+          <% end %> </p>
         </div>
       </div>
 
     <div class="col-xs-12 col-sm-6">
-      <div class= "white-box" >
+      <div class= "white-box height-line-1" >
         <%= image_tag "Lynx.jpg", class: "lynx" %>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+      <div class= "white-box" >
+        <h3> Localisation </h3>
+      </div>
+    </div>
+
+
+     <div class="col-xs-12 col-sm-12">
+      <div class= "white-box" >
+        <h3> Rentals </h3>
+         <table>
+          <% @business_asset.rentals.each do |r| %>
+            <tr>
+              <th>Tenant</th>
+              <th>Rent(y)</th>
+              <th>Rent(y)/m2</th>
+              <th>Entry</th>
+              <th>Brk 1</th>
+              <th>Brk 2</th>
+              <th>Brk 3</th>
+            </tr>
+            <tr>
+              <td><%= r.tenant.name %></td>
+              <td><%= r.annual_rent %></td>
+              <td><%= r.annual_rent_sqm %></td>
+              <td><%= r.start_date.strftime('%b-%Y') %></td>
+              <td><%= r.break_date_1.strftime('%b-%Y') %></td>
+              <td><%= r.break_date_2.strftime('%b-%Y') %></td>
+              <td><%= r.break_date_3.strftime('%b-%Y') %></td>
+            </tr>
+          <% end %>
+        </table>
       </div>
     </div>
 
@@ -40,9 +75,9 @@
               <th>Price (M€)</th>
             </tr>
             <tr>
-              <td><%= t.buyer_id %></td>
-              <td><%= t.seller_id %></td>
-              <td><%= t.date %></td>
+              <td><%= t.buyer.name %></td>
+              <td><%= t.seller.name %></td>
+              <td><%= t.date.strftime('%b-%Y') %></td>
               <td><%= t.price %></td>
             </tr>
           <% end %>
@@ -52,46 +87,12 @@
 
     <div class="col-xs-12 col-sm-6">
       <div class= "white-box" >
-        <h3> Localisation </h3>
-      </div>
-    </div>
-
-     <div class="col-xs-12 col-sm-6">
-      <div class= "white-box" >
-        <h3> Rentals </h3>
-         <table>
-          <% @business_asset.rentals.each do |r| %>
-            <tr>
-              <th>Tenant</th>
-              <th>Annual Rent</th>
-              <th>Annual Rent / m2</th>
-              <th>Start Date</th>
-              <th>Break 1</th>
-              <th>Break 2</th>
-              <th>Break 3</th>
-            </tr>
-            <tr>
-              <td><%= r.tenant_id %></td>
-              <td><%= r.annual_rent %></td>
-              <td><%= r.annual_rent_sqm %></td>
-              <td><%= r.start_date %></td>
-              <td><%= r.break_date_1 %></td>
-              <td><%= r.break_date_2 %></td>
-              <td><%= r.break_date_3 %></td>
-            </tr>
-          <% end %>
-        </table>
-      </div>
-    </div>
-
-
-    <div class="col-xs-12 col-sm-6">
-      <div class= "white-box" >
         <h3> Data-room </h3>
-        <% @business_asset.attachments.each do |a| %>
-           <%= image_tag "file.svg", height: 40 %>
-           <%= link_to "a.type", a.url %>
-        <% end %>
+        <ul class="list-inline doc-attachment">
+          <% @business_asset.attachments.each do |a| %>
+            <li><%= link_to a.attachment_type, a.url %>  </li>
+          <% end %>
+        </ul>
       </div>
     </div>
 

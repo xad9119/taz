@@ -138,3 +138,18 @@ CSV.foreach(filepath, csv_options) do |row|
   transaction.save!
 
 end
+
+
+p "----------- Creating Attachments -----------"
+
+attachments_array = [
+  {
+    business_asset: BusinessAsset.first,
+    attachmetype: "plan",
+    url: "http/www.lequipe.fr",
+  }
+]
+
+Attachment.create!(attachments_array)
+
+
