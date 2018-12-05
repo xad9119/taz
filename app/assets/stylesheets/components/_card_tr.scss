@@ -57,7 +57,8 @@
 .tr-card-return {
   display: flex;
   align-items: center;
-  padding: 20px;
+  justify-content: space-around;
+  width: 60px;
   background-color: #fafafa;
   p {
     color: black;
