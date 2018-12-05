@@ -1,0 +1,407 @@
+date;visite;respo;statut;broker;address;ville;code_postal;asset_type;surface;surface_loue;name_rent;name_owner;annual_rent;annual_rent_sqm;annual_rent_sqm_pot;annual_rent_pot;price;taux;prix_m2
+11/26/18;non;EHB;0;Arnaud Hugonie;7 rue de la mare blanche;Noisiel;77186;Activité;3233;0;;;;; 	55,68  € ; 	180 000,00  € ;;;
+23/11/2018;non;EHB;0;Jérôme Mainguy;4 Square Newton ;Montigny le Bretonneux;78180;Bureau;7288;7288;;; 	1 497 329,00  € ; 	205,45  € ; 	200,00  € ; 	1 497 329,00  € ; 	11 120 000,00  € ;12,02 %; 	1 526  €
+11/14/18;non;EHB;0;Jerome Matias (bnpre);"163 – 165 AVENUE
+CHARLES DE GAULLE";Neuilly-sur-Seine;92200;Bureau;1680;1500;;; 	570 363,00  € ; 	380,24  € ; 	380,00  € ; 	638 400,00  € ; 	12 500 000,00  € ;4,56 %; 	7 440  €
+8/28/18;non;EHB;1;Ariel Amarelli;10 Rue Léonard de Vinci;Brie-Comte-Robert;77170;activité;2590;2590;;privé; 	165 600,00  € ; 	63,94  € ; 	75,00  € ; 	194 250,00  € ;**;;
+6/20/18;non;EHB;1;Charles Albert;225 Rue de la Justice;Vaux le Penil;77000;activité;2022;2022;Canon;; 	120 000,00  € ; 	59,35  € ; 	60,00  € ; 	121 320,00  € ; 	1 350 000,00  € ;8,02 %; 	668  €
+3/26/18;oui;ZK;1;Pascal Voisin;15 av. Raspail;St maur des fossés;94100;promotion logt;555;-;-;;-;-;-;-; 	1 250 000,00  € ;; 	2 252  €
+3/21/18;oui;EHB;1;Frank Perochain;15 rue de l’Angoumois ;Argenteuil;95100;activité;11378;11378;jetpro;; 	680 000,00  € ; 	59,76  € ; 	60,00  € ; 	682 680,00  € ; 	8 300 000,00  € ;7,34 %; 	729  €
+1/17/18;oui;EHB;1;Antoine Guicheteau (Nexity);4 rue des malines;Lisses;91090;Activité;5500;0;;;;; 	46,00  € ; 	253 000,00  € ; 	2 800 000,00  € ;8,07 %; 	509  €
+10/22/18;non;EHB;4;Enguerrand de Villette (CBRE);13 BOULEVARD DES MARTYRS DE CHATEAUBRIANT ;Argenteuil;95100;Activité/Bureau;1615;1615;Office Depot;; 	106 231,00  € ; 	65,78  € ; 	65,00  € ; 	104 975,00  € ; 	1 250 000,00  € ;7,50 %; 	774  €
+10/4/18;non;EHB;2;Arthur HELIN (CBRE);98 rue Anselme Rondenay;Vitry-sur-Seine;94400;activité;1780;0;;;;; 	90,00  € ; 	160 200,00  € ; 	2 000 000,00  € ;7,15 %; 	1 124  €
+10/4/18;non;EHB;2;Avidan Koubi;58 rue de la Sablières;Asnières sur Seine;92600;Hotel/commerce;;;;;;;;;;;
+9/26/18;non;ZK;2;Evolis;116 Avenue Pierre Brossolette;Malakoff;92240;promotion - faisa;330;0;;;;; 	150,00  € ; 	49 500,00  € ; 	495 000,00  € ;8,93 %; 	1 500  €
+9/14/18;non;ZK;2;Pascal Voisin;49 Avenue Henry Barbusse;Bobigny;93000;activité & Bureau;3600;-;-;Privé;-;;;; 	3 200 000,00  € ;; 	889  €
+10/17/18;non;EHB;2;Antoine Guicheteau;4 Avenue du Gué Langlois;Bussy Saint Martin;77600;Activité/bureau;1372;0;;;;; 	90,00  € ; 	123 480,00  € ; 	1 560 000,00  € ;7,07 %; 	1 137  €
+10/9/18;non;EHB;2;Josselin Garcia (Arthur Loyd);14 rue Clapeyron;Paris;75008;Bureau/Logement;;;;;;;;;;;
+10/9/18;non;EHB;2;Sacha Danielian (CW);191 Aristide Briand;Cachan;94230;Bureau;9750;5441;;; 	1 156 568,00  € ; 	212,57  € ; 	185,00  € ; 	1 803 750,00  € ; 	18 000 000,00  € ;8,95 %; 	1 846  €
+22/11/2018;non;CDU;3;Jérôme Mainguy;7 rue Erik Satie;Bobigny;93000;Bureau;5839;5839;Centre des impôts;Cofidy; 	920 523,00  € ; 	157,65  € ; 	150,00  € ; 	920 523,00  € ; 	10 000 000,00  € ;8,22 %; 	1 713  €
+15/11/2018;non;EHB;3;Julien Badene;104 boulevard Diderot;Paris;75012;Logement/commerce;1450;;;;;;;;;;
+11/22/18;non;EHB;3;Ilan Feinsohn;11 rue des Lilas;Montreuil;93100;Activité;1170;0;;;;; 	90,00  € ; 	105 300,00  € ; 	1 350 000,00  € ;6,96 %; 	1 154  €
+11/13/18;non;ZK;3;;28 avenue Albert 1er;Saint maur des fossés;94100;Promotion Logements;1470;;;;;;;; 	1 900 000,00  € ;; 	1 293  €
+11/13/18;non;EHB;3;Nancy Bizet;48 Rue Paul Lescop,;Nanterre;92000;Activité;4033;1523;Electrolab;privé; 	80 000,00  € ; 	52,53  € ; 	80,00  € ; 	280 800,00  € ; 	2 600 000,00  € ;9,64 %; 	645  €
+11/16/18;oui;ZK;3;Julien Mateos (bnp RE );2 avenue Pasteur ;Issy les Moulineaux;92130;Bureaux / Logements;1205;0;;SEST IDF;;; 	250,00  € ; 	301 250,00  € ; 	9 000 000,00  € ;2,99 %; 	7 469  €
+15/11/2018;non;EHB;3;Julien Badene;23 rue Emile Zola;Montreuil;93100;Bureau / activité;2610;2610;IDI;IDI; 	360 000,00  € ; 	137,93  € ; 	130,00  € ; 	339 300,00  € ; 	4 000 000,00  € ;7,57 %; 	1 533  €
+11/13/18;non;ZK;3;Axel  Useldinger;28 Avenue Albert 1er ;Saint maur des fossés;94100;Promotion logements;2050;;;;;;;; 	1 900 000,00  € ;;
+11/7/18;non;EHB;3;Charles Albert;15 route de Fontainebleau;VITRY-SUR-SEINE;94400;Activité Bureau;7620;4235;;; 	595 160,00  € ; 	140,53  € ; 	140,00  € ; 	1 066 800,00  € ; 	12 000 000,00  € ;7,94 %; 	1 575  €
+11/5/18;non;CDU;3;;75 rue Lecourbe ;75015 Paris;75015;Promotion - bilan;;;;;;;;;;;
+11/2/18;non;EHB;3;Alexandre Filipe (Scamac);6 avenue Jean Jaurès;Montrouge;92120;Logement;340;;;;;;;; 	2 210 000,00  € ;; 	6 500  €
+10/30/18;non;EHB;3;Paolo Salzani (Colliers);3 rue des Gaudines;Saint Germain en Laye;78100;bureau;5332;2300;Pall;; 	345 000,00  € ; 	150,00  € ; 	150,00  € ; 	799 800,00  € ; 	6 300 000,00  € ;11,34 %; 	1 182  €
+10/25/18;non;ZK;3;Jérémie SENIOR ( Babylone);53 boulevard de la République;Chatou;78400;Bureaux ;2209;0;;; 	-    € ; 	-    € ; 	100,00  € ; 	220 900,00  € ; 	2 800 000,00  € ;7,89 %; 	1 268  €
+10/22/18;non;ZK;3;"Thibault De la baronniere
+Groupe Babylone";8 rue de la Tour Carrée;Vémars;95470;Activité/Entrepôt;1179;1179;TIP;; 	310 154,00  € ; 	263,07  € ;; 	612 500,00  € ; 	1 050 000,00  € ;-CBI- TRI 5.2%;
+10/11/18;non;ZK;3;Ariel Marelli;2 rue Denis Diderot;Elancourt;78990;activité / bureau;38789;0;;;;; 	50,00  € ; 	1 939 450,00  € ; 	9 000 000,00  € ;19,24 %; 	232  €
+10/10/18;non;ZK;3;PV;106 rue Saint Charles;Paris;75015;"VIAGER Logement / Commerce
+promotion - faisa";1300;1078;;; 	238 440,00  € ; 	221,19  € ; 	360,00  € ; 	468 000,00  € ; 	4 550 000,00  € ;9,18 %; 	3 500  €
+10/4/18;non;EHB;3;Alexandre Filipe (Scamac);65 avenue Vincent François Raspail;ARCUEIL;94110;activité;3148;1968;;; 	289 905,00  € ; 	147,31  € ; 	159,00  € ; 	500 532,00  € ; 	6 300 000,00  € ;7,09 %; 	2 001  €
+1/18/18;non;EHB;3;Charles Albert (BNPRE);44 Avenue de Garlande;Bagneux;92220;Activité;390;390;;; 	48 750,00  € ; 	125,00  € ; 	125,00  € ; 	48 750,00  € ; 	560 000,00  € ;7,77 %; 	1 436  €
+10/31/15;non;ODU;3;Josselin Garcia (Arthur Loyd);Portefeuille Town;France;;Commerce;5438;3892;;; 	766 556,00  € ; 	196,96  € ; 	189,51  € ; 	1 030 566,00  € ; 	15 000 000,00  € ;6,13 %; 	2 758  €
+10/19/18;non;EHB;3;Jerome Mainguy;11 rue jean Mazet;Ivry-sur-Seine;94200;Bureau;7088;0;;LFPI;;; 	180,00  € ; 	1 275 840,00  € ; 	21 000 000,00  € ;5,42 %; 	2 963  €
+11/16/18;non;EHB;4;François Xavier d'Alançon;87-89 rue du Gouverneur Félix Eboué;Issy les Moulineaux;92130;Bureau;1651;1617;;; 	421 573,00  € ; 	260,71  € ; 	260,00  € ; 	430 413,00  € ; 	7 300 000,00  € ;5,26 %; 	4 422  €
+11/15/18;non;EHB;4;DL REAL ESTATE;6 Avneue Evariste Gallois;Savigny sur Orge;91600;Activité;3050;1550;;; 	121 792,00  € ; 	78,58  € ; 	80,00  € ; 	244 000,00  € ; 	2 600 000,00  € ;8,38 %; 	852  €
+10/10/18;non;EHB;4;Josselin Garcia (Arthur Loyd);18bis rue de Villiers;Levallois Perret;92300;Bureau;5432;1792;DATAWORDS;; 	567 937,00  € ; 	316,93  € ; 	305,00  € ; 	1 656 760,00  € ; 	33 000 000,00  € ;4,48 %; 	6 075  €
+11/22/18;non;EHB;4;Avidan Koubi (Kalstone);Rue de la Motte;Aubervilliers;93300;Commerce;414;0;;;;; 	180,00  € ; 	74 520,00  € ; 	795 000,00  € ;8,37 %; 	1 920  €
+11/12/18;non;EHB;4;Simon-Pierre Richard (JLL);305 rue de la Belle Etoile ;ROISSY-EN-France;95700;Activité/bureau;7795;4735;OCP Repartition;; 	351 499,00  € ; 	74,23  € ; 	70,00  € ; 	545 650,00  € ; 	6 000 000,00  € ;8,12 %; 	770  €
+11/12/18;non;EHB;4;Charles Albert;79 rue Rateau ;La Courneuve;93120;activité;2325;1829;;; 	182 961,00  € ; 	100,03  € ; 	100,00  € ; 	232 500,00  € ; 	2 500 000,00  € ;8,30 %; 	1 075  €
+11/5/18;non;EHB;4;charles Albert;Parc des Vergers ;Tigery;91250;activité;2286;2286;;Alsei; 	186 248,00  € ; 	81,47  € ; 	80,00  € ; 	182 880,00  € ; 	2 600 000,00  € ;6,28 %; 	1 137  €
+10/23/18;non;EHB;4;Guilhem HUTTNER;45 rue Delizy;Pantin;93500;Activité/Bureau;3428;2739;Fitness park et Sand fabrik (type arkose);; 	320 000,00  € ; 	116,83  € ; 	105,00  € ; 	359 940,00  € ; 	4 000 000,00  € ;8,03 %; 	1 167  €
+10/23/18;non;EHB;4;Antoine Guicheteau;6 Allée Jean Monnet;Collegien;77090;Actibité/Bureau;2793;0;;;;; 	69,00  € ; 	192 717,00  € ; 	2 350 000,00  € ;7,32 %; 	841  €
+10/22/18;non;EHB;4;Enguerrand de Villette (CBRE);29 Boulevard du Général Delambre;Bezons;95870;Actibité/Bureau;1300;0;;;;; 	100,00  € ; 	130 000,00  € ; 	1 800 000,00  € ;6,45 %; 	1 385  €
+10/20/18;non;EHB;4;Mikael Nataf;2 Allée des Performances ;Noisy le Grand;93160;activité/bureau;2600;0;;;;; 	65,00  € ; 	169 000,00  € ; 	2 620 000,00  € ;5,76 %; 	1 008  €
+10/18/18;non;ZK;4;Marc SEBILLE (EOL);6-8 Rue Marcel Dassault;Le Plessis Bouchard;95130;activité / bureau;1914;1914;;; 	100 000,00  € ; 	52,25  € ; 	70,00  € ; 	133 980,00  € ; 	1 390 000,00  € ;8,61 %; 	726  €
+10/16/18;non;EHB;4;Franck Poizat;42 rue du Commandant Rolland;Le Bourget;93350;bureau/Activité;3077;3077;SALINI;; 	482 270,00  € ; 	156,73  € ; 	150,00  € ; 	461 550,00  € ; 	6 500 000,00  € ;6,34 %; 	2 112  €
+10/15/18;non;EHB;4;Matias Jerome;1 rue André Voguet;Ivry-sur-Seine;94200;Bureau/commerce;1410,6;211,5;;; 	25 591,04  € ; 	121,00  € ; 	220,00  € ; 	310 332,00  € ; 	4 500 000,00  € ;6,16 %; 	3 190  €
+10/11/18;non;EHB;4;Oscar Duclert;11-13 rue de l'Escaut;Paris;75019;Bureau/Logement;1445;;;;;;; 	420 000,00  € ; 	8 950 000,00  € ;4,19 %; 	6 194  €
+10/10/18;non;EHB;4;Geoffroy D'Arche;27 Bouelvard Hippolyte Marques;Ivry-sur-Seine;94200;Bureau:acti;3604;0;;;;; 	141,51  € ; 	510 000,00  € ; 	6 300 000,00  € ;7,23 %; 	1 748  €
+10/2/18;non;EHB;4;Francois-Xavier LOUIS (JC Turri);Rue Philippe SEGUIN ;FRANCONVILLE;95130;activité;2109;0;;;;; 	90,00  € ; 	189 810,00  € ; 	2 833 000,00  € ;5,98 %; 	1 343  €
+9/18/18;non;EHB;4;Dan Erith;122 rue Saint Denis;75002 Paris;75002;logement/commerce;949;495;;; 	121 649,00  € ; 	245,76  € ; 	420,00  € ; 	398 580,00  € ; 	6 500 000,00  € ;5,48 %; 	6 849  €
+9/14/18;oui;ZK;4;Pascal Voisin;1 rue Heynen;Bois-Colombes;92270;promotion logt;1395;-;-;Privé;-;;;; 	2 180 000,00  € ;; 	1 563  €
+9/13/18;non;EHB;4;Astesana;6 Avenue des 3 peuples;Montigny;78180;activité & Bureau;16263;0;;;;; 	45,00  € ; 	731 835,00  € ; 	5 300 000,00  € ;12,33 %; 	326  €
+9/12/18;non;EHB;4;Moché Harroch;17 rue jean jaures;Champigny-sur-Marne;94500;logement/commerce;1428;1428;;; 	382 536,00  € ; 	267,88  € ;;; 	5 000 000,00  € ;6,83 %; 	3 501  €
+9/7/18;non;EHB;4;Daniel Erith;43/45 Avenue Iena;75016 Paris;75016;logement ;;;;;;;;;;;
+9/5/18;non;EHB;4;Florian Lachaussée (JLL);10 Avenue Ampère;Wissous;91320;activité & Bureau;7365;0;;;;; 	80,00  € ; 	589 200,00  € ; 	5 000 000,00  € ;10,52 %; 	679  €
+7/19/18;non;EHB;4;Charles Albert;15 rue Francis de Pressensé;Saint Denis;93210;activité;2906;2906;Isiprint, Egis, GDG ZAKA;; 	543 970,00  € ; 	187,19  € ; 	190,00  € ; 	552 140,00  € ; 	8 200 000,00  € ;6,01 %; 	2 822  €
+7/18/18;non;EHB;4;Alexandre Lalande;12 rue Desnouettes;75015 Paris;75015;logement/commerce;690;;;;;;;;;;
+7/18/18;non;EHB;4;Antoine Guicheteau;140 Chemin de Groslay;Bondy;93140;Activité;982;982;;; 	72 000,00  € ; 	73,32  € ; 	70,00  € ; 	68 740,00  € ; 	991 820,00  € ;6,19 %; 	1 010  €
+7/16/18;non;EHB;4;Olivier Lambin; 6 Avenue de la Croix Boisselière;Morangis;91420;activité;4600;0;;;;; 	55,00  € ; 	253 000,00  € ; 	2 600 000,00  € ;8,69 %; 	565  €
+7/12/18;non;EHB;4;Antoine Guicheteau;25 rue Bossuet ;LONGJUMEAU;91160;activité;1359;0;;;;; 	42,00  € ; 	57 078,00  € ; 	1 700 000,00  € ;3,00 %; 	1 251  €
+7/5/18;non;EHB;4;Pierre Etienne Maury;10, route Nationale 10 (RN 10) Lieu-dit l’Agiot;Elancourt;78990;Commerce;550;550;Courtepaille, Boulangerie le Petrin Ribeirou;-; 	95 000,00  € ; 	172,73  € ; 	170,00  € ; 	93 500,00  € ; 	1 600 000,00  € ;5,30 %; 	2 909  €
+6/28/18;non;EHB;4;Entraide;31 rue d'Alesia;Paris 75014;75014;Bureau;450;0;;;;;;;;;
+6/28/18;non;EHB;4;François Xavier d'Alençon;Avenue du Centaure ;Cergy;95000;activité;4181;0;;;;; 	100,00  € ; 	418 100,00  € ; 	6 150 000,00  € ;6,07 %; 	1 471  €
+6/28/18;non;EHB;4;Jérôme Mainguy; 46 48 rue Marcel Grosmenil;Villejuif;94800;Bureau;1483;1483;;; 	350 000,00  € ; 	236,01  € ; 	200,00  € ; 	296 600,00  € ; 	4 100 000,00  € ;6,46 %; 	2 765  €
+6/28/18;non;EHB;4;Stephane Berry;25 rue Louis Ampère;Neuilly sur Marne;93330;Activité;5733;5618;;; 	299 854,00  € ; 	53,37  € ; 	50,00  € ; 	286 650,00  € ; 	3 360 000,00  € ;7,62 %; 	586  €
+6/22/18;non;EHB;4;Antoine Guicheteau;place Marcel Rebuffat ;Villejust;91140;activité;3703;0;;;;; 	100,00  € ; 	370 300,00  € ; 	4 977 500,00  € ;6,64 %; 	1 344  €
+6/22/18;non;EHB;4;Raphael Lucaz;1 rue des Alouettes;Thiais;94320;Activité;19788;0;;;;; 	65,00  € ; 	1 286 220,00  € ; 	12 600 000,00  € ;9,11 %; 	637  €
+6/19/18;non;EHB;4;Eric Robiez;29 rue du Général Leclerc;Versailles;78000;logement/commerce;778;;;;;;;;;;
+6/13/18;non;EHB;4;Charles Albert;7 avenue du Fief;Saint Ouen L'Aumone;95310;activité;3896;3896;CGTT;; 	215 000,00  € ; 	55,18  € ; 	55,00  € ; 	214 280,00  € ; 	2 600 000,00  € ;7,36 %; 	667  €
+6/8/18;non;EHB;4;Charles Albert;114 Rue Camille Desmoulins;Arcueil;94110;activité;470;470;BL MEDICAL;; 	58 650,00  € ; 	124,79  € ; 	85,00  € ; 	39 950,00  € ; 	800 000,00  € ;4,67 %; 	1 702,13  €
+6/6/18;non;EHB;4;Aurélien Rosset;87 Boulevard Poniatowski;75012 Paris;75012;Bureau;705;705;Ville de Paris;; 	181 054,00  € ; 	256,81  € ; 	250,00  € ; 	176 250,00  € ; 	3 500 000,00  € ;4,71 %; 	4 964,54  €
+6/4/18;oui;EHB;4;Arthur Rodriguez;14 rue Henri Dunant;Bondoufle;91070;activité;4993;4993;STACI;; 	264 600,00  € ; 	52,99  € ; 	52,00  € ; 	259 636,00  € ; 	4 000 000,00  € ;5,80 %; 	801  €
+5/27/18;non;EHB;4;Olivier Lambin;8 Avenue Ampère;Wissous;91320;activité;3661;3661;;; 	180 000,00  € ; 	49,17  € ; 	50,00  € ; 	183 050,00  € ; 	2 200 000,00  € ;7,78 %; 	600,93  €
+5/18/18;non;EHB;4;KW;114 rue Diderot;Pantin;93500;Logement & commerce;;;;;;;;;;;
+5/18/18;non;EHB;4;KW;92bis Boulevard Paul Vaillant Couturier;La courneuve;93120;Logement & commerce;315;;;;;;;; 	1 750 000,00  € ;;
+5/17/18;;EHB;4;KW;8 Avenue de Bourgogne;Saint-Ouen-l'Aumône;95310;Activité;2413;2413;Bureau Veritas & PDI Imprimerie;; 	144 368,00  € ; 	59,83  € ; 	60,00  € ; 	144 780,00  € ; 	1 800 000,00  € ;7,52 %; 	745,96  €
+5/16/18;oui;EHB;4;JP Duchenoy;8 Avenue de Bourgogne;Saint Ouen L'Aumone;95310;activité;2 359;2359;Bureau Veritas;; 	144 368,00  € ; 	61,20  € ; 	60,00  € ; 	141 540,00  € ; 	1 800 000,00  € ;7,02 %; 	763  €
+5/16/18;non;EHB;4;Julien Mateos;34 Rue Pierre et Marie Curie;Ivry-sur-Seine;94200;Bureau;1412;0;;;;; 	210,00  € ; 	296 520,00  € ; 	2 900 000,00  € ;;
+5/15/18;;EHB;4;KW;93 Avenue Jean Jaures;Aubervilliers;93300;Logement & Commerce;2534;2534;;; 	201 187,00  € ; 	79,40  € ;;; 	4 090 000,00  € ;nc; 	1 614,05  €
+5/14/18;non;EHB;4;Thomas Ouzounian;136 Avenue d'Italie;75013 PARIS;75013;logement;415;415;;; 	115 752,00  € ; 	278,92  € ;;;;;
+5/2/18;;CDU;4;;5 rue bertrand russel ;trouville;76210;promotion logement;;;;;;;;;;;
+4/20/18;non;EHB;4;Jerome Mainguy;Rue Ferme dambuc;Gonfreville L'Orcher;76700;activité;4737;3877,74;;; 	187 689,00  € ; 	48,40  € ; 	45,00  € ; 	213 165,00  € ; 	2 500 000,00  € ;7,97 %; 	527,76  €
+4/20/18;non;EHB;4;Olivier Lambin ;3 AVENUE DE LA RESISTANCE ;Sainte-Genevieve des Bois;91700;activité;5500;2800;Soccer917;; 	131 742,00  € ; 	47,05  € ; 	45,00  € ; 	247 500,00  € ; 	5 800 000,00  € ;3,99 %; 	1 054,55  €
+4/19/18;non;;4;Frédéric Bazil (DBXConseil) puis Babylone;14 avenue de l’Europe;Bussy-Saint-Georges;77600;Activité;5069;2803;;; 	141 244,56  € ; 	50,39  € ;;; 	3 100 000,00  € ;nc; 	611,56  €
+4/12/18;;EHB;4;Olivier Lambin;1 Avenue Ferdinand de Lesseps;Morangis;91420;Commerce;2360;1485;ALDI;;;;;;;;
+4/5/18;non;EHB;4;Geoffroy D'Arche;24 rue des Fontelles;Ecquevilly;78920;activité;2469;2469;;; 	128 946,00  € ; 	52,23  € ; 	50,00  € ; 	123 450,00  € ; 	1 500 000,00  € ;7,69 %; 	607,53  €
+4/5/18;oui;EHB;4;Julien Mateos BNP;107 avenue henri barbusse;Clichy;92110;Bureau/logement;1966;0;;;;;;; 	6 900 000,00  € ;;
+4/5/18;non;EHB;4;Julien Pinault (Arthur Loyd);Portefeuille à Auvervilliers et Avignon;Aubervilliers & Avignon;93300;activité;6947;6947;Loomis;; 	986 740,00  € ; 	142,04  € ; 	140,00  € ; 	972 580,00  € ; 	17 000 000,00  € ;5,35 %; 	2 447,10  €
+3/28/18;non;EHB;4;Arthur Rodriguez (CBRE);57 RUE DU BOIS CHALAND;LISSES;91090;activité;2902;0;;;;; 	60,00  € ; 	174 120,00  € ; 	2 200 000,00  € ;7,40 %; 	758,10  €
+3/28/18;non;EHB;4;Augustin Michaud (Colliers);50-52 avenue Gabriel Peri;Arcueil;94110;Bureau ;2365;2365;;; 	258 000,00  € ; 	109,09  € ; 	200,00  € ; 	473 000,00  € ; 	4 100 000,00  € ;10,78 %; 	1 733,62  €
+3/26/18;oui;EHB;4;Victor Melloult;32 boulevard Paul Vaillant Couturier;Montreuil;93100;transformation;3593;;;;;;;;;;
+3/20/18;non;EHB;4;Aryé C. MAMAN ;Portefeuille Belgique;;;Commerce;21863;21863;C&A;; 	2 605 113,00  € ; 	119,16  € ; 	120,00  € ; 	2 623 560,00  € ; 	36 000 000,00  € ;6,81 %; 	1 646,62  €
+3/20/18;non;EHB;4;Ilan FEINSOHN (Nexity);55 route de saint leu;Epinay sur Seine;93800;activité;3369;0;;;;; 	75,00  € ; 	252 675,00  € ; 	3 300 000,00  € ;7,16 %; 	979,52  €
+3/8/18;non;CDU;4;PE Maury (Cordell);4 rue Alphonse XIII;75016;75016;Logement;1210,15;;;;;;;; 	13 000 000,00  € ;; 	10 742  €
+3/7/18;non;CDU;4;Yann Giboire (CYRE);2 rue Androuet;75018 Paris;75018;Logement;238,4;;;;;;;; 	2 400 000,00  € ;; 	10 067  €
+3/2/18;oui;CDU;4;Leboncoin;30 rue Greuze;75016 Paris;75016;Logement;553;553;;; 	253 559,00  € ; 	458,52  € ;; 	253 559,00  € ; 	5 950 000,00  € ;3,80 %; 	10 759  €
+2/26/18;non;CDU;4;Arthur Rodriguez (CBRE);1 route de Mesnil saint Denis ;COIGNERES;78310;Entrepots- bureaux;11634;;;;;; 	50,00  € ; 	581 700,00  € ; 	7 562 100,00  € ;6,87 %; 	650  €
+2/22/18;non;EHB;4;Charles Albert (BNPRE);Avenue de Norvège  Avenue de la Baltique;Courtaboeuf / les Ulis;91940;activité;7019;0;;;;; 	104,00  € ; 	729 976,00  € ; 	9 100 000,00  € ;7,16 %; 	1 296  €
+2/18/18;non;EHB;4;Arthur Rodriguez;6 rue de la fosse aux leux;STE GENEVIEVE DES BOIS;91700;activité;13613;0;Biocoop;;;; 	40,00  € ; 	544 520,00  € ; 	6 500 000,00  € ;7,48 %; 	477  €
+2/15/18;oui;CDU;4;Antoine Guicheteau;124 av de Stalingrad;Choisy le Roi;94600;Activité;3700;1644;;; 	360 000,00  € ; 	218,98  € ; 	200,00  € ; 	740 000,00  € ;;;
+2/9/18;non;EHB;4;Julien Pinault (Arthur Loyd);Portefeuille STRAW;;;Commerce;11260;11260;;; 	1 800 000,00  € ; 	159,86  € ;;; 	25 000 000,00  € ;;
+1/30/18;non;CDU;4;Yann Giboire (CYRE);321/323 Route de Paris;Amiens;80000;Logement;643;643;;; 	75 120,00  € ; 	116,83  € ; 	115,00  € ; 	73 945,00  € ;;;
+1/29/18;non;EHB;4;Charles Albert (BNPRE);24 rue Condorcet;CHENNEVIERES SUR MARNE;94430;Activité;1947;1947;;; 	101 645,00  € ; 	52,21  € ; 	52,00  € ; 	101 244,00  € ; 	1 000 000,00  € ;9,04 %; 	514  €
+1/18/18;non;EHB;4;Antoine Guicheteau (Nexity);72 rue de Longjumeau ;BALLAINVILLIERS;91160;Activité;1800;0;;;;; 	30,00  € ;;;;
+1/18/18;oui;EHB;4;Charles Albert (BNPRE);Rue de l'Ormeteau;Servon;77170;Activité;6592;6592;;; 	398 313,00  € ; 	60,42  € ; 	60,00  € ; 	395 520,00  € ; 	5 300 000,00  € ;6,66 %; 	804  €
+1/18/18;non;EHB;4;Lucas Belaid (Evolis);1 Rue diderot, rue jean jacque rousseau;Grigny;91350;Activité;6150;6150;;; 	186 000,00  € ; 	30,24  € ; 	40,00  € ; 	246 000,00  € ; 	2 800 000,00  € ;7,84 %; 	455  €
+1/15/18;oui;CDU;4;Arnaud VETO (EOL);ZAC du Noyer aux Perdrix;Servon;77170;Activité;867;423;-;; 	46 515,00  € ; 	109,96  € ; 	100,00  € ; 	86 700,00  € ; 	1 131 700,00  € ;7,03 %; 	1 305  €
+12/11/17;oui;CDU;4;Jérôme Mainguy (Strategim Partner);11 rue Benjamin Raspail;Malakoff;92240;Bureau;1840;400;Studio;; 	41 000,00  € ; 	102,50  € ; 	180,00  € ; 	331 200,00  € ; 	2 800 000,00  € ;10,56 %; 	1 522  €
+12/6/17;oui;CDU;4;Babylone;5 rue de Lyon 75012;Paris 12;75012;Hotel;;;;;;;;;;;
+11/29/17;oui ;GRO ;4;Olivia RIVIERE (CORPIMMO);104 rue D'Aguesseau ;Boulogne Billancourt;92100;Bureau;96;;;;;;;; 	860 000,00  € ;;
+11/13/17;oui;EHB;4;Anthony Garcia (Groupe Babylone);39 rue Fessart ;Boulogne-Billancourt;92100;Bureau;350;- ;;;;; 	278,40  € ; 	97 440,00  € ; 	2 500 000,00  € ;3.33%; 	7 143  €
+11/7/17;non;EHB;4;NS Property International;17 rue Mauconseil ;Fontenay sous bois;94120;Logement;443.93;391.41;;; 	84 948,00  € ; 	191,32  € ;;; 	1 700 000,00  € ;4.25 %; 	3 829  €
+11/6/17;non;GRO;4;Antoine GUICHETEAU (NEXITY Conseil Transaction);5 rue des Gardes;VERRIERES LE BUISSON;91370;Activité;3528;;;;;;;; 	3 600 000,00  € ;6.4%; 	1 020  €
+11/1/17;non;CDU;4;N.C;Grande Angle;Montreuil;93100;Commerce;252;;- ;;;;;; 	1 630 000,00  € ;4.73%;
+10/27/17;non;EHB;4;Vaneau;Rue Mathis ;Paris;75000;Logement;N.C;;;;;;;;;;
+10/24/17;non;CDU;4;Tzarowski;15 rue Trousseau;Paris;75011;;;;;;;;;;;;
+10/13/17;non;;4;Charles Albert (BNP);27 rue de l’Industrie ;DRAVEIL;91210;Activité;2 690;890;FIC (Filiale de Véolia);; 	84 658,00  € ; 	95,00  € ;;; 	1 000 000,00  € ;"6.7% taux AEM en place
+8,8% Taux AEM occupé";
+10/13/17;oui;EHB;4;Charles Albert (BNP) ;5 rue Maximilien Robespierre;Noisy le Sec;93130;Activité;2105;2105;"Aerologis; Bocker France";; 	149 237,00  € ; 	70,90  € ; 	85,00  € ; 	178 925,00  € ; 	2 100 000,00  € ;7,96 %; 	997,62  €
+10/3/17;non;;4;Arthur Rodriguez (CBRE);rue de l'Ormeteau;Servon;77170;Activité;9384;;;;;;;; 	3 900 000,00  € ;;
+7/4/17;non;;4;Antoine guicheteau (Nexity);100 avenue du Général Leclerc;Pantin;93500;Activité;1627;0;;; 	-    € ; 	-    € ; 	80,00  € ; 	130 160,00  € ;;;
+7/4/17;oui;;4;Antoine guicheteau (Nexity);4 rue des Gardes;Verrières le Buisson;91370;Activité;865;558;;; 	19 200,00  € ; 	34,41  € ; 	90,00  € ; 	77 850,00  € ; 	885 000,00  € ;8,22 %; 	1 023,12  €
+6/19/17;oui;;4;Jerôme Richard (JRPI);31-39 rue Saint Denis;Aubervilliers;93300;Activité;5700;1000;;; 	96 000,00  € ; 	96,00  € ; 	90,00  € ; 	513 000,00  € ; 	8 000 000,00  € ;5,99 %; 	1 403,51  €
+6/14/17;oui;;4;Olivier Yazdani (FdL);10 rue Joseph et Etienne Montgolfier ;Rosny-Sous-Bois;93110;Activité;3246,6;0;;; 	-    € ;; 	90,00  € ; 	292 194,00  € ; 	2 100 000,00  € ;13,00 %; 	646,83  €
+6/12/17;oui;;4;Arthur Rodriguez (CBRE);12 Avenue du Garigliano;Savigny sur Orge;91600;Activité;7102;0;;;;; 	45,00  € ; 	319 590,00  € ; 	3 700 000,00  € ;8,07 %; 	520,98  €
+5/1/17;oui;CDU;4;Charles Albert (BNPRE);27/29 et 32-34 rue du Ballon;Noisy-le-Grand;93160;Activité;12720;12720;CPI Global;; 	580 000,00  € ; 	45,60  € ; 	45,50  € ; 	578 760,00  € ; 	5 937 000,00  € ;9,11 %; 	466,75  €
+4/2/17;oui;;4;Lucien Renaudin (COGIB);15 bis rue de Paris;Meudon;92190;Logement;565;;;; 	-    € ;nc;;; 	3 120 000,00  € ;nc; 	5 522,12  €
+12/9/16;oui;;4;Frédéric Bazil (DBX);14 avenue de l’Europe;Bussy-Saint-Georges;77600;Activité;5069;2803;;; 	141 244,00  € ; 	50,39  € ; 	50,00  € ; 	253 450,00  € ; 	3 100 000,00  € ;7,64 %; 	611,56  €
+1/9/16;;;4;Geoffroy d’ARCHE (Evolis);11 bis rue Rabelais;Montreuil;93100;Activité;1400;1400;Artana;; 	202 149,00  € ; 	144,39  € ; 	130,00  € ; 	182 000,00  € ; 	2 500 000,00  € ;6,80 %; 	1 785,71  €
+;non;EHB;4;Arthur Rodriguez;58-60 Rue des Osiers;Bondoufle;91070;;;;;;;;;;;;
+10/25/18;non;EHB;4;Mathieu Fourdan (BNPRE);9/11 rue henri dunant;Bondoufle;91070;Activité/Bureau;3633;0;;;;; 	65,00  € ; 	236 145,00  € ; 	3 200 000,00  € ;6,59 %; 	881  €
+10/4/18;non;EHB;4;Charles Albert (BNPRE);15 rue Charles Edouard Jeanneret ;POISSY;78300;activité;1329;1329;;; 	119 996,00  € ; 	90,29  € ; 	90,00  € ; 	119 610,00  € ; 	1 500 000,00  € ;7,12 %; 	1 129  €
+22/11/2018;non;EHB;5;Jérôme Mainguy;1 place Copernic;Courcouronnes;91080;Bureau;5598;5598;Carrefour Banque;Fonds Israélien; 	1 142 621,00  € ; 	204,11  € ; 	200,00  € ; 	1 142 621,00  € ; 	12 000 000,00  € ;8,50 %; 	2 144  €
+11/21/18;non;EHB;5;Antoine Ronsseray;39-41 Boulevard Gallieni;Issy les Moulineaux;92130;Bureau;1041;0;;;;; 	350,00  € ; 	364 350,00  € ; 	7 000 000,00  € ;4,65 %; 	6 724  €
+11/21/18;non;ZK;5;Avidan Koubi (Kalstone);24 Boulevard Edouard Vaillant;Aubervilliers;93300;Promotion logement;665;;;;;;;; 	750 000,00  € ;; 	1 128  €
+11/22/18;non;EHB;5;Ilan Feinsohn;43 avenue de la Croix Blanche;Aulnay-sous-Bois;93600;Activité;1850;0;;;;; 	90,00  € ; 	166 500,00  € ; 	1 500 000,00  € ;9,91 %; 	811  €
+11/22/18;non;EHB;5;Ilan Feinsohn;8 rue des fours;Thieux;77230;Activité;1924;0;;;;; 	80,00  € ; 	153 920,00  € ; 	1 450 000,00  € ;9,48 %; 	754  €
+11/20/18;non;ZK;5;Julian Burg (JLL);17 rue de l'Yser;Vitry sur seine;94400;Promotion logement;1206;;;;;;;; 	1 300 000,00  € ;; 	1 078  €
+7/19/18;non;ZK;5;Guilhem HUTTNER; 5 rue Richelieu;Gennevilliers;92230;promotion - bilan;600;0;;;;;;; 	1 500 000,00  € ;; 	2 500  €
+10/18/18;non;ZK;5;Gaetan Joly (Arthur Lyod);Portefeuille AGORA;-;;commerces;13286;10990;;; 	1 083 500,00  € ; 	98,59  € ; 	94,62  € ; 	1 257 116,11  € ; 	13 500 000,00  € ;8,31 %;
+10/3/18;non;ZK;5;Thomas Ouzounian;369 rue Gabriel Péri ;Colombes;92700;promotion logt;1128;;;;;;;; 	1 500 000,00  € ;; 	1 330  €
+11/9/18;non;ZK;5;Mickael Younes;36-40 Rue rasapail ;Levallois Perret;92300;Bureaux ;4267;0;-;AEW; 	-    € ; 	-    € ; 	350,00  € ; 	1 493 450,00  € ; 	30 000 000,00  € ;4,44 %; 	7 031  €
+11/7/18;non;EHB;5;Stephane CRESTEY (CW);Portefeuille Blois;;;Commerce;12131;11997;;; 	756 499,00  € ; 	63,06  € ; 	60,00  € ; 	727 860,00  € ; 	10 000 000,00  € ;6,50 %; 	824  €
+11/2/18;non;EHB;5;Alexandre Filipe (Scamac); 7 rue Danton;Montrouge;92120;Commerce;143,5;143,5;SAS HOKKAIDO;; 	27 360,00  € ; 	190,66  € ; 	190,00  € ; 	27 265,00  € ; 	450 000,00  € ;5,41 %; 	3 136  €
+10/29/18;non;EHB;5;Charles Albert;1 rue Jules Guesde ;Ris Orangis;91130;Bureau;1550;775;E-mir;; 	72 229,00  € ; 	93,20  € ; 	80,00  € ; 	124 000,00  € ; 	800 000,00  € ;13,84 %; 	516  €
+10/29/18;non;EHB;5;Charles Albert;10 rue du chêne à champagne;Fleury Mérogis;91170;Commerce;841;841;Fleurform;; 	81 292,00  € ; 	96,66  € ; 	80,00  € ; 	67 280,00  € ; 	1 000 000,00  € ;6,01 %; 	1 189  €
+10/29/18;non;EHB;5;Charles Albert;9 rue du chêne à champagne;Fleury Mérogis;91170;Commerce;690;330;Bazar fleury;; 	26 565,00  € ; 	80,50  € ; 	80,00  € ; 	55 200,00  € ; 	800 000,00  € ;6,16 %; 	1 159  €
+10/18/18;non;ZK;5;Azoulay Igal;8 Rue Edouard Delamare Deboutteville;Thiais;94320;Terrain;48890;-;;;;;;; 	6 000 000,00  € ;;
+10/10/18;non;EHB;5;Amadou Dime (CBRE);7 rue Jacques Cartier;Bussy-Saint-Georges;77600;Bureau;4702;0;;;;;;;;;
+10/9/18;oui;ZK;5;BLOUZAT Crédit Foncier immo;56 rue Pasteur;Suresnes;92150;Logements;471;151;privé;; 	30 022,00  € ; 	198,82  € ; 	320,00  € ; 	165 382,00  € ; 	2 756 000,00  € ;5,36 %; 	5 851  €
+10/8/18;non;EHB;5;Elsa Sierra (CBRE);28 – 34 Route Nationale 10;Coignieres;78310;Terrain pour prom acti;;;;;;;;;;;
+10/8/18;non;EHB;5;Julien Mateos;124 rue de Verdun ;Puteaux;92800;bureau;2628;2300;;; 	530 482,00  € ; 	230,64  € ; 	230,00  € ; 	604 440,00  € ; 	10 000 000,00  € ;5,40 %; 	3 805  €
+10/4/18;non;EHB;5;Alexandre Filipe (Scamac);19 rue de la baignade;Vitry-sur-Seine;94400;activité;1980;;;;;; 	100,00  € ; 	198 000,00  € ; 	4 000 000,00  € ;4,42 %; 	2 020  €
+10/4/18;non;EHB;5;Grégory Lognon;14 rue Louis Fournier;Meaux;77100;activité;1534;1534;Sodimatel;; 	82 690,00  € ; 	53,90  € ; 	50,00  € ; 	76 700,00  € ; 	650 000,00  € ;10,54 %; 	424  €
+9/28/18;non;EHB;5;Cecile Hollanders;120 Boulevard Camelinat;Malakoff;92240;Restructu logement;;;;;;;;;;;
+9/20/18;non;EHB;5; Charles-Antoine Daudruy (CW);Portefeuille Tessi;-;;bureau/Activité;9771;9771;Tessi;Tessi; 	1 399 782,00  € ; 	143,26  € ; 	140,00  € ; 	1 367 940,00  € ;;;
+9/18/18;non;EHB;5;KW;70 rue Ampère;Lagny;77400;activité;9300;9300;;;;;;;;;
+9/18/18;non;EHB;5;Pascal Berzelius;6 rue Damiens;Boulogne;92100;Logement/bureau;;;;;;;;;;;
+9/6/18;non;EHB;5;Guilhem HUTTNER (BNPRE);41 rue Fourny;BUC;78530;activité & Bureau;4100;1300;Unisol;; 	95 000,00  € ; 	73,08  € ; 	70,00  € ; 	287 000,00  € ; 	1 800 000,00  € ;14,24 %; 	439  €
+9/6/18;non;EHB;5;Useldinger; 54 / 62, avenue Jean Jaurès;l'Ile Saint Denis;93450;logement/activité;;;;;;;;;;;
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);10 rue colombier;Wissous;91320;activité & Bureau;1879;0;;;;; 	100,00  € ; 	187 900,00  € ; 	3 500 000,00  € ;4,79 %; 	1 863  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL); Avenue du Maréchal Juin;Massy;91300;activité & Bureau;5711;0;;;;; 	95,00  € ; 	542 545,00  € ; 	7 700 000,00  € ;6,29 %; 	1 348  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);6 rue Jean Marius;Saint Pierre du Perray;91280;activité & Bureau;1200;0;;;;; 	50,00  € ; 	60 000,00  € ; 	1 080 000,00  € ;4,96 %; 	900  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);12 rue Leon Appert;Saint Pierre du Perray;91280;activité & Bureau;3947;0;;;;; 	50,00  € ; 	197 350,00  € ; 	3 611 505,00  € ;4,88 %; 	915  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);11 Avenue de la Baltique;VILLEBON SUR YVETTE;91140;activité & Bureau;1530;0;;;;; 	75,00  € ; 	114 750,00  € ; 	1 200 000,00  € ;8,54 %; 	784  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);6 Avenue de la Baltique;VILLEBON SUR YVETTE;91140;activité & Bureau;2268;0;;;;; 	75,00  € ; 	170 100,00  € ; 	1 750 000,00  € ;8,68 %; 	772  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);Place Marcel Rebuffat ;Villejust;91140;activité & Bureau;4188;0;;;;; 	75,00  € ; 	314 100,00  € ;;;
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);Campus des erable, Avenue de Norvege;VILLEBON SUR YVETTE;91140;activité & Bureau;9334;0;;;;;;;;;
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);22bis rue des Malines;Lisses;91090;activité;1100;0;;;;; 	45,00  € ; 	49 500,00  € ; 	850 000,00  € ;5,20 %; 	773  €
+9/5/18;non;EHB;5;Florian Lachaussée (JLL);5 rue Henri Dunant;Bondoufle;91070;activité;1460;0;;;;; 	50,00  € ; 	73 000,00  € ; 	1 362 180,00  € ;4,78 %; 	933  €
+8/28/18;non;EHB;5;Coffournic;106 rue Fourny;BUC;78530;activité & Bureau;7808;2421;;;;;;;;;
+8/28/18;non;EHB;5;Grégory Lognon;1-5 ALLEE ROLAND GARROS ;NEUILLY PLAISANCE;93360;activité & Bureau;5606;4883;;; 	353 795,00  € ; 	72,45  € ; 	70,00  € ; 	392 420,00  € ; 	4 000 000,00  € ;8,76 %; 	714  €
+7/19/18;non;EHB;5;Guilhem HUTTNER;103 Boulevard Chanzy;MONTREUIL;93100;Commerce;280;280;Kiloutou;; 	42 960,00  € ; 	153,43  € ; 	150,00  € ; 	42 000,00  € ; 	650 000,00  € ;5,77 %; 	2 321  €
+7/17/18;non;EHB;5;François Xavier d'Alençon;82 rue de Pixérécourt;75020 Paris;75020;Bureau;1175;1175;Cesap;; 	225 000,00  € ; 	191,49  € ; 	260,00  € ; 	305 500,00  € ; 	4 600 000,00  € ;5,93 %; 	3 915  €
+7/12/18;non;EHB;5;Geoffroy d'Arche;20 rue Jean Baptiste Pigalle;75009 Paris;75009;Bureau;323;323;Domino Assist;; 	100 000,00  € ; 	309,60  € ; 	400,00  € ; 	129 200,00  € ; 	1 750 000,00  € ;6,59 %; 	5 418  €
+6/26/18;non;EHB;5;François Xavier D'ALANCON (Alex Bolton);47 rue de Rivoli;75001 Paris;75001;logement/commerce;1345;1345;undiz;; 	662 318,00  € ; 	492,43  € ; 	655,00  € ; 	880 975,00  € ; 	20 100 000,00  € ;3,91 %; 	14 944  €
+6/22/18;non;EHB;5;Julien Mateos;29 rue Marsoulant;75012 Paris;75012;Bureau;1233;0;;;;;;;;;
+6/22/18;non;EHB;5;Julien Mateos;20 Quai du Président Carnot;Saint-Cloud;92210;Bureau;3252;0;;;;;;;;;
+6/22/18;non;EHB;5;Julien Mateos;11-13 rue Hector Malot;75012 Paris;75012;Bureau;450;0;;;;;;;;;
+6/21/18;non;EHB;5;Matias Jerome;9 Villa Pierre Ginier;Paris 75018;75018;bureau;994;994;Dyson;; 	258 918,00  € ; 	260,48  € ; 	450,00  € ; 	447 300,00  € ; 	5 900 000,00  € ;3,92 %; 	5 936  €
+6/20/18;non;EHB;5; Cécile HOLLANDERS (Evolis);7, RUE JEAN MERMOZ ;COURCOURONNES;91080;Bureau;1513;;;;;;;;;;
+6/19/18;non;EHB;5;Pierric Antoine;19 rue du Bois Cerdon;Valenton;94460;activité;1050;0;;;;; 	75,00  € ; 	78 750,00  € ; 	1 350 000,00  € ;5,21 %; 	1 286  €
+6/12/18;non;EHB;5;Vadehra Maxim;3 Route de Bergues;Coudekerque-Branche;59210;Bureau;20304;17062;;; 	970 060,00  € ; 	56,85  € ; 	40,00  € ; 	812 160,00  € ; 	20 500 000,00  € ;3,70 %; 	1 009,65  €
+6/11/18;non;EHB;5;Pascal Dezellus;18 rue des Carrières;Montmorency;95160;logement;2112;1599;;; 	256 999,00  € ; 	160,72  € ; 	160,00  € ; 	337 920,00  € ; 	7 500 000,00  € ;4,21 %; 	3 551,14  €
+6/8/18;non;EHB;5;Jerome Mainguy;7 Avenue Spinoza;Ivry-sur-Seine;94200;activité;620;;;;;; 	150,00  € ; 	93 000,00  € ; 	1 300 000,00  € ;6,69 %; 	2 096,77  €
+6/6/18;non;EHB;5;Jérôme Mainguy;126 Avenue du Poteau;Senlis;60300;activité;33246;33246;Office Dépôt;; 	1 300 000,00  € ; 	39,10  € ; 	40,00  € ; 	1 329 840,00  € ; 	16 000 000,00  € ;7,77 %; 	481,26  €
+6/4/18;non;EHB;5;Charles Albert;2 Avenue des Gros Chevaux;Saint Ouen L'Aumone;95310;activité;2491;1871;;; 	81 600,00  € ; 	43,61  € ; 	45,00  € ; 	112 095,00  € ; 	1 400 000,00  € ;7,15 %; 	562  €
+5/29/18;non;EHB;5;Alexis Madec;25 Rue du Cuivre ;Savigny-le-Temple;77176;activité;5700;5700;;;;; 	40,00  € ; 	228 000,00  € ; 	2 050 000,00  € ;10,39 %; 	359,65  €
+5/24/18;non;EHB;5;Franck Poizat;Rue du Hanenberg ;SCHERWILLER;67750;activité;4119;4119;Mondial Relay;; 	259 500,00  € ; 	63,00  € ; 	63,00  € ; 	259 497,00  € ; 	4 000 000,00  € ;6,06 %; 	971,11  €
+5/22/18;non;EHB;5;Aurélien Rosset;72, rue René Alazard;Bagnolet;93170;Bureau;1000;0;;;;; 	160,00  € ; 	160 000,00  € ; 	2 500 000,00  € ;5,98 %; 	2 500,00  €
+5/22/18;non;CDU;5;Gabriel Richert;49-51 rue de Stalingrad;Nanterre;92000;Bureau;1458;0;;; 	-    € ;; 	180,00  € ; 	262 440,00  € ; 	4 600 000,00  € ;5,33 %; 	3 155,01  €
+5/18/18;;EHB;5;KW;11 avenue Lenine;la courneuve;93120;logement & Commerce;1125;1125;;; 	337 619,00  € ; 	300,11  € ; 	300,00  € ; 	337 500,00  € ; 	5 200 000,00  € ;6,07 %; 	4 622,22  €
+5/17/18;non;EHB;5;Charles Albert;Route de la Gueule du Bois & Route de la Pomponnette;VILLEVAUDE;77410;activité;6445;5815;;; 	397 415,00  € ; 	68,34  € ; 	65,00  € ; 	418 925,00  € ; 	4 800 000,00  € ;8,16 %; 	744,76  €
+5/15/18;;EHB;5;Ghislain Resch;62 Boulevard Henri Navier;Taverny;95150;Activité;13518;12312;;; 	1 058 377,00  € ; 	85,96  € ;; 	1 142 791,00  € ;;;
+5/6/18;non;EHB;5;Julien Mateos;112 rue de Paris;Boulogne;92100;Bureau;864;94;;; 	35 225,00  € ; 	374,73  € ; 	380,00  € ; 	328 320,00  € ; 	4 500 000,00  € ;6,82 %; 	5 208,33  €
+5/4/18;;EHB;5;Seraphin Bravard;12 rue Carnot;Groslay;95410;Activité;2464;0;;; 	-    € ; 	-    € ; 	90,00  € ; 	221 760,00  € ; 	3 200 000,00  € ;6,48 %; 	1 298,70  €
+5/2/18;non;EHB;5;Charles Albert;1015 rue du Marechal Juin;Vaux Le Penil;77000;Activité;5000;3600;;; 	273 281,00  € ; 	75,91  € ; 	65,00  € ; 	325 000,00  € ; 	2 500 000,00  € ;12,15 %; 	500,00  €
+5/2/18;;GRO;5;Gérard BRIS(Cabinet FLABEAU);1118 rue de cocherel ;Evreux;27000;activité;;;;;;;;;;;
+4/26/18;non;EHB;5;Licitor;1 rue d'Angiboust;SARL PAYSAGE 19;;activité;839;839;SARL PAYSAGE;; 	84 792,00  € ; 	101,06  € ; 	90,00  € ; 	75 510,00  € ; 	500 000,00  € ;14,11 %; 	595,95  €
+4/24/18;non;EHB;5;Antoine Guicheteau;Rue Luigi Galvani;Antony;92160;activité;897;0;;; 	-    € ;; 	80,00  € ; 	71 760,00  € ; 	850 000,00  € ;7,89 %; 	947,60  €
+4/10/18;non;GRO;5;Richard Desgroppes;32-50 rue Parmentier ;BAGNOLET;93170;;;;;;;;;;;;
+4/10/18;oui;GRO;5;Richard Desgroppes;108 av de stalingrad;VILLEJUIF;94800;bureau;;;;;;;;; 	11 500 000,00  € ;;
+4/9/18;non;EHB;5;Frank Poizat BNP;Portefeuille Organa;;;;;;;;;;;;;;
+4/9/18;non;EHB;5;Geoffroy D'Arche;23/25 Avenue Michel d'Ornano;Blonville-sur-Mer;14910;Hotel;2190;;;;;;;; 	2 400 000,00  € ;; 	1 095,89  €
+3/28/18;non;EHB;5;Ilan FEINSOHN (Nexity);9 rue Danielle Casanova;AUBERVILLIERS;93300;activité;1401;;;;;;;; 	1 600 000,00  € ;;
+3/28/18;non;EHB;5;Ilan FEINSOHN (Nexity);278 rue de Rosny;MONTREUIL;93100;activité;3600;0;;;;; 	70,00  € ; 	252 000,00  € ; 	2 950 000,00  € ;7,98 %; 	819,44  €
+3/26/18;oui;CDU;5;direct;4 av theophile;Argenteuil;95100;promotion logt;;;;;;;;;;;
+3/21/18;non;EHB;5; Quentin Abelé;Parc d'activité de la Chênaie;Rouvroy;62320;activité;2587;2587;;; 	118 905,00  € ; 	45,96  € ; 	45,00  € ; 	116 415,00  € ; 	1 550 000,00  € ;7,02 %; 	599,15  €
+3/20/18;non;EHB;5; FEINSOHN Ilan (Nexity);191 Route de Saint-Leu, ;Épinay-sur-Seine (93800 );93800;Activité;3369;0;;;;; 	60,00  € ; 	202 140,00  € ; 	3 300 000,00  € ;5,72 %; 	979,52  €
+3/16/18;non;EHB;5;David Chataignier;241 avenue Jean Jaurès,;93300 Aubervilliers;93300;Logement;472;472;;; 	118 416,00  € ; 	250,88  € ; 	250,00  € ; 	118 000,00  € ; 	1 450 000,00  € ;7,27 %; 	3 072  €
+3/8/18;non;EHB;5;PE Maury (Cordell);39 Boulevard de la Muette;95140 Garges-lès-Gonesse;95140;Bureau;3297;3147,13636363636;;; 	278 548,00  € ; 	88,51  € ; 	80,00  € ; 	263 760,00  € ; 	2 900 000,00  € ;8,12 %; 	880  €
+3/6/18;non;EHB;5;Raphel Lucaz;35 Quai d'Asnières ;Villeneuve la Garenne;92390;Logement;1090;1090;;; 	218 250,00  € ; 	200,23  € ; 	200,00  € ; 	218 000,00  € ; 	2 800 000,00  € ;6,95 %; 	2 569  €
+3/5/18;non;GRO ;5;Jean-Paul Robert (L'Adresse);72 boulevard du Président Carnot;AGEN;47000;Bureaux ;4522;1430;La Poste ;; 	92 408,00  € ; 	64,62  € ; 	60,00  € ; 	277 928,00  € ;;;
+3/1/18;oui;EHB;5;Charles Albert (BNPRE);3 avenue de l’Amazonie ;Les Ulis;91940;activité;3353;3353;Narboni;; 	278 245,00  € ; 	82,98  € ; 	82,00  € ; 	274 946,00  € ; 	2 800 000,00  € ;8,77 %; 	835  €
+3/1/18;non;EHB;5;Jerome Maingy;380 rue Marcelin Berthelot;FLEURY LES AUBRAIS;45400;activité;15909;15909;;; 	1 070 000,00  € ; 	67,26  € ;;;;;
+3/1/18;non;EHB;5;Richard Desgroppes (GB);131 rue d’Aboukir;75002 Paris;75002;Bureau;524;0;;;;;;;;;
+3/1/18;non;EHB;5;Richard Desgroppes (GB);45 rue de la Procession;75015 Paris;75015;bureau;1879;0;;;;; 	390,00  € ; 	732 810,00  € ; 	9 900 000,00  € ;6,61 %; 	5 269  €
+2/23/18;non;EHB;5;Michael HAGEGE (CW);8 rue Férou;Paris (75006);75006;Bureau;1116;0;;;;; 	600,00  € ; 	669 600,00  € ; 	9 000 000,00  € ;6,64 %; 	8 065  €
+2/22/18;non;EHB;5;Pierre Etienne Maury (Cordell);6, place Louis XI 45000 ORLEANS;Orléans;45000;Commerce;258;258;;; 	71 760,00  € ; 	278,14  € ; 	250,00  € ; 	64 500,00  € ; 	850 000,00  € ;6,78 %; 	3 295  €
+2/20/18;non;EHB;5;Augustin Michaud;64 Rue du Vivier;Amiens;88000;Bureau;2069;2069;;; 	248 441,00  € ; 	120,08  € ; 	120,00  € ; 	248 280,00  € ; 	3 000 000,00  € ;7,39 %; 	1 450  €
+2/16/18;;GRO;5;Charles Albert BNP PARIBAS ;80 Bis rue pierre Semard ;Chatillon;92320;Bureaux et act;1108;958;Boostek - SPCV - Otus Ovelia;; 	99 200,00  € ; 	103,55  € ; 	111,87  € ; 	123 950,00  € ; 	1 800 000,00  € ;6,15 %; 	1 879  €
+2/15/18;non;EHB;5;Antoine Guicheteau (Nexity);Zone de la Bonde rue de l'Aulnaye Dracourt ;Massy;91300;activité;1023;0;;;;; 	135,00  € ; 	138 105,00  € ; 	2 200 000,00  € ;5,60 %; 	2 151  €
+2/7/18;non;GRO;5;Arthur Rodriguez;26 rue condorcet;Fleury Merogis;;activité;2829;0;;;;; 	40,00  € ; 	113 160,00  € ; 	1 700 000,00  € ;5,94 %; 	601  €
+2/5/18;non;EHB;5;Arthur Rodriguez (CBRE);17 RUE PIERRE JOSSE;BONDOUFLE;91070;Activité;9493;0; 	-    € ;;;; 	40,00  € ; 	379 720,00  € ; 	4 200 000,00  € ;8,07 %; 	442  €
+2/5/18;non;EHB;5;Olivier Lambin (CBRE);"RUE DU BOIS CHALAND
+91090 LISSES";Lisses;91090;Activité en promotion;8500;8500;;;; 	-    € ;;; 	1 800 000,00  € ;; 	212  €
+2/1/18;non;EHB;5;Arthur Rodriguez (CBRE);RUE DES GRAVIERS;SAULX LES CHARTREUX;91160;Activité;1679;0;;; 	-    € ; 	-    € ; 	50,00  € ; 	83 950,00  € ; 	1 400 000,00  € ;5,35 %; 	834  €
+2/1/18;non;EHB;5;Frederique Guillaumot (CBRE);3 rue des Aerostiers;Noisy le Grand;93160;Activité;13055;0;;;;; 	50,00  € ; 	652 750,00  € ; 	5 500 000,00  € ;10,60 %; 	421  €
+1/30/18;non;CDU;5;Antoine RONSSERAY (CORPIMMO);98 RUE DU CHATEAUX;Boulogne Billancourt;92100;Bureau;1206;0;;; 	-    € ; 	-    € ; 	300,00  € ; 	361 800,00  € ; 	6 500 000,00  € ;4,97 %; 	5 390  €
+1/29/18;non;CDU;5;Alexandre Lalande;11 rue Morice;Clichy;92110;Logement;874;;;;;;;;;;
+1/28/18;non;EHB;5;Arthur Rodriguez (CBRE);14 RUE JEAN JACQUES ROUSSEAU;Grigny;91350;Activité;1803;0;;; 	-    € ; 	-    € ; 	45,00  € ; 	81 135,00  € ; 	1 270 000,00  € ;5,70 %; 	704  €
+1/26/18;non;EHB;5;Mikael Nataf;7 rue Gauthier 1er;Nemours;77140;Commerce;233;233;;; 	24 000,00  € ; 	103,00  € ; 	100,00  € ; 	23 300,00  € ; 	390 000,00  € ;5,33 %; 	1 674  €
+1/23/18;non;EHB;5;Charles Albert (BNPRE);Route de la Pomponnette;Villevaude;77410;Activité;1400;1400;;; 	128 341,00  € ; 	91,67  € ; 	90,00  € ; 	126 000,00  € ; 	1 500 000,00  € ;7,50 %; 	1 071  €
+1/19/18;non;EHB;5;Charles Albert (BNPRE);Avenue de Châteaudun;Dourdan;91410;Activité;7417;7417;;; 	339 831,00  € ; 	45,82  € ; 	45,00  € ; 	333 765,00  € ; 	4 000 000,00  € ;7,45 %; 	539  €
+1/16/18;non;EHB;5;Olivier Lambin (CBRE);18 AVENUE AMPERE;WISSOUS;91320;Activité;4615;0;;; 	-    € ;; 	65,00  € ; 	299 975,00  € ; 	3 175 000,00  € ;8,44 %; 	688  €
+1/16/18;non;EHB;5;Olivier Lambin (CBRE);13 Rue du Docteur Charcot;Morangis;91420;Activité;2517;2260;;; 	150 676,00  € ; 	66,67  € ; 	70,00  € ; 	176 190,00  € ; 	1 800 000,00  € ;8,74 %; 	715  €
+1/15/18;non;EHB;5;Geoffroy d’ARCHE (Evolis);27 rue de Vanves;Boulogne-Billancourt;92100;Bureau;1454;0;-;; 	-    € ;-; 	280,00  € ; 	407 120,00  € ; 	6 000 000,00  € ;6,06 %; 	4 127  €
+1/12/18;non;EHB;5;Richard Desgroppes (GB);Portefeuille Azur;-;;Activité;32258;8040;La Poste;; 	481 998,00  € ; 	59,95  € ; 	60,00  € ;;;;
+1/11/18;non;EHB;5;Jérôme Mainguy (Strategim Partner);15 Route de Fontainebleau, 94400;Vitry-sur-Seine;94400;Activité;7600;4040;-;; 	586 220,00  € ; 	145,10  € ; 	150,00  € ; 	1 140 000,00  € ; 	23 000 000,00  € ;4,43 %; 	3 026  €
+12/14/17;non;GRO;5;"Geoffroy D'Arche
+Evolis
+";Avenue Blaise Pascal ;Morangis;91420;Activité;5654;4286;29 Locataires;; 	273 638,00  € ; 	63,84  € ; 	67,98  € ; 	384 366,00  € ; 	4 200 000,00  € ;6,52 %; 	743  €
+12/14/17;non;EHB;5;Jérôme Mainguy (Strategim Partner);93/107 Boulevard Victor Hugo 93400 SAINT-OUEN;Saint-Ouen;93400;Activité;4495;;;;;;;;;;
+13/12/2017;;EHB;5;Jérôme Mainguy (Strategim Partner);5 Boulevard de Créteil;Saint-Maur des Fossés;94100;Activité;7020;5171;;; 	352 907,00  € ; 	68,25  € ; 	85,00  € ; 	490 415,00  € ; 	4 000 000,00  € ;10,95 %; 	570  €
+12/6/17;non;GRO ;5;Charles Albert (BNP);rue Heurtault;Aubervilliers;93300;Activité;1378;1040;"Conseil Départemental
+ St denis";; 	140 470,00  € ; 	135,07  € ;;;N.C;;
+12/6/17;non;EHB;5;Thierry de Precigout ;3, Rue de Montigny;Argenteuil;95100;Activité;6690;3400;;; 	335 774,00  € ; 	98,76  € ; 	98,00  € ; 	655 620,00  € ;;;
+12/5/17;non;EHB ;5;Charles albert (BNP);"25/27 29/31 Av Consul Général
+Nordling ";Livry Gargan;93130;Activité;3384;3661;Kiloutou;;;;;; 	4 000 000,00  € ;;
+12/5/17;;EHB;5;Franck POIZAT (BNPRE);2 rue Vieilles Vignes;CROISSY-BEAUBOURG;77183;Activité;10661;9947;"ALCARA
+JULIE SOFTWARE
+TEXTILE LOGISTICS
+OWANDY RADIOLOGY
+TEXTILES LOGISTICS
+TOUPARGEL
+FREE
+ORANGE
+SFR
+BOUYGUES
+";; 	520 949,00  € ; 	52,37  € ;;; 	6 900 000,00  € ;6,74 %; 	647  €
+12/3/17;oui;EHB ;5;Khalid BRAIK (Nexim Conseil);19 rue de Sèvres ;Boulogne - Billancourt;92100;Bureau;1323;;;;;;;;;;
+12/3/17;non;GRO ;5;Sofincal Conseil;216/218 Avenue Aristide Briand ;Bagneux;92220;Bureau;100;;;;;;;;;;
+11/29/17;non;GRO ;5;"
+Stéphane HIRSCHENHAUT
+(Villa consulting) 
+";113 Boulevard de Strasbourg;Le Havre;;Bureau;593;593;SNIC;; 	83 000,00  € ; 	139,97  € ; 	110,00  € ; 	65 230,00  € ; 	860 000,00  € ;7,72 %;
+11/29/17;oui ;GRO;5;"Olivia RIVIERE
+(CORPIMMO)
+";6 rue jules simon ;Boulogne-Billancourt;92100;Bureau;256;;;;;;;;;;
+11/28/17;oui;EHB;5;Arthur HELIN (CBRE);43 Avenue pasteur ;Gentilly;94250;;;;;;;;;; 	1 800 000,00  € ;;
+11/28/17;non;GRO ;5;Maxim Vadehra ACTA Immo;26 rue des Briquetiers;Le Havre;76600;Bureau;1500;1500;NEGOCEANE;; 	98 000,00  € ; 	65,33  € ;;; 	1 000 000,00  € ;8,75 %;
+11/28/17;;EHB;5;Yann Giboire (CYRE);11 avenue marechal foch;Freyming-Merlebach;57800;Logement;1813;;;; 	160 558,68  € ;;;; 	1 600 000,00  € ;8,96 %; 	883  €
+11/24/17;oui;EHB;5;Arthur HELIN (CBRE);6 Rue des Maronniers  ;L'hay les Roses;94240;Activité;953;;;;;; 	100,00  € ; 	95 300,00  € ; 	1 250 000,00  € ;6,81 %;
+11/23/17;non;CDU;5;Pascal Voisin;19 - 29 Rue Jean l'Olive 93170 Bagnolet;Bagnolet;;Activité;14500;1450;;; 	360 000,00  € ; 	248,28  € ; 	100,00  € ; 	1 450 000,00  € ; 	10 500 000,00  € ;12,33 %; 	724  €
+11/22/17;non;CDU;5;Nadia MEUNIER (Nexity);rue Professeur Paul Milliez ;Champigny sur marne;94500;Activité;3300;;;;;;;; 	3 500 000,00  € ;;
+11/17/17;non;EHB;5;Lucien Renaudin (COGIB) ;328 Bis rue de Paris ;Villeneuve Saint Georges;94190;Logement;1149;228;;; 	57 000,00  € ; 	250,00  € ;;; 	695 000,00  € ;7,32 %; 	3 048  €
+11/16/17;non;GRO;5;Charles-Henri ADOU (CBRE);5-11 RUE HENRI BECQUEREL;Mitry Mory;77290;Activité;4 968;4527;Randstad- Maisons Pierre - Watefaugle etc;; 	344 000,00  € ; 	75,99  € ;;; 	3 300 000,00  € ;;
+11/13/17;non;EHB;5;(NEXITY Conseil Transaction);27 rue Aman Jean ;Chevry Cossigny;77173;Activité;2456;2456;ADI KALFA;; 	200 000,00  € ; 	81,43  € ;;; 	2 350 000,00  € ;7.93 %; 	957  €
+11/13/17;non;;5;N.C;La villa Parisienne (VEFA)- 6 rue de Paris;Torcy;77200;Logement;;;;;;;;;;;
+11/9/17;non;CDU;5;CYRE;"2 rue Servolles
+1 et 3 rue de Paris ";Guignes;77390;Logement;365.13;236.7;;; 	43 986,00  € ;;;;;;
+10/27/17;non;CDU;5;Ilan Feinsohn (NEXITY Conseil Transaction);31-33 rue Paul Richez ;La Courneuve;93120;Activité;1511;- ;;;;;;; 	980 000,00  € ;;
+10/25/17;non;;5;Arthur Rodriguez (CBRE);9 rue Jean-jacques Rousseau ;Grigny;91350;Activité;5900;;- ;;-;- ;; 	186 000,00  € ;2 800 000,00 €;5.92 %;
+10/13/17;non;;5;Gaëtan JOLY (Arthur Loyd);65 rue George Politzer;Elancourt;78990;Activité;4048;_ ;-;;- ;-; 	56,86  € ; 	230 168,00  € ; 	2 900 000,00  € ;6.28 %;
+10/4/17;non;CDU;5;Alexandre Tzarowsky;100 à 108 Bis Avenue du Général Leclerc et rue de Délizy ;Pantin;93500;Activité;3 427;3427;"Innelec; Kel Fitness; Eglise";; 	399 086,00  € ; 	353,00  € ;;;N.C;12 %;
+10/2/17;non;;5;(EVOLIS);12 rue de Cléry ;Paris (75002);75002;Bureau;1285 à confirmer;N.C;N.C;;;;;;;;
+9/29/17;non;;5;;2 et 4 Rue d'Alexandrie ;Paris (75002);75002;;;;;;;;;;;;
+9/27/17;non;;5;(CBRE);10 rue Léon Foucault ;Montigny-le-Bretonneux;78180;Activité;3432;3432;AMA et Faulhaber;; 	308 612,00  € ; 	90,00  € ;;; 	3 500 000,00  € ;8.20%;1019.81
+9/27/17;non;;5;(Projet promotion);37 Avenue de la République ;Arcueil;94110;Logement;;;;;;;;;;;
+9/25/17;non;;5;(CBRE);112 quai de Bézons ;Argenteuil;95100;Activité;3648;2424;AASSET Security;; 	300 000,00  € ; 	124,00  € ;;; 	5 000 000,00  € ;5,60 %;1370.61 €
+9/13/17;non;;5;Pierre Etienne Maury (CORDELL);6 Boulevard de la République;Noisy le Sec;93130;Commerce;28,5;28,5;Coiffeur;; 	10 200,00  € ; 	357,89  € ; 	380,00  € ; 	10 830,00  € ;;;
+9/7/17;non;;5;Lucien Renaudin (COGIB);7 Rue Guy Môquet;Paris (75017);75017;Commerce;103;0;;;;; 	180,00  € ; 	18 540,00  € ;;;
+9/6/17;non;;5;;Route de bonsecours;Rouen;76000;Logement;4532;0;;;;;;;;;
+8/25/17;non;;5;Charles Henri Adou (CBRE);5 Rue de la Poterie;Saint-Denis;93200;Activité;900;900;Andines;; 	85 000,00  € ; 	94,44  € ; 	90,00  € ; 	81 000,00  € ; 	1 200 000,00  € ;6,31 %; 	1 333,33  €
+7/11/17;non;;5;Martial Bui (EOL);4 Rue de la Patelle;Saint-Ouen l'Aumône;95310;Activité;29733;0;;;;; 	20,00  € ; 	594 660,00  € ; 	8 000 000,00  € ;; 	269,06  €
+7/7/17;non;;5;Marian Ravel (CIMAISE);"Espace commercial ""La Pierre des Noés""";Chateaubriant;44110;Commerce;2700;260;Derka;; 	23 400,00  € ; 	90,00  € ; 	65,00  € ; 	175 500,00  € ;;;
+6/26/17;non;;5;Augustin Michaud (Collier International);3 Avenue Henri Colin;Gennevilliers;92230;Activité;3263;3263;;; 	300 000,00  € ; 	91,94  € ; 	90,00  € ; 	293 670,00  € ; 	4 500 000,00  € ;6,10 %; 	1 379,10  €
+6/21/17;non;;5;Franck Poizat (BNPRE);6 avenue Louis Pasteur;Maurepas;78310;Activité;5198;3908;;; 	286 470,00  € ; 	73,30  € ; 	70,00  € ; 	363 860,00  € ; 	5 500 000,00  € ;6,18 %; 	1 058,10  €
+6/16/17;non;;5;Bernard Taieb (NSP);Portefeuille 47 studios;Vanves, Malakoff, Montrouge;92;Logement;1799,6;1799,6;;; 	1 042 680,00  € ; 	579,40  € ; 	420,00  € ; 	755 832,00  € ; 	16 240 700,00  € ;4,35 %; 	9 024,62  €
+6/12/17;non;;5;Thomas Ouzounian (KW);Rue de Billancourt ;Boulogne-Billancourt;92100;Commerce;18;18;;; 	10 800,00  € ; 	600,00  € ; 	600,00  € ; 	10 800,00  € ; 	180 000,00  € ;5,61 %; 	10 000,00  €
+6/9/17;non;;5;Geoffroy d’ARCHE (Evolis);278 rue de Rosny;Montreuil;93100;Activité;3199;0;;;;;;;;;
+5/22/17;non;;5;Clémence de Cambourg (SAVILLS); 21-37 Rue de Stalingrad;Arcueil;94110;Bureau;5847;1821;;; 	355 755,00  € ; 	195,36  € ; 	160,00  € ; 	935 520,00  € ;;;
+5/19/17;non;;5;Pierre DeMontbeillard (JLL);Portefeuille Trio;Portefeuille Trio;;Activité;21963;21963;;; 	1 934 449,00  € ; 	88,08  € ; 	80,00  € ; 	1 757 040,00  € ; 	21 000 000,00  € ;7,82 %; 	956,15  €
+5/18/17;;;5;Arthur Rodriguez (CBRE);9 Rue Jean Jacques Rousseau;;91350;Activité;5900;;;;;; 	40,00  € ; 	236 000,00  € ; 	2 800 000,00  € ;7,88 %; 	474,58  €
+5/16/17;non;;5;Valérie Spira (CBRE);8 rue Nicolas Robert;Aulnay-sous-Bois;93600;Activité;4750;4850;TEMIS (service fiduciaire);; 	263 000,00  € ; 	54,23  € ; 	60,00  € ; 	285 000,00  € ;;;
+5/4/17;;;5;Julien Pinault (Arthur Loyd);24-24bis-25 Quai du président Carnot;Saint-Cloud;92210;Bureau;3283;3283;Majencia;; 	934 000,00  € ; 	284,50  € ; 	280,00  € ; 	919 240,00  € ;;;
+5/3/17;;;5;Marion Bertrand (CATELLA);25-27 Boulevard de la Paix;Saint Germain en Laye;78100;Bureau;1190;;;;;; 	120,00  € ; 	142 800,00  € ;;;
+4/28/17;oui;;5;Arthur Rodriguez (CBRE);35 Rue de l'Etain;Savigny le Temple;77176;Activité;2261;;;;;; 	65,00  € ; 	146 965,00  € ; 	1 950 000,00  € ;7,04 %; 	862,45  €
+4/26/17;non;;5;Charles ALBERT (BNPRE);45 rue Royale;Yerres;91330;Activité;727;699;;; 	84 420,00  € ; 	120,77  € ; 	90,00  € ; 	65 430,00  € ; 	1 030 000,00  € ;5,94 %; 	1 416,78  €
+4/26/17;non;;5;Steeven Bonnet (Nexity);135 rue des pêchers;Plaisir;78370;Activité;4300;0;;;;nc; 	45,00  € ; 	193 500,00  € ; 	2 400 000,00  € ;7,54 %; 	558,14  €
+4/26/17;non;;5;Steeven Bonnet (Nexity);Avenue des Trois Peuples;Montigny-le-Bretonneux;78180;Activité;16263;0;;; 	557 671,05  € ;nc; 	45,00  € ; 	731 835,00  € ; 	6 970 720,00  € ;9,81 %; 	428,62  €
+4/25/17;non;;5;Charles ALBERT (BNPRE);30 Rue Campo Formio;Paris (75013);75013;Activité;518;518;;; 	134 680,00  € ; 	260,00  € ; 	260,00  € ; 	134 680,00  € ; 	3 100 000,00  € ;4,06 %; 	5 984,56  €
+4/21/17;oui;;5;Séraphin Bravard (CBRE);168 avenue Paul Vaillant Couturier;La Courneuve;93120;Activité;605;605;;; 	61 800,00  € ; 	102,15  € ; 	90,00  € ; 	54 450,00  € ; 	650 000,00  € ;7,83 %; 	1 074,38  €
+4/18/17;non;;5;Augustin Michaud (Collier International);Rue des chevries;Aubergenville;78410;Activité;11430;11430;;; 	1 130 000,00  € ; 	98,86  € ;;; 	11 701 357,00  € ;nc; 	1 023,74  €
+4/18/17;non;;5;Lucien Renaudin (COGIB);12 rue Emile Zola;Pré Saint Gervais;93310;Logement;2000;;;;;nc; 	40,00  € ; 	80 000,00  € ; 	1 600 000,00  € ;4,67 %; 	800,00  €
+4/13/17;non;;5;Lucien Renaudin (COGIB);Rue Chaptal;Levallois Perret;92300;Logement;360;0;;; 	-    € ;nc;;; 	2 578 000,00  € ;nc; 	7 161,11  €
+4/8/17;non;;5;Lucien Renaudin (COGIB);29 rue Saint-Barthélemy ;Melun;77000;Commerce;212;212;O'Tacos;; 	24 000,00  € ; 	113,21  € ; 	110,00  € ; 	23 320,00  € ; 	350 000,00  € ;6,23 %; 	1 650,94  €
+4/8/17;non;;5;Lucien Renaudin (COGIB);35 Boulevard Carnot;Saint Denis;93200;Commerce;1500;1500;;; 	190 000,00  € ; 	126,67  € ; 	110,00  € ; 	165 000,00  € ; 	2 700 000,00  € ;5,71 %; 	1 800,00  €
+4/6/17;;;5;Jean-François BERNERON (EOL);;La Courneuve;93120;Activité;1545;;;;;;;; 	1 907 045,00  € ;;
+4/6/17;;;5;Jean-François BERNERON (EOL);;La Courneuve;93120;Activité;3132;;;;;nc;;;;;
+4/5/17;oui;;5;Arthur Rodriguez (CBRE);3 rue Olympe de Gouges;Grigny;91350;Activité;2200;;;;;nc; 	50,00  € ; 	110 000,00  € ; 	1 650 000,00  € ;6,23 %; 	750,00  €
+4/5/17;non;;5;Lucien Renaudin (COGIB);27 rue de Cîteaux;Paris (75012);75012;Bureau;538;538;;; 	183 444,00  € ; 	340,97  € ; 	340,00  € ; 	182 920,00  € ; 	3 400 000,00  € ;5,03 %; 	6 319,70  €
+4/3/17;non;;5;Amadou Dime (CBRE);29 rue des Peupliers;Nanterre;92000;Activité;1274;1070,16;;; 	154 596,00  € ; 	144,46  € ; 	140,00  € ; 	178 360,00  € ; 	2 300 000,00  € ;7,25 %; 	1 805,34  €
+4/3/17;non;;5;Lucien Renaudin (COGIB);10-12 rue de l'orme;Paris (75019);75019;Bureau;510;;;;;nc; 	204,00  € ; 	104 040,00  € ; 	3 675 000,00  € ;2,65 %; 	7 205,88  €
+4/3/17;non;;5;Yonel MARELLI (Groupe Babylone);45 rue Auguste Perret;Créteil;94000;Bureau;1125;1125;;; 	306 979,00  € ; 	272,87  € ;;;;nc;nc
+30/3/17;;;5;Antoine Guicheteau (Nexity);12 rue jean monnet;Elancourt;78990;Activité;2540;2540;;; 	175 000,00  € ; 	68,90  € ;;;;nc;nc
+3/29/17;non;;5;Lucien Renaudin (COGIB);Rue Edouard Vasseur;Ivry sur Seine;94200;Logement;120;120;;; 	50 268,00  € ; 	418,90  € ;;; 	670 240,00  € ;nc; 	5 585,33  €
+3/29/17;non;;5;Lucien Renaudin (COGIB), Pas de doc;236 Avenue Victor Hugo;Fontenay-Sous-Bois;94120;Logement;360;272;;; 	53 508,00  € ; 	196,72  € ;;;;nc;nc
+3/28/17;non;;5;Fabrice Malka (Capital Return Opportunity);225, Rue Blaise Pascal;Liévin;62800;Activité;7200;7200;Foot en salle;; 	180 000,00  € ; 	25,00  € ; 	25,00  € ; 	180 000,00  € ; 	1 500 000,00  € ;11,21 %; 	208,33  €
+3/27/17;non;;5;Ghislain RESCH (Nexity);1 rue Colbert;Wissous;91320;Activité;17179;17179;;; 	1 060 300,00  € ; 	61,72  € ; 	60,00  € ; 	1 030 740,00  € ; 	16 491 840,00  € ;6,25 %; 	960,00  €
+3/20/17;oui;;5;Rémi Saussey (Néogère);26 rue Henri Monnier;Paris (75009);75009;Bureau;594;594;;; 	260 870,00  € ; 	439,18  € ; 	430,00  € ; 	255 420,00  € ; 	6 450 000,00  € ;3,70 %; 	10 858,59  €
+3/15/17;oui;;5;Franck Perrochain (BNP);"35 Boulevard de Beaubourg &
+10 rue de la Mare Blanche";"Emerainville (77184) &
+ Noisiel (77186)";77184 & 77186;Activité;6441;4648;;; 	339 485,00  € ; 	73,04  € ; 	45,00  € ; 	289 845,00  € ; 	4 800 000,00  € ;5,64 %; 	745,23  €
+14/3/17;;;5;Lucien Renaudin (COGIB);Rue Matthieu;Saint-Ouen;93400;Logement;538;538;;; 	149 588,00  € ; 	278,04  € ;; 	149 588,00  € ; 	2 100 000,00  € ;6,66 %; 	3 903,35  €
+13/3/17;;;5;Lucien Renaudin (COGIB);43 rue de Bellevue;Boulogne-Billancourt;92100;Bureau;337;0;;;;nc; 	275,00  € ; 	92 675,00  € ; 	1 790 000,00  € ;4,84 %; 	5 311,57  €
+1/6/17;;;5;Guissela Hernando (CBRE);19 Rue des Malines;Lisses;91090;Activité;1408;1408;;; 	78 000,00  € ; 	55,40  € ; 	42,00  € ; 	59 136,00  € ; 	892 500,00  € ;6,19 %; 	633,88  €
+12/29/16;;;5;Arthur Helin (CBRE) pas de surface;98 Avenue de la Marne;Montrouge;92120;Activité;;;;; 	30 000,00  € ;nc;;; ;;
+12/28/16;;;5;Arthur Helin (CBRE);6 Rue de la Grange Ory;Cachan;94230;Activité;498;0;;;;nc; 	60,00  € ; 	29 880,00  € ; 	1 150 000,00  € ;2,43 %; 	2 309,24  €
+12/28/16;;;5;Valentin Grivaud (CBRE);1 Bis Rue Guillaume Bigourdan;Wissous;91320;Activité;703;366,73;;; 	30 970,00  € ; 	84,45  € ; 	84,00  € ; 	59 052,00  € ; 	650 000,00  € ;8,49 %; 	924,61  €
+12/20/16;;;5;Arthur Helin (CBRE);;Bagneux;92220;Activité;205;0;;;;nc;;;;;
+12/15/16;;;5;Laurent Gruselin (CBRE);1 Allée de l'Espérance;Rosny-Sous-Bois;93110;Activité;6414;0;;;;nc; 	40,00  € ; 	256 560,00  € ; 	2 000 000,00  € ;11,99 %; 	311,82  €
+12/15/16;;;5;Pas de doc;26 Avenue Ampère;Montigny-le-Bretonneux;78180;Activité;1118;;;;;nc;;;;nc;nc
+12/14/16;;;5;Arthur Helin (CBRE);28 Avenue des Pépinières;Fresnes;94260;Activité;520;0;;;;nc; 	85,00  € ; 	44 200,00  € ; 	600 000,00  € ;6,88 %; 	1 153,85  €
+12/12/16;;;5;Jeremie Senior (Groupe Babylone);14 rue Gaëtan Lamy;Aubervilliers;93300;Logement;1196;892;;; 	162 628,00  € ; 	182,32  € ; 	112,41  € ; 	134 448,00  € ; 	3 045 000,00  € ;4,13 %; 	2 545,99  €
+12/7/16;;;5;Valérie Spira (CBRE);6 Rue Ampère;Igny;91430;Activité;2222;2222;Conforama;; 	169 727,00  € ; 	76,38  € ; 	55,00  € ; 	122 210,00  € ; 	1 682 243,00  € ;6,79 %; 	757,09  €
+11/24/16;;;5;Enguerrand de Vilette (CBRE);14 Rue Jules Vercruysse;Argenteuil;95100;Activité;1805;0;;;;nc; 	58,00  € ; 	104 690,00  € ; 	1 250 000,00  € ;7,83 %; 	692,52  €
+11/21/16;;;5;Pas de doc;7 Rue des Ingrains;Châteauroux;36000;Bureau;2005;2005;;; 	110 367,00  € ; 	55,05  € ;;; 	1 001 425,00  € ;nc; 	499,46  €
+11/9/16;;;5;Pas de doc;;Hyeres;83400;Commerce;;;;;;nc;;;;;
+11/4/16;;;5;Nicolas Coudert (BNP);2 Rue du Fort de la Briche;Saint-Denis;93200;Activité;1350;0;;;;nc; 	50,00  € ; 	67 500,00  € ; 	2 500 000,00  € ;2,52 %; 	1 851,85  €
+11/4/16;;;5;;;Ivry sur Seine;94200;Logement;700;0;;;;nc;; 	-    € ;;nc;
+11/3/16;;;5;Franck Perrochain (BNP) Pas de doc;-;Cergy;95000;Activité;2319;2319;;; 	235 700,00  € ; 	101,64  € ;;; 	2 447 560,00  € ;nc; 	1 055,44  €
+11/2/16;;;5;Jeremie Senior (Groupe Babylone);21 rue de louvain;Courbevoie;92400;Logement;800;0;;;;nc;; 	-    € ; 	2 000 000,00  € ;nc; 	2 500,00  €
+10/29/16;;;5;Olivier Lambin (CBRE);Rue des Épinants;Etampes;91150;Activité;12670;0;;;;nc; 	55,00  € ; 	696 850,00  € ; 	9 800 000,00  € ;6,65 %; 	773,48  €
+10/28/16;;;5;Jean-Philippe Küss (BNP);18 Boulevard de l'Hôpital Stell;Rueil Malmaison;92500;Bureau;1313;1313;Talentia Software;; 	357 263,00  € ; 	272,10  € ; 	240,00  € ; 	315 120,00  € ;;nc;nc
+10/27/16;;;5;Olivier Lambin (CBRE) Pas de doc;1 avenue Gustave Eiffel;Goussainville;95190;Commerce;5980;5980;;; 	449 100,00  € ; 	75,10  € ;;; 	4 620 000,00  € ;nc; 	772,58  €
+10/21/16;;;5;Guissela Hernando (CBRE);9 Avenue Paul Langevin (LBO);Ris-Orangis;91130;Activité;4013;1421;;; 	92 154,00  € ; 	64,85  € ; 	45,00  € ; 	180 585,00  € ; 	2 400 000,00  € ;7,03 %; 	598,06  €
+10/21/16;;;5;Orane Perran (CBRE);5 Rue du Buisson aux Fraises (LBO);Massy;91300;Activité;1800;0;;;;nc; 	45,00  € ; 	81 000,00  € ; 	1 800 000,00  € ;4,21 %; 	1 000,00  €
+10/21/16;;;5;Thomas Chartiez (LBO FRANCE);4, route de la Pointe Ringale (LBO);Saint-Germain-lès-Corbeil;91250;Activité;2052;1029;Lidle;; 	89 456,00  € ; 	86,93  € ; 	50,00  € ; 	102 600,00  € ;;nc;nc
+10/20/16;;;5;Olivier Lambin (CBRE);20 Rue des Cerisiers;Lisses;91090;Activité;1717;0;;;;nc; 	55,00  € ; 	94 435,00  € ; 	1 100 000,00  € ;8,02 %; 	640,65  €
+10/19/16;;;5;Jeremie Senior (Groupe Babylone);26 rue marcadet;Paris (75018);75018;Logement;497;497;;; 	137 115,00  € ; 	275,89  € ; 	328,42  € ; 	163 227,00  € ; 	3 000 000,00  € ;5,08 %; 	6 036,22  €
+10/19/16;;;5;Jeremie Senior (Groupe Babylone);161 Avenue de Verdun;Ivry sur Seine;94200;Bureau;7653;2895;;; 	541 187,00  € ; 	186,94  € ; 	120,00  € ; 	918 360,00  € ; 	8 100 000,00  € ;10,60 %; 	1 058,41  €
+10/15/16;;;5;Jeremie Senior (Groupe Babylone);61 avenue Aristide Briand;Arcueil;94110;Commerce;345;345;Maison de la literie;; 	64 000,00  € ; 	185,51  € ; 	160,00  € ; 	55 200,00  € ; 	800 000,00  € ;6,45 %; 	2 318,84  €
+10/13/16;;;5;Olivier Lambin (CBRE);9 Avenue Denis Papin;Plessis Robinson;92350;Activité;3250;3250;;; 	280 000,00  € ; 	86,15  € ; 	75,00  € ; 	243 750,00  € ; 	3 500 000,00  € ;6,51 %; 	1 076,92  €
+1/9/16;;;5;-;Rue du Buisson du Roi;Le Meux;60890;Activité;2212;2212;;; 	243 671,00  € ; 	110,16  € ; 	110,00  € ; 	243 320,00  € ;;nc;nc
+1/9/16;;;5;-;24 rue Michelet;Ivry sur Seine;94200;Activité;460;460;;; 	27 158,00  € ; 	59,04  € ;;;;nc;nc
+1/9/16;oui;;5;Antoine Musnier (Colliers);37 rue Jean Leclaire;Paris (75017);75017;Bureau;1225;;;;;nc;;; 	7 000 000,00  € ;nc; 	5 714,29  €
+1/9/16;;;5;Charles Albert (BNP);35 avenue de la Commune de Paris;Bretigny-sur-Orge;91220;Activité;997;997;IXIO;; 	95 000,00  € ; 	95,29  € ; 	65,00  € ; 	64 805,00  € ; 	1 050 000,00  € ;5,77 %; 	1 053,16  €
+1/9/16;;;5;Cordell Pas de doc;261 rue de Paris;Montreuil;93100;Bureau;1484;1484;;; 	299 612,00  € ; 	201,89  € ;;; 	3 500 000,00  € ;nc; 	2 358,49  €
+1/9/16;;;5;Franck Perrochain (BNP);58 quai de la Marine;L'Ile Saint-Denis;93450;Activité;10730;8454;;; 	646 240,00  € ; 	76,44  € ; 	65,00  € ; 	697 450,00  € ;;nc;nc
+1/9/16;;;5;Franck Perrochain (BNP) Portefeuille Stardust;-;Coignières (78310), Trappes (78190), Tremblay (93290),...;78310 & 78190 & 93290;Activité;61714;52456,9;;; 	3 101 711,00  € ; 	59,13  € ; 	50,00  € ; 	3 085 700,00  € ;;nc;nc
+1/9/16;;;5;Grivaud, Valentin (CBRE), pas de doc;2 Route de la Bonde;Massy;91300;Activité;1023;1023;;; 	155 000,00  € ; 	151,52  € ;;; 	2 300 000,00  € ;nc; 	2 248,29  €
+1/9/16;;;5;Guissela Hernando (CBRE);9 Avenue Louis Braille;Morangis;91420;Activité;3825;3825;;; 	240 000,00  € ; 	62,75  € ; 	55,00  € ; 	210 375,00  € ; 	2 600 000,00  € ;7,56 %; 	679,74  €
+1/9/16;oui;;5;Julien Pinault (Arthur Loyd);13 avenue Jean d’Alembert;Trappes;78190;Activité;2297;2297;;; 	325 884,00  € ; 	141,87  € ; 	90,00  € ; 	206 730,00  € ; 	2 950 000,00  € ;6,55 %; 	1 284,28  €
+1/9/16;;;5;Lucien Renaudin (COGIB);Avenue de la République;Saint Denis;93200;Logement;437;437;;; 	103 659,00  € ; 	237,21  € ;;; 	1 850 000,00  € ;nc; 	4 233,41  €
+1/9/16;;;5;Lucien Renaudin (COGIB);17 rue Denis Papin;Pantin;93500;Logement;469;469;;; 	107 187,00  € ; 	228,54  € ;; 	107 187,00  € ;;nc;nc
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;Montrouge;Montrouge;92120;Bureau;993;0;;;;nc;;; 	3 950 000,00  € ;nc; 	3 977,84  €
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;Saint Denis;Saint Denis;93200;Logement;435;355;;; 	52 529,04  € ; 	147,97  € ;;; 	1 000 000,00  € ;nc; 	2 298,85  €
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;Saint Denis;Saint Denis;93200;Commerce;70;70;;; 	32 748,00  € ; 	467,83  € ;;; 	1 600 000,00  € ;nc; 	22 857,14  €
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;Saint Denis;Saint Denis;93200;Logement;464;464;;; 	64 502,64  € ; 	139,01  € ;;;;nc;nc
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;Rue de la Forge;Paris (75011);75011;Commerce;79;;;; 	19 138,00  € ;nc;;; 	330 000,00  € ;nc; 	4 177,22  €
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;Rue Duchesnay;Asnières-sur-Seine;92600;Logement;258;;;; 	99 624,00  € ;nc;;; 	1 750 000,00  € ;nc; 	6 782,95  €
+1/9/16;;;5;Lucien Renaudin (COGIB), Pas de doc;59 rue Augustin Dumont;Malakoff;92240;Bureau;430;;;;;nc;;; 	1 470 000,00  € ;nc; 	3 418,60  €
+1/9/16;;;5;Matias Jérome (BNPRE);20 Allée des Erables;Villepinte;93420;Activité;1094;1094;;; 	120 502,00  € ; 	110,15  € ; 	91,65  € ; 	100 265,00  € ;;nc;nc
+1/9/16;;;5;Pas de doc;15 rue de Charonne;Paris (75011);75011;Commerce;90;90;;; 	42 000,00  € ; 	466,67  € ;;; 	980 000,00  € ;nc; 	10 888,89  €
+1/9/16;;;5;Pas de doc;44-46 avenue du 8 mai 1945;Villeneuve-la-Garenne;92310;Activité;3150;3150;;; 	316 000,00  € ; 	100,32  € ;;;;nc;nc
+1/9/16;;;5;Pas de doc;5 Rue d'Alembert;Saint-Michel-sur-Orge;91240;Activité;5868;5868;;; 	305 000,00  € ; 	51,98  € ;;;;nc;nc
+1/9/16;;;5;Philippe FOISSY (Crédit Agricole Immobilier);Angle Langevin Doumer;Romainville;93230;Commerce;1629;1545;;; 	178 690,00  € ; 	115,66  € ; 	115,37  € ; 	187 930,00  € ;;nc;nc
+1/9/16;;;5;Valérie Spira (CBRE);Avenue de l'Europe;Neuilly en Thelle;60530;Activité;12412;12412;;; 	575 000,00  € ; 	46,33  € ; 	35,00  € ; 	434 420,00  € ;;nc;nc
+1/9/16;;;5;Yonel MARELLI (Groupe Babylone), pas de doc;12 Boulevard Maurice Berteaux;Argenteuil;95100;Bureau;2069;1650;;; 	217 255,00  € ; 	131,67  € ;;;;nc;nc
+1/9/16;;;5;Yves Ferre (Alex Bolton);105 Boulevard Malesherbes;Paris (75008);75008;Bureau;953;918;;; 	334 499,00  € ; 	364,38  € ; 	360,00  € ; 	343 080,00  € ;;nc;nc
+4/2/18;non;EHB;7;Charles Albert;16 rue Jean Jacque Rousseau;Grigny;91350;activité;706;706;;; 	63 000,00  € ; 	89,24  € ; 	90,00  € ; 	63 540,00  € ; 	750 000,00  € ;7,92 %; 	1 062,32  €
+2/23/18;non;EHB;7;Michael HAGEGE (CW);85-87 avenue Jean-Jaurès;Montrouge;92120;Bureau & Acti;2212;0;;; 	-    € ;; 	170,00  € ; 	376 040,00  € ; 	6 200 000,00  € ;5,42 %; 	2 803  €
+2/14/18;;CDU;7;LetP en direct;;Issy les Moulineaux;92130;promo logt;;;;;;;;;;;
+11/9/17;oui;EHB;7;Antoine GUICHETEAU (NEXITY);7 allées des Aphleries;Le Perray en Yvelynes;78610;Activité;2 150 ;742;LOCAPOSTE ;; 	51 800,00  € ; 	69,81  € ;;; 	500 000,00  € ;9.21 %; 	674  €
+9/25/17;oui;EHB;7;Charles Albert;15 Avenue des iRis ;Morangis;91420;Activité;2717;2717;;; 	122 305,00  € ; 	45,01  € ; 	45,00  € ; 	122 265,00  € ;;;
+11/8/16;oui;EHB;7;Olivier Lambin (CBRE);61 rue Emile Zola;Corbeil Essonnes;91100;Activité;1530;1530;TME;; 	88 800,00  € ; 	58,04  € ; 	52,00  € ; 	79 560,00  € ; 	850 000,00  € ;8,75 %; 	555,56  €
+11/3/16;oui;EHB;7;PE Maury (Cordell);1 rue des Bruyères;Asnières-sur-Seine;92600;Logement;576;576;;; 	114 000,00  € ; 	197,92  € ;;; 	2 700 000,00  € ;nc; 	4 687,50  €
+1/9/16;Oui;;7;Olivier Lambin (CBRE);64 allée des Champs Elysées;Courcouronnes;91080;Commerce;2140;2140;BNP - Annapurna - Evry Form;; 	349 583,00  € ; 	163,36  € ;; 	349 583,00  € ; 	6 200 000,00  € ;5,27 %; 	2 897,20  €
