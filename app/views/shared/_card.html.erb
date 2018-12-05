@@ -4,14 +4,20 @@
   </div>
   <div class="card-information">
     <div class="first-line">
-      <div class="address"><p>address of the Asset</p></div>
+      <div class="address"><p> <%= business_asset.geographical_location.address %></p></div>
       <div class="occupancy">
-        <i class="fas fa-circle" style="color: green"></i>
+        <% if  %>
+          <% business_asset.occupancy_rate > 0.8 %>
+          <i class="fas fa-circle" style="color: green"></i>
+          <% else %>
+            <i class="fas fa-circle" style="color: red"></i>
+        <% end %>
+
       </div>
     </div>
     <div class="rental-info">
-      <div class="surface"><p>Surface: 2 500m2</p></div>
-      <div class="rent"><p>75€/an/m2</p></div>
+      <div class="surface"><p>Surface: <%= business_asset.surface.round %> m2</p></div>
+      <div class="rent"><p><%= business_asset.potential_annual_rent_sqm.round %>/ €an/m2</p></div>
     </div>
     <div class="profitability"><p>Rentabilité: 7,05%</p></div>
   </div>
