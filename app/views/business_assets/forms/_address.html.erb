@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-6">
+    <h2>Enter the address of the asset</h2>
+      <h3 class="form-input-title">Address</h3>
+      <%= f.fields_for :geographical_location do |loc| %>
+        <%= loc.input :address, label: false %>
+      <% end %>
+    </div>
+</div>

@@ -6,4 +6,5 @@ class BusinessAsset < ApplicationRecord
   has_many :attachments
   belongs_to :business_asset_manager, class_name: "Company"
   accepts_nested_attributes_for :geographical_location
+  BUSINESS_ASSET_TYPES = ["stock warehouse", "logistics warehouse", "shop", "office"]
 end
