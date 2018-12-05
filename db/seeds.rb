@@ -63,7 +63,6 @@ business_assets_array = [
     business_asset_manager: Company.first,
     geographical_location: GeographicalLocation.first,
     construction_year: 2001,
-    has_icpe: true,
     asset_type: "wharehouse",
     occupancy_rate: 0.45,
     office_area_share: 0.33,
