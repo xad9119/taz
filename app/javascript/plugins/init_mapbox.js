@@ -34,14 +34,6 @@ const initMapbox = () => {
     addMarkersToMap(map, markers);
     fitMapToMarkers(map, markers);
   }
- const cards = document.querySelectorAll('.card');
-  cards.forEach((card, index) => {
-    // Put a microphone on each card listenning for a hover event
-    card.addEventListener('mouseenter', () => {
-      // Here we trigger the display of the corresponding marker infoWindow as it is the default behavior of a click on a  marker
-      google.maps.event.trigger(mapMarkers[index], 'click');
-    });
-  });
 };
 
 
