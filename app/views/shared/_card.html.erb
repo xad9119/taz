@@ -43,7 +43,8 @@
         <% end %>
       </div>
     </div>
-    <div class="profitability"><p>Rentabilité: 7,05%</p></div>
+    <div class="profitability">
+      <p>Rentabilité: <%= @rental ? (100 * (@rental.annual_rent + 0.0) / @transaction.price).round(1) : "na" %> %</p></div>
   </div>
 </div>
 <% end %>
