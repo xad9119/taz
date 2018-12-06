@@ -2,7 +2,7 @@
   <div class="container--row">
     <%= render 'card_transaction' %>
   </div>
-  <div class="container--row">
+  <div class="container--row" id='ai-estimate'>
     <%= render 'estimate' %>
   </div>
   <div class="container--row">
@@ -10,7 +10,7 @@
       <div class="comparable-list">
         <div id='first-tr'><%= render 'card_transaction' %></div>
         <% @comparables.each do |comparable| %>
-          <%= render 'comparable_transaction', comparable: comparable %>
+          <%= render 'comparable_transactions', comparable: comparable, key_comparable: @key_comparables.include?(comparable) %>
         <% end %>
       </div>
       <div class="comparable-map">
