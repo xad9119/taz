@@ -4,18 +4,18 @@ class Rental < ApplicationRecord
   validates :start_date, presence: true
 
   def define_attributes(my_hash, business_asset)
-    tenant_name = my_hash['tenant_name']
+    tenant_name = my_hash['tenant_name'] if !my_hash['tenant_name'].empty?
     tenant = Company.find_by(name: tenant_name)
-    if tenant.nil?
+    if tenant.nil? && !tenant_name.nil?
       tenant = Company.new(name: tenant_name)
       tenant.save!
     end
 
     start_date = my_hash['start_date'].to_date
     if my_hash['break_dates'] == "0"
-      break_date_1 = start_date + 3.years
-      break_date_2 = start_date + 6.years
-      break_date_3 = start_date + 9.years
+      break_date_1 = start_date.nil? ? nil : start_date + 3.years
+      break_date_2 = start_date.nil? ? nil : start_date + 6.years
+      break_date_3 = start_date.nil? ? nil : start_date + 9.years
     else
       break_date_1 = my_hash['break_date_1'].to_date
       break_date_2 = my_hash['break_date_2'].to_date

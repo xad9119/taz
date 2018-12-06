@@ -25,21 +25,34 @@ class BusinessAssetsController < ApplicationController
     my_hash = params['search']
     business_asset = BusinessAsset.new
     business_asset.define_attributes(my_hash, current_user)
-    business_asset.save!
+    if business_asset.valid?
+      business_asset.save!
+    else
+      flash[:alert] = business_asset.errors.full_messages
+      render :new
+    end
 
     rental = Rental.new
     rental.define_attributes(my_hash['rentals'], business_asset)
-    rental.save!
-
+    if rental.valid?
+      rental.save!
+    elsif nil_attributes?(rental) == false
+      flash[:alert] = rental.errors.full_messages
+      render :new
+    end
 
     transaction = Transaction.new
     transaction.define_attributes(my_hash['transactions'], business_asset)
     if transaction.valid?
         transaction.save!
-    else
-      render "new", :alert => 'FUCKER!'
+    elsif nil_attributes?(transaction) == false
+      flash[:alert] = transaction.errors.full_messages
+      render :new
     end
 
+    if business_asset.valid?
+      redirect_to business_assets_path
+    end
     authorize business_asset
   end
 
@@ -76,6 +89,10 @@ private
       :general_condition,
       :description
       )
+  end
+
+  def nil_attributes? (class_instance)
+    class_instance.attributes.values.select {|x| !x.nil? || x.nil? ? false : x.positive?}.empty?
   end
 end
 
