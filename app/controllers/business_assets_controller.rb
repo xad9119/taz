@@ -22,18 +22,25 @@ class BusinessAssetsController < ApplicationController
   end
 
   def create
-    raise
-    latitude = params['search']['geographical_location']['latitude']
-    longitude = params['search']['geographical_location']['longitude']
-    @business_asset = BusinessAsset.new
-    GeographicalLocation.create!(
-      latitude: latitude,
-      longitude: longitude
-      )
-    authorize @business_asset
+    my_hash = params['search']
+    business_asset = BusinessAsset.new
+    business_asset.define_attributes(my_hash, current_user)
+    business_asset.save!
 
-    redirect_to business_assets_path
+    rental = Rental.new
+    rental.define_attributes(my_hash['rentals'], business_asset)
+    rental.save!
 
+
+    transaction = Transaction.new
+    transaction.define_attributes(my_hash['transactions'], business_asset)
+    if transaction.valid?
+        transaction.save!
+    else
+      render "new", :alert => 'FUCKER!'
+    end
+
+    authorize business_asset
   end
 
   def edit
