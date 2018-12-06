@@ -2,6 +2,7 @@ class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
 
   def index
+
     if params[:query].present?
       sql_query = " \
       geographical_locations.address ILIKE :query \
@@ -20,6 +21,7 @@ class BusinessAssetsController < ApplicationController
     else
       @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
       authorize @business_assets
+
       @markers = @business_assets.map do |business_asset|
         {
           lng: business_asset.geographical_location.longitude,
@@ -27,7 +29,6 @@ class BusinessAssetsController < ApplicationController
           infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
         }
     end
-
     end
   end
 

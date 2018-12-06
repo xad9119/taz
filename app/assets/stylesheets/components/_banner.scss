@@ -4,9 +4,26 @@
   height: 70vh;
   color: #eee;
   text-align: center;
+  vertical-align: middle;
+    // h1 {
+    // color: white !important;
+    // }
 }
 
 #banner-typed-text {
   color: white;
   font-weight: 700;
+}
+
+.index-banner {
+  background-color: $third-color;
+  opacity: 1;
+  height: 80px;
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+  margin-top: 0px;
+  padding: 15px;
+  padding-top: 20px;
+  position: sticky;
+  top: 60px;
+  z-index: 10;
 }

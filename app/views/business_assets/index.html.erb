@@ -1,11 +1,13 @@
-<div class="search_bar">
-<%= form_tag business_assets_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Search Assets"
-  %>
-<% end %>
+<div class="index-banner">
+  <div class="search_bar">
+    <%= form_tag business_assets_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Search Assets"
+      %>
+  <% end %>
+  </div>
 </div>
 
 <div class="main-container">
