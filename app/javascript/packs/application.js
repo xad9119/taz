@@ -6,7 +6,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { initMapbox } from '../plugins/init_mapbox';
 
 // checkEvents();
-initMapbox();
+// initMapbox();
 
 import { xxx } from '../components/checkbox_compare';
 
