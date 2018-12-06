@@ -14,6 +14,12 @@ class BusinessAssetsController < ApplicationController
   end
 
   def show
+    @markers =
+      {
+        lng: @business_asset.geographical_location.longitude,
+        lat: @business_asset.geographical_location.latitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: @business_asset })
+      }
   end
 
   def new
