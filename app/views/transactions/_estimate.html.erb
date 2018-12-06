@@ -6,17 +6,17 @@
     <ul class="estimate-fork-list">
       <li class="estimate-element">
         <p>Low estimate</p>
-        <h4>100 000€</h4>
+        <h4><%= ((@fair_price * 0.8 / 1000).round(0) * 1000).to_s.split('.')[0] %>€</h4>
       </li>
       <li class="estimate-sep"></li>
       <li class="estimate-element">
         <p>Best estimate</p>
-        <h4>120 000€</h4>
+        <h4><%= ((@fair_price / 1000).round(0) * 1000).to_s.split('.')[0] %>€</h4>
       </li>
       <li class="estimate-sep"></li>
       <li class="estimate-element">
         <p>High estimate</p>
-        <h4>140 000€</h4>
+        <h4><%= ((@fair_price * 1.2 / 1000).round(0) * 1000).to_s.split('.')[0] %>€</h4>
       </li>
     </ul>
   </div>
