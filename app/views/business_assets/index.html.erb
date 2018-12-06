@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <% @business_assets.each do |business_asset| %>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-6">
           <%= render 'shared/card', business_asset: business_asset  %>
         </div>
       <% end %>

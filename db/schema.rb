@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2018_12_05_170407) do
 
   create_table "attachments", force: :cascade do |t|
     t.bigint "business_asset_id"
-    t.string "type"
+    t.string "attachment_type"
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
