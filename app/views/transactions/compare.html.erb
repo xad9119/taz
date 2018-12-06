@@ -1,15 +1,8 @@
-<%= form_tag compare_path(@transaction), method: :get do %>
-  <%= text_field_tag :query,
-    @key_comparables.map(&:id),
-    class: "form-control"
-  %>
-<% end %>
-
 <div class="container">
   <div class="container--row">
     <%= render 'card_transaction' %>
   </div>
-  <div class="container--row">
+  <div class="container--row" id='ai-estimate'>
     <%= render 'estimate' %>
   </div>
   <div class="container--row">
