@@ -84,7 +84,7 @@ private
   def business_asset_params
     params.require(:business_asset).permit(
       :user_id,
-      geographical_location_attributes: {...},
+      # :geographical_location_attributes: {...},
       :business_asset_manager_id,
       :construction_year,
       :has_icpe,
