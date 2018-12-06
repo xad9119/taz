@@ -8,5 +8,5 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { initMapbox } from '../plugins/init_mapbox';
 
 // checkEvents();
-initMapbox();
+// initMapbox();
 
