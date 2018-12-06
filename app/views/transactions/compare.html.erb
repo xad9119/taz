@@ -1,3 +1,10 @@
+<%= form_tag compare_path(@transaction), method: :get do %>
+  <%= text_field_tag :query,
+    @key_comparables.map(&:id),
+    class: "form-control"
+  %>
+<% end %>
+
 <div class="container">
   <div class="container--row">
     <%= render 'card_transaction' %>
@@ -10,7 +17,7 @@
       <div class="comparable-list">
         <div id='first-tr'><%= render 'card_transaction' %></div>
         <% @comparables.each do |comparable| %>
-          <%= render 'comparable_transaction', comparable: comparable %>
+          <%= render 'comparable_transactions', comparable: comparable, key_comparable: @key_comparables.include?(comparable) %>
         <% end %>
       </div>
       <div class="comparable-map">
