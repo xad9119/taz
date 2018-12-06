@@ -3,8 +3,9 @@ class BusinessAssetsController < ApplicationController
 
   def index
     if params[:query].present?
-      @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
-      @business_asset = BusinessAsset.where(address: params[:query])
+      @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
+        geographical_locations: {address: params[:query]}
+        )
       authorize @business_assets
       @markers = @business_assets.map do |business_asset|
         {

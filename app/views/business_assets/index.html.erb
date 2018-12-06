@@ -1,4 +1,4 @@
-
+<div class="search_bar">
 <%= form_tag business_assets_path, method: :get do %>
   <%= text_field_tag :query,
     params[:query],
@@ -6,6 +6,7 @@
     placeholder: "Search Assets"
   %>
 <% end %>
+</div>
 
 <div class="main-container">
   <div class="container">
