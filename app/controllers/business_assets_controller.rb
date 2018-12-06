@@ -24,11 +24,15 @@ class BusinessAssetsController < ApplicationController
 
   def new
     @business_asset = BusinessAsset.new
+
+#build associuated models
+
     authorize @business_asset
   end
 
   def create
     my_hash = params['search']
+
     business_asset = BusinessAsset.new
     business_asset.define_attributes(my_hash, current_user)
     if business_asset.valid?
@@ -80,7 +84,7 @@ private
   def business_asset_params
     params.require(:business_asset).permit(
       :user_id,
-      :location_id,
+      geographical_location_attributes: {...},
       :business_asset_manager_id,
       :construction_year,
       :has_icpe,

@@ -2,7 +2,6 @@
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <div class="form-asset">
       <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
-
         <%= render 'business_assets/forms/address', f:f   %>
         <%= render 'business_assets/forms/asset_type', f:f   %>
         <%= render 'business_assets/forms/general_information', f:f   %>
