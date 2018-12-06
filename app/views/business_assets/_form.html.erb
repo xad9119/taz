@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-
-    <%= simple_form_for :search, url: business_assets_path, method: :post   do |f| %>
-
-      <%= render 'business_assets/forms/address', f:f   %>
-      <%= render 'business_assets/forms/asset_type', f:f   %>
-      <%= render 'business_assets/forms/general_information', f:f   %>
-      <%= render 'business_assets/forms/financial_information', f:f   %>
-      <%= f.submit "add an asset", class: "btn btn-primary" %>
-    <% end %>
+    <div class="form-asset">
+      <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
+        <%= render 'business_assets/forms/address', f:f   %>
+        <%= render 'business_assets/forms/asset_type', f:f   %>
+        <%= render 'business_assets/forms/general_information', f:f   %>
+        <%= render 'business_assets/forms/financial_information', f:f   %>
+        <%= f.submit "add an asset", class: "btn btn-primary" %>
+      <% end %>
+    </div>
   </div>
 </div>

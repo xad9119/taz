@@ -56,6 +56,11 @@ geographical_locations_array = [
 ]
 GeographicalLocation.create!(geographical_locations_array)
 
+p "----------- Creating Asset Categories -----------"
+  asset_categories_array = ["stock warehouse", "logistics warehouse", "shop", "office"]
+  asset_categories_array.each {|a| AssetCategory.create!(name: a)}
+
+
 
 p "----------- Creating Assets -----------"
 
@@ -74,7 +79,6 @@ business_assets_array = [
     general_condition: "gros travaux à effectuer"
   }
 ]
-
 BusinessAsset.create!(business_assets_array)
 
 
@@ -107,7 +111,6 @@ CSV.foreach(filepath, csv_options) do |row|
 
   row_loc = row.select{ |key, _| GeographicalLocation.attribute_names.index(key.to_s) }
   location = GeographicalLocation.new(row_loc)
-  location.address = "#{location.address}, #{row[:code_postal]}"
   location.save!
 
   row_asset = row.select{ |key, _| BusinessAsset.attribute_names.index(key.to_s) }
@@ -123,7 +126,7 @@ CSV.foreach(filepath, csv_options) do |row|
 
   row_rental = row.select{ |key, _| Rental.attribute_names.index(key.to_s) }
   rental = Rental.new(row_rental)
-  rental.business_asset_id = asset.id
+  rental.business_asset = asset
   rental.tenant = tenant
   rental.annual_rent = 0 unless rental.annual_rent
   rental.start_date = DateTime.new(2000)
@@ -145,18 +148,3 @@ CSV.foreach(filepath, csv_options) do |row|
   transaction.save!
 
 end
-
-
-p "----------- Creating Attachments -----------"
-
-attachments_array = [
-  {
-    business_asset: BusinessAsset.first,
-    attachment_type: "plan",
-    url: "http/www.lequipe.fr",
-  }
-]
-
-Attachment.create!(attachments_array)
-
-

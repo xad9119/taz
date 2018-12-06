@@ -29,26 +29,56 @@ class BusinessAssetsController < ApplicationController
   end
 
   def show
+    @markers =
+      {
+        lng: @business_asset.geographical_location.longitude,
+        lat: @business_asset.geographical_location.latitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: @business_asset })
+      }
   end
 
   def new
     @business_asset = BusinessAsset.new
+
+#build associuated models
+
     authorize @business_asset
   end
 
   def create
-    raise
-    latitude = params['search']['geographical_location']['latitude']
-    longitude = params['search']['geographical_location']['longitude']
-    @business_asset = BusinessAsset.new
-    GeographicalLocation.create!(
-      latitude: latitude,
-      longitude: longitude
-      )
-    authorize @business_asset
+    my_hash = params['search']
 
-    redirect_to business_assets_path
+    business_asset = BusinessAsset.new
+    business_asset.define_attributes(my_hash, current_user)
+    if business_asset.valid?
+      business_asset.save!
+    else
+      flash[:alert] = business_asset.errors.full_messages
+      render :new
+    end
 
+    rental = Rental.new
+    rental.define_attributes(my_hash['rentals'], business_asset)
+    if rental.valid?
+      rental.save!
+    elsif nil_attributes?(rental) == false
+      flash[:alert] = rental.errors.full_messages
+      render :new
+    end
+
+    transaction = Transaction.new
+    transaction.define_attributes(my_hash['transactions'], business_asset)
+    if transaction.valid?
+        transaction.save!
+    elsif nil_attributes?(transaction) == false
+      flash[:alert] = transaction.errors.full_messages
+      render :new
+    end
+
+    if business_asset.valid?
+      redirect_to business_assets_path
+    end
+    authorize business_asset
   end
 
   def edit
@@ -69,7 +99,7 @@ private
   def business_asset_params
     params.require(:business_asset).permit(
       :user_id,
-      :location_id,
+      # :geographical_location_attributes: {...},
       :business_asset_manager_id,
       :construction_year,
       :has_icpe,
@@ -84,6 +114,10 @@ private
       :general_condition,
       :description
       )
+  end
+
+  def nil_attributes? (class_instance)
+    class_instance.attributes.values.select {|x| !x.nil? || x.nil? ? false : x.positive?}.empty?
   end
 end
 
