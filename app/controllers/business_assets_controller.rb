@@ -2,14 +2,28 @@ class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
 
   def index
-    @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
-    authorize @business_assets
-    @markers = @business_assets.map do |business_asset|
-      {
-        lng: business_asset.geographical_location.longitude,
-        lat: business_asset.geographical_location.latitude,
-        infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
-      }
+    if params[:query].present?
+      @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+      @business_asset = BusinessAsset.where(address: params[:query])
+      authorize @business_assets
+      @markers = @business_assets.map do |business_asset|
+        {
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
+        }
+      end
+    else
+      @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+      authorize @business_assets
+      @markers = @business_assets.map do |business_asset|
+        {
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
+        }
+    end
+
     end
   end
 
