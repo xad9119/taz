@@ -1,7 +1,7 @@
 import "bootstrap";
 import "../plugins/flatpickr";
 
-checkEvents();
+// checkEvents();
 
 import { checkEvents } from '../components/form';
 import 'mapbox-gl/dist/mapbox-gl.css';
