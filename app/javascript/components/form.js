@@ -15,7 +15,6 @@
 // const checkEvents = () => {
 //   const display_button = document.querySelector('#search_break_dates_1');
 //   const hide_button = document.querySelector('#search_break_dates_0');
-
 //   display_button.addEventListener('click', event => {displayField()})
 //   hide_button.addEventListener('click', event => {displayField()})
 // };

@@ -49,7 +49,12 @@ ActiveRecord::Schema.define(version: 2018_12_05_170407) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+
+    t.float "latitude"
+    t.float "longitude"
+
     t.integer "asset_category_id"
+
     t.index ["geographical_location_id"], name: "index_business_assets_on_geographical_location_id"
     t.index ["user_id"], name: "index_business_assets_on_user_id"
   end

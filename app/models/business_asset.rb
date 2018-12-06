@@ -44,17 +44,17 @@ class BusinessAsset < ApplicationRecord
 
 
   def define_attributes(my_hash, user)
-    address = my_hash['geographical_location']['address']
+    address = my_hash['geographical_location']['address'] if !my_hash['geographical_location']['address'].empty?
     geographical_location = GeographicalLocation.find_by(
       address: address)
-    if geographical_location.nil?
+    if geographical_location.nil? && !address.nil?
       geographical_location = GeographicalLocation.new(address: address)
       geographical_location.save!
     end
 
-    asset_manager_name = my_hash['company']['name']
+    asset_manager_name = my_hash['company']['name'] if !my_hash['company']['name'].empty?
     asset_manager = Company.find_by(name: asset_manager_name)
-    if asset_manager.nil?
+    if asset_manager.nil? && !asset_manager_name.nil?
       asset_manager = Company.new(name: asset_manager_name)
       asset_manager.save!
     end
@@ -64,7 +64,7 @@ class BusinessAsset < ApplicationRecord
     self.user = user
     self.geographical_location = geographical_location
     self.business_asset_manager = asset_manager
-    self.asset_type = category.name
+    self.asset_type = category.name if !category.nil?
     self.surface = my_hash['surface'].to_f if !my_hash['surface'].empty?
     self.land_surface = my_hash['land_surface'] if !my_hash['land_surface'].empty?
     self.construction_year = my_hash['construction_year'] if !my_hash['construction_year'].empty?

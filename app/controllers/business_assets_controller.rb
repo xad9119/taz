@@ -2,44 +2,82 @@ class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
 
   def index
-    @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
-    authorize @business_assets
-    @markers = @business_assets.map do |business_asset|
-      {
-        lng: business_asset.geographical_location.longitude,
-        lat: business_asset.geographical_location.latitude,
-        infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
-      }
+    if params[:query].present?
+      @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
+        geographical_locations: { address: params[:query] }
+        )
+      authorize @business_assets
+      @markers = @business_assets.map do |business_asset|
+        {
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
+        }
+      end
+    else
+      @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+      authorize @business_assets
+      @markers = @business_assets.map do |business_asset|
+        {
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: business_asset })
+        }
+    end
+
     end
   end
 
   def show
+    @markers =
+      {
+        lng: @business_asset.geographical_location.longitude,
+        lat: @business_asset.geographical_location.latitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { business_asset: @business_asset })
+      }
   end
 
   def new
     @business_asset = BusinessAsset.new
+
+#build associuated models
+
     authorize @business_asset
   end
 
   def create
     my_hash = params['search']
+
     business_asset = BusinessAsset.new
     business_asset.define_attributes(my_hash, current_user)
-    business_asset.save!
+    if business_asset.valid?
+      business_asset.save!
+    else
+      flash[:alert] = business_asset.errors.full_messages
+      render :new
+    end
 
     rental = Rental.new
     rental.define_attributes(my_hash['rentals'], business_asset)
-    rental.save!
-
+    if rental.valid?
+      rental.save!
+    elsif nil_attributes?(rental) == false
+      flash[:alert] = rental.errors.full_messages
+      render :new
+    end
 
     transaction = Transaction.new
     transaction.define_attributes(my_hash['transactions'], business_asset)
     if transaction.valid?
         transaction.save!
-    else
-      render "new", :alert => 'FUCKER!'
+    elsif nil_attributes?(transaction) == false
+      flash[:alert] = transaction.errors.full_messages
+      render :new
     end
 
+    if business_asset.valid?
+      redirect_to business_assets_path
+    end
     authorize business_asset
   end
 
@@ -61,7 +99,7 @@ private
   def business_asset_params
     params.require(:business_asset).permit(
       :user_id,
-      :location_id,
+      # :geographical_location_attributes: {...},
       :business_asset_manager_id,
       :construction_year,
       :has_icpe,
@@ -76,6 +114,10 @@ private
       :general_condition,
       :description
       )
+  end
+
+  def nil_attributes? (class_instance)
+    class_instance.attributes.values.select {|x| !x.nil? || x.nil? ? false : x.positive?}.empty?
   end
 end
 
