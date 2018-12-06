@@ -22,9 +22,41 @@
         </div>
       </div>
 
-    <div class="col-xs-12 col-sm-6">
-      <div class= "white-box height-line-1" >
-        <%= image_tag "Lynx.jpg", class: "lynx" %>
+      <div class="col-xs-12 col-sm-6">
+        <div class= "white-box height-line-1" >
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <% @business_asset.attachments.each do |a| %>
+                <% if a.attachment_type = "picture"  %>
+                <% then %>
+                  <% i=+1 %>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="i"></li>
+                <% end %>
+              <% end %>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="..." alt="First image">
+            </div>
+            <div class="carousel-item">
+              <% @business_asset.attachments.each do |a| %>
+                <% if a.attachment_type = "picture"  %>
+                <% then %>
+                    <img class="d-block w-100" src="..." alt="Second image">
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </div>
 
