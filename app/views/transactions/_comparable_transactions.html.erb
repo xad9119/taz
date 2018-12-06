@@ -1,16 +1,12 @@
 <div class="tr-card checkbox_equiped">
-  <div class="checkbox_c" data-id="<%= comparable.id %>">
-    <%= check_box_tag('', '1', key_comparable) %>
-  </div>
-  <div class="tr-card-picture">
-    <img alt="Photo" src="/assets/images/logo.jpg" />
+  <div class="tr-card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1524214786335-66456317bde6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81c0d1a541bf9c4857daa8b6c79bffda&auto=format&fit=crop&w=750&q=80');">
   </div>
   <div class="tr-card-info">
-    <div class="tr-card-type">
-      <%= comparable.business_asset.asset_type %>
-    </div>
     <div class="tr-card-address">
       <%= comparable.business_asset.geographical_location.address %>
+    </div>
+    <div class="tr-card-type">
+      <%= comparable.business_asset.asset_type %>
     </div>
     <ul class="tr-card-feature-list">
       <li><%= comparable.price %> €</li>
@@ -22,5 +18,8 @@
                     .select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }
                     .first %>
     <p><%= rental ? (100 * (rental.annual_rent + 0.0) / comparable.price).round(1) : 0 %> %</p>
+    <div class="checkbox_c" data-id="<%= comparable.id %>">
+      <%= check_box_tag('', '1', key_comparable) %>
+    </div>
   </div>
 </div>
