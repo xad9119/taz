@@ -8,7 +8,16 @@ class Transaction < ApplicationRecord
   def ranked_comparables
     filtered_comparables.sort_by { |c| distance_to(c) }
   end
-  
+
+  def fair_price(comparables)
+    sum = 0
+    comparables.each do |t|
+      sum += (t.price + 0.0) / (t.business_asset.surface)
+    end
+    average = !comparables.empty? ? sum / comparables.count : 0
+    return average * business_asset.surface
+  end
+
   def define_attributes(my_hash, business_asset)
     buyer_name = my_hash['buyer_name'] if !my_hash['buyer_name'].empty?
     buyer = Company.find_by(name: buyer_name)
@@ -31,9 +40,9 @@ class Transaction < ApplicationRecord
     self.seller = seller
     self.date = my_hash['date'].to_date
     self.price = my_hash['price'].to_f
-    
+
   end
-  
+
   private
 
   def filtered_comparables
@@ -43,33 +52,32 @@ class Transaction < ApplicationRecord
   end
 
   def filtered_absolute_conditions(transaction)
-    condition0 = transaction.id != seld.id
+    condition0 = transaction.id != id
     condition1 = transaction.price > 0
-    condition2 = transaction.business_asset.surface > 0
-    condition3 = transaction.business_asset.current_rental.annual_rent > 0
-    condition4 = transaction.business_asset.geographical_location.latitude > 0
-    condition5 = transaction.business_asset.geographical_location.longitude > 0
+    condition2 = transaction.business_asset.surface ? transaction.business_asset.surface > 0 : false
+    condition3 = transaction.business_asset.current_rental ? transaction.business_asset.current_rental.annual_rent > 0 : false
+    condition4 = transaction.business_asset.geographical_location.latitude
+    condition5 = transaction.business_asset.geographical_location.longitude
     return condition0 && condition1 && condition2 && condition3 && condition4 && condition5
   end
 
   def distance_to(transaction)
-    point1 = transaction.geographical_location
-    point2 = geographical_location
+    loc1 = [transaction.business_asset.geographical_location.latitude, transaction.business_asset.geographical_location.longitude]
+    loc2 = [business_asset.geographical_location.latitude, business_asset.geographical_location.longitude]
 
-    # convert to coordinate arrays
-    point1 = extract_coordinates(point1)
-    point2 = extract_coordinates(point2)
+    rad_per_deg = Math::PI/180  # PI / 180
+    rkm = 6371                  # Earth radius in kilometers
+    rm = rkm * 1000             # Radius in meters
 
-    # convert degrees to radians
-    point1 = to_radians(point1)
-    point2 = to_radians(point2)
+    dlat_rad = (loc2[0]-loc1[0]) * rad_per_deg  # Delta, converted to rad
+    dlon_rad = (loc2[1]-loc1[1]) * rad_per_deg
 
-    # compute deltas
-    dlat = point2[0] - point1[0]
-    dlon = point2[1] - point1[1]
+    lat1_rad, lon1_rad = loc1.map {|i| i * rad_per_deg }
+    lat2_rad, lon2_rad = loc2.map {|i| i * rad_per_deg }
 
-    a = Math.sin(dlat / 2)**2 + Math.cos(point1[0]) * Math.sin(dlon / 2)**2 * Math.cos(point2[0])
-    c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
-    c * earth_radius(options[:units])
-  end 
+    a = Math.sin(dlat_rad/2)**2 + Math.cos(lat1_rad) * Math.cos(lat2_rad) * Math.sin(dlon_rad/2)**2
+    c = 2 * Math::atan2(Math::sqrt(a), Math::sqrt(1-a))
+
+    rm * c # Delta in meters
+  end
 end

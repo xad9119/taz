@@ -45,13 +45,13 @@ Company.create!(companies_array)
 p "----------- Creating Locations -----------"
 geographical_locations_array = [
   {
-    address: "16 villa gaudelet"
+    address: "16 villa gaudelet, Paris, 75011"
   },
   {
-    address: "204 rond point du pont de sèvres"
+    address: "204 rond point du pont de sèvres, Paris, 92100"
   },
   {
-    address: "1 avenue des champs élysées"
+    address: "1 avenue des champs élysées, Paris, 75008"
   }
 ]
 GeographicalLocation.create!(geographical_locations_array)
@@ -70,7 +70,7 @@ business_assets_array = [
     business_asset_manager: Company.first,
     geographical_location: GeographicalLocation.first,
     construction_year: 2001,
-    asset_type: "wharehouse",
+    asset_type: "Logements",
     occupancy_rate: 0.45,
     office_area_share: 0.33,
     potential_annual_rent: 100000,
@@ -112,7 +112,7 @@ CSV.foreach(filepath, csv_options) do |row|
 
   row_loc = row.select{ |key, _| GeographicalLocation.attribute_names.index(key.to_s) }
   location = GeographicalLocation.new(row_loc)
-  location.address = "#{location.address}, #{row[:code_postal]}"
+  location.address = "#{location.address.strip if location.address}, #{row[:ville].strip if row[:ville]}, #{row[:code_postal].strip if row[:code_postal] }"
   location.save!
 
   row_asset = row.select{ |key, _| BusinessAsset.attribute_names.index(key.to_s) }
