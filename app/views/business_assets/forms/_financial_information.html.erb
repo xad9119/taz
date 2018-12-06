@@ -12,7 +12,6 @@
       <%= f.fields_for :rentals do |re| %>
           <div class="form-input-title">Tenant</div>
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-            <div class="input-group-addon">€</div>
             <%= re.input :tenant_name, as: :string, label: false %>
           </div>
 
@@ -28,7 +27,7 @@
           </div>
 
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-          <%= f.input :break_dates, as: :radio_buttons, collection: [['0', '3 - 6 - 9 '], ['1', 'other']], label_method: :second, value_method: :first %>
+          <%= re.input :break_dates, as: :radio_buttons, collection: [['0', '3 - 6 - 9 '], ['1', 'other']], label_method: :second, value_method: :first %>
 
           </div>
 
@@ -41,12 +40,32 @@
             <div class="form-input-title">Break date 3</div>
             <%= re.input :break_date_3, as: :string, label:false, input_html: {class: "datepicker"} %>
           </div>
-
       <% end %>
 
-
-
-
     <h3>Transactions</h3>
+    <%= f.fields_for :transactions do |tr| %>
+        <div class="form-input-title">Buyer</div>
+        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+          <%= tr.input :buyer_name, as: :string, label: false %>
+        </div>
+        <div class="form-input-title">Seller</div>
+        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+          <%= tr.input :seller_name, as: :string, label: false %>
+        </div>
+
+        <div class="form-input-title">Price</div>
+        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+          <div class="input-group-addon">€</div>
+          <%= tr.input :price, as: :float, label: false %>
+        </div>
+
+        <div class="form-input-title">Date</div>
+        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+          <%= tr.input :date, as: :string, label:false, input_html: {class: "datepicker"} %>
+        </div>
+
+    <% end %>
+
+
   </div>
 </div>
