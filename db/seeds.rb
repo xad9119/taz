@@ -152,7 +152,7 @@ p "----------- Creating Attachments -----------"
 attachments_array = [
   {
     business_asset: BusinessAsset.first,
-    attachmetype: "plan",
+    attachment_type: "plan",
     url: "http/www.lequipe.fr",
   }
 ]
