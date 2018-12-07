@@ -3,6 +3,7 @@ class BusinessAssetsController < ApplicationController
 
 def index
    if params[:query].present?
+
      sql_query = " \
      geographical_locations.address ILIKE :query \
      "
@@ -22,6 +23,7 @@ def index
           infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
         }
       end.compact!
+
   end
 
   def show
