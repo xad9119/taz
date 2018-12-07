@@ -34,20 +34,20 @@
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <% @business_asset.attachments.each_with_index do |a,i| %>
-                <% if a.attachment_type == "photo"  %>
-                    <li data-target="#carouselExampleIndicators" data-slide-to=<%=i%>></li>
+            <% @business_asset.attachments.each_with_index do |a,i| %>
+              <% if a.attachment_type == "photo" && i>0  %>
+                  <li data-target="#carouselExampleIndicators" data-slide-to=<%=i%>></li>
                 <% end %>
               <% end %>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="..." alt="First image">
+            <div class="carousel-item active text-center">
+              <%= cl_image_tag @business_asset.attachments.where(attachment_type: 'photo').first.file, crop: :fit, class: "d-block w-100", alt:"Google view" %>
             </div>
-            <div class="carousel-item">
-              <% @business_asset.attachments.each do |a| %>
-                <% if a.attachment_type == "photo"  %>
-                  <%= cl_image_tag a.file, crop: :fit, class: "d-block w-100", alt:"Second image" %>
+            <div class="carousel-item text-center">
+              <% @business_asset.attachments.each_with_index do |a, i| %>
+                <% if a.attachment_type == "photo" && i>0 %>
+                  <%= cl_image_tag a.file, crop: :fill, class: "d-block w-100" %>
                 <% end %>
               <% end %>
             </div>
