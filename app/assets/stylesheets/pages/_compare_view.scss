@@ -61,6 +61,13 @@
   top: 240px;
 }
 
+#map.comparison-map {
+  flex: 0 0 800px;
+  height: calc(100vh - 240px) !important;
+  position: sticky !important; /* !important to override Gmaps inline CSS */
+  top: 240px !important;
+}
+
 #compared-tr {
 
 }
