@@ -1,6 +1,7 @@
 p "----------- Destroying everything -----------"
 Rental.destroy_all
 Transaction.destroy_all
+Attachment.destroy_all
 BusinessAsset.destroy_all
 GeographicalLocation.destroy_all
 Company.destroy_all
