@@ -7,13 +7,19 @@ def index
      sql_query = " \
      geographical_locations.address ILIKE :query \
      "
-     @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
-       sql_query, query: "%#{params[:query]}%")
+    @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
+     sql_query, query: "%#{params[:query]}%")
+    @markers = @business_assets.map do |business_asset|
+        # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+        {
+          title: business_asset.geographical_location.address,
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+        }
+      end
      else
       @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
-    end
-      authorize @business_assets
-
       @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {
@@ -23,6 +29,9 @@ def index
           infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
         }
       end.compact!
+
+    end
+      authorize @business_assets
 
   end
 
