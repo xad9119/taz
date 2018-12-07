@@ -1,14 +1,13 @@
-<div class="row">
-  <div class="col-xs-6">
- <h2>Financial information</h2>
-    <h3>Business</h3>
+<div class="row row-form">
+  <div class="col-xs-8 col-xs-offset-2">
+    <h3 class="form-section">Business data</h3>
     <div class="form-input-title">Potential annual rent</div>
     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
       <div class="input-group-addon">€</div>
-      <%= f.input :potential_annual_rent, as: :float, label: false %>
+      <%= f.input :potential_annual_rent, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
     </div>
 
-    <h3>Rentals</h3>
+    <h3 class="form-section">Rentals</h3>
       <%= f.fields_for :rentals do |re| %>
           <div class="form-input-title">Tenant</div>
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
@@ -18,19 +17,19 @@
           <div class="form-input-title">Annual rent</div>
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
             <div class="input-group-addon">€</div>
-            <%= re.input :annual_rent, as: :float, label: false %>
+            <%= re.input :annual_rent, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
           </div>
 
           <div class="form-input-title">Start date</div>
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
             <%= re.input :start_date, as: :string, label:false, input_html: {class: "datepicker"} %>
           </div>
+          <div class="form-input-radio">
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <%= re.input :break_dates, as: :radio_buttons, collection: [['0', '3 - 6 - 9 '], ['1', 'other']], label_method: :second, value_method: :first %>
 
-          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-          <%= re.input :break_dates, as: :radio_buttons, collection: [['0', '3 - 6 - 9 '], ['1', 'other']], label_method: :second, value_method: :first %>
-
+            </div>
           </div>
-
 
           <div class="break-dates" hidden>
             <div class="form-input-title">Break date 1</div>
@@ -42,7 +41,7 @@
           </div>
       <% end %>
 
-    <h3>Transactions</h3>
+    <h3  class="form-section">Transactions</h3>
     <%= f.fields_for :transactions do |tr| %>
         <div class="form-input-title">Buyer</div>
         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
@@ -56,12 +55,15 @@
         <div class="form-input-title">Price</div>
         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
           <div class="input-group-addon">€</div>
-          <%= tr.input :price, as: :float, label: false %>
+          <%= tr.input :price, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
         </div>
 
         <div class="form-input-title">Date</div>
         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
           <%= tr.input :date, as: :string, label:false, input_html: {class: "datepicker"} %>
+        </div>
+        <div class="btn-section">
+          <%= f.submit "add an asset", class: "btn btn-primary btn-form" %>
         </div>
 
     <% end %>

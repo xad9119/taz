@@ -1,8 +1,6 @@
-<div class="row">
-  <div class="col-xs-6">
-    <h2>What kind of asset is it ?</h2>
-
+<div class="row row-form">
+  <div class="col-xs-8 col-xs-offset-2">
+    <h3 class="form-section">What kind of asset is it ?</h3>
       <%= f.input :asset_type, collection: BusinessAsset::BUSINESS_ASSET_TYPES, prompt: "Select an asset type", label: false %>
-
   </div>
 </div>
