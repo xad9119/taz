@@ -56,10 +56,22 @@
 }
 
 
+.form-section {
+  margin-top: 20px;
+  padding: 5px 3px 5px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: $main-color;
+  color: white;
+  border-radius: 3px;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -76,4 +88,79 @@
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
+}
+
+.row-form {
+  display: flex;
+  min-height: 50vh;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+}
+.container-form {
+  height: 100%;
+}
+
+
+.form-input-title {
+  font-weight: $text-font-weight;
+  font-size: $text-font-size;
+  font-family: $text-font-family;
+  color: $main-color;
+  margin-top: 3px;
+}
+
+.form-input-numeric {
+  width: 55% !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+input {
+  border-radius: 4px !important;
+}
+
+.form-input-checkbox {
+  color:$main-color;
+  font-weight: $text-font-weight;
+  font-size: $text-font-size;
+  font-family: $text-font-family;
+  color: $main-color;
+  margin-top: 3px;
+  label {
+    margin: 0px 0px 0px 3px;
+  }
+}
+
+
+.form-input-radio {
+  color:$main-color;
+  font-weight: $text-font-weight;
+  font-size: $text-font-size;
+  font-family: $text-font-family;
+  color: $main-color;
+  margin-top: 3px;
+  label {
+    margin: 0px 0px 0px 3px;
+  };
+  legend {
+    text-decoration: none;
+    font-weight: $text-font-weight;
+    font-size: $text-font-size;
+    font-family: $text-font-family;
+    color: $main-color;
+    margin: 3px 0px 3px 0px;
+
+  }
+}
+
+.btn-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.btn-form {
+  background-color: $main-color !important;
+  color: white !important;
 }

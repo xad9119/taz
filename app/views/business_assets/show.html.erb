@@ -1,3 +1,10 @@
+<% content_for :navbar_links do %>
+  <div class= "navbar-taz-left">
+    <%= link_to "Edit", edit_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
+    <%= link_to "Compare", compare_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
+  </div>
+<% end %>
+
 <div class= "container" >
   <div class="row">
 
@@ -7,8 +14,8 @@
         <p> <strong> Address :</strong> <%= @business_asset.geographical_location.address %></p>
         <p> <strong> Construction Year :</strong> <%= @business_asset.construction_year %></p>
         <p> <strong> Asset Type :</strong> <%= @business_asset.asset_type %></p>
-        <p> <strong> Surface :</strong> <%= @business_asset.surface %> m2</p>
-        <p> <strong> Land Surface :</strong> <%= @business_asset.land_surface %></p>
+        <p> <strong> Surface :</strong> <%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
+        <p> <strong> Land Surface :</strong> <%= @business_asset.land_surface.nil? ? "-" : @business_asset.land_surface.round %></p>
         <p> <strong> General Condition :</strong> <%= @business_asset.general_condition %></p>
         <p> <strong> Description :</strong> <%= @business_asset.description %></p>
         <p> <strong> Height :</strong> <%= @business_asset.height %></p>
@@ -27,11 +34,9 @@
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <% @business_asset.attachments.each do |a| %>
-                <% if a.attachment_type = "picture"  %>
-                <% then %>
-                  <% i=+1 %>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="i"></li>
+              <% @business_asset.attachments.each_with_index do |a,i| %>
+                <% if a.attachment_type == "photo"  %>
+                    <li data-target="#carouselExampleIndicators" data-slide-to=<%=i%>></li>
                 <% end %>
               <% end %>
           </ol>
@@ -41,9 +46,8 @@
             </div>
             <div class="carousel-item">
               <% @business_asset.attachments.each do |a| %>
-                <% if a.attachment_type = "picture"  %>
-                <% then %>
-                    <img class="d-block w-100" src="..." alt="Second image">
+                <% if a.attachment_type == "photo"  %>
+                  <%= cl_image_tag a.attachment.file, crop: :fit, class: "d-block w-100", alt:"Second image" %>
                 <% end %>
               <% end %>
             </div>
@@ -88,12 +92,13 @@
             </tr>
             <tr>
               <td><%= r.tenant.name %></td>
-              <td><%= r.annual_rent %></td>
-              <td><%= r.annual_rent_sqm %></td>
+              <td><%= format_number(r.annual_rent) %></td>
+              <td><%= format_number(r.annual_rent_sqm) %></td>
               <td><%= r.start_date.nil? ? "-" : r.start_date.strftime('%b-%y') %> </td>
               <td><%= r.break_date_1.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
               <td><%= r.break_date_2.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
               <td><%= r.break_date_3.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
+
             </tr>
           <% end %>
         </table>
@@ -115,7 +120,7 @@
               <td><%= t.buyer.name %></td>
               <td><%= t.seller.name %></td>
               <td><%= t.date.nil? ? "-" : t.date.strftime('%b-%y') %> </td>
-              <td><%= t.price %></td>
+              <td><%= format_number(t.price) %></td>
             </tr>
           <% end %>
         </table>
