@@ -9,8 +9,8 @@
       <%= @business_asset.asset_type %>
     </div>
     <ul class="tr-card-feature-list">
-      <li> <strong> <%= @transaction.price %> € </strong></li>
-      <li><%= @business_asset.surface %> m2</li>
+      <li> <strong> <%= format_number(@transaction.price, currency_symbol: false) %> € </strong></li>
+      <li><%= format_number(@business_asset.surface, currency_symbol: false) %> m2</li>
     </ul>
   </div>
   <div class="tr-card-return">
