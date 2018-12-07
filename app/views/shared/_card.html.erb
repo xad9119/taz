@@ -29,7 +29,7 @@
     <div class="rental-info">
       <div class="surface">
         <% if business_asset.surface %>
-          <p><strong>Surface: <%= business_asset.surface.round %> m2</strong></p>
+          <p><strong>Surface: <%= format_number(business_asset.surface, currency_symbol: false) %> m2</strong></p>
           <% else %>
           <p>no surface</p>
         <% end %>
@@ -37,7 +37,7 @@
       </div>
       <div class="rent">
         <% if business_asset.transactions.first.price != 0 %>
-          <p><%= business_asset.transactions.first.price.round %>/ €</p>
+          <p><%= format_number(business_asset.transactions.first.price) %></p>
           <% else %>
           <p>-</p>
         <% end %>
