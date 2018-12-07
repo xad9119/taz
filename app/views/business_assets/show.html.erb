@@ -47,7 +47,7 @@
             <div class="carousel-item">
               <% @business_asset.attachments.each do |a| %>
                 <% if a.attachment_type == "photo"  %>
-                  <%= cl_image_tag a.attachment.file, crop: :fit, class: "d-block w-100", alt:"Second image" %>
+                  <%= cl_image_tag a.file, crop: :fit, class: "d-block w-100", alt:"Second image" %>
                 <% end %>
               <% end %>
             </div>
