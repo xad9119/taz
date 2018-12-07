@@ -35,7 +35,7 @@ class Transaction < ApplicationRecord
       seller.save!
     end
 
-
+    self.business_asset = business_asset
     self.buyer = buyer
     self.seller = seller
     self.date = my_hash['date'].to_date

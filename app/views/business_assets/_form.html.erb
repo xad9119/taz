@@ -1,18 +1,28 @@
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <h2>Enter a new asset</h2>
     <div class="tab">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#form-tab-1">Adress</a></li>
+        <li><a href="#form-tab-2">Type</a></li>
+        <li><a href="#form-tab-3">Information</a></li>
+        <li><a href="#form-tab-4">Financials</a></li>
+      </ul>
       <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
-      <div class="tabcontent" id="form-tab-1">
-          <%= render 'business_assets/forms/address', f:f   %>
+      <div class="tab-content">
+          <div id="form-tab-1" class="tab-pane fade in active">
+              <%= render 'business_assets/forms/address', f:f   %>
+          </div>
+          <div id="form-tab-2" class="tab-pane fade">
+              <%= render 'business_assets/forms/asset_type', f:f   %>
+          </div>
+          <div id="form-tab-3" class="tab-pane fade">
+              <%= render 'business_assets/forms/general_information', f:f   %>
+          </div>
+          <div id="form-tab-4" class="tab-pane fade">
+              <%= render 'business_assets/forms/financial_information', f:f   %>
+          </div>
       </div>
-      <div class="tabcontent" id="form-tab-2">
-          <%= render 'business_assets/forms/asset_type', f:f   %>
-      </div>
-          <%= render 'business_assets/forms/general_information', f:f   %>
-          <%= render 'business_assets/forms/financial_information', f:f   %>
-          <%= f.submit "add an asset", class: "btn btn-primary" %>
       <% end %>
-    </div>
-    <button class="tablinks" id="nextBtn">Next</button>
   </div>
 </div>

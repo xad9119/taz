@@ -1,69 +1,26 @@
 
 
+const initSteps = () => {
+  const tabs = document.getElementById('form-tab-1')
 
-function showTab(n) {
-  // This function will display the specified tab of the form ...
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  // ... and fix the Previous/Next buttons:
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
+  if (tabs) {
+
+    const tabs = document.querySelector('.nav-tabs a')
+    tabs.addEventListener('click', (event) => {
+      event.preventDefault();
+    });
+    $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+        $('.nav-tabs a').on('shown.bs.tab', function(event){
+            var x = $(event.target).text();
+            var y = $(event.relatedTarget).text();
+            $(".act span").text(x);
+            $(".prev span").text(y);
+        });
+    });
   }
-  if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
-  } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
-  }
-  // ... and run a function that displays the correct step indicator:
-  fixStepIndicator(n)
 }
 
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form... :
-  if (currentTab >= x.length) {
-    //...the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
-}
-
-
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-
-
-const initShowTab = () => {
-  const currentTab = 0; // Current tab is set to be the first tab (0)
-  const form = document.getElementById("regForm");
-  if (form) {
-    showTab(currentTab); // Display the current tab
-    console.log(document);
-
-    nextBtn = form.querySelector("nextBtn");
-    // prevBtn = document.getElementById("nextBtn")
-    if (nextBtn) {
-      nextBtn.addEventListener('click', (event) => nextPrev(1));
-    }
-  }
-};
-
-export { initShowTab, }
+export { initSteps }
