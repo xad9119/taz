@@ -1,47 +1,52 @@
-<div class="row">
-  <div class="col-xs-6">
-  <h2>General information</h2>
+<div class="row row-form">
+  <div class="col-xs-8 col-xs-offset-2">
+    <h3 class="form-section">Asset information</h3>
+      <div class="form-input-title">Surface</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">m²</div>
+        <%= f.input :surface, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+      </div>
 
-    <div class="form-input-title">Surface</div>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <div class="input-group-addon">m²</div>
-      <%= f.input :surface, as: :float, label: false %>
-    </div>
+      <div class="form-input-title">Land surface</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">m²</div>
+        <%= f.input :land_surface, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+      </div>
 
-    <div class="form-input-title">Land Surface</div>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <div class="input-group-addon">m²</div>
-      <%= f.input :land_surface, as: :float, label: false %>
-    </div>
+      <div class="form-input-title">Construction year</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <%= f.input :construction_year, as: :integer, collection: 1900..2020, label:false %>
+      </div>
 
-    <div class="form-input-title">Construction Year</div>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <%= f.input :construction_year, as: :integer, collection: 1900..2020, label:false %>
-    </div>
+      <div class="form-input-title">Height</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <%= f.input :height, as: :integer, collection: 1900..2020, label:false %>
+      </div>
 
-    <div class="form-input-title">Height</div>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <%= f.input :height, as: :integer, collection: 1900..2020, label:false %>
-    </div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="form-input-checkbox">
+          <%= f.input :has_icpe, as: :boolean, checked_value: true, unchecked_value: false, input_html: {class: 'form-input-checkbox'}%>
+        </div>
+      </div>
 
-    <div class="form-input-title">Occupancy rate</div>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <div class="input-group-addon">%</div>
-      <%= f.input :occupancy_rate, as: :float, label: false %>
-    </div>
+    <h3 class="form-section">Occupancy information</h3>
+      <div class="form-input-title">Occupancy rate</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">%</div>
+        <%= f.input :occupancy_rate, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+      </div>
 
-    <div class="form-input-title">Office area share</div>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <div class="input-group-addon">%</div>
-      <%= f.input :office_area_share, as: :float, label: false %>
-    </div>
+      <div class="form-input-title">Office area share</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">%</div>
+        <%= f.input :office_area_share, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+      </div>
 
-    <div class="form-input-title">Asset manager</div>
-    <%= f.fields_for :company do |loc| %>
-      <%= loc.input :name, label: false %>
-    <% end %>
+      <div class="form-input-title">Asset manager</div>
+      <%= f.fields_for :company do |loc| %>
+        <%= loc.input :name, label: false %>
+      <% end %>
 
-    <%= f.input :has_icpe, as: :boolean, checked_value: true, unchecked_value: false %>
 
   </div>
 </div>

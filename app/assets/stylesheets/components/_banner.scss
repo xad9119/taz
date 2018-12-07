@@ -4,9 +4,48 @@
   height: 70vh;
   color: #eee;
   text-align: center;
+  vertical-align: middle;
+
+}
+
+.banner {
+  color: white !important;
+  text-align: center;
+  height: calc(100vh - 70px);
+
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  color: white !important;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
 }
 
 #banner-typed-text {
   color: white;
   font-weight: 700;
+}
+
+.index-banner {
+  background-color: $third-color;
+  opacity: 1;
+  height: 80px;
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+  margin-top: 0px;
+  padding: 15px;
+  padding-top: 20px;
+  position: sticky;
+  top: 60px;
+  z-index: 10;
 }

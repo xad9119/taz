@@ -12,6 +12,7 @@ def index
       @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
     end
       authorize @business_assets
+
       @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {
@@ -59,6 +60,7 @@ def index
       render :new
     end
 
+
     transaction = Transaction.new
     transaction.define_attributes(my_hash['transactions'], business_asset)
     if transaction.valid?
@@ -69,8 +71,9 @@ def index
     end
 
     if business_asset.valid?
-      redirect_to business_assets_path
+      redirect_to business_asset_path(business_asset)
     end
+
     authorize business_asset
   end
 
