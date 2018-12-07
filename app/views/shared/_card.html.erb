@@ -13,7 +13,7 @@
           <p>No Address</p>
         <% end %>
       </div>
-<!--       <div class="occupancy">
+      <div class="occupancy">
         <% if business_asset.occupancy_rate %>
           <% if  %>
             <% business_asset.occupancy_rate > 0.8 || business_asset.occupancy_rate == nil %>
@@ -24,7 +24,7 @@
           <% else %>
           <p>no data</p>
         <% end %>
-      </div> -->
+      </div>
     </div>
     <div class="rental-info">
       <div class="surface">
@@ -37,14 +37,21 @@
       </div>
       <div class="rent">
         <% if business_asset.transactions.first.price != 0 %>
-          <p><%= business_asset.transactions.first.price.round %>/ €</p>
+          <p><%= business_asset.transactions.first.price %>/ €</p>
           <% else %>
           <p>-</p>
         <% end %>
       </div>
     </div>
     <div class="profitability">
-      <p>Rentabilité: <%= @rental ? (100 * (@rental.annual_rent + 0.0) / @transaction.price).round(1) : "-" %> %</p></div>
+      <p><% business_asset.rentals.each do |r| %>
+        <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
+          <p>Profitability: <%= ((r.annual_rent + 0.0) / business_asset.transactions.first.price).round(2) * 100 %>%</p>
+          <% else %>
+          <p>Profitability: na</p>
+        <% end %>
+        <% end %>
+      </div>
   </div>
 </div>
 <% end %>
