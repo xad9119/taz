@@ -14,8 +14,8 @@
         <p> <strong> Address :</strong> <%= @business_asset.geographical_location.address %></p>
         <p> <strong> Construction Year :</strong> <%= @business_asset.construction_year %></p>
         <p> <strong> Asset Type :</strong> <%= @business_asset.asset_type %></p>
-        <p> <strong> Surface :</strong> <%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
-        <p> <strong> Land Surface :</strong> <%= @business_asset.land_surface.nil? ? "-" : @business_asset.land_surface.round %></p>
+        <p> <strong> Surface :</strong> <%= @business_asset.surface.nil? ? "-" : format_number(@business_asset.surface, currency_symbol: false) %> m2</p>
+        <p> <strong> Land Surface :</strong> <%= @business_asset.land_surface.nil? ? "-" : format_number(@business_asset.land_surface.round, currency_symbol: false) %>m2</p>
         <p> <strong> General Condition :</strong> <%= @business_asset.general_condition %></p>
         <p> <strong> Description :</strong> <%= @business_asset.description %></p>
         <p> <strong> Height :</strong> <%= @business_asset.height %></p>
@@ -42,7 +42,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="..." alt="First image">
+              <img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=40.720032,-73.988354&fov=90&heading=235&pitch=10&key=AIzaSyCQrDsCgu8H5meufFGKqNgMrSdH1zbXo0E" class="d-block w-100" alt="First image">
             </div>
             <div class="carousel-item">
               <% @business_asset.attachments.each do |a| %>
@@ -138,7 +138,5 @@
       </div>
     </div>
 
-
    </div>
 </div>
-

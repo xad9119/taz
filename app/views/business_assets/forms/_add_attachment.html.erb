@@ -1,0 +1,13 @@
+<div class="row row-form">
+  <div class="col-xs-8 col-xs-offset-2">
+    <h3 class="form-section">Add attachment ?</h3>
+       <%= f.fields_for :attachments do |att| %>
+        <%= att.input :attachment_type, label: false %>
+        <%= att.input :file %>
+        <%= att.input :file_cache, as: :hidden %>
+      <% end %>
+    </div>
+    <div class="btn-section">
+      <%= f.submit "add an asset", class: "btn btn-primary btn-form" %>
+    </div>
+</div>

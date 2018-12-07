@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row h100">
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <h2>Enter a new asset</h2>
     <div class="tab">
@@ -7,9 +7,10 @@
         <li><a href="#form-tab-2">Type</a></li>
         <li><a href="#form-tab-3">Information</a></li>
         <li><a href="#form-tab-4">Financials</a></li>
+        <li><a href="#form-tab-5">Attachments</a></li>
       </ul>
       <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
-      <div class="tab-content">
+        <div class="tab-content">
           <div id="form-tab-1" class="tab-pane fade in active">
               <%= render 'business_assets/forms/address', f:f   %>
           </div>
@@ -22,7 +23,10 @@
           <div id="form-tab-4" class="tab-pane fade">
               <%= render 'business_assets/forms/financial_information', f:f   %>
           </div>
-      </div>
+          <div id="form-tab-5" class="tab-pane fade">
+              <%= render 'business_assets/forms/add_attachment', f:f   %>
+          </div>
+        </div>
       <% end %>
   </div>
 </div>

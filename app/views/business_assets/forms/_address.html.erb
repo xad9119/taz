@@ -2,7 +2,7 @@
   <div class="col-xs-8 col-xs-offset-2">
     <h3 class="form-section">Where is the asset ?</h3>
       <%= f.fields_for :geographical_location do |loc| %>
-        <%= loc.input :address, label: false, input_html: {id: 'asset_address', placeholder: "Enter an address"} %>
+        <%= loc.input :attachment_type, label: false %>
       <% end %>
     </div>
 </div>
