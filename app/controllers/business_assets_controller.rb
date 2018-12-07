@@ -12,6 +12,7 @@ def index
       @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
     end
       authorize @business_assets
+
       @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {

@@ -7,7 +7,7 @@
     <div class="first-line">
       <div class="address">
         <% if business_asset.geographical_location.address %>
-          <% address = business_asset.geographical_location.address.length > 30 ? "#{business_asset.geographical_location.address[0..30]}..." : business_asset.geographical_location.address %>
+          <% address = business_asset.geographical_location.address.length > 28 ? "#{business_asset.geographical_location.address[0..28]}..." : business_asset.geographical_location.address %>
           <p><%= address %></p>
           <% else %>
           <p>No Address</p>
@@ -29,22 +29,22 @@
     <div class="rental-info">
       <div class="surface">
         <% if business_asset.surface %>
-          <p>Surface: <%= business_asset.surface.round %> m2</p>
+          <p><strong>Surface: <%= business_asset.surface.round %> m2</strong></p>
           <% else %>
           <p>no surface</p>
         <% end %>
 
       </div>
       <div class="rent">
-        <% if business_asset.transactions.first.price %>
+        <% if business_asset.transactions.first.price != 0 %>
           <p><%= business_asset.transactions.first.price.round %>/ €</p>
           <% else %>
-          <p>no data</p>
+          <p>-</p>
         <% end %>
       </div>
     </div>
     <div class="profitability">
-      <p>Rentabilité: <%= @rental ? (100 * (@rental.annual_rent + 0.0) / @transaction.price).round(1) : "na" %> %</p></div>
+      <p>Rentabilité: <%= @rental ? (100 * (@rental.annual_rent + 0.0) / @transaction.price).round(1) : "-" %> %</p></div>
   </div>
 </div>
 <% end %>
