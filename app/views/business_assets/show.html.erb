@@ -92,8 +92,8 @@
             </tr>
             <tr>
               <td><%= r.tenant.name %></td>
-              <td><%= money(r.annual_rent) %></td>
-              <td><%= money(r.annual_rent_sqm) %></td>
+              <td><%= format_number(r.annual_rent) %></td>
+              <td><%= format_number(r.annual_rent_sqm) %></td>
               <td><%= r.start_date.nil? ? "-" : r.start_date.strftime('%b-%y') %> </td>
               <td><%= r.break_date_1.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
               <td><%= r.break_date_2.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
@@ -120,7 +120,7 @@
               <td><%= t.buyer.name %></td>
               <td><%= t.seller.name %></td>
               <td><%= t.date.nil? ? "-" : t.date.strftime('%b-%y') %> </td>
-              <td><%= money(t.price) %></td>
+              <td><%= format_number(t.price) %></td>
             </tr>
           <% end %>
         </table>
