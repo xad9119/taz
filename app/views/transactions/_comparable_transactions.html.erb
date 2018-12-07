@@ -9,8 +9,8 @@
       <%= comparable.business_asset.asset_type %>
     </div>
     <ul class="tr-card-feature-list">
-      <li><%= comparable.price %> €</li>
-      <li><%= comparable.business_asset.surface %> m2</li>
+      <li><%= format_number(comparable.price, currency_symbol: false) %> €</li>
+      <li><%= format_number(comparable.business_asset.surface, currency_symbol: false) %> m2</li>
     </ul>
   </div>
   <div class="tr-card-return">
