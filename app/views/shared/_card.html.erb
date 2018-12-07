@@ -37,9 +37,7 @@
       </div>
       <div class="rent">
         <% if business_asset.transactions.first.price != 0 %>
-
-          <p><%= format_number(business_asset.transactions.first.price) %></p>
-
+            <p><%= format_number(business_asset.transactions.first.price) %></p>
           <% else %>
           <p>-</p>
         <% end %>
