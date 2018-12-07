@@ -57,6 +57,16 @@ def index
     business_asset.define_attributes(my_hash, current_user)
     if business_asset.valid?
       business_asset.save!
+
+      a = Attachment.new
+      a.business_asset = business_asset
+      a.attachment_type = 'photo'
+      loc = business_asset.geographical_location
+      url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
+      a.url = url
+      a.remote_file_url = url
+      a.save!
+
     else
       flash[:alert] = business_asset.errors.full_messages
       render :new
@@ -81,9 +91,15 @@ def index
       render :new
     end
 
+
+
+
     if business_asset.valid?
       redirect_to business_asset_path(business_asset)
     end
+
+
+
 
     authorize business_asset
   end
