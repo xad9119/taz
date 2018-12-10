@@ -6,11 +6,11 @@ class BusinessAsset < ApplicationRecord
   has_one :last_transaction, -> { order("date DESC") }, class_name: "Transaction"
 
   has_many :rentals
-  has_many :attachments
-  has_one :asset_category
+  has_many :attachments, dependent: :destroy
+  has_many :asset_categories, through: :business_asset_categories
   belongs_to :business_asset_manager, class_name: "Company"
   accepts_nested_attributes_for :geographical_location
-  BUSINESS_ASSET_TYPES = ["stock warehouse", "logistics warehouse", "shop", "office"]
+  BUSINESS_ASSET_TYPES = ["Stock warehouse", "Logistics warehouse", "Shop", "Office"]
 
 
   def current_rental
@@ -37,6 +37,14 @@ class BusinessAsset < ApplicationRecord
     end
   end
 
+  def seller
+    unless self.transactions.empty?
+      self.transactions.select {|r| r.date <= Date.today }.sort { |r| r.date }.last.seller
+    else
+      nil
+    end
+  end
+
   def tenant
     unless self.rentals.empty?
       self.rentals.select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }.first.tenant
@@ -50,6 +58,7 @@ class BusinessAsset < ApplicationRecord
     address = my_hash['geographical_location']['address'] if !my_hash['geographical_location']['address'].empty?
     geographical_location = GeographicalLocation.find_by(
       address: address)
+
     if geographical_location.nil? && !address.nil?
       geographical_location = GeographicalLocation.new(address: address)
       geographical_location.save!
@@ -62,12 +71,12 @@ class BusinessAsset < ApplicationRecord
       asset_manager.save!
     end
 
-    category = AssetCategory.find_by(name: my_hash['business_asset_type'])
+
+
 
     self.user = user
     self.geographical_location = geographical_location
     self.business_asset_manager = asset_manager
-    self.asset_type = category.name if !category.nil?
     self.surface = my_hash['surface'].to_f if !my_hash['surface'].empty?
     self.land_surface = my_hash['land_surface'] if !my_hash['land_surface'].empty?
     self.construction_year = my_hash['construction_year'] if !my_hash['construction_year'].empty?

@@ -61,12 +61,20 @@ def index
 
   def create
     my_hash = params['search']
-
+    categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
     business_asset = BusinessAsset.new
-    business_asset.define_attributes(my_hash, current_user)
+    business_asset.define_attributes(my_hash,current_user)
+
+
     if business_asset.valid?
       business_asset.save!
+      categories_array.each do |cat|
+        binding.pry
+        asset_category = AssetCategory.find(cat)
+        BusinessAssetCategory.create(business_asset: business_asset, asset_category: asset_category)
+      end
 
+      # add a default picture that's the street view screenshot
       a = Attachment.new
       a.business_asset = business_asset
       a.attachment_type = 'photo'
@@ -102,6 +110,7 @@ def index
     if business_asset.valid?
       redirect_to business_asset_path(business_asset)
     end
+
     authorize business_asset
   end
 
@@ -137,26 +146,6 @@ private
   def set_business_asset
     @business_asset = policy_scope(BusinessAsset).find(params[:id])
     authorize @business_asset
-  end
-
-  def business_asset_params
-    params.require(:business_asset).permit(
-      :user_id,
-      # :geographical_location_attributes: {...},
-      :business_asset_manager_id,
-      :construction_year,
-      :has_icpe,
-      :business_asset_type,
-      :occupancy_rate,
-      :office_area_share,
-      :potential_annual_rent,
-      :potential_annual_rent_sqm,
-      :height,
-      :land_surface,
-      :surface,
-      :general_condition,
-      :description
-      )
   end
 
   def nil_attributes? (class_instance)

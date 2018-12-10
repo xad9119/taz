@@ -12,8 +12,11 @@ autocomplete();
 
 import { xxx } from '../components/checkbox_compare';
 
-
-
+$(document).ready(function(){
+  $(".category-choice").click(function(){
+    $(this).toggleClass("active");
+  });
+});
 // const btn = document.getElementById('nextBtn')
 
 // if (btn) {
