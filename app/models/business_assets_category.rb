@@ -1,0 +1,2 @@
+class BusinessAssetsCategory < ApplicationRecord
+end

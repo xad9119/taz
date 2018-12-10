@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_07_100448) do
+ActiveRecord::Schema.define(version: 2018_12_10_102442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,15 @@ ActiveRecord::Schema.define(version: 2018_12_07_100448) do
     t.datetime "updated_at", null: false
     t.string "file"
     t.index ["business_asset_id"], name: "index_attachments_on_business_asset_id"
+  end
+
+  create_table "business_asset_categories", force: :cascade do |t|
+    t.bigint "business_asset_id"
+    t.bigint "asset_category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["asset_category_id"], name: "index_business_asset_categories_on_asset_category_id"
+    t.index ["business_asset_id"], name: "index_business_asset_categories_on_business_asset_id"
   end
 
   create_table "business_assets", force: :cascade do |t|
@@ -121,10 +130,12 @@ ActiveRecord::Schema.define(version: 2018_12_07_100448) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "attachments", "business_assets"
+  add_foreign_key "attachments", "business_assets", on_delete: :cascade
+  add_foreign_key "business_asset_categories", "asset_categories"
+  add_foreign_key "business_asset_categories", "business_assets", on_delete: :cascade
   add_foreign_key "business_assets", "geographical_locations"
   add_foreign_key "business_assets", "users"
   add_foreign_key "interests", "geographical_locations"
-  add_foreign_key "rentals", "business_assets"
-  add_foreign_key "transactions", "business_assets"
+  add_foreign_key "rentals", "business_assets", on_delete: :cascade
+  add_foreign_key "transactions", "business_assets", on_delete: :cascade
 end
