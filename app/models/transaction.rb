@@ -43,16 +43,16 @@ class Transaction < ApplicationRecord
   end
 
   def python
-    `python lib/assets/py_script.ipynb`
+    `python ../../lib/assets/py_script_py.py`
   end
 
   def self.create_csv
     csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
-    filepath    = 'db/input_python_script.csv'
+    filepath    = 'db/python_training.csv'
 
     CSV.open(filepath, 'wb', csv_options) do |csv|
       csv << ['id', 'date', 'asset_type', 'surface', 'latitude', 'longitutde', 'pricesqm']
-      Transaction.all.select { |t| t.filtered_absolute_conditions_class }.each do |tr|
+      Transaction.all.select { |t| filtered_absolute_conditions_class(t) }.each do |tr|
         csv << [tr.id,
                 tr.date,
                 tr.business_asset.asset_type,
@@ -64,7 +64,7 @@ class Transaction < ApplicationRecord
     end
   end
 
-  def filtered_absolute_conditions_class
+  def self.filtered_absolute_conditions_class(transaction)
     condition1 = transaction.price > 0
     condition2 = transaction.business_asset.surface ? transaction.business_asset.surface > 0 : false
     condition3 = transaction.business_asset.current_rental ? transaction.business_asset.current_rental.annual_rent > 0 : false
