@@ -40,7 +40,37 @@ class Transaction < ApplicationRecord
     self.seller = seller
     self.date = my_hash['date'].to_date
     self.price = my_hash['price'].gsub(/[^\d^\.]/, '').to_f
+  end
 
+  def python
+    `python ../../lib/assets/py_script_py.py`
+  end
+
+  def self.create_csv
+    csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
+    filepath    = 'db/python_training.csv'
+
+    CSV.open(filepath, 'wb', csv_options) do |csv|
+      csv << ['id', 'date', 'asset_type', 'surface', 'latitude', 'longitutde', 'pricesqm']
+      Transaction.all.select { |t| filtered_absolute_conditions_class(t) }.each do |tr|
+        csv << [tr.id,
+                tr.date,
+                tr.business_asset.asset_type,
+                tr.business_asset.surface,
+                tr.business_asset.geographical_location.latitude,
+                tr.business_asset.geographical_location.longitude,
+                tr.price / tr.business_asset.surface]
+      end
+    end
+  end
+
+  def self.filtered_absolute_conditions_class(transaction)
+    condition1 = transaction.price > 0
+    condition2 = transaction.business_asset.surface ? transaction.business_asset.surface > 0 : false
+    condition3 = transaction.business_asset.current_rental ? transaction.business_asset.current_rental.annual_rent > 0 : false
+    condition4 = transaction.business_asset.geographical_location.latitude
+    condition5 = transaction.business_asset.geographical_location.longitude
+    return condition1 && condition2 && condition3 && condition4 && condition5
   end
 
   private

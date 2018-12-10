@@ -70,7 +70,7 @@ business_assets_array = [
     business_asset_manager: Company.first,
     geographical_location: GeographicalLocation.first,
     construction_year: 2001,
-    asset_type: "Logements",
+    asset_type: "Light Industrial",
     occupancy_rate: 0.45,
     office_area_share: 0.33,
     potential_annual_rent: 100000,
@@ -180,15 +180,15 @@ CSV.foreach(filepath, csv_options) do |row|
 end
 
 
-p "----------- Creating Attachments -----------"
-BusinessAsset.all.each_with_index do |b, i|
-  a = Attachment.new
-  a.business_asset = b
-  a.attachment_type = 'photo'
-  loc = b.geographical_location
-  url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
-  a.url = url
-  a.remote_file_url = url
-  a.save!
-  p "#{i} / #{BusinessAsset.all.count}"
-end
+# p "----------- Creating Attachments -----------"
+# BusinessAsset.all.each_with_index do |b, i|
+#   a = Attachment.new
+#   a.business_asset = b
+#   a.attachment_type = 'photo'
+#   loc = b.geographical_location
+#   url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
+#   a.url = url
+#   a.remote_file_url = url
+#   a.save!
+#   p "#{i} / #{BusinessAsset.all.count}"
+# end
