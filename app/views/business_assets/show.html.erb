@@ -7,26 +7,101 @@
 
 <div class= "container" >
   <div class="row">
-
     <div class="col-xs-12 col-sm-6">
       <div class= "white-box height-line-1" >
         <h3> Descriptif </h3>
-        <p> <strong> Address :</strong>
-        <p align="right"></p> <%= @business_asset.geographical_location.address %></p>
-        <p> <strong> Construction Year :</strong> <%= @business_asset.construction_year %></p>
-        <p> <strong> Asset Type :</strong> <%= @business_asset.asset_type %></p>
-        <p> <strong> Surface :</strong> <%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
-        <p> <strong> Land Surface :</strong> <%= @business_asset.land_surface.nil? ? "-" : @business_asset.land_surface.round %></p>
-        <p> <strong> General Condition :</strong> <%= @business_asset.general_condition %></p>
-        <p> <strong> Description :</strong> <%= @business_asset.description %></p>
-        <p> <strong> Height :</strong> <%= @business_asset.height %></p>
-        <p> <strong> Office Area Share : </strong>  <%= @business_asset.office_area_share %> %</p>
-        <p> <strong> Occupancy Rate : </strong> <%= @business_asset.occupancy_rate %> %</p>
-        <p> <% if @business_asset.has_icpe %>
-           <i class="far fa-check-square"></i> <strong>is ICPE</strong>
-          <% else %>
-           <i class="far fa-square"></i> <strong>is ICPE</strong>
-          <% end %> </p>
+        <div class="descriptif">
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Address :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.geographical_location.address %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Construction Year :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.construction_year %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Asset Type :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.asset_type %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Surface :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> General Condition :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.general_condition %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Land Surface :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.land_surface.nil? ? "-" : @business_asset.land_surface.round %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Description :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.description %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Height :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.height %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Office Area Share : </strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.office_area_share %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Occupancy Rate : </strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.occupancy_rate %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong>
+                  <% if @business_asset.has_icpe %>
+                    <i class="far fa-check-square"></i> <strong>is ICPE</strong>
+                  <% else %>
+                    <i class="far fa-square"></i> <strong>is ICPE</strong>
+                  <% end %> </strong></p>
+              </div>
+            </div>
+        </div>
         </div>
       </div>
 
