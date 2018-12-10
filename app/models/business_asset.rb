@@ -77,13 +77,13 @@ class BusinessAsset < ApplicationRecord
     self.user = user
     self.geographical_location = geographical_location
     self.business_asset_manager = asset_manager
-    self.surface = my_hash['surface'].to_f if !my_hash['surface'].empty?
+    self.surface = my_hash['surface'].gsub(/[^\d^\.]/, '').to_f if !my_hash['surface'].empty?
     self.land_surface = my_hash['land_surface'] if !my_hash['land_surface'].empty?
     self.construction_year = my_hash['construction_year'] if !my_hash['construction_year'].empty?
     self.height = my_hash['height'] if !my_hash['height'].empty?
     self.occupancy_rate = my_hash['occupancy_rate'] if !my_hash['occupancy_rate'].empty?
     self.office_area_share = my_hash['office_area_share'] if !my_hash['office_area_share'].empty?
-    self.potential_annual_rent = my_hash['potential_annual_rent'].to_f if !my_hash['potential_annual_rent'].empty?
+    self.potential_annual_rent = my_hash['potential_annual_rent'].gsub(/[^\d^\.]/, '').to_f if !my_hash['potential_annual_rent'].empty?
     self.potential_annual_rent_sqm = compute_sqm_rent(self.potential_annual_rent, self.surface)
 
   end
