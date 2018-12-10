@@ -125,10 +125,14 @@ def index
 
   def dashboard
     @buyers = Company.joins(:bought_transactions).distinct
+    @buyers_unique = @buyers.all.select(:name).distinct
+      if params[:option].present?
+        @buyer = Company.find_by(name:params[:option])
+      else
+        @buyer = Company.find_by(name:"VLD")
+      end
 
-    @buyer = @buyers.first
     @business_assets = policy_scope(BusinessAsset).joins(:last_transaction).where(transactions: { buyer_id: @buyer.id })
-
     authorize @business_assets
 
     @markers = @business_assets.map do |business_asset|

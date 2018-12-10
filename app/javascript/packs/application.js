@@ -3,12 +3,15 @@ import "../plugins/flatpickr";
 import "jquery";
 import { checkEvents } from '../components/form';
 import { autocomplete } from '../components/autocomplete';
+autocomplete();
 import { initSteps } from '../components/form_steps';
-import 'mapbox-gl/dist/mapbox-gl.css';
-
 initSteps();
 
-autocomplete();
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+import { initSelect } from '../components/dashboard_select';
+initSelect();
+
 
 import { xxx } from '../components/checkbox_compare';
 
