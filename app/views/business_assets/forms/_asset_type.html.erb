@@ -1,6 +1,19 @@
 <div class="row row-form">
   <div class="col-xs-8 col-xs-offset-2">
     <h3 class="form-section">What kind of asset is it ?</h3>
-      <%= f.input :asset_type, collection: BusinessAsset::BUSINESS_ASSET_TYPES, prompt: "Select an asset type", label: false %>
+    <div class="form-group">
+      <input type="hidden" name="post[category_ids][]" value="">
+      <div class="category-choices">
+        <% AssetCategory.all.sort_by {|x| x.name}.each do |category| %>
+            <input type="checkbox" class="category-choice hidden" value="<%= category.id %>" name="post[category_ids][]" id="post_category_ids_<%= category.id %>">
+            <label for="post_category_ids_<%= category.id %>" class="category-choice">
+              <p class="category-name">
+                <%= category.name %>
+              </p>
+              <i class="<%= category.pictogram %>"></i>
+            </label>
+        <% end %>
+       </div>
+    </div>
   </div>
 </div>

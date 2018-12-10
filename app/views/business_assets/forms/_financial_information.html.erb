@@ -4,7 +4,7 @@
     <div class="form-input-title">Potential annual rent</div>
     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
       <div class="input-group-addon">€</div>
-      <%= f.input :potential_annual_rent, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+      <%= f.input :potential_annual_rent, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
     </div>
 
     <h3 class="form-section">Rentals</h3>
@@ -17,7 +17,7 @@
           <div class="form-input-title">Annual rent</div>
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
             <div class="input-group-addon">€</div>
-            <%= re.input :annual_rent, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+            <%= re.input :annual_rent, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
           </div>
 
           <div class="form-input-title">Start date</div>
@@ -55,7 +55,7 @@
         <div class="form-input-title">Price</div>
         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
           <div class="input-group-addon">€</div>
-          <%= tr.input :price, as: :float, label: false, input_html: {class: 'form-input-numeric'} %>
+          <%= tr.input :price, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
         </div>
 
         <div class="form-input-title">Date</div>

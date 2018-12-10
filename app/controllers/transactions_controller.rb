@@ -18,7 +18,7 @@ class TransactionsController < ApplicationController
                     .select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }
                     .first
     @comparables = @transaction.ranked_comparables
-
+    raise
     if params[:query]
       @key_comparables = @comparables.select { |e| params[:query].split(' ').include?(e.id.to_s) }
     else
