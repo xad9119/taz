@@ -4,4 +4,8 @@ class BusinessAssetPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  def dashboard?
+    true
+  end
 end

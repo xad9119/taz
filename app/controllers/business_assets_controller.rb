@@ -32,7 +32,6 @@ def index
 
     end
       authorize @business_assets
-
   end
 
   def show
@@ -48,6 +47,16 @@ def index
   def new
     @business_asset = BusinessAsset.new
     authorize @business_asset
+
+    @markers = @business_assets.map do |business_asset|
+        next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+        {
+          title: business_asset.geographical_location.address,
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+        }
+      end.compact!
   end
 
   def create
@@ -98,15 +107,9 @@ def index
       flash[:alert] = transaction.errors.full_messages
       render :new
     end
-
-
-
-
     if business_asset.valid?
       redirect_to business_asset_path(business_asset)
     end
-
-
 
     authorize business_asset
   end
@@ -120,6 +123,25 @@ def index
   def destroy
   end
 
+  def dashboard
+    @buyers = Company.joins(:bought_transactions).distinct
+
+    @buyer = @buyers.first
+    @business_assets = policy_scope(BusinessAsset).joins(:last_transaction).where(transactions: { buyer_id: @buyer.id })
+
+    authorize @business_assets
+
+    @markers = @business_assets.map do |business_asset|
+        next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+        {
+          title: business_asset.geographical_location.address,
+          lng: business_asset.geographical_location.longitude,
+          lat: business_asset.geographical_location.latitude,
+          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+        }
+      end.compact!
+  end
+
 private
   def set_business_asset
     @business_asset = policy_scope(BusinessAsset).find(params[:id])
@@ -130,5 +152,3 @@ private
     class_instance.attributes.values.select {|x| !x.nil? || x.nil? ? false : x.positive?}.empty?
   end
 end
-
-
