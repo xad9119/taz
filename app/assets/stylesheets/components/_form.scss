@@ -33,17 +33,27 @@
 .category-choices {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding: 0px;
   flex-wrap: wrap;
   margin: 20px 0;
 }
 
 .category-choice {
+  width: 25%;
+  height: 100px;
   background: #b7b7b7;
-  padding: 20px;
+  padding: 5px;
   border-radius: 5px;
-  opacity: .4;
+  opacity: .8;
   flex: 0 0 30%;
+  display: flex;
+  color: white;
   text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   &:hover {
     opacity: 1;
     cursor: pointer;
@@ -51,10 +61,13 @@
   &.active {
   background-color: $main-color;
   color: white;
-  opacity: 1;
+  opacity: 0.8;
   }
 }
 
+.category-name {
+  margin: 0px;
+}
 
 .form-section {
   margin-top: 20px;

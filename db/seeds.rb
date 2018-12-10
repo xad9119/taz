@@ -95,6 +95,35 @@ transaction_array = [
 
 Transaction.create!(transaction_array)
 
+
+
+p "----------- Creating Business Assets Categories -----------"
+
+
+asset_categories_array = [
+  "Stock warehouse",
+  "logistics warehouse",
+  "Retail",
+  "Office",
+  "HousiNg",
+  "lIght Industrial",
+  "hotel",
+  "Industrial"
+]
+
+asset_categories_array.map! {|x| x.capitalize}
+
+
+
+asset_categories_array.each do |a|
+  AssetCategory.create!(
+    name: a,
+    pictogram: 'fas fa-warehouse'
+    )
+end
+
+
+
 p "----------- Seeding from CSV -----------"
 
 i = 1
