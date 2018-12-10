@@ -142,8 +142,8 @@ CSV.foreach(filepath, csv_options) do |row|
   row_tr = row.select{ |key, _| Transaction.attribute_names.index(key.to_s) }
   transaction = Transaction.new(row_tr)
   transaction.business_asset = asset
-  transaction.seller = owner
-  transaction.buyer = Company.first
+  transaction.seller = Company.first
+  transaction.buyer = owner
   transaction.date = DateTime.new(1000) unless transaction.date
   transaction.price = 0 unless transaction.price
   transaction.save!
