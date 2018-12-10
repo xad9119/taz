@@ -25,3 +25,27 @@
   top: 0 !important;
   width: 120px;
 }
+
+.infowindow_address p {
+  color: $main-color;
+  font-size: strong;
+  margin-top: 5px;
+}
+
+.infowindow_surface p {
+  color: $main-color;
+}
+
+.infowindow_price p {
+  color: $main-color;
+}
+
+.infowindow_image {
+  max-width: 70px;
+}
+
+.infowindow {
+  width: 230px;
+  text-align: center;
+  margin-left: 22px
+}
