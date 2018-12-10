@@ -3,6 +3,8 @@ Rental.destroy_all
 Transaction.destroy_all
 Attachment.destroy_all
 BusinessAsset.destroy_all
+BusinessAssetCategory.destroy_all
+AssetCategory.destroy_all
 GeographicalLocation.destroy_all
 Company.destroy_all
 User.destroy_all
@@ -56,10 +58,6 @@ geographical_locations_array = [
   }
 ]
 GeographicalLocation.create!(geographical_locations_array)
-
-p "----------- Creating Asset Categories -----------"
-  asset_categories_array = ["stock warehouse", "logistics warehouse", "shop", "office"]
-  asset_categories_array.each {|a| AssetCategory.create!(name: a)}
 
 
 p "----------- Creating Assets -----------"

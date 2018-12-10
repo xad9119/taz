@@ -1,25 +1,44 @@
-<h1>Dashboard</h1>
+
+<div class= "container" >
 
 
+  <div class="col-xs-12 col-sm-12">
+    <div class="hr">
+      <%= form_tag dashboard_path, method: :get do |f| %>
+        <label> Select View (Owner) :</label>
+        <%= select_tag "option", options_from_collection_for_select(@buyers_unique, "name", "name", @buyer.name) %>
+      <% end %>
+    </div>
+  </div>
 
-<div class="col-xs-12 col-sm-12">
-  <%= form_tag dashboard_path, method: :get do |f| %>
-    <label> Select View (Owner) :</label>
-    <%= select_tag "option", options_from_collection_for_select(@buyers_unique, "name", "name", @buyer.name) %>
-  <% end %>
-</div>
-
-
-
-
-
- <div class="col-xs-12 col-sm-12">
-      <div class= "white-box" >
-        <h3> Localisation </h3>
-        <div
-          id="map"
-          data-markers="<%= @markers.to_json %>"
-          style="height: 400px"
-        ></div>
+  <div class="white-box">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 green-box">
+         <p>Total Surface</p>
+         <p><%=@business_assets.first.surface%></p>
       </div>
-</div>
+        <div class="col-xs-12 col-sm-4">
+         <p>Total Rent </p>
+         <p><%= @business_assets.first.surface %></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+         <p>Total Buying price</p>
+         <p><%=@business_assets.first.surface%></p>
+        </div>
+      </div>
+    </div>
+
+  <div class="col-xs-12 col-sm-12">
+    <div class= "white-box" >
+      <h3> Localisation </h3>
+      <div
+        id="map"
+        data-markers="<%= @markers.to_json %>"
+        style="height: 400px"
+      ></div>
+    </div>
+  </div>
+
+
+
+  </div>

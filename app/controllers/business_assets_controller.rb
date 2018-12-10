@@ -124,16 +124,17 @@ def index
   end
 
   def dashboard
-    @buyers = Company.joins(:bought_transactions).distinct
-    @buyers_unique = @buyers.all.select(:name).distinct
-      if params[:option].present?
-        @buyer = Company.find_by(name:params[:option])
-      else
-        @buyer = Company.find_by(name:"VLD")
-      end
+    authorize policy_scope(BusinessAsset)
+    @buyers_unique = Company.joins(:bought_transactions).select(:name).distinct
+    if params[:option].present?
+      @buyer = Company.find_by(name:params[:option])
+    else
+      @buyer = Company.find_by(name: "VLD")
+    end
 
-    @business_assets = policy_scope(BusinessAsset).joins(:last_transaction).where(transactions: { buyer_id: @buyer.id })
-    authorize @business_assets
+    last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
+    buyer_last_transaction = last_transactions.select { |last_transaction| last_transaction.buyer == @buyer }
+    @business_assets = buyer_last_transaction.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
 
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
@@ -143,7 +144,7 @@ def index
           lat: business_asset.geographical_location.latitude,
           infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
         }
-      end.compact!
+      end
   end
 
 private
