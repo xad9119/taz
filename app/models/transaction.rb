@@ -39,7 +39,7 @@ class Transaction < ApplicationRecord
     self.buyer = buyer
     self.seller = seller
     self.date = my_hash['date'].to_date
-    self.price = my_hash['price'].to_f
+    self.price = my_hash['price'].gsub(/[^\d^\.]/, '').to_f
 
   end
 

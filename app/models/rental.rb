@@ -28,7 +28,7 @@ class Rental < ApplicationRecord
     self.break_date_1 = break_date_1
     self.break_date_2 = break_date_2
     self.break_date_3 = break_date_3
-    self.annual_rent = my_hash['annual_rent'].to_f
+    self.annual_rent = my_hash['annual_rent'].gsub(/[^\d^\.]/, '').to_f
     self.annual_rent_sqm = compute_sqm_rent(self.annual_rent, business_asset.surface)
   end
 
