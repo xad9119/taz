@@ -1,7 +1,10 @@
 class BusinessAsset < ApplicationRecord
   belongs_to :user
   belongs_to :geographical_location
+
   has_many :transactions
+  has_one :last_transaction, -> { order("date DESC") }, class_name: "Transaction"
+
   has_many :rentals
   has_many :attachments
   has_one :asset_category
