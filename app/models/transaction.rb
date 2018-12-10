@@ -40,7 +40,6 @@ class Transaction < ApplicationRecord
     self.seller = seller
     self.date = my_hash['date'].to_date
     self.price = my_hash['price'].to_f
-
   end
 
   private
