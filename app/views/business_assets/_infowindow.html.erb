@@ -1,19 +1,24 @@
 <%= link_to business_asset_path(business_asset) do %>
-  <% if business_asset.geographical_location.address %>
-      <p><%= business_asset.geographical_location.address %></p>
-    <% else %>
-      <p>No Address Available</p>
-  <% end %>
-
-  <% if business_asset.surface %>
-    <p>Surface: <%= business_asset.surface.round %> m2</p>
-    <% else %>
-    <p></p>
-  <% end %>
-
-  <% if business_asset.potential_annual_rent_sqm %>
-      <p><%= business_asset.potential_annual_rent_sqm.round %>/ €an/m2</p>
-    <% else %>
-    <p></p>
-  <% end %>
+  <div class="infowindow">
+    <div class="infowindow_image">
+      <%= cl_image_tag business_asset.attachments.where(attachment_type: 'photo').first.file, width: 230, crop: :fit, class: "d-block w-30", alt:"Google view" %>
+    </div>
+    <div class="infowindow_address">
+      <p><strong> <%= business_asset.geographical_location.address %></strong></p>
+    </div>
+    <div class="infowindow_surface">
+      <% if business_asset.surface %>
+        <p>Surface: <%= format_number(business_asset.surface, currency_symbol: false) %> m2</p>
+        <% else %>
+        <p></p>
+      <% end %>
+    </div>
+    <div class=infowindow_price>
+      <% if business_asset.transactions.first.price %>
+          <p><%= format_number(business_asset.transactions.first.price) %></p>
+        <% else %>
+        <p></p>
+      <% end %>
+    </div>
+  </div>
 <% end %>
