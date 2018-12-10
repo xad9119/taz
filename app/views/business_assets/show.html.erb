@@ -11,7 +11,8 @@
     <div class="col-xs-12 col-sm-6">
       <div class= "white-box height-line-1" >
         <h3> Descriptif </h3>
-        <p> <strong> Address :</strong> <%= @business_asset.geographical_location.address %></p>
+        <p> <strong> Address :</strong>
+        <p align="right"></p> <%= @business_asset.geographical_location.address %></p>
         <p> <strong> Construction Year :</strong> <%= @business_asset.construction_year %></p>
         <p> <strong> Asset Type :</strong> <%= @business_asset.asset_type %></p>
         <p> <strong> Surface :</strong> <%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
