@@ -44,6 +44,7 @@ class Transaction < ApplicationRecord
     self.price = my_hash['price'].gsub(/[^\d^\.]/, '').to_f
   end
 
+
   def python
     return unless ENV['PRICE_PREDICTION_ENABLED']
 
