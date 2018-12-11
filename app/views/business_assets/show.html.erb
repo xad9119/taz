@@ -40,7 +40,7 @@
                 <p><strong> Surface :</strong></p>
               </div>
               <div class="col-xs-8 text-left">
-                <p><%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
+                <p><%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m²</p>
               </div>
             </div>
             <div class="row">
@@ -167,6 +167,8 @@
               <th>Brk 3</th>
             </tr>
             <tr>
+
+
               <td><%= r.tenant.nil? ? '-' : r.tenant.name %></td>
               <td><%= format_number(r.annual_rent) %></td>
               <td><%= format_number(r.annual_rent_sqm) %></td>
