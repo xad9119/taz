@@ -10,18 +10,19 @@ class Transaction < ApplicationRecord
   def ranked_comparables
     result = []
     if ENV['PRICE_PREDICTION_ENABLED']
-      self.class.create_csvs
+      create_csvs
       generate_predictions
-      filepath = File.join(Rails.root, "lib/python/data/python_predicted.csv")
 
+      filepath = File.join(Rails.root, "lib/python/data/python_predicted.csv")
       csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
       CSV.foreach(filepath, csv_options) do |row|
         result << Transaction.find(row[0].to_i)
       end
-      result.pop()
+      result.shift
     else
       result = filtered_comparables.sort_by { |c| distance_to(c) }
     end
+
     return result
   end
 
@@ -58,13 +59,19 @@ class Transaction < ApplicationRecord
     self.price = my_hash['price'].gsub(/[^\d^\.]/, '').to_f
   end
 
-  def self.create_csvs
-    csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
-    filepath    = 'db/python_training.csv'
+  def generate_predictions
+    script_path = Rails.root.join("lib/python/price_train_predict.py")
+    `python #{script_path}`
+  end
 
+  private
+
+  def create_csvs
+    csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
+    filepath = File.join(Rails.root, "lib/python/data/python_training.csv")
     CSV.open(filepath, 'wb', csv_options) do |csv|
       csv << ['id', 'date', 'asset_type', 'surface', 'latitude', 'longitutde', 'pricesqm']
-      Transaction.all.select { |t| filtered_absolute_conditions_class(t) }.each do |tr|
+      Transaction.all.select { |t| filtered_absolute_conditions(t) }.each do |tr|
         csv << [tr.id,
                 tr.date,
                 tr.business_asset.asset_type,
@@ -74,23 +81,20 @@ class Transaction < ApplicationRecord
                 tr.price / tr.business_asset.surface]
       end
     end
+
+    csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
+    filepath = File.join(Rails.root, "lib/python/data/python_to_predict.csv")
+    CSV.open(filepath, 'wb', csv_options) do |csv|
+      csv << ['id', 'date', 'asset_type', 'surface', 'latitude', 'longitutde']
+      csv << [self.id,
+              self.date,
+              self.business_asset.asset_type,
+              self.business_asset.surface,
+              self.business_asset.geographical_location.latitude,
+              self.business_asset.geographical_location.longitude]
+    end
   end
 
-  def self.filtered_absolute_conditions_class(transaction)
-    condition1 = transaction.price > 0
-    condition2 = transaction.business_asset.surface ? transaction.business_asset.surface > 0 : false
-    condition3 = transaction.business_asset.current_rental ? transaction.business_asset.current_rental.annual_rent > 0 : false
-    condition4 = transaction.business_asset.geographical_location.latitude
-    condition5 = transaction.business_asset.geographical_location.longitude
-    return condition1 && condition2 && condition3 && condition4 && condition5
-  end
-
-  private
-
-  def generate_predictions
-    script_path = Rails.root.join("lib/python/price_train_predict.py")
-    `python #{script_path}`
-  end
 
   def filtered_comparables
     Transaction.all
