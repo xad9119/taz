@@ -1,266 +1,266 @@
-﻿date;visite;respo;broker;Ville (CP);address;ville;code_postal;asset_type;surface;surface_loue;occupancy_rate;name_rent;name_owner;annual_rent;annual_rent_sqm;annual_rent_sqm_pot;annual_rent_pot;price;prix_m2;
-16/11/2018;oui;ZK;Julien Mateos (bnp RE );;2 avenue Pasteur ;Issy les Moulineaux;92130;Retail;1205;0;0%;; SEST IDF;;;250;301250;9000000;7469; 7 468,88  € 
-14/11/2018;non;EHB;Jerome Matias (bnpre);;163 avenue Charles de Gaulle;Neuilly-sur-Seine;92200;Office;1680;1500;89%;;;570363;380;380;638400;12500000;7440; 7 440,48  € 
-18/09/2018;non;EHB;Dan Erith;;122 rue Saint Denis;Paris;75002;Retail;949;495;52,16%;;;121649;246;420;398580;6500000;6849; 6 849,32  € 
-02/11/2018;non;EHB;Alexandre Filipe (Scamac);;6 avenue Jean Jaurès;Montrouge;92120;Housing;340;0;0%;;;;;;;2210000;6500; 6 500,00  € 
-11/10/2018;non;EHB;Oscar Duclert;;11-13 rue de l'Escaut;Paris;75019;Retail;1445;0;0,00%;;;;;;420000;8950000;6194; 6 193,77  € 
-10/10/2018;non;EHB;Josselin Garcia (Arthur Loyd);;18bis rue de Villiers;Levallois Perret;92300;Office;5432;1792;33%; DATAWORDS;;567937;317;305;1656760;33000000;6075; 6 075,11  € 
-18/05/2018;non;EHB;KW;;92bis Boulevard Paul Vaillant Couturier;La courneuve;93120;Housing / Retail;315;0;0%;;;;;;;1750000;; 5 555,56  € 
-06/06/2018;non;EHB;Aurélien Rosset;;87 Boulevard Poniatowski;Paris;75012;Office;705;705;100,00%; Ville de Paris;;181054;257;250;176250;3500000;4965; 4 964,54  € 
-16/11/2018;non;EHB;François Xavier d'Alançon;;87-89 rue du Gouverneur Félix Eboué;Issy les Moulineaux;92130;Office;1651;1617;98%;;;421573;261;260;430413;7300000;4422; 4 421,56  € 
-12/09/2018;non;EHB;Moché Harroch;;17 rue jean jaures;Champigny-sur-Marne;94500;Housing / Retail;1428;1428;100%;;;382536;268;;;5000000;3501; 3 501,40  € 
-15/10/2018;non;EHB;Matias Jerome;;1 rue André Voguet;Ivry-sur-Seine;94200;Retail;1411;211,5;15%;;;25591;121;220;310332;4500000;3190; 3 190,13  € 
-19/10/2018;non;EHB;Jerome Mainguy;;11 rue jean Mazet;Ivry-sur-Seine;94200;Office;7088;0;0%;; LFPI;;;180;1275840;21000000;2963; 2 962,75  € 
-05/07/2018;non;EHB;Pierre Etienne Maury;;10, route Nationale 10 (RN 10) Lieu-dit l’Agiot;Elancourt;78990;Retail;550;550;100%; Courtepaille, Boulangerie le Petrin Ribeirou; -;95000;173;170;93500;1600000;2909; 2 909,09  € 
-19/07/2018;non;EHB;Charles Albert;;15 rue Francis de Pressensé;Saint Denis;93210;Light Industrial;2906;2906;100%; Isiprint, Egis, GDG ZAKA;;543970;187;190;552140;8200000;2822; 2 821,75  € 
-28/06/2018;non;EHB;Jérôme Mainguy;; 46 48 rue Marcel Grosmenil;Villejuif;94800;Office;1483;1483;100%;;;350000;236;200;296600;4100000;2765; 2 764,67  € 
-26/03/2018;oui;ZK;Pascal Voisin;;15 av. Raspail;St maur des fossés;94100;Housing Promotion;555;0;0%; -;;;; -; -;1250000;2252; 2 252,25  € 
-16/10/2018;non;EHB;Franck Poizat;;42 rue du Commandant Rolland;Le Bourget;93350;Light Industrial / Office;3077;3077;100%; SALINI;;482270;157;150;461550;6500000;2112; 2 112,45  € 
-16/05/2018;non;EHB;Julien Mateos;;34 Rue Pierre et Marie Curie;Ivry-sur-Seine;94200;Office;1412;0;0%;;;;;210;296520;2900000;; 2 053,82  € 
-04/10/2018;non;EHB;Alexandre Filipe (Scamac);;65 avenue Vincent François Raspail;ARCUEIL;94110;Light Industrial;3148;1968;63%;;;289905;147;159;500532;6300000;2001; 2 001,27  € 
-22/11/2018;non;EHB;Avidan Koubi (Kalstone);;Rue de la Motte;Aubervilliers;93300;Retail;414;0;0%;;;;;180;74520;795000;1920; 1 920,29  € 
-09/10/2018;non;EHB;Sacha Danielian (CW);;191 Aristide Briand;Cachan;94230;Office;9750;5441;56%;;;1156568;213;185;1803750;18000000;1846; 1 846,15  € 
-01/09/2016;;;Geoffroy d’ARCHE (Evolis);93100;11 bis rue Rabelais;Montreuil;93100;Light Industrial;1400;1400;100%; Artana;;202149;144;130;182000;2500000;1786; 1 785,71  € 
-10/10/2018;non;EHB;Geoffroy D'Arche;;27 Bouelvard Hippolyte Marques;Ivry-sur-Seine;94200;Light Industrial / Office;3604;0;0%;;;;;142;510000;6300000;1748; 1 748,06  € 
-22/11/2018;non;CDU;Jérôme Mainguy;;7 rue Erik Satie;Bobigny;93000;Office;5839;5839;100%; Centre des impôts; Cofidy;920523;158;150;920523;10000000;1713; 1 712,62  € 
-08/06/2018;non;EHB;Charles Albert;;114 Rue Camille Desmoulins;Arcueil;94110;Light Industrial;470;470;100%; BL MEDICAL;;58650;125;85;39950;800000;1702; 1 702,13  € 
-15/05/2018;;EHB;KW;;93 Avenue Jean Jaures;Aubervilliers;93300;Housing / Retail;2534;2534;100%;;;201187;79;;;4090000;1614; 1 614,05  € 
-07/11/2018;non;EHB;Charles Albert;;15 route de Fontainebleau;Vitry sur seine;94400;Light Industrial / Office;7620;4235;56%;;;595160;141;140;1066800;12000000;1575; 1 574,80  € 
-14/09/2018;oui;ZK;Pascal Voisin;;1 rue Heynen;Bois-Colombes;92270;Housing Promotion;1395;0;0%; -; Privé;;;;;2180000;1563; 1 562,72  € 
-15/11/2018;non;EHB;Julien Badene;;23 rue Emile Zola;Montreuil;93100;Light Industrial / Office;2610;2610;100%; IDI; IDI;360000;138;130;339300;4000000;1533; 1 532,57  € 
-23/11/2018;non;EHB;Jérôme Mainguy;;4 Square Newton ;Montigny le Bretonneux;78180;Office;7288;7288;100%;;;1497329;205;200;1497329;11120000;1526; 1 525,80  € 
-26/09/2018;non;ZK;Evolis;;116 Avenue Pierre Brossolette;Malakoff;92240;Housing Promotion;330;0;0%;;;;;150;49500;495000;1500; 1 500,00  € 
-28/06/2018;non;EHB;François Xavier d'Alençon;;Avenue du Centaure ;Cergy;95000;Light Industrial;4181;0;0%;;;;;100;418100;6150000;1471; 1 470,94  € 
-18/01/2018;non;EHB;Charles Albert (BNPRE);;44 Avenue de Garlande;Bagneux;92220;Light Industrial;390;390;100%;;;48750;125;125;48750;560000;1436; 1 435,90  € 
-22/10/2018;non;EHB;Enguerrand de Villette (CBRE);;29 Boulevard du Général Delambre;Bezons;95870;Light Industrial / Office;1300;0;0%;;;;;100;130000;1800000;1385; 1 384,62  € 
-22/06/2018;non;EHB;Antoine Guicheteau;;place Marcel Rebuffat ;Villejust;91140;Light Industrial;3703;0;0%;;;;;100;370300;4977500;1344; 1 344,18  € 
-02/10/2018;non;EHB;Francois-Xavier LOUIS (JC Turri);;Rue Philippe SEGUIN ;FRANCONVILLE;95130;Light Industrial;2109;0;0%;;;;;90;189810;2833000;1343; 1 343,29  € 
-13/11/2018;non;ZK;;;28 avenue Albert 1er;Saint maur des fossés;94100;Housing Promotion;1470;0;0%;;;;;;;1900000;1293; 1 292,52  € 
-25/10/2018;non;ZK;Jérémie SENIOR ( Babylone);;53 boulevard de la République;Chatou;78400;Office;2209;0;0%;;;;;100;220900;2800000;1268; 1 267,54  € 
-12/07/2018;non;EHB;Antoine Guicheteau;;25 rue Bossuet ;LONGJUMEAU;91160;Light Industrial;1359;0;0%;;;;;42;57078;1700000;1251; 1 250,92  € 
-30/10/2018;non;EHB;Paolo Salzani (Colliers);;3 rue des Gaudines;Saint Germain en Laye;78100;Office;5332;2300;43%; Pall;;345000;150;150;799800;6300000;1182; 1 181,55  € 
-23/10/2018;non;EHB;Guilhem HUTTNER;;45 rue Delizy;Pantin;93500;Light Industrial / Office;3428;2739;80%; Fitness park et Sand fabrik (type arkose);;320000;117;105;359940;4000000;1167; 1 166,86  € 
-22/11/2018;non;EHB;Ilan Feinsohn;;11 rue des Lilas;Montreuil;93100;Light Industrial;1170;0;0%;;;;;90;105300;1350000;1154; 1 153,85  € 
-05/11/2018;non;EHB;charles Albert;;Parc des Vergers ;Tigery;91250;Light Industrial;2286;2286;100%;; Alsei;186248;81;80;182880;2600000;1137; 1 137,36  € 
-17/10/2018;non;EHB;Antoine Guicheteau;;4 Avenue du Gué Langlois;Bussy Saint Martin;77600;Light Industrial / Office;1372;0;0%;;;;;90;123480;1560000;1137; 1 137,03  € 
-04/10/2018;non;EHB;Arthur HELIN (CBRE);;98 rue Anselme Rondenay;Vitry-sur-Seine;94400;Light Industrial;1780;0;0%;;;;;90;160200;2000000;1124; 1 123,60  € 
-12/11/2018;non;EHB;Charles Albert;;79 rue Rateau ;La Courneuve;93120;Light Industrial;2325;1829;79%;;;182961;100;100;232500;2500000;1075; 1 075,27  € 
-21/04/2017;oui;;Séraphin Bravard (CBRE);;168 avenue Paul Vaillant Couturier;La Courneuve;93120;Light Industrial;605;605;100%;;;61800;102;90;54450;650000;1074; 1 074,38  € 
-20/04/2018;non;EHB;Olivier Lambin ;;3 Avenue de la Resistance;Sainte-Genevieve des Bois;91700;Light Industrial;5500;2800;51%; Soccer917;;131742;47;45;247500;5800000;1055; 1 054,55  € 
-18/07/2018;non;EHB;Antoine Guicheteau;;140 Chemin de Groslay;Bondy;93140;Light Industrial;982;982;100%;;;72000;73;70;68740;991820;1010; 1 010,00  € 
-20/10/2018;non;EHB;Mikael Nataf;;2 Allée des Performances ;Noisy le Grand;93160;Light Industrial / Office;2600;0;0%;;;;;65;169000;2620000;1008; 1 007,69  € 
-13/11/2018;non;ZK;Axel  Useldinger;;28 Avenue Albert 1er ;Saint maur des fossés;94100;Housing Promotion;2050;0;0%;;;;;;;1900000;; 926,83  € 
+﻿date;visite;respo;broker;Ville (CP);address;ville;code_postal;asset_type;surface;surface_loue;occupancy_rate;name_rent;name_owner;annual_rent;annual_rent_sqm;annual_rent_sqm_pot;annual_rent_pot;price;prix_m2
+16/11/2018;oui;ZK;Julien Mateos (bnp RE );;2 avenue Pasteur ;Issy les Moulineaux;92130;Retail;1205;0;0%;; SEST IDF;;;250;301250;9000000;7469
+14/11/2018;non;EHB;Jerome Matias (bnpre);;163 avenue Charles de Gaulle;Neuilly-sur-Seine;92200;Office;1680;1500;89%;;;570363;380;380;638400;12500000;7440
+18/09/2018;non;EHB;Dan Erith;;122 rue Saint Denis;Paris;75002;Retail;949;495;52,16%;;;121649;246;420;398580;6500000;6849
+02/11/2018;non;EHB;Alexandre Filipe (Scamac);;6 avenue Jean Jaurès;Montrouge;92120;Housing;340;0;0%;;;;;;;2210000;6500
+11/10/2018;non;EHB;Oscar Duclert;;11-13 rue de l'Escaut;Paris;75019;Retail;1445;0;0,00%;;;;;;420000;8950000;6194
+10/10/2018;non;EHB;Josselin Garcia (Arthur Loyd);;18bis rue de Villiers;Levallois Perret;92300;Office;5432;1792;33%; DATAWORDS;;567937;317;305;1656760;33000000;6075
+18/05/2018;non;EHB;KW;;92bis Boulevard Paul Vaillant Couturier;La courneuve;93120;Housing / Retail;315;0;0%;;;;;;;1750000;
+06/06/2018;non;EHB;Aurélien Rosset;;87 Boulevard Poniatowski;Paris;75012;Office;705;705;100,00%; Ville de Paris;;181054;257;250;176250;3500000;4965
+16/11/2018;non;EHB;François Xavier d'Alançon;;87-89 rue du Gouverneur Félix Eboué;Issy les Moulineaux;92130;Office;1651;1617;98%;;;421573;261;260;430413;7300000;4422
+12/09/2018;non;EHB;Moché Harroch;;17 rue jean jaures;Champigny-sur-Marne;94500;Housing / Retail;1428;1428;100%;;;382536;268;;;5000000;3501
+15/10/2018;non;EHB;Matias Jerome;;1 rue André Voguet;Ivry-sur-Seine;94200;Retail;1411;211,5;15%;;;25591;121;220;310332;4500000;3190
+19/10/2018;non;EHB;Jerome Mainguy;;11 rue jean Mazet;Ivry-sur-Seine;94200;Office;7088;0;0%;; LFPI;;;180;1275840;21000000;2963
+05/07/2018;non;EHB;Pierre Etienne Maury;;10 route Nationale 10 (RN 10) Lieu-dit l’Agiot;Elancourt;78990;Retail;550;550;100%; Courtepaille, Boulangerie le Petrin Ribeirou;;95000;173;170;93500;1600000;2909
+19/07/2018;non;EHB;Charles Albert;;15 rue Francis de Pressensé;Saint Denis;93210;Light Industrial;2906;2906;100%; Isiprint, Egis, GDG ZAKA;;543970;187;190;552140;8200000;2822
+28/06/2018;non;EHB;Jérôme Mainguy;; 46 48 rue Marcel Grosmenil;Villejuif;94800;Office;1483;1483;100%;;;350000;236;200;296600;4100000;2765
+26/03/2018;oui;ZK;Pascal Voisin;;15 av. Raspail;St maur des fossés;94100;Housing Promotion;555;0;0%;;;;; -; -;1250000;2252
+16/10/2018;non;EHB;Franck Poizat;;42 rue du Commandant Rolland;Le Bourget;93350;Light Industrial;3077;3077;100%; SALINI;;482270;157;150;461550;6500000;2112
+16/05/2018;non;EHB;Julien Mateos;;34 Rue Pierre et Marie Curie;Ivry-sur-Seine;94200;Office;1412;0;0%;;;;;210;296520;2900000;
+04/10/2018;non;EHB;Alexandre Filipe (Scamac);;65 avenue Vincent François Raspail;ARCUEIL;94110;Light Industrial;3148;1968;63%;;;289905;147;159;500532;6300000;2001
+22/11/2018;non;EHB;Avidan Koubi (Kalstone);;Rue de la Motte;Aubervilliers;93300;Retail;414;0;0%;;;;;180;74520;795000;1920
+09/10/2018;non;EHB;Sacha Danielian (CW);;191 Aristide Briand;Cachan;94230;Office;9750;5441;56%;;;1156568;213;185;1803750;18000000;1846
+01/09/2016;;;Geoffroy d’ARCHE (Evolis);93100;11 bis rue Rabelais;Montreuil;93100;Light Industrial;1400;1400;100%; Artana;;202149;144;130;182000;2500000;1786
+10/10/2018;non;EHB;Geoffroy D'Arche;;27 Bouelvard Hippolyte Marques;Ivry-sur-Seine;94200;Light Industrial;3604;0;0%;;;;;142;510000;6300000;1748
+22/11/2018;non;CDU;Jérôme Mainguy;;7 rue Erik Satie;Bobigny;93000;Office;5839;5839;100%; Centre des impôts; Cofidy;920523;158;150;920523;10000000;1713
+08/06/2018;non;EHB;Charles Albert;;114 Rue Camille Desmoulins;Arcueil;94110;Light Industrial;470;470;100%; BL MEDICAL;;58650;125;85;39950;800000;1702
+15/05/2018;;EHB;KW;;93 Avenue Jean Jaures;Aubervilliers;93300;Housing / Retail;2534;2534;100%;;;201187;79;;;4090000;1614
+07/11/2018;non;EHB;Charles Albert;;15 route de Fontainebleau;Vitry sur seine;94400;Light Industrial;7620;4235;56%;;;595160;141;140;1066800;12000000;1575
+14/09/2018;oui;ZK;Pascal Voisin;;1 rue Heynen;Bois-Colombes;92270;Housing Promotion;1395;0;0%;; Privé;;;;;2180000;1563
+15/11/2018;non;EHB;Julien Badene;;23 rue Emile Zola;Montreuil;93100;Light Industrial;2610;2610;100%; IDI; IDI;360000;138;130;339300;4000000;1533
+23/11/2018;non;EHB;Jérôme Mainguy;;4 Square Newton ;Montigny le Bretonneux;78180;Office;7288;7288;100%;;;1497329;205;200;1497329;11120000;1526
+26/09/2018;non;ZK;Evolis;;116 Avenue Pierre Brossolette;Malakoff;92240;Housing Promotion;330;0;0%;;;;;150;49500;495000;1500
+28/06/2018;non;EHB;François Xavier d'Alençon;;Avenue du Centaure ;Cergy;95000;Light Industrial;4181;0;0%;;;;;100;418100;6150000;1471
+18/01/2018;non;EHB;Charles Albert (BNPRE);;44 Avenue de Garlande;Bagneux;92220;Light Industrial;390;390;100%;;;48750;125;125;48750;560000;1436
+22/10/2018;non;EHB;Enguerrand de Villette (CBRE);;29 Boulevard du Général Delambre;Bezons;95870;Light Industrial;1300;0;0%;;;;;100;130000;1800000;1385
+22/06/2018;non;EHB;Antoine Guicheteau;;place Marcel Rebuffat ;Villejust;91140;Light Industrial;3703;0;0%;;;;;100;370300;4977500;1344
+02/10/2018;non;EHB;Francois-Xavier LOUIS (JC Turri);;Rue Philippe SEGUIN ;FRANCONVILLE;95130;Light Industrial;2109;0;0%;;;;;90;189810;2833000;1343
+13/11/2018;non;ZK;;;28 avenue Albert 1er;Saint maur des fossés;94100;Housing Promotion;1470;0;0%;;;;;;;1900000;1293
+25/10/2018;non;ZK;Jérémie SENIOR ( Babylone);;53 boulevard de la République;Chatou;78400;Office;2209;0;0%;;;;;100;220900;2800000;1268
+12/07/2018;non;EHB;Antoine Guicheteau;;25 rue Bossuet ;LONGJUMEAU;91160;Light Industrial;1359;0;0%;;;;;42;57078;1700000;1251
+30/10/2018;non;EHB;Paolo Salzani (Colliers);;3 rue des Gaudines;Saint Germain en Laye;78100;Office;5332;2300;43%; Pall;;345000;150;150;799800;6300000;1182
+23/10/2018;non;EHB;Guilhem HUTTNER;;45 rue Delizy;Pantin;93500;Light Industrial;3428;2739;80%; Fitness park et Sand fabrik (type arkose);;320000;117;105;359940;4000000;1167
+22/11/2018;non;EHB;Ilan Feinsohn;;11 rue des Lilas;Montreuil;93100;Light Industrial;1170;0;0%;;;;;90;105300;1350000;1154
+05/11/2018;non;EHB;charles Albert;;Parc des Vergers ;Tigery;91250;Light Industrial;2286;2286;100%;; Alsei;186248;81;80;182880;2600000;1137
+17/10/2018;non;EHB;Antoine Guicheteau;;4 Avenue du Gué Langlois;Bussy Saint Martin;77600;Light Industrial;1372;0;0%;;;;;90;123480;1560000;1137
+04/10/2018;non;EHB;Arthur HELIN (CBRE);;98 rue Anselme Rondenay;Vitry-sur-Seine;94400;Light Industrial;1780;0;0%;;;;;90;160200;2000000;1124
+12/11/2018;non;EHB;Charles Albert;;79 rue Rateau ;La Courneuve;93120;Light Industrial;2325;1829;79%;;;182961;100;100;232500;2500000;1075
+21/04/2017;oui;;Séraphin Bravard (CBRE);;168 avenue Paul Vaillant Couturier;La Courneuve;93120;Light Industrial;605;605;100%;;;61800;102;90;54450;650000;1074
+20/04/2018;non;EHB;Olivier Lambin ;;3 Avenue de la Resistance;Sainte-Genevieve des Bois;91700;Light Industrial;5500;2800;51%; Soccer917;;131742;47;45;247500;5800000;1055
+18/07/2018;non;EHB;Antoine Guicheteau;;140 Chemin de Groslay;Bondy;93140;Light Industrial;982;982;100%;;;72000;73;70;68740;991820;1010
+20/10/2018;non;EHB;Mikael Nataf;;2 Allée des Performances ;Noisy le Grand;93160;Light Industrial;2600;0;0%;;;;;65;169000;2620000;1008
+13/11/2018;non;ZK;Axel  Useldinger;;28 Avenue Albert 1er ;Saint maur des fossés;94100;Housing Promotion;2050;0;0%;;;;;;;1900000;
 22/10/2018;non;ZK;"Thibault De la baronniere
-Groupe Babylone";;8 rue de la Tour Carrée;Vémars;95470;Light Industrial;1179;1179;100%; TIP;;310154;263;;612500;1050000;; 890,59  € 
-14/09/2018;non;ZK;Pascal Voisin;;49 Avenue Henry Barbusse;Bobigny;93000;Light Industrial / Office;3600;0;0%; -; Privé;;;;;3200000;889; 888,89  € 
-15/11/2018;non;EHB;DL REAL ESTATE;;6 Avneue Evariste Gallois;Savigny sur Orge;91600;Light Industrial;3050;1550;51%;;;121792;79;80;244000;2600000;852; 852,46  € 
-23/10/2018;non;EHB;Antoine Guicheteau;;6 Allée Jean Monnet;Collegien;77090;Light Industrial / Office;2793;0;0%;;;;;69;192717;2350000;841; 841,39  € 
-04/06/2018;oui;EHB;Arthur Rodriguez;;14 rue Henri Dunant;Bondoufle;91070;Light Industrial;4993;4993;100%; STACI;;264600;53;52;259636;4000000;801; 801,12  € 
-22/10/2018;non;EHB;Enguerrand de Villette (CBRE);;13 Boulevard des Martyrs de Chateaubriant;Argenteuil;95100;Light Industrial;1615;1615;100%; Office Depot;;106231;66;65;104975;1250000;774; 773,99  € 
-12/11/2018;non;EHB;Simon-Pierre Richard (JLL);;305 rue de la Belle Etoile ;ROISSY-EN-France;95700;Light Industrial / Office;7795;4735;61%; OCP Repartition;VLD;351499;74;70;545650;6000000;770; 769,72  € 
-16/05/2018;oui;EHB;JP Duchenoy;;8 Avenue de Bourgogne;Saint Ouen L'Aumone;95310;Light Industrial;2359;2359;100%; Bureau Veritas;;144368;61;60;141540;1800000;763; 763,04  € 
-17/05/2018;;EHB;KW;;8 Avenue de Bourgogne;Saint-Ouen-l'Aumône;95310;Light Industrial;2413;2413;100%; Bureau Veritas & PDI Imprimerie;;144368;60;60;144780;1800000;746; 745,96  € 
-21/03/2018;oui;EHB;Frank Perochain;;15 rue de l’Angoumois ;Argenteuil;95100;Light Industrial;11378;11378;100%; jetpro;VLD;680000;60;60;682680;8300000;729; 729,48  € 
-18/10/2018;non;ZK;Marc SEBILLE (EOL);;6-8 Rue Marcel Dassault;Le Plessis Bouchard;95130;Light Industrial / Office;1914;1914;100%;;;100000;52;70;133980;1390000;726; 726,23  € 
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;10 Avenue Ampère;Wissous;91320;Light Industrial / Office;7365;0;0%;;;;;80;589200;5000000;679; 678,89  € 
-20/06/2018;non;EHB;Charles Albert;;225 Rue de la Justice;Vaux le Penil;77000;Light Industrial;2022;2022;100%; Canon;;120000;59;60;121320;1350000;668; 667,66  € 
-13/06/2018;non;EHB;Charles Albert;;7 avenue du Fief;Saint Ouen L'Aumone;95310;Light Industrial;3896;3896;100%; CGTT;;215000;55;55;214280;2600000;667; 667,35  € 
-13/11/2018;non;EHB;Nancy Bizet;;48 Rue Paul Lescop;Nanterre;92000;Light Industrial;4033;1523;38%; Electrolab; privé;80000;53;80;280800;2600000;645; 644,68  € 
-22/06/2018;non;EHB;Raphael Lucaz;;1 rue des Alouettes;Thiais;94320;Light Industrial;19788;0;0%;;;;;65;1286220;12600000;637; 636,75  € 
-19/04/2018;non;;Frédéric Bazil (DBXConseil) puis Babylone;;14 avenue de l’Europe;Bussy-Saint-Georges;77600;Light Industrial;5069;2803;55%;;;141245;50;;;3100000;612; 611,56  € 
-27/05/2018;non;EHB;Olivier Lambin;;8 Avenue Ampère;Wissous;91320;Light Industrial;3661;3661;100%;;;180000;49;50;183050;2200000;601; 600,93  € 
-28/06/2018;non;EHB;Stephane Berry;;25 rue Louis Ampère;Neuilly sur Marne;93330;Light Industrial;5733;5618;98%;;;299854;53;50;286650;3360000;586; 586,08  € 
-16/07/2018;non;EHB;Olivier Lambin;; 6 Avenue de la Croix Boisselière;Morangis;91420;Light Industrial;4600;0;0%;;;;;55;253000;2600000;565; 565,22  € 
-26/04/2017;non;;Steeven Bonnet (Nexity);;135 rue des pêchers;Plaisir;78370;Light Industrial;4300;0;0%;;;;;45;193500;2400000;558; 558,14  € 
-20/04/2018;non;EHB;Jerome Mainguy;;Rue Ferme dambuc;Gonfreville L'Orcher;76700;Light Industrial;4737;3877,74;82%;;;187689;48;45;213165;2500000;528; 527,76  € 
-17/01/2018;oui;EHB;Antoine Guicheteau (Nexity);;4 rue des malines;Lisses;91090;Light Industrial;5500;0;0%;;;;;46;253000;2800000;509; 509,09  € 
-13/09/2018;non;EHB;Astesana;;6 Avenue des 3 peuples;Montigny;78180;Light Industrial / Office;16263;0;0%;;;;;45;731835;5300000;326; 325,89  € 
-11/10/2018;non;ZK;Ariel Marelli;;2 rue Denis Diderot;Elancourt;78990;Light Industrial / Office;38789;0;0%;;;;0;50;1939450;9000000;232; 232,02  € 
-05/04/2018;non;EHB;Geoffroy D'Arche;;24 rue des Fontelles;Ecquevilly;78920;Light Industrial;2469;2469;100%;;;128946;52;50;123450;1500000;608;
-05/04/2018;oui;EHB;Julien Mateos BNP;;107 avenue henri barbusse;Clichy;92110;Retail;1966;0;0%;;;;;;;6900000;;
-28/03/2018;non;EHB;Arthur Rodriguez (CBRE);;57 Rue du Bois Challand;Lisses;91090;Light Industrial;2902;0;0%;;;;;60;174120;2200000;758;
-28/03/2018;non;EHB;Augustin Michaud (Colliers);;50-52 avenue Gabriel Peri;Arcueil;94110;Office;2365;2365;100%;;;258000;109;200;473000;4100000;1734;
-20/03/2018;non;EHB;Ilan FEINSOHN (Nexity);;55 route de saint leu;Epinay sur Seine;93800;Light Industrial;3369;0;0%;;;;;75;252675;3300000;980;
-08/03/2018;non;CDU;PE Maury (Cordell);;4 rue Alphonse XIII;Paris;75016;Housing;1210;0;0,00%;;;;;;;13000000;10742;
-07/03/2018;non;CDU;Yann Giboire (CYRE);;2 rue Androuet;Paris;75018;Housing;238;0;0,00%;;;;;;;2400000;10067;
-02/03/2018;oui;CDU;Leboncoin;;30 rue Greuze;Paris;75016;Housing;553;553;100,00%;;;253559;459;;253559;5950000;10759;
-26/02/2018;non;CDU;Arthur Rodriguez (CBRE);;1 route de Mesnil saint Denis ;Coignères;78310;Light Industrial / Office;11634;0;0%;;;;;50;581700;7562100;650;
-22/02/2018;non;EHB;Charles Albert (BNPRE);;Avenue de Norvège  Avenue de la Baltique;Courtaboeuf / les Ulis;91940;Light Industrial;7019;0;0%;;;;;104;729976;9100000;1296;
-18/02/2018;non;EHB;Arthur Rodriguez;;6 rue de la fosse aux leux;Ste Geneviève des Bois;91700;Light Industrial;13613;0;0%; Biocoop;;;;40;544520;6500000;477;
-29/01/2018;non;EHB;Charles Albert (BNPRE);;24 rue Condorcet;Chennevières;94430;Light Industrial;1947;1947;100%;;;101645;52;52;101244;1000000;514;
-18/01/2018;oui;EHB;Charles Albert (BNPRE);;Rue de l'Ormeteau;Servon;77170;Light Industrial;6592;6592;100%;;;398313;60;60;395520;5300000;804;
-18/01/2018;non;EHB;Lucas Belaid (Evolis);;1 Rue diderot, rue jean jacque rousseau;Grigny;91350;Light Industrial;6150;6150;100%;;;186000;30;40;246000;2800000;455;
-15/01/2018;oui;CDU;Arnaud VETO (EOL);;ZAC du Noyer aux Perdrix;Servon;77170;Light Industrial;867;423;49%; -;;46515;110;100;86700;1131700;1305;
-11/12/2017;oui;CDU;Jérôme Mainguy (Strategim Partner);;11 rue Benjamin Raspail;Malakoff;92240;Office;1840;400;22%; Studio;;41000;103;180;331200;2800000;1522;
-29/11/2017;oui ;GRO ;Olivia RIVIERE (CORPIMMO);;104 rue D'Aguesseau ;Boulogne Billancourt;92100;Office;96;0;0%;;;;;;;860000;;
-13/11/2017;oui;EHB;Anthony Garcia (Groupe Babylone);;39 rue Fessart ;Boulogne-Billancourt;92100;Office;350;0;0%;;;;;278;97440;2500000;7143;
-07/11/2017;non;EHB;NS Property International;;17 rue Mauconseil ;Fontenay sous bois;94120;Housing;445;390;#VALEUR!;;;84948;191;;;1700000;3829;
-06/11/2017;non;GRO;Antoine GUICHETEAU (NEXITY Conseil Transaction);;5 rue des Gardes;VERRIERES LE BUISSON;91370;Light Industrial;3528;0;0%;;;;;;;3600000;1020;
-13/10/2017;non;;Charles Albert (BNP);;27 rue de l’Industrie ;DRAVEIL;91210;Light Industrial;2690;890;33%; FIC (Filiale de Véolia);;84658;95;;;1000000;;
-13/10/2017;oui;EHB;Charles Albert (BNP) ;;5 rue Maximilien Robespierre;Noisy le Sec;93130;Light Industrial;2105;2105;100%;" Aerologis; Bocker France";;149237;71;85;178925;2100000;998;
-03/10/2017;non;;Arthur Rodriguez (CBRE);;rue de l'Ormeteau;Servon;77170;Light Industrial;9384;0;0%;;;;;;;3900000;;
-04/07/2017;oui;;Antoine guicheteau (Nexity);;4 rue des Gardes;Verrières le Buisson;91370;Light Industrial;865;558;65%;;;19200;34;90;77850;885000;1023;
-19/06/2017;oui;;Jerôme Richard (JRPI);;31-39 rue Saint Denis;Aubervilliers;93300;Light Industrial;5700;1000;18%;;;96000;96;90;513000;8000000;1404;
-14/06/2017;oui;;Olivier Yazdani (FdL);;10 rue Joseph et Etienne Montgolfier ;Rosny-Sous-Bois;93110;Light Industrial;3247;0;0%;;;;;90;292194;2100000;647;
-12/06/2017;oui;;Arthur Rodriguez (CBRE);;12 Avenue du Garigliano;Savigny sur Orge;91600;Light Industrial;7102;0;0%;;;;;45;319590;3700000;521;
-01/05/2017;oui;CDU;Charles Albert (BNPRE);;27/29 et 32-34 rue du Ballon;Noisy-le-Grand;93160;Light Industrial;12720;12720;100%; CPI Global;;580000;46;46;578760;5937000;467;
-02/04/2017;oui;;Lucien Renaudin (COGIB);;15 bis rue de Paris;Meudon;92190;Housing;565;0;0%;;;;;;;3120000;5522;
-09/12/2016;oui;;Frédéric Bazil (DBX);77600;14 avenue de l’Europe;Bussy-Saint-Georges;77600;Light Industrial;5069;2803;55%;;;141244;50;50;253450;3100000;612;
-25/10/2018;non;EHB;Mathieu Fourdan (BNPRE);;9/11 rue henri dunant;Bondoufle;91070;Light Industrial / Office;3633;0;0%;;;;;65;236145;3200000;881;
-04/10/2018;non;EHB;Charles Albert (BNPRE);;15 rue Charles Edouard Jeanneret ;POISSY;78300;Light Industrial;1329;1329;100%;;;119996;90;90;119610;1500000;1129;
-22/11/2018;non;EHB;Jérôme Mainguy;;1 place Copernic;Courcouronnes;91080;Office;5598;5598;100%; Carrefour Banque; Fonds Israélien;1142621;204;200;1142621;12000000;2144;
-21/11/2018;non;EHB;Antoine Ronsseray;;39-41 Boulevard Gallieni;Issy les Moulineaux;92130;Office;1041;0;0%;;;;;350;364350;7000000;6724;
-21/11/2018;non;ZK;Avidan Koubi (Kalstone);;24 Boulevard Edouard Vaillant;Aubervilliers;93300;Housing Promotion;665;0;0%;;;;;;;750000;1128;
-22/11/2018;non;EHB;Ilan Feinsohn;;43 avenue de la Croix Blanche;Aulnay-sous-Bois;93600;Light Industrial;1850;0;0%;;;;;90;166500;1500000;811;
-22/11/2018;non;EHB;Ilan Feinsohn;;8 rue des fours;Thieux;77230;Light Industrial;1924;0;0%;;;;;80;153920;1450000;754;
-20/11/2018;non;ZK;Julian Burg (JLL);;17 rue de l'Yser;Vitry sur seine;94400;Housing Promotion;1206;0;0%;;;;;;;1300000;1078;
-19/07/2018;non;ZK;Guilhem HUTTNER;; 5 rue Richelieu;Gennevilliers;92230;Housing Promotion;600;0;0%;;;;;;;1500000;2500;
-03/10/2018;non;ZK;Thomas Ouzounian;;369 rue Gabriel Péri ;Colombes;92700;Housing Promotion;1128;0;0%;;;;;;;1500000;1330;
-09/11/2018;non;ZK;Mickael Younes;;36-40 Rue rasapail ;Levallois Perret;92300;Office;4267;0;0%; -; AEW;;;350;1493450;30000000;7031;
-02/11/2018;non;EHB;Alexandre Filipe (Scamac);; 7 rue Danton;Montrouge;92120;Retail;144;143,5;100%; SAS HOKKAIDO;;27360;191;190;27265;450000;3136;
-29/10/2018;non;EHB;Charles Albert;;1 rue Jules Guesde ;Ris Orangis;91130;Office;1550;775;50%; E-mir;;72229;93;80;124000;800000;516;
-29/10/2018;non;EHB;Charles Albert;;10 rue du chêne à champagne;Fleury Mérogis;91170;Retail;841;841;100%; Fleurform;;81292;97;80;67280;1000000;1189;
-29/10/2018;non;EHB;Charles Albert;;9 rue du chêne à champagne;Fleury Mérogis;91170;Retail;690;330;48%; Bazar fleury;;26565;81;80;55200;800000;1159;
-09/10/2018;oui;ZK;BLOUZAT Crédit Foncier immo;;56 rue Pasteur;Suresnes;92150;Housing;471;151;32%; privé;;30022;199;320;165382;2756000;5851;
-08/10/2018;non;EHB;Julien Mateos;;124 rue de Verdun ;Puteaux;92800;Office;2628;2300;88%;;;530482;231;230;604440;10000000;3805;
-04/10/2018;non;EHB;Alexandre Filipe (Scamac);;19 rue de la baignade;Vitry-sur-Seine;94400;Light Industrial;1980;0;0%;;;;;100;198000;4000000;2020;
-04/10/2018;non;EHB;Grégory Lognon;;14 rue Louis Fournier;Meaux;77100;Light Industrial;1534;1534;100%; Sodimatel;;82690;54;50;76700;650000;424;
-06/09/2018;non;EHB;Guilhem HUTTNER (BNPRE);;41 rue Fourny;BUC;78530;Light Industrial / Office;4100;1300;32%; Unisol;;95000;73;70;287000;1800000;439;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;10 rue colombier;Wissous;91320;Light Industrial / Office;1879;0;0%;;;;;100;187900;3500000;1863;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);; Avenue du Maréchal Juin;Massy;91300;Light Industrial / Office;5711;0;0%;;;;;95;542545;7700000;1348;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;6 rue Jean Marius;Saint Pierre du Perray;91280;Light Industrial / Office;1200;0;0%;;;;;50;60000;1080000;900;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;12 rue Leon Appert;Saint Pierre du Perray;91280;Light Industrial / Office;3947;0;0%;;;;;50;197350;3611505;915;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;11 Avenue de la Baltique;VILLEBON SUR YVETTE;91140;Light Industrial / Office;1530;0;0%;;;;;75;114750;1200000;784;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;6 Avenue de la Baltique;VILLEBON SUR YVETTE;91140;Light Industrial / Office;2268;0;0%;;;;;75;170100;1750000;772;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;22bis rue des Malines;Lisses;91090;Light Industrial;1100;0;0%;;;;;45;49500;850000;773;
-05/09/2018;non;EHB;Florian Lachaussée (JLL);;5 rue Henri Dunant;Bondoufle;91070;Light Industrial;1460;0;0%;;;;;50;73000;1362180;933;
-28/08/2018;non;EHB;Grégory Lognon;;1-5 Allée Roland Garros;NEUILLY PLAISANCE;93360;Light Industrial / Office;5606;4883;87%;;;353795;72;70;392420;4000000;714;
-19/07/2018;non;EHB;Guilhem HUTTNER;;103 Boulevard Chanzy;MONTREUIL;93100;Retail;280;280;100%; Kiloutou;;42960;153;150;42000;650000;2321;
-17/07/2018;non;EHB;François Xavier d'Alençon;;82 rue de Pixérécourt;Paris;75020;Office;1175;1175;100,00%; Cesap;;225000;191;260;305500;4600000;3915;
-12/07/2018;non;EHB;Geoffroy d'Arche;;20 rue Jean Baptiste Pigalle;Paris;75009;Office;323;323;100,00%; Domino Assist;;100000;310;400;129200;1750000;5418;
-26/06/2018;non;EHB;François Xavier D'ALANCON (Alex Bolton);;47 rue de Rivoli;Paris;75001;Housing / Retail;1345;1345;100,00%; undiz;;662318;492;655;880975;20100000;14944;
-21/06/2018;non;EHB;Matias Jerome;;9 Villa Pierre Ginier;Paris;75018;Office;994;994;100,00%; Dyson;;258918;260;450;447300;5900000;5936;
-19/06/2018;non;EHB;Pierric Antoine;;19 rue du Bois Cerdon;Valenton;94460;Light Industrial;1050;0;0%;;;;;75;78750;1350000;1286;
-12/06/2018;non;EHB;Vadehra Maxim;;3 Route de Bergues;Coudekerque-Branche;59210;Office;20304;17062;84%;;;970060;57;40;812160;20500000;1010;
-11/06/2018;non;EHB;Pascal Dezellus;;18 rue des Carrières;Montmorency;95160;Housing;2112;1599;76%;;;256999;161;160;337920;7500000;3551;
-08/06/2018;non;EHB;Jerome Mainguy;;7 Avenue Spinoza;Ivry-sur-Seine;94200;Light Industrial;620;0;0%;;;;;150;93000;1300000;2097;
-06/06/2018;non;EHB;Jérôme Mainguy;;126 Avenue du Poteau;Senlis;60300;Light Industrial;33246;33246;100%; Office Dépôt;;1300000;39;40;1329840;16000000;481;
-04/06/2018;non;EHB;Charles Albert;;2 Avenue des Gros Chevaux;Saint Ouen L'Aumone;95310;Light Industrial;2491;1871;75%;;;81600;44;45;112095;1400000;562;
-29/05/2018;non;EHB;Alexis Madec;;25 Rue du Cuivre ;Savigny-le-Temple;77176;Light Industrial;5700;5700;100%;;;;;40;228000;2050000;360;
-24/05/2018;non;EHB;Franck Poizat;;Rue du Hanenberg ;SCHERWILLER;67750;Light Industrial;4119;4119;100%; Mondial Relay;;259500;63;63;259497;4000000;971;
-22/05/2018;non;EHB;Aurélien Rosset;;72, rue René Alazard;Bagnolet;93170;Office;1000;0;0%;;;;;160;160000;2500000;2500;
-22/05/2018;non;CDU;Gabriel Richert;;49-51 rue de Stalingrad;Nanterre;92000;Office;1458;0;0%;;;;;180;262440;4600000;3155;
-18/05/2018;;EHB;KW;;11 avenue Lenine;la courneuve;93120;Housing / Retail;1125;1125;100%;;;337619;300;300;337500;5200000;4622;
-06/05/2018;non;EHB;Julien Mateos;;112 rue de Paris;Boulogne;92100;Office;864;94;11%;;;35225;375;380;328320;4500000;5208;
-04/05/2018;;EHB;Seraphin Bravard;;12 rue Carnot;Groslay;95410;Light Industrial;2464;0;0%;;;;;90;221760;3200000;1299;
-02/05/2018;non;EHB;Charles Albert;;1015 rue du Marechal Juin;Vaux Le Penil;77000;Light Industrial;5000;3600;72%;;;273281;76;65;325000;2500000;500;
-26/04/2018;non;EHB;Licitor;;1 rue d'Angiboust;SARL PAYSAGE 19;;Light Industrial;839;839;100%; SARL PAYSAGE;;84792;101;90;75510;500000;596;
-24/04/2018;non;EHB;Antoine Guicheteau;;Rue Luigi Galvani;Antony;92160;Light Industrial;897;0;0%;;;;;80;71760;850000;948;
-09/04/2018;non;EHB;Geoffroy D'Arche;;23/25 Avenue Michel d'Ornano;Blonville-sur-Mer;14910;Hotel;2190;0;0%;;;;;;;2400000;1096;
-28/03/2018;non;EHB;Ilan FEINSOHN (Nexity);;9 rue Danielle Casanova;AUBERVILLIERS;93300;Light Industrial;1401;0;0%;;;;;;;1600000;;
-28/03/2018;non;EHB;Ilan FEINSOHN (Nexity);;278 rue de Rosny;MONTREUIL;93100;Light Industrial;3600;0;0%;;;;;70;252000;2950000;819;
-21/03/2018;non;EHB; Quentin Abelé;;Parc d'activité de la Chênaie;Rouvroy;62320;Light Industrial;2587;2587;100%;;;118905;46;45;116415;1550000;599;
-20/03/2018;non;EHB; FEINSOHN Ilan (Nexity);;191 Route de Saint-Leu, ;Épinay-sur-Seine (93800 );93800;Light Industrial;3369;0;0%;;;;;60;202140;3300000;980;
-16/03/2018;non;EHB;David Chataignier;;241 avenue Jean Jaurès,;93300 Aubervilliers;93300;Housing;472;472;100%;;;118416;251;250;118000;1450000;3072;
-08/03/2018;non;EHB;PE Maury (Cordell);;39 Boulevard de la Muette;95140 Garges-lès-Gonesse;95140;Office;3297;3297;100%;;;278548;84;80;263760;2900000;880;
-06/03/2018;non;EHB;Raphel Lucaz;;35 Quai d'Asnières ;Villeneuve la Garenne;92390;Housing;1090;1090;100%;;;218250;200;200;218000;2800000;2569;
-01/03/2018;oui;EHB;Charles Albert (BNPRE);;3 avenue de l’Amazonie ;Les Ulis;91940;Light Industrial;3353;3353;100%; Narboni;;278245;83;82;274946;2800000;835;
-01/03/2018;non;EHB;Richard Desgroppes (GB);;45 rue de la Procession;Paris;75015;Office;1879;0;0,00%;;;;;390;732810;9900000;5269;
-23/02/2018;non;EHB;Michael HAGEGE (CW);;8 rue Férou;Paris;75006;Office;1116;0;0,00%;;;;;600;669600;9000000;8065;
-22/02/2018;non;EHB;Pierre Etienne Maury (Cordell);;6, place Louis XI;Orléans;45000;Retail;258;258;100%;;;71760;278;250;64500;850000;3295;
-20/02/2018;non;EHB;Augustin Michaud;;64 Rue du Vivier;Amiens;88000;Office;2069;2069;100%;;;248441;120;120;248280;3000000;1450;
-16/02/2018;;GRO;Charles Albert BNP PARIBAS ;;80 Bis rue pierre Semard ;Chatillon;92320;Light Industrial / Office;1108;958;86%; Boostek - SPCV - Otus Ovelia;;99200;104;112;123950;1800000;1879;
-15/02/2018;non;EHB;Antoine Guicheteau (Nexity);;Zone de la Bonde rue de l'Aulnaye Dracourt ;Massy;91300;Light Industrial;1023;0;0%;;;;;135;138105;2200000;2151;
-07/02/2018;non;GRO;Arthur Rodriguez;;26 rue condorcet;Fleury Merogis;;Light Industrial;2829;0;0%;;;;;40;113160;1700000;601;
-05/02/2018;non;EHB;Arthur Rodriguez (CBRE);;17 Rue Pierre Josse;BONDOUFLE;91070;Light Industrial;9493;0;0%;;;;;40;379720;4200000;442;
-01/02/2018;non;EHB;Arthur Rodriguez (CBRE);;Rue des Graviers;Saulx les Chartreux;91160;Light Industrial;1679;0;0%;;;;;50;83950;1400000;834;
-01/02/2018;non;EHB;Frederique Guillaumot (CBRE);;3 rue des Aerostiers;Noisy le Grand;93160;Light Industrial;13055;0;0%;;;;;50;652750;5500000;421;
-30/01/2018;non;CDU;Antoine RONSSERAY (CORPIMMO);;98 Rue du Château;Boulogne Billancourt;92100;Office;1206;0;0%;;;;;300;361800;6500000;5390;
-28/01/2018;non;EHB;Arthur Rodriguez (CBRE);;14 Rue Jean Jacques Rousseau;Grigny;91350;Light Industrial;1803;0;0%;;;;;45;81135;1270000;704;
-26/01/2018;non;EHB;Mikael Nataf;;7 rue Gauthier 1er;Nemours;77140;Retail;233;233;100%;;;24000;103;100;23300;390000;1674;
-23/01/2018;non;EHB;Charles Albert (BNPRE);;Route de la Pomponnette;Villevaude;77410;Light Industrial;1400;1400;100%;;VLD;128341;92;90;126000;1500000;1071;
-19/01/2018;non;EHB;Charles Albert (BNPRE);;Avenue de Châteaudun;Dourdan;91410;Light Industrial;7417;7417;100%;;;339831;46;45;333765;4000000;539;
-16/01/2018;non;EHB;Olivier Lambin (CBRE);;18 AVENUE AMPERE;WISSOUS;91320;Light Industrial;4615;0;0%;;;;;65;299975;3175000;688;
-16/01/2018;non;EHB;Olivier Lambin (CBRE);;13 Rue du Docteur Charcot;Morangis;91420;Light Industrial;2517;2260;90%;;;150676;67;70;176190;1800000;715;
-15/01/2018;non;EHB;Geoffroy d’ARCHE (Evolis);;27 rue de Vanves;Boulogne-Billancourt;92100;Office;1454;0;0%; -;;;;280;407120;6000000;4127;
-11/01/2018;non;EHB;Jérôme Mainguy (Strategim Partner);;15 Route de Fontainebleau;Vitry-sur-Seine;94400;Light Industrial;7600;4040;53%; -;;586220;145;150;1140000;23000000;3026;
+Groupe Babylone";;8 rue de la Tour Carrée;Vémars;95470;Light Industrial;1179;1179;100%; TIP;;310154;263;;612500;1050000;
+14/09/2018;non;ZK;Pascal Voisin;;49 Avenue Henry Barbusse;Bobigny;93000;Light Industrial;3600;0;0%;; Privé;;;;;3200000;889
+15/11/2018;non;EHB;DL REAL ESTATE;;6 Avneue Evariste Gallois;Savigny sur Orge;91600;Light Industrial;3050;1550;51%;;;121792;79;80;244000;2600000;852
+23/10/2018;non;EHB;Antoine Guicheteau;;6 Allée Jean Monnet;Collegien;77090;Light Industrial;2793;0;0%;;;;;69;192717;2350000;841
+04/06/2018;oui;EHB;Arthur Rodriguez;;14 rue Henri Dunant;Bondoufle;91070;Light Industrial;4993;4993;100%; STACI;;264600;53;52;259636;4000000;801
+22/10/2018;non;EHB;Enguerrand de Villette (CBRE);;13 Boulevard des Martyrs de Chateaubriant;Argenteuil;95100;Light Industrial;1615;1615;100%; Office Depot;;106231;66;65;104975;1250000;774
+12/11/2018;non;EHB;Simon-Pierre Richard (JLL);;305 rue de la Belle Etoile ;ROISSY-EN-France;95700;Light Industrial;7795;4735;61%; OCP Repartition;VLD;351499;74;70;545650;6000000;770
+16/05/2018;oui;EHB;JP Duchenoy;;8 Avenue de Bourgogne;Saint Ouen L'Aumone;95310;Light Industrial;2359;2359;100%; Bureau Veritas;;144368;61;60;141540;1800000;763
+17/05/2018;;EHB;KW;;8 Avenue de Bourgogne;Saint-Ouen-l'Aumône;95310;Light Industrial;2413;2413;100%; Bureau Veritas & PDI Imprimerie;;144368;60;60;144780;1800000;746
+21/03/2018;oui;EHB;Frank Perochain;;15 rue de l’Angoumois ;Argenteuil;95100;Light Industrial;11378;11378;100%; jetpro;VLD;680000;60;60;682680;8300000;729
+18/10/2018;non;ZK;Marc SEBILLE (EOL);;6-8 Rue Marcel Dassault;Le Plessis Bouchard;95130;Light Industrial;1914;1914;100%;;;100000;52;70;133980;1390000;726
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;10 Avenue Ampère;Wissous;91320;Light Industrial;7365;0;0%;;;;;80;589200;5000000;679
+20/06/2018;non;EHB;Charles Albert;;225 Rue de la Justice;Vaux le Penil;77000;Light Industrial;2022;2022;100%; Canon;;120000;59;60;121320;1350000;668
+13/06/2018;non;EHB;Charles Albert;;7 avenue du Fief;Saint Ouen L'Aumone;95310;Light Industrial;3896;3896;100%; CGTT;;215000;55;55;214280;2600000;667
+13/11/2018;non;EHB;Nancy Bizet;;48 Rue Paul Lescop;Nanterre;92000;Light Industrial;4033;1523;38%; Electrolab; privé;80000;53;80;280800;2600000;645
+22/06/2018;non;EHB;Raphael Lucaz;;1 rue des Alouettes;Thiais;94320;Light Industrial;19788;0;0%;;;;;65;1286220;12600000;637
+19/04/2018;non;;Frédéric Bazil (DBXConseil) puis Babylone;;14 avenue de l’Europe;Bussy-Saint-Georges;77600;Light Industrial;5069;2803;55%;;;141245;50;;;3100000;612
+27/05/2018;non;EHB;Olivier Lambin;;8 Avenue Ampère;Wissous;91320;Light Industrial;3661;3661;100%;;;180000;49;50;183050;2200000;601
+28/06/2018;non;EHB;Stephane Berry;;25 rue Louis Ampère;Neuilly sur Marne;93330;Light Industrial;5733;5618;98%;;;299854;53;50;286650;3360000;586
+16/07/2018;non;EHB;Olivier Lambin;; 6 Avenue de la Croix Boisselière;Morangis;91420;Light Industrial;4600;0;0%;;;;;55;253000;2600000;565
+26/04/2017;non;;Steeven Bonnet (Nexity);;135 rue des pêchers;Plaisir;78370;Light Industrial;4300;0;0%;;;;;45;193500;2400000;558
+20/04/2018;non;EHB;Jerome Mainguy;;Rue Ferme dambuc;Gonfreville L'Orcher;76700;Light Industrial;4737;3877,74;82%;;;187689;48;45;213165;2500000;528
+17/01/2018;oui;EHB;Antoine Guicheteau (Nexity);;4 rue des malines;Lisses;91090;Light Industrial;5500;0;0%;;;;;46;253000;2800000;509
+13/09/2018;non;EHB;Astesana;;6 Avenue des 3 peuples;Montigny;78180;Light Industrial;16263;0;0%;;;;;45;731835;5300000;326
+11/10/2018;non;ZK;Ariel Marelli;;2 rue Denis Diderot;Elancourt;78990;Light Industrial;38789;0;0%;;;;0;50;1939450;9000000;232
+05/04/2018;non;EHB;Geoffroy D'Arche;;24 rue des Fontelles;Ecquevilly;78920;Light Industrial;2469;2469;100%;;;128946;52;50;123450;1500000;608
+05/04/2018;oui;EHB;Julien Mateos BNP;;107 avenue henri barbusse;Clichy;92110;Retail;1966;0;0%;;;;;;;6900000;
+28/03/2018;non;EHB;Arthur Rodriguez (CBRE);;57 Rue du Bois Challand;Lisses;91090;Light Industrial;2902;0;0%;;;;;60;174120;2200000;758
+28/03/2018;non;EHB;Augustin Michaud (Colliers);;50-52 avenue Gabriel Peri;Arcueil;94110;Office;2365;2365;100%;;;258000;109;200;473000;4100000;1734
+20/03/2018;non;EHB;Ilan FEINSOHN (Nexity);;55 route de saint leu;Epinay sur Seine;93800;Light Industrial;3369;0;0%;;;;;75;252675;3300000;980
+08/03/2018;non;CDU;PE Maury (Cordell);;4 rue Alphonse XIII;Paris;75016;Housing;1210;0;0,00%;;;;;;;13000000;10742
+07/03/2018;non;CDU;Yann Giboire (CYRE);;2 rue Androuet;Paris;75018;Housing;238;0;0,00%;;;;;;;2400000;10067
+02/03/2018;oui;CDU;Leboncoin;;30 rue Greuze;Paris;75016;Housing;553;553;100,00%;;;253559;459;;253559;5950000;10759
+26/02/2018;non;CDU;Arthur Rodriguez (CBRE);;1 route de Mesnil saint Denis ;Coignères;78310;Light Industrial;11634;0;0%;;;;;50;581700;7562100;650
+22/02/2018;non;EHB;Charles Albert (BNPRE);;Avenue de Norvège  Avenue de la Baltique;Courtaboeuf / les Ulis;91940;Light Industrial;7019;0;0%;;;;;104;729976;9100000;1296
+18/02/2018;non;EHB;Arthur Rodriguez;;6 rue de la fosse aux leux;Ste Geneviève des Bois;91700;Light Industrial;13613;0;0%; Biocoop;;;;40;544520;6500000;477
+29/01/2018;non;EHB;Charles Albert (BNPRE);;24 rue Condorcet;Chennevières;94430;Light Industrial;1947;1947;100%;;;101645;52;52;101244;1000000;514
+18/01/2018;oui;EHB;Charles Albert (BNPRE);;Rue de l'Ormeteau;Servon;77170;Light Industrial;6592;6592;100%;;;398313;60;60;395520;5300000;804
+18/01/2018;non;EHB;Lucas Belaid (Evolis);;1 Rue diderot rue jean jacque rousseau;Grigny;91350;Light Industrial;6150;6150;100%;;;186000;30;40;246000;2800000;455
+15/01/2018;oui;CDU;Arnaud VETO (EOL);;ZAC du Noyer aux Perdrix;Servon;77170;Light Industrial;867;423;49%;;;46515;110;100;86700;1131700;1305
+11/12/2017;oui;CDU;Jérôme Mainguy (Strategim Partner);;11 rue Benjamin Raspail;Malakoff;92240;Office;1840;400;22%; Studio;;41000;103;180;331200;2800000;1522
+29/11/2017;oui ;GRO ;Olivia RIVIERE (CORPIMMO);;104 rue D'Aguesseau ;Boulogne Billancourt;92100;Office;96;0;0%;;;;;;;860000;
+13/11/2017;oui;EHB;Anthony Garcia (Groupe Babylone);;39 rue Fessart ;Boulogne-Billancourt;92100;Office;350;0;0%;;;;;278;97440;2500000;7143
+07/11/2017;non;EHB;NS Property International;;17 rue Mauconseil ;Fontenay sous bois;94120;Housing;445;390;#VALEUR!;;;84948;191;;;1700000;3829
+06/11/2017;non;GRO;Antoine GUICHETEAU (NEXITY Conseil Transaction);;5 rue des Gardes;VERRIERES LE BUISSON;91370;Light Industrial;3528;0;0%;;;;;;;3600000;1020
+13/10/2017;non;;Charles Albert (BNP);;27 rue de l’Industrie ;DRAVEIL;91210;Light Industrial;2690;890;33%; FIC (Filiale de Véolia);;84658;95;;;1000000;
+13/10/2017;oui;EHB;Charles Albert (BNP) ;;5 rue Maximilien Robespierre;Noisy le Sec;93130;Light Industrial;2105;2105;100%;" Aerologis; Bocker France";;149237;71;85;178925;2100000;998
+03/10/2017;non;;Arthur Rodriguez (CBRE);;rue de l'Ormeteau;Servon;77170;Light Industrial;9384;0;0%;;;;;;;3900000;
+04/07/2017;oui;;Antoine guicheteau (Nexity);;4 rue des Gardes;Verrières le Buisson;91370;Light Industrial;865;558;65%;;;19200;34;90;77850;885000;1023
+19/06/2017;oui;;Jerôme Richard (JRPI);;31-39 rue Saint Denis;Aubervilliers;93300;Light Industrial;5700;1000;18%;;;96000;96;90;513000;8000000;1404
+14/06/2017;oui;;Olivier Yazdani (FdL);;10 rue Joseph et Etienne Montgolfier ;Rosny-Sous-Bois;93110;Light Industrial;3247;0;0%;;;;;90;292194;2100000;647
+12/06/2017;oui;;Arthur Rodriguez (CBRE);;12 Avenue du Garigliano;Savigny sur Orge;91600;Light Industrial;7102;0;0%;;;;;45;319590;3700000;521
+01/05/2017;oui;CDU;Charles Albert (BNPRE);;27/29 et 32-34 rue du Ballon;Noisy-le-Grand;93160;Light Industrial;12720;12720;100%; CPI Global;;580000;46;46;578760;5937000;467
+02/04/2017;oui;;Lucien Renaudin (COGIB);;15 bis rue de Paris;Meudon;92190;Housing;565;0;0%;;;;;;;3120000;5522
+09/12/2016;oui;;Frédéric Bazil (DBX);77600;14 avenue de l’Europe;Bussy-Saint-Georges;77600;Light Industrial;5069;2803;55%;;;141244;50;50;253450;3100000;612
+25/10/2018;non;EHB;Mathieu Fourdan (BNPRE);;9/11 rue henri dunant;Bondoufle;91070;Light Industrial;3633;0;0%;;;;;65;236145;3200000;881
+04/10/2018;non;EHB;Charles Albert (BNPRE);;15 rue Charles Edouard Jeanneret ;POISSY;78300;Light Industrial;1329;1329;100%;;;119996;90;90;119610;1500000;1129
+22/11/2018;non;EHB;Jérôme Mainguy;;1 place Copernic;Courcouronnes;91080;Office;5598;5598;100%; Carrefour Banque; Fonds Israélien;1142621;204;200;1142621;12000000;2144
+21/11/2018;non;EHB;Antoine Ronsseray;;39-41 Boulevard Gallieni;Issy les Moulineaux;92130;Office;1041;0;0%;;;;;350;364350;7000000;6724
+21/11/2018;non;ZK;Avidan Koubi (Kalstone);;24 Boulevard Edouard Vaillant;Aubervilliers;93300;Housing Promotion;665;0;0%;;;;;;;750000;1128
+22/11/2018;non;EHB;Ilan Feinsohn;;43 avenue de la Croix Blanche;Aulnay-sous-Bois;93600;Light Industrial;1850;0;0%;;;;;90;166500;1500000;811
+22/11/2018;non;EHB;Ilan Feinsohn;;8 rue des fours;Thieux;77230;Light Industrial;1924;0;0%;;;;;80;153920;1450000;754
+20/11/2018;non;ZK;Julian Burg (JLL);;17 rue de l'Yser;Vitry sur seine;94400;Housing Promotion;1206;0;0%;;;;;;;1300000;1078
+19/07/2018;non;ZK;Guilhem HUTTNER;; 5 rue Richelieu;Gennevilliers;92230;Housing Promotion;600;0;0%;;;;;;;1500000;2500
+03/10/2018;non;ZK;Thomas Ouzounian;;369 rue Gabriel Péri ;Colombes;92700;Housing Promotion;1128;0;0%;;;;;;;1500000;1330
+09/11/2018;non;ZK;Mickael Younes;;36-40 Rue rasapail ;Levallois Perret;92300;Office;4267;0;0%;; AEW;;;350;1493450;30000000;7031
+02/11/2018;non;EHB;Alexandre Filipe (Scamac);; 7 rue Danton;Montrouge;92120;Retail;144;143,5;100%; SAS HOKKAIDO;;27360;191;190;27265;450000;3136
+29/10/2018;non;EHB;Charles Albert;;1 rue Jules Guesde ;Ris Orangis;91130;Office;1550;775;50%; E-mir;;72229;93;80;124000;800000;516
+29/10/2018;non;EHB;Charles Albert;;10 rue du chêne à champagne;Fleury Mérogis;91170;Retail;841;841;100%; Fleurform;;81292;97;80;67280;1000000;1189
+29/10/2018;non;EHB;Charles Albert;;9 rue du chêne à champagne;Fleury Mérogis;91170;Retail;690;330;48%; Bazar fleury;;26565;81;80;55200;800000;1159
+09/10/2018;oui;ZK;BLOUZAT Crédit Foncier immo;;56 rue Pasteur;Suresnes;92150;Housing;471;151;32%; privé;;30022;199;320;165382;2756000;5851
+08/10/2018;non;EHB;Julien Mateos;;124 rue de Verdun ;Puteaux;92800;Office;2628;2300;88%;;;530482;231;230;604440;10000000;3805
+04/10/2018;non;EHB;Alexandre Filipe (Scamac);;19 rue de la baignade;Vitry-sur-Seine;94400;Light Industrial;1980;0;0%;;;;;100;198000;4000000;2020
+04/10/2018;non;EHB;Grégory Lognon;;14 rue Louis Fournier;Meaux;77100;Light Industrial;1534;1534;100%; Sodimatel;;82690;54;50;76700;650000;424
+06/09/2018;non;EHB;Guilhem HUTTNER (BNPRE);;41 rue Fourny;BUC;78530;Light Industrial;4100;1300;32%; Unisol;;95000;73;70;287000;1800000;439
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;10 rue colombier;Wissous;91320;Light Industrial;1879;0;0%;;;;;100;187900;3500000;1863
+05/09/2018;non;EHB;Florian Lachaussée (JLL);; Avenue du Maréchal Juin;Massy;91300;Light Industrial;5711;0;0%;;;;;95;542545;7700000;1348
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;6 rue Jean Marius;Saint Pierre du Perray;91280;Light Industrial;1200;0;0%;;;;;50;60000;1080000;900
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;12 rue Leon Appert;Saint Pierre du Perray;91280;Light Industrial;3947;0;0%;;;;;50;197350;3611505;915
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;11 Avenue de la Baltique;VILLEBON SUR YVETTE;91140;Light Industrial;1530;0;0%;;;;;75;114750;1200000;784
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;6 Avenue de la Baltique;VILLEBON SUR YVETTE;91140;Light Industrial;2268;0;0%;;;;;75;170100;1750000;772
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;22bis rue des Malines;Lisses;91090;Light Industrial;1100;0;0%;;;;;45;49500;850000;773
+05/09/2018;non;EHB;Florian Lachaussée (JLL);;5 rue Henri Dunant;Bondoufle;91070;Light Industrial;1460;0;0%;;;;;50;73000;1362180;933
+28/08/2018;non;EHB;Grégory Lognon;;1-5 Allée Roland Garros;NEUILLY PLAISANCE;93360;Light Industrial;5606;4883;87%;;;353795;72;70;392420;4000000;714
+19/07/2018;non;EHB;Guilhem HUTTNER;;103 Boulevard Chanzy;MONTREUIL;93100;Retail;280;280;100%; Kiloutou;;42960;153;150;42000;650000;2321
+17/07/2018;non;EHB;François Xavier d'Alençon;;82 rue de Pixérécourt;Paris;75020;Office;1175;1175;100,00%; Cesap;;225000;191;260;305500;4600000;3915
+12/07/2018;non;EHB;Geoffroy d'Arche;;20 rue Jean Baptiste Pigalle;Paris;75009;Office;323;323;100,00%; Domino Assist;;100000;310;400;129200;1750000;5418
+26/06/2018;non;EHB;François Xavier D'ALANCON (Alex Bolton);;47 rue de Rivoli;Paris;75001;Housing / Retail;1345;1345;100,00%; undiz;;662318;492;655;880975;20100000;14944
+21/06/2018;non;EHB;Matias Jerome;;9 Villa Pierre Ginier;Paris;75018;Office;994;994;100,00%; Dyson;;258918;260;450;447300;5900000;5936
+19/06/2018;non;EHB;Pierric Antoine;;19 rue du Bois Cerdon;Valenton;94460;Light Industrial;1050;0;0%;;;;;75;78750;1350000;1286
+12/06/2018;non;EHB;Vadehra Maxim;;3 Route de Bergues;Coudekerque-Branche;59210;Office;20304;17062;84%;;;970060;57;40;812160;20500000;1010
+11/06/2018;non;EHB;Pascal Dezellus;;18 rue des Carrières;Montmorency;95160;Housing;2112;1599;76%;;;256999;161;160;337920;7500000;3551
+08/06/2018;non;EHB;Jerome Mainguy;;7 Avenue Spinoza;Ivry-sur-Seine;94200;Light Industrial;620;0;0%;;;;;150;93000;1300000;2097
+06/06/2018;non;EHB;Jérôme Mainguy;;126 Avenue du Poteau;Senlis;60300;Light Industrial;33246;33246;100%; Office Dépôt;;1300000;39;40;1329840;16000000;481
+04/06/2018;non;EHB;Charles Albert;;2 Avenue des Gros Chevaux;Saint Ouen L'Aumone;95310;Light Industrial;2491;1871;75%;;;81600;44;45;112095;1400000;562
+29/05/2018;non;EHB;Alexis Madec;;25 Rue du Cuivre ;Savigny-le-Temple;77176;Light Industrial;5700;5700;100%;;;;;40;228000;2050000;360
+24/05/2018;non;EHB;Franck Poizat;;Rue du Hanenberg ;SCHERWILLER;67750;Light Industrial;4119;4119;100%; Mondial Relay;;259500;63;63;259497;4000000;971
+22/05/2018;non;EHB;Aurélien Rosset;;72 rue René Alazard;Bagnolet;93170;Office;1000;0;0%;;;;;160;160000;2500000;2500
+22/05/2018;non;CDU;Gabriel Richert;;49-51 rue de Stalingrad;Nanterre;92000;Office;1458;0;0%;;;;;180;262440;4600000;3155
+18/05/2018;;EHB;KW;;11 avenue Lenine;la courneuve;93120;Housing / Retail;1125;1125;100%;;;337619;300;300;337500;5200000;4622
+06/05/2018;non;EHB;Julien Mateos;;112 rue de Paris;Boulogne;92100;Office;864;94;11%;;;35225;375;380;328320;4500000;5208
+04/05/2018;;EHB;Seraphin Bravard;;12 rue Carnot;Groslay;95410;Light Industrial;2464;0;0%;;;;;90;221760;3200000;1299
+02/05/2018;non;EHB;Charles Albert;;1015 rue du Marechal Juin;Vaux Le Penil;77000;Light Industrial;5000;3600;72%;;;273281;76;65;325000;2500000;500
+26/04/2018;non;EHB;Licitor;;1 rue d'Angiboust;SARL PAYSAGE 19;;Light Industrial;839;839;100%; SARL PAYSAGE;;84792;101;90;75510;500000;596
+24/04/2018;non;EHB;Antoine Guicheteau;;Rue Luigi Galvani;Antony;92160;Light Industrial;897;0;0%;;;;;80;71760;850000;948
+09/04/2018;non;EHB;Geoffroy D'Arche;;23/25 Avenue Michel d'Ornano;Blonville-sur-Mer;14910;Hotel;2190;0;0%;;;;;;;2400000;1096
+28/03/2018;non;EHB;Ilan FEINSOHN (Nexity);;9 rue Danielle Casanova;AUBERVILLIERS;93300;Light Industrial;1401;0;0%;;;;;;;1600000;
+28/03/2018;non;EHB;Ilan FEINSOHN (Nexity);;278 rue de Rosny;MONTREUIL;93100;Light Industrial;3600;0;0%;;;;;70;252000;2950000;819
+21/03/2018;non;EHB; Quentin Abelé;;Parc d'activité de la Chênaie;Rouvroy;62320;Light Industrial;2587;2587;100%;;;118905;46;45;116415;1550000;599
+20/03/2018;non;EHB; FEINSOHN Ilan (Nexity);;191 Route de Saint-Leu ;Épinay-sur-Seine (93800 );93800;Light Industrial;3369;0;0%;;;;;60;202140;3300000;980
+16/03/2018;non;EHB;David Chataignier;;241 avenue Jean Jaurès,;93300 Aubervilliers;93300;Housing;472;472;100%;;;118416;251;250;118000;1450000;3072
+08/03/2018;non;EHB;PE Maury (Cordell);;39 Boulevard de la Muette;95140 Garges-lès-Gonesse;95140;Office;3297;3297;100%;;;278548;84;80;263760;2900000;880
+06/03/2018;non;EHB;Raphel Lucaz;;35 Quai d'Asnières ;Villeneuve la Garenne;92390;Housing;1090;1090;100%;;;218250;200;200;218000;2800000;2569
+01/03/2018;oui;EHB;Charles Albert (BNPRE);;3 avenue de l’Amazonie ;Les Ulis;91940;Light Industrial;3353;3353;100%; Narboni;;278245;83;82;274946;2800000;835
+01/03/2018;non;EHB;Richard Desgroppes (GB);;45 rue de la Procession;Paris;75015;Office;1879;0;0,00%;;;;;390;732810;9900000;5269
+23/02/2018;non;EHB;Michael HAGEGE (CW);;8 rue Férou;Paris;75006;Office;1116;0;0,00%;;;;;600;669600;9000000;8065
+22/02/2018;non;EHB;Pierre Etienne Maury (Cordell);;6 place Louis XI;Orléans;45000;Retail;258;258;100%;;;71760;278;250;64500;850000;3295
+20/02/2018;non;EHB;Augustin Michaud;;64 Rue du Vivier;Amiens;88000;Office;2069;2069;100%;;;248441;120;120;248280;3000000;1450
+16/02/2018;;GRO;Charles Albert BNP PARIBAS ;;80 Bis rue pierre Semard ;Chatillon;92320;Light Industrial;1108;958;86%; Boostek - SPCV - Otus Ovelia;;99200;104;112;123950;1800000;1879
+15/02/2018;non;EHB;Antoine Guicheteau (Nexity);;Zone de la Bonde rue de l'Aulnaye Dracourt ;Massy;91300;Light Industrial;1023;0;0%;;;;;135;138105;2200000;2151
+07/02/2018;non;GRO;Arthur Rodriguez;;26 rue condorcet;Fleury Merogis;;Light Industrial;2829;0;0%;;;;;40;113160;1700000;601
+05/02/2018;non;EHB;Arthur Rodriguez (CBRE);;17 Rue Pierre Josse;BONDOUFLE;91070;Light Industrial;9493;0;0%;;;;;40;379720;4200000;442
+01/02/2018;non;EHB;Arthur Rodriguez (CBRE);;Rue des Graviers;Saulx les Chartreux;91160;Light Industrial;1679;0;0%;;;;;50;83950;1400000;834
+01/02/2018;non;EHB;Frederique Guillaumot (CBRE);;3 rue des Aerostiers;Noisy le Grand;93160;Light Industrial;13055;0;0%;;;;;50;652750;5500000;421
+30/01/2018;non;CDU;Antoine RONSSERAY (CORPIMMO);;98 Rue du Château;Boulogne Billancourt;92100;Office;1206;0;0%;;;;;300;361800;6500000;5390
+28/01/2018;non;EHB;Arthur Rodriguez (CBRE);;14 Rue Jean Jacques Rousseau;Grigny;91350;Light Industrial;1803;0;0%;;;;;45;81135;1270000;704
+26/01/2018;non;EHB;Mikael Nataf;;7 rue Gauthier 1er;Nemours;77140;Retail;233;233;100%;;;24000;103;100;23300;390000;1674
+23/01/2018;non;EHB;Charles Albert (BNPRE);;Route de la Pomponnette;Villevaude;77410;Light Industrial;1400;1400;100%;;VLD;128341;92;90;126000;1500000;1071
+19/01/2018;non;EHB;Charles Albert (BNPRE);;Avenue de Châteaudun;Dourdan;91410;Light Industrial;7417;7417;100%;;;339831;46;45;333765;4000000;539
+16/01/2018;non;EHB;Olivier Lambin (CBRE);;18 AVENUE AMPERE;WISSOUS;91320;Light Industrial;4615;0;0%;;;;;65;299975;3175000;688
+16/01/2018;non;EHB;Olivier Lambin (CBRE);;13 Rue du Docteur Charcot;Morangis;91420;Light Industrial;2517;2260;90%;;;150676;67;70;176190;1800000;715
+15/01/2018;non;EHB;Geoffroy d’ARCHE (Evolis);;27 rue de Vanves;Boulogne-Billancourt;92100;Office;1454;0;0%;;;;;280;407120;6000000;4127
+11/01/2018;non;EHB;Jérôme Mainguy (Strategim Partner);;15 Route de Fontainebleau;Vitry-sur-Seine;94400;Light Industrial;7600;4040;53%;;;586220;145;150;1140000;23000000;3026
 14/12/2017;non;GRO;"Geoffroy D'Arche
 Evolis
-";;Avenue Blaise Pascal ;Morangis;91420;Light Industrial;5654;4286;76%; 29 Locataires;;273638;64;68;384366;4200000;743;
-13/12/2017;;EHB;Jérôme Mainguy (Strategim Partner);;5 Boulevard de Créteil;Saint-Maur des Fossés;94100;Light Industrial;7020;5171;74%;;;352907;68;85;490415;4000000;570;
+";;Avenue Blaise Pascal ;Morangis;91420;Light Industrial;5654;4286;76%; 29 Locataires;;273638;64;68;384366;4200000;743
+13/12/2017;;EHB;Jérôme Mainguy (Strategim Partner);;5 Boulevard de Créteil;Saint-Maur des Fossés;94100;Light Industrial;7020;5171;74%;;;352907;68;85;490415;4000000;570
 29/11/2017;non;GRO ;"
 Stéphane HIRSCHENHAUT
 (Villa consulting) 
-";;113 Boulevard de Strasbourg;Le Havre;;Office;593;593;100%; SNIC;;83000;140;110;65230;860000;;
-28/11/2017;non;GRO ;Maxim Vadehra ACTA Immo;;26 rue des Briquetiers;Le Havre;76600;Office;1500;1500;100%; NEGOCEANE;;98000;65;;;1000000;;
-28/11/2017;;EHB;Yann Giboire (CYRE);;11 avenue marechal foch;Freyming-Merlebach;57800;Housing;1813;0;0%;;;160559;;;;1600000;883;
-24/11/2017;oui;EHB;Arthur HELIN (CBRE);;6 Rue des Maronniers  ;L'hay les Roses;94240;Light Industrial;953;0;0%;;;;;100;95300;1250000;;
-23/11/2017;non;CDU;Pascal Voisin;;19 - 29 Rue Jean l'Olive;Bagnolet;;Light Industrial;14500;1450;10%;;;360000;248;100;1450000;10500000;724;
-22/11/2017;non;CDU;Nadia MEUNIER (Nexity);;rue Professeur Paul Milliez ;Champigny sur marne;94500;Light Industrial;3300;0;0%;;;;;;;3500000;;
-17/11/2017;non;EHB;Lucien Renaudin (COGIB) ;;328 Bis rue de Paris ;Villeneuve Saint Georges;94190;Housing;1149;228;20%;;;57000;250;;;695000;3048;
-16/11/2017;non;GRO;Charles-Henri ADOU (CBRE);;5-11 Rue Henri Bequerel;Mitry Mory;77290;Light Industrial;4968;4527;91%; Randstad- Maisons Pierre - Watefaugle etc;;344000;76;;;3300000;;
-13/11/2017;non;EHB;(NEXITY Conseil Transaction);;27 rue Aman Jean ;Chevry Cossigny;77173;Light Industrial;2456;2456;100%; ADI KALFA;;200000;81;;;2350000;957;
-27/10/2017;non;CDU;Ilan Feinsohn (NEXITY Conseil Transaction);;31-33 rue Paul Richez ;La Courneuve;93120;Light Industrial;1511;0;0%;;;;;;;980000;;
-25/10/2017;non;;Arthur Rodriguez (CBRE);;9 rue Jean-jacques Rousseau ;Grigny;91350;Light Industrial;5900;0;0%; - ;;;;;186000;2800000;;
-13/10/2017;non;;Gaëtan JOLY (Arthur Loyd);;65 rue George Politzer;Elancourt;78990;Light Industrial;4048;0;0%; -;;;;57;230168;2900000;;
-27/09/2017;non;;(CBRE);;10 rue Léon Foucault ;Montigny-le-Bretonneux;78180;Light Industrial;3432;3432;100%; AMA et Faulhaber;;308612;90;;;3500000; 1019.81;
-25/09/2017;non;;(CBRE);;112 quai de Bézons ;Argenteuil;95100;Light Industrial;3648;2424;66%; AASSET Security;;300000;124;;;5000000; 1370.61 €;
-25/08/2017;non;;Charles Henri Adou (CBRE);;5 Rue de la Poterie;Saint-Denis;93200;Light Industrial;900;900;100%; Andines;;85000;94;90;81000;1200000;1333;
-11/07/2017;non;;Martial Bui (EOL);;4 Rue de la Patelle;Saint-Ouen l'Aumône;95310;Light Industrial;29733;0;0%;;;;;20;594660;8000000;269;
-26/06/2017;non;;Augustin Michaud (Collier International);;3 Avenue Henri Colin;Gennevilliers;92230;Light Industrial;3263;3263;100%;;;300000;92;90;293670;4500000;1379;
-21/06/2017;non;;Franck Poizat (BNPRE);;6 avenue Louis Pasteur;Maurepas;78310;Light Industrial;5198;3908;75%;;VLD;286470;73;70;363860;5500000;1058;
-18/05/2017;;;Arthur Rodriguez (CBRE);;9 Rue Jean Jacques Rousseau;;91350;Light Industrial;5900;0;0%;;;;;40;236000;2800000;475;
-28/04/2017;oui;;Arthur Rodriguez (CBRE);;35 Rue de l'Etain;Savigny le Temple;77176;Light Industrial;2261;0;0%;;;;;65;146965;1950000;862;
-26/04/2017;non;;Charles ALBERT (BNPRE);;45 rue Royale;Yerres;91330;Light Industrial;727;699;96%;;;84420;121;90;65430;1030000;1417;
-26/04/2017;non;;Steeven Bonnet (Nexity);;Avenue des Trois Peuples;Montigny-le-Bretonneux;78180;Light Industrial;16263;0;0%;;;557671;;45;731835;6970720;429;
-25/04/2017;non;;Charles ALBERT (BNPRE);;30 Rue Campo Formio;Paris;75013;Light Industrial;518;518;100,00%;;;134680;260;260;134680;3100000;5985;
-18/04/2017;non;;Augustin Michaud (Collier International);;Rue des chevries;Aubergenville;78410;Light Industrial;11430;11430;100%;;;1130000;99;;;11701357;1024;
-18/04/2017;non;;Lucien Renaudin (COGIB);;12 rue Emile Zola;Pré Saint Gervais;93310;Housing;2000;0;0%;;;;;40;80000;1600000;800;
-13/04/2017;non;;Lucien Renaudin (COGIB);;Rue Chaptal;Levallois Perret;92300;Housing;360;0;0%;;;;;;;2578000;7161;
-08/04/2017;non;;Lucien Renaudin (COGIB);;29 rue Saint-Barthélemy ;Melun;77000;Retail;212;212;100%; O'Tacos;;24000;113;110;23320;350000;1651;
-08/04/2017;non;;Lucien Renaudin (COGIB);;35 Boulevard Carnot;Saint Denis;93200;Retail;1500;1500;100%;;;190000;127;110;165000;2700000;1800;
-05/04/2017;oui;;Arthur Rodriguez (CBRE);91350;3 rue Olympe de Gouges;Grigny;91350;Light Industrial;2200;0;0%;;;;;50;110000;1650000;750;
-05/04/2017;non;;Lucien Renaudin (COGIB);;27 rue de Cîteaux;Paris;75012;Office;538;538;100,00%;;;183444;341;340;182920;3400000;6320;
-03/04/2017;non;;Amadou Dime (CBRE);92000;29 rue des Peupliers;Nanterre;92000;Light Industrial;1274;1070,16;84%;;;154596;144;140;178360;2300000;1805;
-03/04/2017;non;;Lucien Renaudin (COGIB);75019;10-12 rue de l'orme;Paris;75019;Office;510;0;0,00%;;;;;204;104040;3675000;7206;
-29/03/2017;non;;Lucien Renaudin (COGIB);94200;Rue Edouard Vasseur;Ivry sur Seine;94200;Housing;120;120;100%;;;50268;419;;;670240;5585;
-28/03/2017;non;;Fabrice Malka (Capital Return Opportunity);;225, Rue Blaise Pascal;Liévin;62800;Light Industrial;7200;7200;100%; Foot en salle;;180000;25;25;180000;1500000;208;
-20/03/2017;oui;;Rémi Saussey (Néogère);;26 rue Henri Monnier;Paris;75009;Office;594;594;100,00%;;;260870;439;430;255420;6450000;10859;
-14/03/2017;;;Lucien Renaudin (COGIB);93400;Rue Matthieu;Saint-Ouen;93400;Housing;538;538;100%;;;149588;278;;149588;2100000;3903;
-13/03/2017;;;Lucien Renaudin (COGIB);92100;43 rue de Bellevue;Boulogne-Billancourt;92100;Office;337;0;0%;;;;;275;92675;1790000;5312;
-06/01/2017;;;Guissela Hernando (CBRE);91090;19 Rue des Malines;Lisses;91090;Light Industrial;1408;1408;100%;;;78000;55;42;59136;892500;634;
-28/12/2016;;;Arthur Helin (CBRE);94230;6 Rue de la Grange Ory;Cachan;94230;Light Industrial;498;0;0%;;;;;60;29880;1150000;2309;
-28/12/2016;;;Valentin Grivaud (CBRE);91320;1 Bis Rue Guillaume Bigourdan;Wissous;91320;Light Industrial;703;366,73;52%;;;30970;84;84;59052;650000;925;
-15/12/2016;;;Laurent Gruselin (CBRE);93110;1 Allée de l'Espérance;Rosny-Sous-Bois;93110;Light Industrial;6414;0;0%;;;;;40;256560;2000000;312;
-14/12/2016;;;Arthur Helin (CBRE);94260;28 Avenue des Pépinières;Fresnes;94260;Light Industrial;520;0;0%;;;;;85;44200;600000;1154;
-12/12/2016;;;Jeremie Senior (Groupe Babylone);93300;14 rue Gaëtan Lamy;Aubervilliers;93300;Housing;1196;892;75%;;;162628;182;112;134448;3045000;2546;
-07/12/2016;;;Valérie Spira (CBRE);91430;6 Rue Ampère;Igny;91430;Light Industrial;2222;2222;100%; Conforama;;169727;76;55;122210;1682243;757;
-24/11/2016;;;Enguerrand de Vilette (CBRE);95100;14 Rue Jules Vercruysse;Argenteuil;95100;Light Industrial;1805;0;0%;;;;;58;104690;1250000;693;
-21/11/2016;;;Pas de doc;36000;7 Rue des Ingrains;Châteauroux;36000;Office;2005;2005;100%;;;110367;55;;;1001425;499;
-04/11/2016;;;Nicolas Coudert (BNP);93200;2 Rue du Fort de la Briche;Saint-Denis;93200;Light Industrial;1350;0;0%;;;;;50;67500;2500000;1852;
-02/11/2016;;;Jeremie Senior (Groupe Babylone);92400;21 rue de louvain;Courbevoie;92400;Housing;800;0;0%;;;;;; -    € ;2000000;2500;
-29/10/2016;;;Olivier Lambin (CBRE);91150;Rue des Épinants;Etampes;91150;Light Industrial;12670;0;0%;;;;;55;696850;9800000;773;
-27/10/2016;;;Olivier Lambin (CBRE) Pas de doc;95190;1 avenue Gustave Eiffel;Goussainville;95190;Retail;5980;5980;100%;;;449100;75;;;4620000;773;
-21/10/2016;;;Guissela Hernando (CBRE);91130;9 Avenue Paul Langevin;Ris-Orangis;91130;Light Industrial;4013;1421;35%;;;92154;65;45;180585;2400000;598;
-21/10/2016;;;Orane Perran (CBRE);91300;5 Rue du Buisson aux Fraises;Massy;91300;Light Industrial;1800;0;0%;;;;;45;81000;1800000;1000;
-20/10/2016;;;Olivier Lambin (CBRE);91090;20 Rue des Cerisiers;Lisses;91090;Light Industrial;1717;0;0%;;;;;55;94435;1100000;641;
-19/10/2016;;;Jeremie Senior (Groupe Babylone);75018;26 rue marcadet;Paris;75018;Housing;497;497;100,00%;;;137115;276;328;163227;3000000;6036;
-19/10/2016;;;Jeremie Senior (Groupe Babylone);94200;161 Avenue de Verdun;Ivry sur Seine;94200;Office;7653;2895;38%;;;541187;187;120;918360;8100000;1058;
-15/10/2016;;;Jeremie Senior (Groupe Babylone);94110;61 avenue Aristide Briand;Arcueil;94110;Retail;345;345;100%; Maison de la literie;;64000;186;160;55200;800000;2319;
-13/10/2016;;;Olivier Lambin (CBRE);92350;9 Avenue Denis Papin;Plessis Robinson;92350;Light Industrial;3250;3250;100%;;;280000;86;75;243750;3500000;1077;
-01/09/2016;oui;;Antoine Musnier (Colliers);75017;37 rue Jean Leclaire;Paris;75017;Office;1225;0;0,00%;;;;;;;7000000;5714;
-01/09/2016;;;Charles Albert (BNP);91220;35 avenue de la Commune de Paris;Bretigny-sur-Orge;91220;Light Industrial;997;997;100%; IXIO;;95000;95;65;64805;1050000;1053;
-01/09/2016;;;Cordell Pas de doc;93100;261 rue de Paris;Montreuil;93100;Office;1484;1484;100%;;;299612;202;;;3500000;2358;
-01/09/2016;;;Grivaud, Valentin (CBRE), pas de doc;91300;2 Route de la Bonde;Massy;91300;Light Industrial;1023;1023;100%;;;155000;152;;;2300000;2248;
-01/09/2016;;;Guissela Hernando (CBRE);91420;9 Avenue Louis Braille;Morangis;91420;Light Industrial;3825;3825;100%;;;240000;63;55;210375;2600000;680;
-01/09/2016;oui;;Julien Pinault (Arthur Loyd);78190;13 avenue Jean d’Alembert;Trappes;78190;Light Industrial;2297;2297;100%;;VLD;325884;142;90;206730;2950000;1284;
-01/09/2016;;;Lucien Renaudin (COGIB);78000;Avenue de la République;Saint Denis;93200;Housing;437;437;100%;;;103659;237;;;1850000;4233;
-01/09/2016;;;Lucien Renaudin (COGIB), Pas de doc;92120;Montrouge;Montrouge;92120;Office;993;0;0%;;;;;;;3950000;3978;
-01/09/2016;;;Lucien Renaudin (COGIB), Pas de doc;92600;Rue Duchesnay;Asnières-sur-Seine;92600;Housing;258;0;0%;;;99624;;;;1750000;6783;
-01/09/2016;;;Lucien Renaudin (COGIB), Pas de doc;92240;59 rue Augustin Dumont;Malakoff;92240;Office;430;0;0%;;;;;;;1470000;3419;
-02/04/2018;non;EHB;Charles Albert;;16 rue Jean Jacque Rousseau;Grigny;91350;Light Industrial;706;706;100%;;;63000;89;90;63540;750000;1062;
-23/02/2018;non;EHB;Michael HAGEGE (CW);;85-87 avenue Jean-Jaurès;Montrouge;92120;Light Industrial / Office;2212;0;0%;;;;;170;376040;6200000;2803;
-09/11/2017;oui;EHB;Antoine GUICHETEAU (NEXITY);;7 allées des Aphleries;Le Perray en Yvelynes;78610;Light Industrial;2150;742;#VALEUR!; LOCAPOSTE ;;51800;70;;;500000;674;
-08/11/2016;oui;EHB;Olivier Lambin (CBRE);91100;61 rue Emile Zola;Corbeil Essonnes;91100;Light Industrial;1530;1530;100%; TME;;88800;58;52;79560;850000;556;
-03/11/2016;oui;EHB;PE Maury (Cordell);92600;1 rue des Bruyères;Asnières-sur-Seine;92600;Housing;576;576;100%;;;114000;198;;;2700000;4688;
-01/09/2016;Oui;;Olivier Lambin (CBRE);91080;64 allée des Champs Elysées;Courcouronnes;91080;Retail;2140;2140;100%; BNP - Annapurna - Evry Form;;349583;163;;349583;6200000;2897;
+";;113 Boulevard de Strasbourg;Le Havre;;Office;593;593;100%; SNIC;;83000;140;110;65230;860000;
+28/11/2017;non;GRO ;Maxim Vadehra ACTA Immo;;26 rue des Briquetiers;Le Havre;76600;Office;1500;1500;100%; NEGOCEANE;;98000;65;;;1000000;
+28/11/2017;;EHB;Yann Giboire (CYRE);;11 avenue marechal foch;Freyming-Merlebach;57800;Housing;1813;0;0%;;;160559;;;;1600000;883
+24/11/2017;oui;EHB;Arthur HELIN (CBRE);;6 Rue des Maronniers  ;L'hay les Roses;94240;Light Industrial;953;0;0%;;;;;100;95300;1250000;
+23/11/2017;non;CDU;Pascal Voisin;;19 - 29 Rue Jean l'Olive;Bagnolet;;Light Industrial;14500;1450;10%;;;360000;248;100;1450000;10500000;724
+22/11/2017;non;CDU;Nadia MEUNIER (Nexity);;rue Professeur Paul Milliez ;Champigny sur marne;94500;Light Industrial;3300;0;0%;;;;;;;3500000;
+17/11/2017;non;EHB;Lucien Renaudin (COGIB) ;;328 Bis rue de Paris ;Villeneuve Saint Georges;94190;Housing;1149;228;20%;;;57000;250;;;695000;3048
+16/11/2017;non;GRO;Charles-Henri ADOU (CBRE);;5-11 Rue Henri Bequerel;Mitry Mory;77290;Light Industrial;4968;4527;91%; Randstad- Maisons Pierre - Watefaugle etc;;344000;76;;;3300000;
+13/11/2017;non;EHB;(NEXITY Conseil Transaction);;27 rue Aman Jean ;Chevry Cossigny;77173;Light Industrial;2456;2456;100%; ADI KALFA;;200000;81;;;2350000;957
+27/10/2017;non;CDU;Ilan Feinsohn (NEXITY Conseil Transaction);;31-33 rue Paul Richez ;La Courneuve;93120;Light Industrial;1511;0;0%;;;;;;;980000;
+25/10/2017;non;;Arthur Rodriguez (CBRE);;9 rue Jean-jacques Rousseau ;Grigny;91350;Light Industrial;5900;0;0%;;;;;;186000;2800000;
+13/10/2017;non;;Gaëtan JOLY (Arthur Loyd);;65 rue George Politzer;Elancourt;78990;Light Industrial;4048;0;0%;;;;;57;230168;2900000;
+27/09/2017;non;;(CBRE);;10 rue Léon Foucault ;Montigny-le-Bretonneux;78180;Light Industrial;3432;3432;100%; AMA et Faulhaber;;308612;90;;;3500000; 1019.81
+25/09/2017;non;;(CBRE);;112 quai de Bézons ;Argenteuil;95100;Light Industrial;3648;2424;66%; AASSET Security;;300000;124;;;5000000; 1370.61 €
+25/08/2017;non;;Charles Henri Adou (CBRE);;5 Rue de la Poterie;Saint-Denis;93200;Light Industrial;900;900;100%; Andines;;85000;94;90;81000;1200000;1333
+11/07/2017;non;;Martial Bui (EOL);;4 Rue de la Patelle;Saint-Ouen l'Aumône;95310;Light Industrial;29733;0;0%;;;;;20;594660;8000000;269
+26/06/2017;non;;Augustin Michaud (Collier International);;3 Avenue Henri Colin;Gennevilliers;92230;Light Industrial;3263;3263;100%;;;300000;92;90;293670;4500000;1379
+21/06/2017;non;;Franck Poizat (BNPRE);;6 avenue Louis Pasteur;Maurepas;78310;Light Industrial;5198;3908;75%;;VLD;286470;73;70;363860;5500000;1058
+18/05/2017;;;Arthur Rodriguez (CBRE);;9 Rue Jean Jacques Rousseau;;91350;Light Industrial;5900;0;0%;;;;;40;236000;2800000;475
+28/04/2017;oui;;Arthur Rodriguez (CBRE);;35 Rue de l'Etain;Savigny le Temple;77176;Light Industrial;2261;0;0%;;;;;65;146965;1950000;862
+26/04/2017;non;;Charles ALBERT (BNPRE);;45 rue Royale;Yerres;91330;Light Industrial;727;699;96%;;;84420;121;90;65430;1030000;1417
+26/04/2017;non;;Steeven Bonnet (Nexity);;Avenue des Trois Peuples;Montigny-le-Bretonneux;78180;Light Industrial;16263;0;0%;;;557671;;45;731835;6970720;429
+25/04/2017;non;;Charles ALBERT (BNPRE);;30 Rue Campo Formio;Paris;75013;Light Industrial;518;518;100,00%;;;134680;260;260;134680;3100000;5985
+18/04/2017;non;;Augustin Michaud (Collier International);;Rue des chevries;Aubergenville;78410;Light Industrial;11430;11430;100%;;;1130000;99;;;11701357;1024
+18/04/2017;non;;Lucien Renaudin (COGIB);;12 rue Emile Zola;Pré Saint Gervais;93310;Housing;2000;0;0%;;;;;40;80000;1600000;800
+13/04/2017;non;;Lucien Renaudin (COGIB);;Rue Chaptal;Levallois Perret;92300;Housing;360;0;0%;;;;;;;2578000;7161
+08/04/2017;non;;Lucien Renaudin (COGIB);;29 rue Saint-Barthélemy ;Melun;77000;Retail;212;212;100%; O'Tacos;;24000;113;110;23320;350000;1651
+08/04/2017;non;;Lucien Renaudin (COGIB);;35 Boulevard Carnot;Saint Denis;93200;Retail;1500;1500;100%;;;190000;127;110;165000;2700000;1800
+05/04/2017;oui;;Arthur Rodriguez (CBRE);91350;3 rue Olympe de Gouges;Grigny;91350;Light Industrial;2200;0;0%;;;;;50;110000;1650000;750
+05/04/2017;non;;Lucien Renaudin (COGIB);;27 rue de Cîteaux;Paris;75012;Office;538;538;100,00%;;;183444;341;340;182920;3400000;6320
+03/04/2017;non;;Amadou Dime (CBRE);92000;29 rue des Peupliers;Nanterre;92000;Light Industrial;1274;1070,16;84%;;;154596;144;140;178360;2300000;1805
+03/04/2017;non;;Lucien Renaudin (COGIB);75019;10-12 rue de l'orme;Paris;75019;Office;510;0;0,00%;;;;;204;104040;3675000;7206
+29/03/2017;non;;Lucien Renaudin (COGIB);94200;Rue Edouard Vasseur;Ivry sur Seine;94200;Housing;120;120;100%;;;50268;419;;;670240;5585
+28/03/2017;non;;Fabrice Malka (Capital Return Opportunity);;225 Rue Blaise Pascal;Liévin;62800;Light Industrial;7200;7200;100%; Foot en salle;;180000;25;25;180000;1500000;208
+20/03/2017;oui;;Rémi Saussey (Néogère);;26 rue Henri Monnier;Paris;75009;Office;594;594;100,00%;;;260870;439;430;255420;6450000;10859
+14/03/2017;;;Lucien Renaudin (COGIB);93400;Rue Matthieu;Saint-Ouen;93400;Housing;538;538;100%;;;149588;278;;149588;2100000;3903
+13/03/2017;;;Lucien Renaudin (COGIB);92100;43 rue de Bellevue;Boulogne-Billancourt;92100;Office;337;0;0%;;;;;275;92675;1790000;5312
+06/01/2017;;;Guissela Hernando (CBRE);91090;19 Rue des Malines;Lisses;91090;Light Industrial;1408;1408;100%;;;78000;55;42;59136;892500;634
+28/12/2016;;;Arthur Helin (CBRE);94230;6 Rue de la Grange Ory;Cachan;94230;Light Industrial;498;0;0%;;;;;60;29880;1150000;2309
+28/12/2016;;;Valentin Grivaud (CBRE);91320;1 Bis Rue Guillaume Bigourdan;Wissous;91320;Light Industrial;703;366,73;52%;;;30970;84;84;59052;650000;925
+15/12/2016;;;Laurent Gruselin (CBRE);93110;1 Allée de l'Espérance;Rosny-Sous-Bois;93110;Light Industrial;6414;0;0%;;;;;40;256560;2000000;312
+14/12/2016;;;Arthur Helin (CBRE);94260;28 Avenue des Pépinières;Fresnes;94260;Light Industrial;520;0;0%;;;;;85;44200;600000;1154
+12/12/2016;;;Jeremie Senior (Groupe Babylone);93300;14 rue Gaëtan Lamy;Aubervilliers;93300;Housing;1196;892;75%;;;162628;182;112;134448;3045000;2546
+07/12/2016;;;Valérie Spira (CBRE);91430;6 Rue Ampère;Igny;91430;Light Industrial;2222;2222;100%; Conforama;;169727;76;55;122210;1682243;757
+24/11/2016;;;Enguerrand de Vilette (CBRE);95100;14 Rue Jules Vercruysse;Argenteuil;95100;Light Industrial;1805;0;0%;;;;;58;104690;1250000;693
+21/11/2016;;;Pas de doc;36000;7 Rue des Ingrains;Châteauroux;36000;Office;2005;2005;100%;;;110367;55;;;1001425;499
+04/11/2016;;;Nicolas Coudert (BNP);93200;2 Rue du Fort de la Briche;Saint-Denis;93200;Light Industrial;1350;0;0%;;;;;50;67500;2500000;1852
+02/11/2016;;;Jeremie Senior (Groupe Babylone);92400;21 rue de louvain;Courbevoie;92400;Housing;800;0;0%;;;;;; -    € ;2000000;2500
+29/10/2016;;;Olivier Lambin (CBRE);91150;Rue des Épinants;Etampes;91150;Light Industrial;12670;0;0%;;;;;55;696850;9800000;773
+27/10/2016;;;Olivier Lambin (CBRE) Pas de doc;95190;1 avenue Gustave Eiffel;Goussainville;95190;Retail;5980;5980;100%;;;449100;75;;;4620000;773
+21/10/2016;;;Guissela Hernando (CBRE);91130;9 Avenue Paul Langevin;Ris-Orangis;91130;Light Industrial;4013;1421;35%;;;92154;65;45;180585;2400000;598
+21/10/2016;;;Orane Perran (CBRE);91300;5 Rue du Buisson aux Fraises;Massy;91300;Light Industrial;1800;0;0%;;;;;45;81000;1800000;1000
+20/10/2016;;;Olivier Lambin (CBRE);91090;20 Rue des Cerisiers;Lisses;91090;Light Industrial;1717;0;0%;;;;;55;94435;1100000;641
+19/10/2016;;;Jeremie Senior (Groupe Babylone);75018;26 rue marcadet;Paris;75018;Housing;497;497;100,00%;;;137115;276;328;163227;3000000;6036
+19/10/2016;;;Jeremie Senior (Groupe Babylone);94200;161 Avenue de Verdun;Ivry sur Seine;94200;Office;7653;2895;38%;;;541187;187;120;918360;8100000;1058
+15/10/2016;;;Jeremie Senior (Groupe Babylone);94110;61 avenue Aristide Briand;Arcueil;94110;Retail;345;345;100%; Maison de la literie;;64000;186;160;55200;800000;2319
+13/10/2016;;;Olivier Lambin (CBRE);92350;9 Avenue Denis Papin;Plessis Robinson;92350;Light Industrial;3250;3250;100%;;;280000;86;75;243750;3500000;1077
+01/09/2016;oui;;Antoine Musnier (Colliers);75017;37 rue Jean Leclaire;Paris;75017;Office;1225;0;0,00%;;;;;;;7000000;5714
+01/09/2016;;;Charles Albert (BNP);91220;35 avenue de la Commune de Paris;Bretigny-sur-Orge;91220;Light Industrial;997;997;100%; IXIO;;95000;95;65;64805;1050000;1053
+01/09/2016;;;Cordell Pas de doc;93100;261 rue de Paris;Montreuil;93100;Office;1484;1484;100%;;;299612;202;;;3500000;2358
+01/09/2016;;;Grivaud, Valentin (CBRE), pas de doc;91300;2 Route de la Bonde;Massy;91300;Light Industrial;1023;1023;100%;;;155000;152;;;2300000;2248
+01/09/2016;;;Guissela Hernando (CBRE);91420;9 Avenue Louis Braille;Morangis;91420;Light Industrial;3825;3825;100%;;;240000;63;55;210375;2600000;680
+01/09/2016;oui;;Julien Pinault (Arthur Loyd);78190;13 avenue Jean d’Alembert;Trappes;78190;Light Industrial;2297;2297;100%;;VLD;325884;142;90;206730;2950000;1284
+01/09/2016;;;Lucien Renaudin (COGIB);78000;Avenue de la République;Saint Denis;93200;Housing;437;437;100%;;;103659;237;;;1850000;4233
+01/09/2016;;;Lucien Renaudin (COGIB), Pas de doc;92120;Montrouge;Montrouge;92120;Office;993;0;0%;;;;;;;3950000;3978
+01/09/2016;;;Lucien Renaudin (COGIB), Pas de doc;92600;Rue Duchesnay;Asnières-sur-Seine;92600;Housing;258;0;0%;;;99624;;;;1750000;6783
+01/09/2016;;;Lucien Renaudin (COGIB), Pas de doc;92240;59 rue Augustin Dumont;Malakoff;92240;Office;430;0;0%;;;;;;;1470000;3419
+02/04/2018;non;EHB;Charles Albert;;16 rue Jean Jacque Rousseau;Grigny;91350;Light Industrial;706;706;100%;;;63000;89;90;63540;750000;1062
+23/02/2018;non;EHB;Michael HAGEGE (CW);;85-87 avenue Jean-Jaurès;Montrouge;92120;Light Industrial;2212;0;0%;;;;;170;376040;6200000;2803
+09/11/2017;oui;EHB;Antoine GUICHETEAU (NEXITY);;7 allées des Aphleries;Le Perray en Yvelynes;78610;Light Industrial;2150;742;#VALEUR!; LOCAPOSTE ;;51800;70;;;500000;674
+08/11/2016;oui;EHB;Olivier Lambin (CBRE);91100;61 rue Emile Zola;Corbeil Essonnes;91100;Light Industrial;1530;1530;100%; TME;;88800;58;52;79560;850000;556
+03/11/2016;oui;EHB;PE Maury (Cordell);92600;1 rue des Bruyères;Asnières-sur-Seine;92600;Housing;576;576;100%;;;114000;198;;;2700000;4688
+01/09/2016;Oui;;Olivier Lambin (CBRE);91080;64 allée des Champs Elysées;Courcouronnes;91080;Retail;2140;2140;100%; BNP - Annapurna - Evry Form;;349583;163;;349583;6200000;2897
