@@ -99,24 +99,51 @@ p "----------- Creating Business Assets Categories -----------"
 
 
 asset_categories_array = [
-  "Stock warehouse",
-  "logistics warehouse",
-  "Retail",
-  "Office",
-  "HousiNg",
-  "lIght Industrial",
-  "hotel",
-  "Industrial"
+  {
+    name: "Stock warehouse",
+    pictogram: "fas fa-warehouse"
+  },
+  {
+    name:"logistics warehouse",
+    pictogram: "fas fa-truck"
+  },
+  {
+    name:"Retail",
+    pictogram: "fas fa-shopping-cart"
+  },
+  {
+    name:"Office",
+    pictogram: "fas fa-building"
+  },
+  {
+    name:"HousiNg",
+    pictogram: "fas fa-home"
+  },
+  {
+    name:"lIght Industrial",
+    pictogram: "fas fa-industry"
+  },
+  {
+    name:"hotel",
+    pictogram: "fas fa-hotel"
+  },
+  {
+    name:"Industrial",
+    pictogram: "fas fa-industry"
+  }
 ]
 
-asset_categories_array.map! {|x| x.capitalize}
+
+
+
+asset_categories_array.map! { |x| {name: x[:name].capitalize, pictogram: x[:pictogram]} }
 
 
 
 asset_categories_array.each do |a|
   AssetCategory.create!(
-    name: a,
-    pictogram: 'fas fa-warehouse'
+    name: a[:name],
+    pictogram: a[:pictogram]
     )
 end
 

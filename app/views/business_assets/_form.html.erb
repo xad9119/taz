@@ -1,28 +1,43 @@
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <h2>Enter a new asset</h2>
-    <div class="tab">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#form-tab-1">Adress</a></li>
-        <li><a href="#form-tab-2">Type</a></li>
-        <li><a href="#form-tab-3">Information</a></li>
-        <li><a href="#form-tab-4">Financials</a></li>
-      </ul>
-      <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
+<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+  <div class="steps">
+    <div class="step">
+      <i class="fas fa-location-arrow step-logo"></i>
+      <p class="step-title">Location</p>
+    </div>
+    <div class="step">
+      <i class="fas fa-cog step-logo"></i>
+      <p class="step-title">Type</p>
+    </div>
+    <div class="step">
+      <i class="fas fa-info-circle step-logo"></i>
+      <p class="step-title">Information</p>
+    </div>
+    <div class="step">
+      <i class="fas fa-dollar-sign step-logo"></i>
+      <p class="step-title">Financials</p>
+    </div>
+  </div>
+
+  <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
+  <div class="row-form">
+    <button type="button" id="prevBtn" class="nav-btn"> < </button>
+    <div class="col-xs-10 col-xs-offset-1">
       <div class="tab-content">
-          <div id="form-tab-1" class="tab-pane fade in active">
+          <div id="form-tab-1" class="tab">
               <%= render 'business_assets/forms/address', f:f   %>
           </div>
-          <div id="form-tab-2" class="tab-pane fade">
+          <div id="form-tab-2" class="tab">
               <%= render 'business_assets/forms/asset_type', f:f   %>
           </div>
-          <div id="form-tab-3" class="tab-pane fade">
+          <div id="form-tab-3" class="tab">
               <%= render 'business_assets/forms/general_information', f:f   %>
           </div>
-          <div id="form-tab-4" class="tab-pane fade">
+          <div id="form-tab-4" class="tab">
               <%= render 'business_assets/forms/financial_information', f:f   %>
           </div>
       </div>
       <% end %>
+    </div>
+    <button type="button" id="nextBtn" class="nav-btn"> > </button>
   </div>
 </div>

@@ -1,8 +1,8 @@
-<div class="row row-form">
-  <div class="col-xs-8 col-xs-offset-2">
-    <h3 class="form-section">Where is the asset ?</h3>
-      <%= f.fields_for :geographical_location do |loc| %>
-        <%= loc.input :address, label: false, input_html: {id: 'asset_address', placeholder: "Enter an address"} %>
-      <% end %>
-    </div>
-</div>
+<h3 class="form-section">Where is the asset ?</h3>
+  <%= f.fields_for :geographical_location do |loc| %>
+    <%= loc.input :address, label: false, input_html: {id: 'asset_address', placeholder: "Enter an address"} %>
+  <% end %>
+  <div
+    id="map"
+    data-markers=""
+  ></div>
