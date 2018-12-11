@@ -43,7 +43,11 @@ class Transaction < ApplicationRecord
   end
 
   def python
-    `python ../../lib/assets/py_script_py.py`
+    return unless ENV['PRICE_PREDICTION_ENABLED']
+
+    python_path = File.join(ENV['ANACONDA_ENV'], 'bin/python')
+    script_path = Rails.root.join("lib/python/price_train_predict.py")
+    `#{python_path} #{script_path}`
   end
 
   def self.create_csv

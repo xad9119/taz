@@ -1,13 +1,15 @@
+import os
+
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-%matplotlib inline
+dir_path  = os.path.dirname(os.path.realpath(__file__))
+data_path = os.path.join(dir_path, "data")
 
 ## training
+file_path = os.path.join(data_path, "python_training.csv")
 
-df = pd.read_csv('../../db/python_training.csv', sep=';')
+df = pd.read_csv(file_path, sep=';')
 # filtering outliers (> 12ke per sqm)
 df = df.loc[df['pricesqm']<12000]
 df.head()
@@ -119,11 +121,13 @@ model.fit(feature_processing.transform(df.drop('pricesqm', axis=1)), np.array(df
 
 ## predicting
 
-df = pd.read_csv('../../db/python_training.csv', sep=';')
+file_path = os.path.join(data_path, "python_training.csv")
+df = pd.read_csv(file_path, sep=';')
 # filtering outliers (> 12ke per sqm)
 df = df.loc[df['pricesqm']<12000]
 
-X = pd.read_csv('../../db/python_to_predict.csv', sep=';')
+file_path = os.path.join(data_path, "python_to_predict.csv")
+X = pd.read_csv(file_path, sep=';')
 X_ = processing(X)
 X_ = feature_processing.transform(X_)
 
@@ -144,4 +148,5 @@ result = {'id': ids,
          }
 result = pd.DataFrame(data=result)
 
-result.to_csv('../../db/python_predicted.csv', sep=';', index = False)
+file_path = os.path.join(data_path, "python_predicted.csv")
+result.to_csv(file_path, sep=';', index = False)
