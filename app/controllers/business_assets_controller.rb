@@ -111,6 +111,9 @@ def index
   end
 
   def destroy
+    @business_asset = BusinessAsset.find(params[:id])
+    @business_asset.destroy
+    redirect_to business_asset_path
   end
 
   def dashboard
