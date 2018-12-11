@@ -1,9 +1,11 @@
 <% content_for :navbar_links do %>
-  <div class= "navbar-taz-left">
+    <div class= "navbar-taz-left">
     <%= link_to "Edit", edit_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
     <%= link_to "Compare", compare_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
-  </div>
+    <p data-toggle="modal" data-target="#delete-modal" class="navbar-taz-item navbar-taz-link navbar-title">Delete</p>
+     </div>
 <% end %>
+<%= render "modal" %>
 
 <div class= "container" >
   <div class="row">
@@ -167,7 +169,6 @@
               <th>Brk 3</th>
             </tr>
             <tr>
-
 
               <td><%= r.tenant.nil? ? '-' : r.tenant.name %></td>
               <td><%= format_number(r.annual_rent) %></td>
