@@ -1,3 +1,5 @@
+require 'csv'
+
 class Transaction < ApplicationRecord
   belongs_to :business_asset
   belongs_to :buyer, class_name: "Company"
