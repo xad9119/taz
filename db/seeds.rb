@@ -1,3 +1,12 @@
+def assign_company(company_name)
+  if Company.find_by(name: company_name).nil?
+    Company.create(name: company_name)
+  else
+    Company.find_by(name: company_name)
+  end
+end
+
+
 p "----------- Destroying everything -----------"
 Rental.destroy_all
 Transaction.destroy_all
@@ -99,24 +108,51 @@ p "----------- Creating Business Assets Categories -----------"
 
 
 asset_categories_array = [
-  "Stock warehouse",
-  "logistics warehouse",
-  "Retail",
-  "Office",
-  "HousiNg",
-  "lIght Industrial",
-  "hotel",
-  "Industrial"
+  {
+    name: "Stock warehouse",
+    pictogram: "fas fa-warehouse"
+  },
+  {
+    name:"logistics warehouse",
+    pictogram: "fas fa-truck"
+  },
+  {
+    name:"Retail",
+    pictogram: "fas fa-shopping-cart"
+  },
+  {
+    name:"Office",
+    pictogram: "fas fa-building"
+  },
+  {
+    name:"HousiNg",
+    pictogram: "fas fa-home"
+  },
+  {
+    name:"lIght Industrial",
+    pictogram: "fas fa-industry"
+  },
+  {
+    name:"hotel",
+    pictogram: "fas fa-hotel"
+  },
+  {
+    name:"Industrial",
+    pictogram: "fas fa-industry"
+  }
 ]
 
-asset_categories_array.map! {|x| x.capitalize}
+
+
+
+asset_categories_array.map! { |x| {name: x[:name].capitalize, pictogram: x[:pictogram]} }
 
 
 
 asset_categories_array.each do |a|
   AssetCategory.create!(
-    name: a,
-    pictogram: 'fas fa-warehouse'
+    name: a[:name],
+    pictogram: a[:pictogram]
     )
 end
 
@@ -148,9 +184,8 @@ CSV.foreach(filepath, csv_options) do |row|
   asset.business_asset_manager = Company.first
   asset.save!
 
-  tenant = Company.new(name: row[:name_rent])
-  tenant.name = "placeholder" unless tenant.name
-  tenant.save!
+  tenant = assign_company(row[:name_rent])
+
 
   row_rental = row.select{ |key, _| Rental.attribute_names.index(key.to_s) }
   rental = Rental.new(row_rental)
@@ -162,10 +197,7 @@ CSV.foreach(filepath, csv_options) do |row|
   rental.end_date = DateTime.new(2020)
   rental.save!
 
-  owner = Company.new(name: row[:name_owner])
-  owner.name = "placeholder" unless owner.name
-  owner.save!
-
+  owner = assign_company(row[:name_owner])
   row_tr = row.select{ |key, _| Transaction.attribute_names.index(key.to_s) }
   transaction = Transaction.new(row_tr)
   transaction.business_asset = asset
@@ -178,15 +210,16 @@ CSV.foreach(filepath, csv_options) do |row|
 end
 
 
-# p "----------- Creating Attachments -----------"
-# BusinessAsset.all.each_with_index do |b, i|
-#   a = Attachment.new
-#   a.business_asset = b
-#   a.attachment_type = 'photo'
-#   loc = b.geographical_location
-#   url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
-#   a.url = url
-#   a.remote_file_url = url
-#   a.save!
-#   p "#{i} / #{BusinessAsset.all.count}"
-# end
+p "----------- Creating Attachments -----------"
+
+BusinessAsset.all.each_with_index do |b, i|
+  a = Attachment.new
+  a.business_asset = b
+  a.attachment_type = 'photo'
+  loc = b.geographical_location
+  url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
+  a.url = url
+  a.remote_file_url = url
+  a.save!
+  p "#{i} / #{BusinessAsset.all.count}"
+end

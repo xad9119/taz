@@ -47,16 +47,6 @@ def index
   def new
     @business_asset = BusinessAsset.new
     authorize @business_asset
-
-    @markers = @business_assets.map do |business_asset|
-        next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
-        {
-          title: business_asset.geographical_location.address,
-          lng: business_asset.geographical_location.longitude,
-          lat: business_asset.geographical_location.latitude,
-          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
-        }
-      end.compact!
   end
 
   def create
@@ -121,6 +111,13 @@ def index
   end
 
   def destroy
+    respond_to do |format|
+    format.html
+    format.js
+    end
+    @business_asset = BusinessAsset.find(params[:id])
+    @business_asset.destroy
+    redirect_to business_assets_path
   end
 
   def dashboard
@@ -131,11 +128,9 @@ def index
     else
       @buyer = Company.find_by(name: "VLD")
     end
-
     last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
     buyer_last_transaction = last_transactions.select { |last_transaction| last_transaction.buyer == @buyer }
     @business_assets = buyer_last_transaction.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
-
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {

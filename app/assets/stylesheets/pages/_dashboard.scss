@@ -7,8 +7,58 @@
 }
 
 .green_box {
-  background-color: $main-color;
+  background-color: $main-color !important;
   text-align: center;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 20px;
+  border-radius: 3px;
+  max-width: 250px;
+  p {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
 }
 
+.dashboard-white-box {
+  background-color: white;
+  padding: 10px;
+  margin-top: 70px;
+  h3 {
+    margin-top: 0px !important;
+    padding: 4px;
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: bold;
+    background-color: $main-color;
+    color: white;
+    border-radius: 3px;
+  }
+}
+
+.dashboard-white-box-2 {
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  h3 {
+    margin-top: 0px !important;
+    padding: 4px;
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: bold;
+    background-color: $main-color;
+    color: white;
+    border-radius: 3px;
+  }
+}
+
+
+
+.main-info {
+  margin: 25px;
+  display: flex;
+  justify-content: space-around;
+}
 

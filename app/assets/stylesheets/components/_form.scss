@@ -59,7 +59,7 @@
     cursor: pointer;
   }
   &.active {
-  background-color: $main-color;
+  background-color: $secondary-color;
   color: white;
   opacity: 0.8;
   }
@@ -67,6 +67,10 @@
 
 .category-name {
   margin: 0px;
+  font-size: 14px;
+  &.active {
+    color: white;
+  }
 }
 
 .form-section {
@@ -79,42 +83,29 @@
   border-radius: 3px;
 }
 
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: white;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
 
 .row-form {
-  display: flex;
-  min-height: 50vh;
-  padding: 10px 0px 10px 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  // grid-template-rows: minmax(50vh, 1fr);
+  grid-template-rows: 60vh;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  text-align:center;
   align-items: center;
 }
-.container-form {
-  height: 100%;
-}
+// .container-form {
+//   height: 100%;
+// }
 
 
 .form-input-title {
+  display: flex;
+  justify-content: flex-start;
   font-weight: $text-font-weight;
   font-size: $text-font-size;
   font-family: $text-font-family;
@@ -177,3 +168,81 @@ input {
   background-color: $main-color !important;
   color: white !important;
 }
+
+
+
+
+
+
+/*=========================================================================
+
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  overflow-y: scroll;
+  height: 50vh;
+  vertical-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+.steps {
+  text-align:center;
+  margin-top:40px;
+  margin-bottom:20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  text-align: center;
+  opacity: 0.5;
+
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+  color: $secondary-color;
+  p {
+    color: $secondary-color;
+  }
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+
+.nav-btn {
+  background-color: inherit;
+  border: hidden;
+  color: $main-color;
+  margin: 0px 3px 0px 3px;
+  &:hover {
+    background-color: $main-color;
+    opacity: 0.5;
+    color: white;
+    border-radius: 4px;
+
+  };
+}
+

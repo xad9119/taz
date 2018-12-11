@@ -1,9 +1,11 @@
 <% content_for :navbar_links do %>
-  <div class= "navbar-taz-left">
+    <div class= "navbar-taz-left">
     <%= link_to "Edit", edit_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
     <%= link_to "Compare", compare_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
-  </div>
+    <p data-toggle="modal" data-target="#delete-modal" class="navbar-taz-item navbar-taz-link navbar-title">Delete</p>
+     </div>
 <% end %>
+<%= render "modal" %>
 
 <div class= "container" >
   <div class="row">
@@ -40,7 +42,7 @@
                 <p><strong> Surface :</strong></p>
               </div>
               <div class="col-xs-8 text-left">
-                <p><%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m2</p>
+                <p><%= @business_asset.surface.nil? ? "-" : @business_asset.surface.round %> m²</p>
               </div>
             </div>
             <div class="row">
@@ -167,7 +169,8 @@
               <th>Brk 3</th>
             </tr>
             <tr>
-              <td><%= r.tenant.name %></td>
+
+              <td><%= r.tenant.nil? ? '-' : r.tenant.name %></td>
               <td><%= format_number(r.annual_rent) %></td>
               <td><%= format_number(r.annual_rent_sqm) %></td>
               <td><%= r.start_date.nil? ? "-" : r.start_date.strftime('%b-%y') %> </td>
@@ -192,8 +195,8 @@
               <th>Price (M€)</th>
             </tr>
             <tr>
-              <td><%= t.buyer.name %></td>
-              <td><%= t.seller.name %></td>
+              <td><%= t.buyer.nil? ? '-' : t.buyer.name %></td>
+              <td><%= t.seller.nil? ? '-' : t.seller.name %></td>
               <td><%= t.date.nil? ? "-" : t.date.strftime('%b-%y') %> </td>
               <td><%= format_number(t.price) %></td>
             </tr>
@@ -207,7 +210,7 @@
         <h3> Data-room </h3>
         <ul class="list-inline doc-attachment">
           <% @business_asset.attachments.each do |a| %>
-            <li><%= link_to a.attachment_type, a.url %>  </li>
+            <li><%= link_to a.attachment_type, a.url, target: :_blank %>  </li>
           <% end %>
         </ul>
       </div>
