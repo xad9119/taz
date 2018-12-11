@@ -10,6 +10,9 @@ class ApplicationPolicy
   def index?
     true
   end
+  def search?
+    true
+  end
 
   def show?
     true

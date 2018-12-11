@@ -1,5 +1,27 @@
 class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
+  skip_after_action :verify_authorized, :only => :search
+
+def search
+    sql_query = " \
+    geographical_locations.address ILIKE :query \
+    "
+    @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
+    sql_query, query: "%#{params[:query]}%")
+    @markers = @business_assets.map do |business_asset|
+      # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+      {
+        title: business_asset.geographical_location.address,
+        lng: business_asset.geographical_location.longitude,
+        lat: business_asset.geographical_location.latitude,
+        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+      }
+    end
+    respond_to do |format|
+      format.js
+    end
+
+end
 
 def index
    if params[:query].present?
@@ -59,7 +81,6 @@ def index
     if business_asset.valid?
       business_asset.save!
       categories_array.each do |cat|
-        binding.pry
         asset_category = AssetCategory.find(cat)
         BusinessAssetCategory.create(business_asset: business_asset, asset_category: asset_category)
       end
