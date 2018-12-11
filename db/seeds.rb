@@ -211,6 +211,7 @@ end
 
 
 p "----------- Creating Attachments -----------"
+
 BusinessAsset.all.each_with_index do |b, i|
   a = Attachment.new
   a.business_asset = b
@@ -222,6 +223,3 @@ BusinessAsset.all.each_with_index do |b, i|
   a.save!
   p "#{i} / #{BusinessAsset.all.count}"
 end
-
-
-
