@@ -1,5 +1,3 @@
-<div class="row row-form">
-  <div class="col-xs-8 col-xs-offset-2">
     <h3 class="form-section">Asset information</h3>
       <div class="form-input-title">Surface</div>
       <div class="input-group mb-2 mr-sm-2 mb-sm-0">
@@ -43,10 +41,7 @@
       </div>
 
       <div class="form-input-title">Asset manager</div>
+
       <%= f.fields_for :company do |loc| %>
         <%= loc.input :name, label: false %>
       <% end %>
-
-
-  </div>
-</div>

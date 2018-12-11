@@ -47,16 +47,6 @@ def index
   def new
     @business_asset = BusinessAsset.new
     authorize @business_asset
-
-    @markers = @business_assets.map do |business_asset|
-        next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
-        {
-          title: business_asset.geographical_location.address,
-          lng: business_asset.geographical_location.longitude,
-          lat: business_asset.geographical_location.latitude,
-          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
-        }
-      end.compact!
   end
 
   def create
