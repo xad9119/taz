@@ -14,7 +14,7 @@
       <% end %>
     </div>
     <div class=infowindow_price>
-      <% if business_asset.transactions.first.price %>
+      <% unless business_asset.transactions.empty? %>
           <p><%= format_number(business_asset.transactions.first.price) %></p>
         <% else %>
         <p></p>

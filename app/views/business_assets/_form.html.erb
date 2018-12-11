@@ -16,6 +16,10 @@
       <i class="fas fa-dollar-sign step-logo"></i>
       <p class="step-title">Financials</p>
     </div>
+     <div class="step">
+      <i class="fas fa-paperclip step-logo"></i>
+      <p class="step-title">Attachements</p>
+    </div>
   </div>
 
   <%= simple_form_for :search, url: business_assets_path, method: :post do |f| %>
@@ -34,6 +38,9 @@
           </div>
           <div id="form-tab-4" class="tab">
               <%= render 'business_assets/forms/financial_information', f:f   %>
+          </div>
+          <div id="form-tab-5" class="tab">
+              <%= render 'business_assets/forms/attachements', f:f   %>
           </div>
       </div>
       <% end %>
