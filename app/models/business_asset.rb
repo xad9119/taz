@@ -8,7 +8,7 @@ class BusinessAsset < ApplicationRecord
   has_many :rentals
   has_many :attachments, dependent: :destroy
   has_many :asset_categories, through: :business_asset_categories
-  belongs_to :business_asset_manager, class_name: "Company"
+  belongs_to :business_asset_manager, class_name: "Company", optional: true
   accepts_nested_attributes_for :geographical_location
   BUSINESS_ASSET_TYPES = ["Stock warehouse", "Logistics warehouse", "Shop", "Office"]
 

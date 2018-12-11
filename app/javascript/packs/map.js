@@ -23,26 +23,25 @@ import GMaps from 'gmaps/gmaps.js';
 //   service.nearbySearch(request, callback);
 // };
 
-
-
-
 const mapElement = document.getElementById('map');
 if (mapElement) {
   const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
-  const markers = JSON.parse(mapElement.dataset.markers);
-  map.addMarkers(markers);
-  if (markers.length === 0) {
-    map.setZoom(8);
-  } else if (markers.length === 1) {
-    map.setCenter(48.864716, 2.349014);
-    map.setZoom(8);
-  } else if (markers.length == undefined) {
-    map.addMarker(markers);
-    map.setCenter(markers.lat, markers.lng);
-    map.setZoom(14);
-    getNearPlaces(markers, 500, map);
-  } else {
-    map.fitLatLngBounds(markers);
+  if (mapElement.dataset.markers !== "") {
+    const markers = JSON.parse(mapElement.dataset.markers);
+    map.addMarkers(markers);
+    if (markers.length === 0) {
+      map.setZoom(8);
+    } else if (markers.length === 1) {
+      map.setCenter(48.864716, 2.349014);
+      map.setZoom(8);
+    } else if (markers.length == undefined) {
+      map.addMarker(markers);
+      map.setCenter(markers.lat, markers.lng);
+      map.setZoom(14);
+      getNearPlaces(markers, 500, map);
+    } else {
+      map.fitLatLngBounds(markers);
+    }
   }
 }
 

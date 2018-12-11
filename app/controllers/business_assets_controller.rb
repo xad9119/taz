@@ -1,26 +1,15 @@
 class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
 
-def index
-   if params[:query].present?
-    sql_query = " \
-    geographical_locations.address ILIKE :query \
-    "
-    @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
-    sql_query, query: "%#{params[:query]}%")
-    @markers = @business_assets.map do |business_asset|
-      # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
-      {
-        title: business_asset.geographical_location.address,
-        lng: business_asset.geographical_location.longitude,
-        lat: business_asset.geographical_location.latitude,
-        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
-      }
-    end
-    else
-      @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+  def index
+    if params[:query].present?
+      sql_query = " \
+      geographical_locations.address ILIKE :query \
+      "
+      @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
+      sql_query, query: "%#{params[:query]}%")
       @markers = @business_assets.map do |business_asset|
-        next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+        # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {
           title: business_asset.geographical_location.address,
           lng: business_asset.geographical_location.longitude,
@@ -28,9 +17,19 @@ def index
           infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
         }
       end
-      @markers.select! { |x| !x.nil? }
+    else
+        @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+        @markers = @business_assets.map do |business_asset|
+          next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+          {
+            title: business_asset.geographical_location.address,
+            lng: business_asset.geographical_location.longitude,
+            lat: business_asset.geographical_location.latitude,
+            infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+          }
+        end
+        @markers.select! { |x| !x.nil? }
     end
-
     authorize @business_assets
   end
 
@@ -59,7 +58,6 @@ def index
     if business_asset.valid?
       business_asset.save!
       categories_array.each do |cat|
-        binding.pry
         asset_category = AssetCategory.find(cat)
         BusinessAssetCategory.create(business_asset: business_asset, asset_category: asset_category)
       end
@@ -73,6 +71,18 @@ def index
       a.url = url
       a.remote_file_url = url
       a.save!
+
+      # # add attachements
+      # attachment = Attachment.new
+      # attachment.business_asset = business_asset
+      # attachment.attachment_type = 'photo'
+      # loc = business_asset.geographical_location
+      # # url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
+      # url = params[:file]
+      # attachment.url = url
+      # attachment.remote_file_url = url
+      # attachment.save!
+
 
     else
       flash[:alert] = business_asset.errors.full_messages
@@ -104,6 +114,8 @@ def index
     authorize business_asset
   end
 
+
+
   def edit
   end
 
@@ -115,7 +127,7 @@ def index
     format.html
     format.js
     end
-    @business_asset = BusinessAsset.find(params[:id])
+    # @business_asset = BusinessAsset.find(params[:id])
     @business_asset.destroy
     redirect_to business_assets_path
   end

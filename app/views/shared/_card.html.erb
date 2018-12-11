@@ -38,7 +38,7 @@
 
       </div>
       <div class="rent">
-        <% if business_asset.transactions.first.price != 0 %>
+        <% unless business_asset.transactions.empty? %>
             <p><%= format_number(business_asset.transactions.first.price) %></p>
           <% else %>
           <p>-</p>

@@ -14,17 +14,20 @@ import { autocomplete } from '../components/autocomplete';
 import { initSteps } from '../components/form_steps';
 import { initSelect } from '../components/dashboard_select';
 import { xxx } from '../components/checkbox_compare';
-// import Chart from 'chart.js';
-
 
 
 if (document.querySelector("#asset_address")){
   autocomplete();
 }
+if (document.querySelector("#nextBtn")){
+  initFormStyle();
+}
 
 if (document.querySelector("#option")){
   initSelect();
 }
+
+
 
 
 

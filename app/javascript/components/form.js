@@ -23,7 +23,6 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
-
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   if (n == 1 && false) return false;
