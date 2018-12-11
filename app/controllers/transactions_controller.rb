@@ -24,7 +24,7 @@ class TransactionsController < ApplicationController
     else
       @key_comparables = @comparables.first(5)
       query = @comparables.first(5).map(&:id).join(' ')
-      redirect_to compare_path(params[:id], query: query) and return
+      return redirect_to compare_path(params[:id], query: query)
     end
 
     @fair_price = @transaction.fair_price(@key_comparables)
