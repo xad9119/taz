@@ -132,6 +132,13 @@ def index
   end
 
   def destroy
+    respond_to do |format|
+    format.html
+    format.js
+    end
+    @business_asset = BusinessAsset.find(params[:id])
+    @business_asset.destroy
+    redirect_to business_assets_path
   end
 
   def dashboard

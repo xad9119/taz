@@ -2,7 +2,7 @@
 16/11/2018;oui;ZK;Julien Mateos (bnp RE );;2 avenue Pasteur ;Issy les Moulineaux;92130;Retail;1205;0;0%;; SEST IDF;;;250;301250;9000000;7469; 7 468,88  € 
 14/11/2018;non;EHB;Jerome Matias (bnpre);;163 avenue Charles de Gaulle;Neuilly-sur-Seine;92200;Office;1680;1500;89%;;;570363;380;380;638400;12500000;7440; 7 440,48  € 
 18/09/2018;non;EHB;Dan Erith;;122 rue Saint Denis;Paris;75002;Retail;949;495;52,16%;;;121649;246;420;398580;6500000;6849; 6 849,32  € 
-02/11/2018;non;EHB;Alexandre Filipe (Scamac);;6 avenue Jean Jaurès;Montrouge;92120;Housing;340;0;0%;;VLD;;;;;2210000;6500; 6 500,00  € 
+02/11/2018;non;EHB;Alexandre Filipe (Scamac);;6 avenue Jean Jaurès;Montrouge;92120;Housing;340;0;0%;;;;;;;2210000;6500; 6 500,00  € 
 11/10/2018;non;EHB;Oscar Duclert;;11-13 rue de l'Escaut;Paris;75019;Retail;1445;0;0,00%;;;;;;420000;8950000;6194; 6 193,77  € 
 10/10/2018;non;EHB;Josselin Garcia (Arthur Loyd);;18bis rue de Villiers;Levallois Perret;92300;Office;5432;1792;33%; DATAWORDS;;567937;317;305;1656760;33000000;6075; 6 075,11  € 
 18/05/2018;non;EHB;KW;;92bis Boulevard Paul Vaillant Couturier;La courneuve;93120;Housing / Retail;315;0;0%;;;;;;;1750000;; 5 555,56  € 
@@ -36,7 +36,7 @@
 22/06/2018;non;EHB;Antoine Guicheteau;;place Marcel Rebuffat ;Villejust;91140;Light Industrial;3703;0;0%;;;;;100;370300;4977500;1344; 1 344,18  € 
 02/10/2018;non;EHB;Francois-Xavier LOUIS (JC Turri);;Rue Philippe SEGUIN ;FRANCONVILLE;95130;Light Industrial;2109;0;0%;;;;;90;189810;2833000;1343; 1 343,29  € 
 13/11/2018;non;ZK;;;28 avenue Albert 1er;Saint maur des fossés;94100;Housing Promotion;1470;0;0%;;;;;;;1900000;1293; 1 292,52  € 
-25/10/2018;non;ZK;Jérémie SENIOR ( Babylone);;53 boulevard de la République;Chatou;78400;Office;2209;0;0%;;VLD;;;100;220900;2800000;1268; 1 267,54  € 
+25/10/2018;non;ZK;Jérémie SENIOR ( Babylone);;53 boulevard de la République;Chatou;78400;Office;2209;0;0%;;;;;100;220900;2800000;1268; 1 267,54  € 
 12/07/2018;non;EHB;Antoine Guicheteau;;25 rue Bossuet ;LONGJUMEAU;91160;Light Industrial;1359;0;0%;;;;;42;57078;1700000;1251; 1 250,92  € 
 30/10/2018;non;EHB;Paolo Salzani (Colliers);;3 rue des Gaudines;Saint Germain en Laye;78100;Office;5332;2300;43%; Pall;;345000;150;150;799800;6300000;1182; 1 181,55  € 
 23/10/2018;non;EHB;Guilhem HUTTNER;;45 rue Delizy;Pantin;93500;Light Industrial / Office;3428;2739;80%; Fitness park et Sand fabrik (type arkose);;320000;117;105;359940;4000000;1167; 1 166,86  € 
@@ -66,7 +66,7 @@ Groupe Babylone";;8 rue de la Tour Carrée;Vémars;95470;Light Industrial;1179;1
 20/06/2018;non;EHB;Charles Albert;;225 Rue de la Justice;Vaux le Penil;77000;Light Industrial;2022;2022;100%; Canon;;120000;59;60;121320;1350000;668; 667,66  € 
 13/06/2018;non;EHB;Charles Albert;;7 avenue du Fief;Saint Ouen L'Aumone;95310;Light Industrial;3896;3896;100%; CGTT;;215000;55;55;214280;2600000;667; 667,35  € 
 13/11/2018;non;EHB;Nancy Bizet;;48 Rue Paul Lescop;Nanterre;92000;Light Industrial;4033;1523;38%; Electrolab; privé;80000;53;80;280800;2600000;645; 644,68  € 
-22/06/2018;non;EHB;Raphael Lucaz;;1 rue des Alouettes;Thiais;94320;Light Industrial;19788;0;0%;;VLD;;;65;1286220;12600000;637; 636,75  € 
+22/06/2018;non;EHB;Raphael Lucaz;;1 rue des Alouettes;Thiais;94320;Light Industrial;19788;0;0%;;;;;65;1286220;12600000;637; 636,75  € 
 19/04/2018;non;;Frédéric Bazil (DBXConseil) puis Babylone;;14 avenue de l’Europe;Bussy-Saint-Georges;77600;Light Industrial;5069;2803;55%;;;141245;50;;;3100000;612; 611,56  € 
 27/05/2018;non;EHB;Olivier Lambin;;8 Avenue Ampère;Wissous;91320;Light Industrial;3661;3661;100%;;;180000;49;50;183050;2200000;601; 600,93  € 
 28/06/2018;non;EHB;Stephane Berry;;25 rue Louis Ampère;Neuilly sur Marne;93330;Light Industrial;5733;5618;98%;;;299854;53;50;286650;3360000;586; 586,08  € 
@@ -85,7 +85,7 @@ Groupe Babylone";;8 rue de la Tour Carrée;Vémars;95470;Light Industrial;1179;1
 07/03/2018;non;CDU;Yann Giboire (CYRE);;2 rue Androuet;Paris;75018;Housing;238;0;0,00%;;;;;;;2400000;10067;
 02/03/2018;oui;CDU;Leboncoin;;30 rue Greuze;Paris;75016;Housing;553;553;100,00%;;;253559;459;;253559;5950000;10759;
 26/02/2018;non;CDU;Arthur Rodriguez (CBRE);;1 route de Mesnil saint Denis ;Coignères;78310;Light Industrial / Office;11634;0;0%;;;;;50;581700;7562100;650;
-22/02/2018;non;EHB;Charles Albert (BNPRE);;Avenue de Norvège  Avenue de la Baltique;Courtaboeuf / les Ulis;91940;Light Industrial;7019;0;0%;;VLD;;;104;729976;9100000;1296;
+22/02/2018;non;EHB;Charles Albert (BNPRE);;Avenue de Norvège  Avenue de la Baltique;Courtaboeuf / les Ulis;91940;Light Industrial;7019;0;0%;;;;;104;729976;9100000;1296;
 18/02/2018;non;EHB;Arthur Rodriguez;;6 rue de la fosse aux leux;Ste Geneviève des Bois;91700;Light Industrial;13613;0;0%; Biocoop;;;;40;544520;6500000;477;
 29/01/2018;non;EHB;Charles Albert (BNPRE);;24 rue Condorcet;Chennevières;94430;Light Industrial;1947;1947;100%;;;101645;52;52;101244;1000000;514;
 18/01/2018;oui;EHB;Charles Albert (BNPRE);;Rue de l'Ormeteau;Servon;77170;Light Industrial;6592;6592;100%;;;398313;60;60;395520;5300000;804;
@@ -172,7 +172,7 @@ Groupe Babylone";;8 rue de la Tour Carrée;Vémars;95470;Light Industrial;1179;1
 16/02/2018;;GRO;Charles Albert BNP PARIBAS ;;80 Bis rue pierre Semard ;Chatillon;92320;Light Industrial / Office;1108;958;86%; Boostek - SPCV - Otus Ovelia;;99200;104;112;123950;1800000;1879;
 15/02/2018;non;EHB;Antoine Guicheteau (Nexity);;Zone de la Bonde rue de l'Aulnaye Dracourt ;Massy;91300;Light Industrial;1023;0;0%;;;;;135;138105;2200000;2151;
 07/02/2018;non;GRO;Arthur Rodriguez;;26 rue condorcet;Fleury Merogis;;Light Industrial;2829;0;0%;;;;;40;113160;1700000;601;
-05/02/2018;non;EHB;Arthur Rodriguez (CBRE);;17 Rue Pierre Josse;BONDOUFLE;91070;Light Industrial;9493;0;0%; -    € ;;;;40;379720;4200000;442;
+05/02/2018;non;EHB;Arthur Rodriguez (CBRE);;17 Rue Pierre Josse;BONDOUFLE;91070;Light Industrial;9493;0;0%;;;;;40;379720;4200000;442;
 01/02/2018;non;EHB;Arthur Rodriguez (CBRE);;Rue des Graviers;Saulx les Chartreux;91160;Light Industrial;1679;0;0%;;;;;50;83950;1400000;834;
 01/02/2018;non;EHB;Frederique Guillaumot (CBRE);;3 rue des Aerostiers;Noisy le Grand;93160;Light Industrial;13055;0;0%;;;;;50;652750;5500000;421;
 30/01/2018;non;CDU;Antoine RONSSERAY (CORPIMMO);;98 Rue du Château;Boulogne Billancourt;92100;Office;1206;0;0%;;;;;300;361800;6500000;5390;
@@ -238,12 +238,12 @@ Stéphane HIRSCHENHAUT
 24/11/2016;;;Enguerrand de Vilette (CBRE);95100;14 Rue Jules Vercruysse;Argenteuil;95100;Light Industrial;1805;0;0%;;;;;58;104690;1250000;693;
 21/11/2016;;;Pas de doc;36000;7 Rue des Ingrains;Châteauroux;36000;Office;2005;2005;100%;;;110367;55;;;1001425;499;
 04/11/2016;;;Nicolas Coudert (BNP);93200;2 Rue du Fort de la Briche;Saint-Denis;93200;Light Industrial;1350;0;0%;;;;;50;67500;2500000;1852;
-02/11/2016;;;Jeremie Senior (Groupe Babylone);92400;21 rue de louvain;Courbevoie;92400;Housing;800;0;0%;;VLD;;;; -    € ;2000000;2500;
+02/11/2016;;;Jeremie Senior (Groupe Babylone);92400;21 rue de louvain;Courbevoie;92400;Housing;800;0;0%;;;;;; -    € ;2000000;2500;
 29/10/2016;;;Olivier Lambin (CBRE);91150;Rue des Épinants;Etampes;91150;Light Industrial;12670;0;0%;;;;;55;696850;9800000;773;
 27/10/2016;;;Olivier Lambin (CBRE) Pas de doc;95190;1 avenue Gustave Eiffel;Goussainville;95190;Retail;5980;5980;100%;;;449100;75;;;4620000;773;
 21/10/2016;;;Guissela Hernando (CBRE);91130;9 Avenue Paul Langevin;Ris-Orangis;91130;Light Industrial;4013;1421;35%;;;92154;65;45;180585;2400000;598;
 21/10/2016;;;Orane Perran (CBRE);91300;5 Rue du Buisson aux Fraises;Massy;91300;Light Industrial;1800;0;0%;;;;;45;81000;1800000;1000;
-20/10/2016;;;Olivier Lambin (CBRE);91090;20 Rue des Cerisiers;Lisses;91090;Light Industrial;1717;0;0%;;VLD;;;55;94435;1100000;641;
+20/10/2016;;;Olivier Lambin (CBRE);91090;20 Rue des Cerisiers;Lisses;91090;Light Industrial;1717;0;0%;;;;;55;94435;1100000;641;
 19/10/2016;;;Jeremie Senior (Groupe Babylone);75018;26 rue marcadet;Paris;75018;Housing;497;497;100,00%;;;137115;276;328;163227;3000000;6036;
 19/10/2016;;;Jeremie Senior (Groupe Babylone);94200;161 Avenue de Verdun;Ivry sur Seine;94200;Office;7653;2895;38%;;;541187;187;120;918360;8100000;1058;
 15/10/2016;;;Jeremie Senior (Groupe Babylone);94110;61 avenue Aristide Briand;Arcueil;94110;Retail;345;345;100%; Maison de la literie;;64000;186;160;55200;800000;2319;

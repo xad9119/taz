@@ -31,7 +31,7 @@
     <div class="rental-info">
       <div class="surface">
         <% if business_asset.surface %>
-          <p><strong>Surface: <%= format_number(business_asset.surface, currency_symbol: false) %> m2</strong></p>
+          <p><strong>Surface: <%= format_number(business_asset.surface, currency_symbol: false) %>m²</strong></p>
           <% else %>
           <p>no surface</p>
         <% end %>
@@ -48,7 +48,7 @@
     <div class="profitability">
       <p><% business_asset.rentals.each do |r| %>
         <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
-          <p>Profitability: <%= ((r.annual_rent + 0.0) / business_asset.transactions.first.price).round(2) * 100 %>%</p>
+          <p>Profitability: <%= (r.annual_rent / business_asset.transactions.first.price).round(2) * 100 %>%</p>
           <% else %>
           <p>Profitability: na</p>
         <% end %>
