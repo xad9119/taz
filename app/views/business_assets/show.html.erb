@@ -1,10 +1,9 @@
 <% content_for :navbar_links do %>
-  <div class= "navbar-taz-left">
     <%= link_to "Edit", edit_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
     <%= link_to "Compare", compare_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
-    <%= link_to "Delete", business_asset_path,method: :delete, data: { confirm: "you sure?" }, class: "navbar-taz-item navbar-taz-link navbar-title " %>
-  </div>
+    <p data-toggle="modal" data-target="#delete-modal" class="navbar-taz-item navbar-taz-link navbar-title">Delete</p>
 <% end %>
+<%= render "modal" %>
 
 <div class= "container" >
   <div class="row">
