@@ -210,7 +210,7 @@
         <h3> Data-room </h3>
         <ul class="list-inline doc-attachment">
           <% @business_asset.attachments.each do |a| %>
-            <li><%= link_to a.attachment_type, a.url %>  </li>
+            <li><%= link_to a.attachment_type, a.url, target: :_blank %>  </li>
           <% end %>
         </ul>
       </div>
