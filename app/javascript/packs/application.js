@@ -1,8 +1,13 @@
 
+import "jquery-ui";
 import "bootstrap";
 import "../plugins/flatpickr";
 import "jquery";
 import 'mapbox-gl/dist/mapbox-gl.css';
+
+require('webpack-jquery-ui');
+require('webpack-jquery-ui/css');
+
 
 import { initFormStyle } from '../components/form';
 import { autocomplete } from '../components/autocomplete';

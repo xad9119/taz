@@ -167,7 +167,9 @@
               <th>Brk 3</th>
             </tr>
             <tr>
-              <td><%= r.tenant.name.nil? ? "-" : r.tenant.name %></td>
+
+
+              <td><%= r.tenant.nil? ? '-' : r.tenant.name %></td>
               <td><%= format_number(r.annual_rent) %></td>
               <td><%= format_number(r.annual_rent_sqm) %></td>
               <td><%= r.start_date.nil? ? "-" : r.start_date.strftime('%b-%y') %> </td>
@@ -192,8 +194,8 @@
               <th>Price (M€)</th>
             </tr>
             <tr>
-              <td><%= t.buyer.name %></td>
-              <td><%= t.seller.name %></td>
+              <td><%= t.buyer.nil? ? '-' : t.buyer.name %></td>
+              <td><%= t.seller.nil? ? '-' : t.seller.name %></td>
               <td><%= t.date.nil? ? "-" : t.date.strftime('%b-%y') %> </td>
               <td><%= format_number(t.price) %></td>
             </tr>
