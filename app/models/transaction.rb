@@ -1,3 +1,5 @@
+require 'csv'
+
 class Transaction < ApplicationRecord
   belongs_to :business_asset
   belongs_to :buyer, class_name: "Company"
@@ -6,7 +8,21 @@ class Transaction < ApplicationRecord
   validates :price, presence: true
 
   def ranked_comparables
-    filtered_comparables.sort_by { |c| distance_to(c) }
+    result = []
+    if ENV['PRICE_PREDICTION_ENABLED']
+      self.class.create_csvs
+      generate_predictions
+      filepath = File.join(Rails.root, "lib/python/data/python_predicted.csv")
+
+      csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
+      CSV.foreach(filepath, csv_options) do |row|
+        result << Transaction.find(row[0].to_i)
+      end
+      result.pop()
+    else
+      result = filtered_comparables.sort_by { |c| distance_to(c) }
+    end
+    return result
   end
 
   def fair_price(comparables)
@@ -42,11 +58,7 @@ class Transaction < ApplicationRecord
     self.price = my_hash['price'].gsub(/[^\d^\.]/, '').to_f
   end
 
-  def python
-    `python ../../lib/assets/py_script_py.py`
-  end
-
-  def self.create_csv
+  def self.create_csvs
     csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
     filepath    = 'db/python_training.csv'
 
@@ -74,6 +86,11 @@ class Transaction < ApplicationRecord
   end
 
   private
+
+  def generate_predictions
+    script_path = Rails.root.join("lib/python/price_train_predict.py")
+    `python #{script_path}`
+  end
 
   def filtered_comparables
     Transaction.all
