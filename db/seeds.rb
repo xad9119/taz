@@ -1,3 +1,12 @@
+def assign_company(company_name)
+  if Company.find_by(name: company_name).nil?
+    Company.create(name: company_name)
+  else
+    Company.find_by(name: company_name)
+  end
+end
+
+
 p "----------- Destroying everything -----------"
 Rental.destroy_all
 Transaction.destroy_all
@@ -175,9 +184,8 @@ CSV.foreach(filepath, csv_options) do |row|
   asset.business_asset_manager = Company.first
   asset.save!
 
-  tenant = Company.new(name: row[:name_rent])
-  tenant.name = "placeholder" unless tenant.name
-  tenant.save!
+  tenant = assign_company(row[:name_rent])
+
 
   row_rental = row.select{ |key, _| Rental.attribute_names.index(key.to_s) }
   rental = Rental.new(row_rental)
@@ -189,10 +197,7 @@ CSV.foreach(filepath, csv_options) do |row|
   rental.end_date = DateTime.new(2020)
   rental.save!
 
-  owner = Company.new(name: row[:name_owner])
-  owner.name = "placeholder" unless owner.name
-  owner.save!
-
+  owner = assign_company(row[:name_owner])
   row_tr = row.select{ |key, _| Transaction.attribute_names.index(key.to_s) }
   transaction = Transaction.new(row_tr)
   transaction.business_asset = asset
@@ -217,3 +222,6 @@ end
 #   a.save!
 #   p "#{i} / #{BusinessAsset.all.count}"
 # end
+
+
+
