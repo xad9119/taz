@@ -1,11 +1,10 @@
 <div class="border" style="width: 100%; height: 70px"></div>
+<%= simple_form_for :search, url: search_business_assets_path, method: :get, remote: true do |f| %>
   <div class="search_bar">
-    <%= simple_form_for :search, url: search_business_assets_path, method: :get, remote: true do |f| %>
-      <%= f.input :address, label: false, placeholder: "Enter address" %>
+    <%= f.input :address, label: false, placeholder: "Enter address" %>
   </div>
-</div>
 
-<div class="filter navbar-taz navbar-index" style="display:none" hidden>
+<div class="filter navbar-taz navbar-index">
   <div class="filter-btn">
     <button id="btn-asset-category">Category</button>
     <div class="filter-options" id="filter-asset-category">
@@ -24,8 +23,9 @@
     </div>
   </div>
   <%= f.submit  %>
-  <% end %>
 </div>
+<% end %>
+
 <div class="main-container" id="main-display">
   <%= render 'cards_list_map', business_assets: @business_assets, markers: @markers  %>
 </div>

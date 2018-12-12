@@ -155,6 +155,8 @@ var myStyle = [
 //   service.nearbySearch(request, callback);
 // };
 
+const initMap = () => {
+
 var styledMapType = new google.maps.StyledMapType(myStyle)
 
 
@@ -185,6 +187,7 @@ if (mapElement) {
     map.setStyle('map_style');
 
   }
+}
 }
 
 initMap();
