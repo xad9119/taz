@@ -13,7 +13,7 @@ import { autocomplete } from '../components/autocomplete';
 import { initSteps } from '../components/form_steps';
 import { initSelect } from '../components/dashboard_select';
 import { xxx } from '../components/checkbox_compare';
-import { chart_q_per_cat, chart_value_per_year, chart_price_per_asset } from '../components/charts';
+import { chart_bubble, chart_q_per_cat, chart_value_per_year, chart_price_per_asset } from '../components/charts';
 
 if (document.querySelector("#asset_address")){
   autocomplete();
@@ -45,4 +45,11 @@ if (document.getElementById("q_per_cat")) {
  const categories = JSON.parse(myId.dataset.categories);
  const values = JSON.parse(myId.dataset.values);
  chart_q_per_cat(categories, values);
+};
+
+if (document.getElementById("bubble")) {
+ const myId = document.getElementById("bubble");
+ console.log(myId.dataset.points);
+ const points = JSON.parse(myId.dataset.points);
+ chart_bubble(points);
 };
