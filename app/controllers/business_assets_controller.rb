@@ -3,11 +3,38 @@ class BusinessAssetsController < ApplicationController
   skip_after_action :verify_authorized, :only => :search
 
 def search
-    sql_query = " \
-    geographical_locations.address ILIKE :query \
-    "
-    @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
-    sql_query, query: "%#{params[:query]}%")
+    @business_assets = policy_scope(BusinessAsset)
+    .joins(:geographical_location)
+    # .joins(:business_asset_category)
+    # .joins(:asset_category)
+
+
+    binding.pry
+      my_hash = params["search"]
+      categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
+      .map{|cat| AssetCategory.find(cat).name}
+
+      if !my_hash["address"].empty?
+        sql_query = " \
+        geographical_locations.address ILIKE :query \
+        "
+        @business_assets = @business_assets
+        .where(sql_query, query: "%#{my_hash["address"] }%")
+
+      end
+      unless categories_array.empty?
+        @business_assets = @business_assets.where(asset_type: categories_array)
+
+        # .where("asset_type LIKE ?", "%#{params[:asset_category]}%")
+        # sql_query = " \
+        # business_assets.asset_type ILIKE :asset_category \
+        # "
+        # @business_assets = @business_assets
+        # .where(sql_query, query: "%#{params[:asset_category] }%")
+
+      end
+
+
     @markers = @business_assets.map do |business_asset|
       # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
       {
@@ -18,7 +45,6 @@ def search
       }
     end
     @markers.select! { |x| !x.nil? }
-
     respond_to do |format|
       format.js
     end

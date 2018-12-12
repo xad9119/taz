@@ -1,18 +1,36 @@
 <div class="border" style="width: 100%; height: 70px"></div>
 <div class="navbar-taz navbar-index navbar-fixed-top">
   <div class="search_bar">
-    <%= form_tag search_business_assets_path, method: :get, remote: true do%>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control",
-        placeholder: "Type a city or zipcode"
-      %>
-    <% end %>
+    <%= simple_form_for :search, url: search_business_assets_path, method: :get, remote: true do |f| %>
+      <%= f.input :address, label: false, placeholder: "Enter address" %>
   </div>
+</div>
+
+<div class="filter navbar-taz navbar-index">
+  <div class="filter-btn">
+    <button id="btn-asset-category">Category</button>
+    <div class="filter-options" id="filter-asset-category">
+        <span class="close">&times;</span>
+        <input type="hidden" name="post[category_ids][]" value="">
+        <div class="category-choices list-inline">
+          <% AssetCategory.all.sort_by {|x| x.name}.each do |category| %>
+              <input type="checkbox" class="category-choice hidden" value="<%= category.id %>" name="post[category_ids][]" id="post_category_ids_<%= category.id %>">
+              <label for="post_category_ids_<%= category.id %>" class="category-choice">
+                <div class="category-name">
+                  <%= category.name %>
+                </div>
+              </label>
+          <% end %>
+        </div>
+    </div>
+  </div>
+  <%= f.submit  %>
+  <% end %>
 </div>
 <div class="main-container" id="main-display">
   <%= render 'cards_list_map', business_assets: @business_assets, markers: @markers  %>
 </div>
+
 
 
 
