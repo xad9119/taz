@@ -154,6 +154,7 @@ var myStyle = [
 //   service = new google.maps.places.PlacesService(map);
 //   service.nearbySearch(request, callback);
 // };
+
 const initMap = () => {
   var styledMapType = new google.maps.StyledMapType(myStyle)
   const mapElement = document.getElementById('map');
@@ -180,7 +181,7 @@ const initMap = () => {
         mapTypeId: 'map_style'
       });
       map.setStyle('map_style');
-
+      var styledMapType = new google.maps.StyledMapType(myStyle)
     }
   }
 }
