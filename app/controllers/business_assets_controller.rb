@@ -136,13 +136,13 @@ class BusinessAssetsController < ApplicationController
     authorize policy_scope(BusinessAsset)
     @buyers_unique = Company.joins(:bought_transactions).select(:name).distinct
     if params[:option].present?
-      @buyer = Company.find_by(name:params[:option])
+      @buyer = Company.find_by(name: params[:option])
     else
       @buyer = Company.find_by(name: "VLD")
     end
     last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
-    buyer_last_transaction = last_transactions.select { |last_transaction| last_transaction.buyer == @buyer }
-    @business_assets = buyer_last_transaction.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
+    buyer_last_transactions = last_transactions.select { |transaction| transaction.buyer == @buyer }
+    @business_assets = buyer_last_transactions.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {
