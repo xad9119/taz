@@ -155,40 +155,40 @@ var myStyle = [
 //   service.nearbySearch(request, callback);
 // };
 const initMap = () => {
-var styledMapType = new google.maps.StyledMapType(myStyle)
+  var styledMapType = new google.maps.StyledMapType(myStyle)
+  const mapElement = document.getElementById('map');
+  if (mapElement) {
+    const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
+    if (mapElement.dataset.markers !== "") {
+      const markers = JSON.parse(mapElement.dataset.markers);
+      map.addMarkers(markers);
+      if (markers.length === 0) {
+        map.setZoom(8);
+      } else if (markers.length === 1) {
+        map.setCenter(48.864716, 2.349014);
+        map.setZoom(8);
+      } else if (markers.length == undefined) {
+        map.addMarker(markers);
+        map.setCenter(markers.lat, markers.lng);
+        map.setZoom(14);
+        getNearPlaces(markers, 500, map);
+      } else {
+        map.fitLatLngBounds(markers);
+      }
+      map.addStyle({
+        styles: myStyle,
+        mapTypeId: 'map_style'
+      });
+      map.setStyle('map_style');
 
-
-
-const mapElement = document.getElementById('map');
-if (mapElement) {
-  const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
-  if (mapElement.dataset.markers !== "") {
-    const markers = JSON.parse(mapElement.dataset.markers);
-    map.addMarkers(markers);
-    if (markers.length === 0) {
-      map.setZoom(8);
-    } else if (markers.length === 1) {
-      map.setCenter(48.864716, 2.349014);
-      map.setZoom(8);
-    } else if (markers.length == undefined) {
-      map.addMarker(markers);
-      map.setCenter(markers.lat, markers.lng);
-      map.setZoom(14);
-      getNearPlaces(markers, 500, map);
-    } else {
-      map.fitLatLngBounds(markers);
     }
-    map.addStyle({
-      styles: myStyle,
-      mapTypeId: 'map_style'
-    });
-    map.setStyle('map_style');
-
   }
 }
+
+
+var mapElement = document.getElementById('map');
+
+if (mapElement) {
+  initMap();
+  window.initMap = initMap;
 }
-
-initMap();
-
-
-window.initMap = initMap;
