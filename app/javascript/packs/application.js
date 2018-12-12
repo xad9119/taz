@@ -13,9 +13,7 @@ import { autocomplete } from '../components/autocomplete';
 import { initSteps } from '../components/form_steps';
 import { initSelect } from '../components/dashboard_select';
 import { xxx } from '../components/checkbox_compare';
-import { chart_price_per_asset } from '../components/chart_price_per_asset';
-import { chart_value_per_year } from '../components/chart_value_per_year';
-
+import { chart_q_per_cat, chart_value_per_year, chart_price_per_asset } from '../components/charts';
 
 if (document.querySelector("#asset_address")){
   autocomplete();
@@ -42,3 +40,9 @@ if (document.getElementById("value_per_year")) {
  chart_value_per_year(years, values);
 };
 
+if (document.getElementById("q_per_cat")) {
+ const myId = document.getElementById("q_per_cat");
+ const categories = JSON.parse(myId.dataset.categories);
+ const values = JSON.parse(myId.dataset.values);
+ chart_q_per_cat(categories, values);
+};

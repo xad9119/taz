@@ -4,6 +4,6 @@
                                .map { |y| @business_assets
                                   .select { |b| b.transactions.last.date.year <= y}
                                   .map { |b| b.transactions.last.price}
-                                  .sum } %>">
+                                  .sum / 1000000 } %>">
 
 </canvas>
