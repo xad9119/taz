@@ -1,0 +1,9 @@
+<canvas id="q_per_cat"
+  data-categories="<%= @business_assets.map { |b| b.asset_type }.uniq %>"
+  data-values="<%= @business_assets.map { |b| b.asset_type }.uniq
+                                   .map { |c| @business_assets
+                                      .select { |b| b.asset_type == c }
+                                      .map { |b| b.transactions.last.price}
+                                      .sum / 1000000 } %>">
+
+</canvas>
