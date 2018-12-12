@@ -104,6 +104,7 @@ class BusinessAssetsController < ApplicationController
     if business_asset.valid?
       redirect_to business_asset_path(business_asset)
     end
+raise
 
     attachment = Attachment.new(business_asset: business_asset)
     file = my_hash[:attachment][:file]
