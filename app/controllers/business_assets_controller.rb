@@ -155,6 +155,7 @@ end
     if business_asset.valid?
       redirect_to business_asset_path(business_asset)
     end
+raise
 
     attachment = Attachment.new(business_asset: business_asset)
     file = my_hash[:attachment][:file]
@@ -194,6 +195,7 @@ end
     last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
     buyer_last_transactions = last_transactions.select { |transaction| transaction.buyer == @buyer }
     @business_assets = buyer_last_transactions.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
+    @max_price = @business_assets.map { |bus| bus.transactions.last.price }.max()
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {

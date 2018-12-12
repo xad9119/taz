@@ -4,7 +4,9 @@
   </div>
 
 
-    <div class="asset-category"><%= business_asset.asset_type %></div>
+    <div class="asset-category">
+      <%= image_tag("#{business_asset.asset_type.downcase.delete(' ')}.png") %>
+      </div>
   <div class="card-information">
     <div class="first-line">
       <div class="address">
@@ -12,7 +14,7 @@
           <% address = business_asset.geographical_location.address.length > 28 ? "#{business_asset.geographical_location.address[0..28]}..." : business_asset.geographical_location.address %>
           <p><%= address %></p>
           <% else %>
-          <p>No Address</p>
+          <p>No address</p>
         <% end %>
       </div>
       <div class="occupancy">
@@ -33,7 +35,7 @@
         <% if business_asset.surface %>
           <p><strong>Surface: <%= format_number(business_asset.surface, currency_symbol: false) %>m²</strong></p>
           <% else %>
-          <p>no surface</p>
+          <p>No surface</p>
         <% end %>
 
       </div>
