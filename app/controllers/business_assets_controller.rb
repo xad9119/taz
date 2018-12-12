@@ -45,6 +45,9 @@ class BusinessAssetsController < ApplicationController
         infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: @business_asset })},
         icon: ActionController::Base.helpers.image_path("#{@business_asset.asset_type.downcase.delete(' ')}.png")
       }
+    ap @business_asset.attachments
+    @carroussel = @business_asset.attachments.sort_by { |file| file.id }
+    ap @carroussel
   end
 
   def new

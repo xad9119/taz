@@ -22,6 +22,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
 gem 'bootstrap'
+gem 'awesome_print'
 
 gem 'pg_search'
 gem 'jquery-ui-rails'
