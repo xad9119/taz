@@ -8,6 +8,10 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 require('webpack-jquery-ui');
 require('webpack-jquery-ui/css');
 
+
+
+
+import { initMap } from 'map.js';
 import { initFormStyle } from '../components/form';
 import { autocomplete } from '../components/autocomplete';
 import { initSteps } from '../components/form_steps';
