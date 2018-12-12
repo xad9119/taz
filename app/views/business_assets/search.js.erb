@@ -1,0 +1,9 @@
+function refreshPage(innerHTML) {
+  const newReviewPage = document.getElementById('main-display');
+  newReviewPage.innerHTML = innerHTML;
+}
+
+refreshPage('<%= j render "business_assets/cards_list_map", business_assets: @business_assets, markers: @markers %>');
+initMap();
+
+
