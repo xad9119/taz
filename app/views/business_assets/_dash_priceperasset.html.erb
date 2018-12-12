@@ -1,0 +1,3 @@
+<canvas id="price_per_asset" data-assets="<%= @business_assets.map { |b| b.geographical_location.address.split(',')[1].downcase.capitalize()} %>" data-prices="<%= @business_assets.map { |b| b.transactions.last.price} %>">
+
+</canvas>
