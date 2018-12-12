@@ -23,6 +23,8 @@ import GMaps from 'gmaps/gmaps.js';
 //   service = new google.maps.places.PlacesService(map);
 //   service.nearbySearch(request, callback);
 // };
+const initMap = () => {
+
 const mapElement = document.getElementById('map');
 if (mapElement) {
   const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
@@ -43,6 +45,7 @@ if (mapElement) {
       map.fitLatLngBounds(markers);
     }
   }
+}
 }
 
 initMap();

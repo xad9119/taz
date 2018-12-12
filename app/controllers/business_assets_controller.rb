@@ -106,6 +106,7 @@ end
   end
 
   def create
+    raise
     my_hash = params['search']
     categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
     business_asset = BusinessAsset.new
