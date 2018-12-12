@@ -10,14 +10,7 @@ const chart_value_per_year = (years, values) => {
           datasets: [{
               label: 'Asset Under Management (M€)',
               data: values,
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
+              backgroundColor: 'rgba(75, 192, 192, 0.5)',
               // backgroundColor: [
               //     'rgba(255, 99, 132, 0.2)',
               //     'rgba(54, 162, 235, 0.2)',
@@ -54,14 +47,7 @@ const chart_price_per_asset = (assets, prices) => {
           datasets: [{
               label: 'Asset Under Management (M€)',
               data: prices,
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
+              backgroundColor: 'rgba(54, 162, 235, 0.5)',
               // backgroundColor: [
               //     'rgba(255, 99, 132, 0.2)',
               //     'rgba(54, 162, 235, 0.2)',
@@ -95,12 +81,12 @@ const chart_q_per_cat = (categories, prices) => {
       datasets: [{
           data: prices,
           backgroundColor: [
-                          'rgba(255, 99, 132, 0.2)',
-                          'rgba(54, 162, 235, 0.2)',
-                          'rgba(255, 206, 86, 0.2)',
-                          'rgba(75, 192, 192, 0.2)',
-                          'rgba(153, 102, 255, 0.2)',
-                          'rgba(255, 159, 64, 0.2)'
+                          'rgba(255, 99, 132, 0.5)',
+                          'rgba(54, 162, 235, 0.5)',
+                          'rgba(255, 206, 86, 0.5)',
+                          'rgba(75, 192, 192, 0.5)',
+                          'rgba(153, 102, 255, 0.5)',
+                          'rgba(255, 159, 64, 0.5)'
                       ]
       }],
 
@@ -116,19 +102,12 @@ const chart_q_per_cat = (categories, prices) => {
 const chart_bubble = (points) => {
   var ctx = document.getElementById("bubble").getContext('2d');
   var scatterChart = new Chart(ctx, {
-      type: 'scatter',
+      type: 'bubble',
       data: {
           datasets: [{
               label: 'Scatter Dataset',
               data: points,
-              backgroundColor: [
-                              'rgba(255, 99, 132, 0.2)',
-                              'rgba(54, 162, 235, 0.2)',
-                              'rgba(255, 206, 86, 0.2)',
-                              'rgba(75, 192, 192, 0.2)',
-                              'rgba(153, 102, 255, 0.2)',
-                              'rgba(255, 159, 64, 0.2)'
-                          ]
+              backgroundColor:'rgba(255, 99, 132, 0.5)',
           }]
       },
       options: {
