@@ -59,7 +59,6 @@
 ;EHB;Stephane Berry;25 rue Louis Ampère;Neuilly sur Marne;93330;Light Industrial;5733;5618;98%;;;299854;53;50;286650;3360000;586;
 ;EHB;Olivier Lambin; 6 Avenue de la Croix Boisselière;Morangis;91420;Light Industrial;4600;0;0%;;;;;55;253000;2600000;565;
 ;;Steeven Bonnet (Nexity);135 rue des pêchers;Plaisir;78370;Light Industrial;4300;0;0%;;;;;45;193500;2400000;558;
-;EHB;Jerome Mainguy;Rue Ferme dambuc;Gonfreville L'Orcher;76700;Light Industrial;4737;3877,74;82%;;;187689;48;45;213165;2500000;528;
 ;EHB;Antoine Guicheteau (Nexity);4 rue des malines;Lisses;91090;Light Industrial;5500;0;0%;;;;;46;253000;2800000;509;
 ;EHB;Astesana;6 Avenue des 3 peuples;Montigny;78180;Light Industrial;16263;0;0%;;;;;45;731835;5300000;326;
 ;ZK;Ariel Marelli;2 rue Denis Diderot;Elancourt;78990;Light Industrial;38789;0;0%;;;;0;50;1939450;9000000;232;
@@ -116,7 +115,6 @@
 ;EHB;Charles Albert (BNPRE);3 avenue de l’Amazonie ;Les Ulis;91940;Light Industrial;3353;3353;100%; Narboni;;278245;83;82;274946;2800000;835;
 ;EHB;Richard Desgroppes (GB);45 rue de la Procession;Paris;75015;Office;1879;0;0,00%;;;;;390;732810;9900000;5269;
 ;EHB;Michael HAGEGE (CW);8 rue Férou;Paris;75006;Office;1116;0;0,00%;;;;;600;669600;9000000;8065;
-;EHB;Augustin Michaud;64 Rue du Vivier;Amiens;88000;Office;2069;2069;100%;;;248441;120;120;248280;3000000;1450;
 ;GRO;Charles Albert BNP PARIBAS ;80 Bis rue pierre Semard ;Chatillon;92320;Light Industrial;1108;958;86%; Boostek - SPCV - Otus Ovelia;;99200;104;112;123950;1800000;1879;
 ;EHB;Antoine Guicheteau (Nexity);Zone de la Bonde rue de l'Aulnaye Dracourt ;Massy;91300;Light Industrial;1023;0;0%;;;;;135;138105;2200000;2151;
 ;EHB;Arthur Rodriguez (CBRE);17 Rue Pierre Josse;BONDOUFLE;91070;Light Industrial;9493;0;0%;;;;;40;379720;4200000;442;
@@ -131,7 +129,6 @@
 ;EHB;Geoffroy d’ARCHE (Evolis);27 rue de Vanves;Boulogne-Billancourt;92100;Office;1454;0;0%;;;;;280;407120;6000000;4127;
 ;EHB;Jérôme Mainguy (Strategim Partner);15 Route de Fontainebleau;Vitry-sur-Seine;94400;Light Industrial;7600;4040;53%;;;586220;145;150;1140000;23000000;3026;
 ;EHB;Jérôme Mainguy (Strategim Partner);5 Boulevard de Créteil;Saint-Maur des Fossés;94100;Light Industrial;7020;5171;74%;;;352907;68;85;490415;4000000;570;
-;GRO ;Maxim Vadehra ACTA Immo;26 rue des Briquetiers;Le Havre;76600;Office;1500;1500;100%; NEGOCEANE;;98000;65;;;1000000;;
 ;EHB;Arthur HELIN (CBRE);6 Rue des Maronniers  ;L'hay les Roses;94240;Light Industrial;953;0;0%;;;;;100;95300;1250000;;
 ;CDU;Nadia MEUNIER (Nexity);rue Professeur Paul Milliez ;Champigny sur marne;94500;Light Industrial;3300;0;0%;;;;;;;3500000;;
 ;EHB;Lucien Renaudin (COGIB) ;328 Bis rue de Paris ;Villeneuve Saint Georges;94190;Housing;1149;228;20%;;;57000;250;;;695000;3048;
@@ -160,15 +157,15 @@
 ;EHB;Olivier Lambin (CBRE);61 rue Emile Zola;Corbeil Essonnes;91100;Light Industrial;1530;1530;100%; TME;;88800;58;52;79560;850000;556;
 ;EHB;PE Maury (Cordell);1 rue des Bruyères;Asnières-sur-Seine;92600;Housing;576;576;100%;;;114000;198;;;2700000;4688;
 ;;Olivier Lambin (CBRE);64 allée des Champs Elysées;Courcouronnes;91080;Retail;2140;2140;100%; BNP - Annapurna - Evry Form;;349583;163;;349583;6200000;2897;
-01/04/2015;;BNPRE;11-15 Rue Léon Blum;Palaiseau;91120;light Industrial;3828;3828;100,00%; Swiss Post ;VLD;196237,38;51,3;51,3;196237,38;1825000;476,8;10%
-22/10/2015;;BNPRE;1-5 rue Michel Carré;Argenteuil;95100;light Industrial;864;864;100,00%; Mesnil Accessoires ;VLD;87622,03;101,4;101,4;87622,03;846000;979,2;0%
-24/03/2016;;BNPRE;6 Avenue Louis Pasteur;Maurepas;78310;light Industrial;8209;8209;100,00%; Altead ;VLD;393267,11;47,9;48,7;400000;4295000;523,2;10%
-11/04/2016;;BNPRE;4 Rue Albert Einstein;Trappes;78190;light Industrial;1276;1276;100,00%; D2T ;VLD;82938;65;65;82938;880000;689,7;22%
-17/11/2016;;CBRE;44 Avenue du 8 Mai 1945;Villeneuve-la-Garenne;92390;light Industrial;3441;3441;100,00%; Intelligence en Direct ;VLD;333932,59;97;97;333932,59;2800000;813,7;21%
-15/01/2017;;BNPRE;15 Rue Benjamin Raspail ;Malakoff;92240;light Industrial;2893;2893;100,00%; Monal Holding ;VLD;355378;122,8;122,8;355378;4149536;1434,3;31%
-26/07/2017;;CBRE; 64 allée des Champs Elysées ;Courcouronnes;91080;retail;2140;2140;100,00%; BNP ;VLD;351115;164,1;164,1;351115;3981058,44;1860,3;0%
-11/12/2017;;Nexity;10 avenue André Marie Ampère;Montigny-le-Bretonneux;78180;light Industrial;559;559;100,00%; Exosport ;VLD;55357,75;99;99;55357,75;750000;1341,7;0%
-05/04/2018;;Nexity;7 allée(s) des Aphleries;Le Perray en Yvelines;78610;light Industrial;743;743;100,00%; Locaposte ;VLD;53125,3;71,5;71,5;53125,3;440000;592,2;33%
-29/03/2018;;BNPRE;"Zone Industrielle Nord""";Morangis;91420;light Industrial;1309;1309;100,00%; CTL ;VLD;64109,1;49;49;64109,1;1000000;763,9;24%
-27/07/2018;;CBRE;61 rue Emile Zola;Corbeil Essonnes;91100;light Industrial;1530;1530;100,00%; TME ;VLD;69500;45,4;45,4;69500;705000;460,8;4%
-18/07/2018;;BNPRE;16 rue Jean Jacques Rousseau ;Grigny;91350;light Industrial;706;706;100,00%; Agence Proximité Services ;VLD;63230;89,6;89,6;63230;700000;991,5;32%
+01/04/2015;;BNPRE;11-15 Rue Léon Blum;Palaiseau;91120;Light Industrial;3828;3828;100,00%; Swiss Post ;VLD;196237,38;51,3;51,3;196237,38;1825000;476,8;10%
+22/10/2015;;BNPRE;1-5 rue Michel Carré;Argenteuil;95100;Light Industrial;864;864;100,00%; Mesnil Accessoires ;VLD;87622,03;101,4;101,4;87622,03;846000;979,2;0%
+24/03/2016;;BNPRE;6 Avenue Louis Pasteur;Maurepas;78310;Light Industrial;8209;8209;100,00%; Altead ;VLD;393267,11;47,9;48,7;400000;4295000;523,2;10%
+11/04/2016;;BNPRE;4 Rue Albert Einstein;Trappes;78190;Light Industrial;1276;1276;100,00%; D2T ;VLD;82938;65;65;82938;880000;689,7;22%
+17/11/2016;;CBRE;44 Avenue du 8 Mai 1945;Villeneuve-la-Garenne;92390;Light Industrial;3441;3441;100,00%; Intelligence en Direct ;VLD;333932,59;97;97;333932,59;2800000;813,7;21%
+15/01/2017;;BNPRE;15 Rue Benjamin Raspail ;Malakoff;92240;Light Industrial;2893;2893;100,00%; Monal Holding ;VLD;355378;122,8;122,8;355378;4149536;1434,3;31%
+26/07/2017;;CBRE; 64 allée des Champs Elysées ;Courcouronnes;91080;Retail;2140;2140;100,00%; BNP ;VLD;351115;164,1;164,1;351115;3981058,44;1860,3;0%
+11/12/2017;;Nexity;10 avenue André Marie Ampère;Montigny-le-Bretonneux;78180;Light Industrial;559;559;100,00%; Exosport ;VLD;55357,75;99;99;55357,75;750000;1341,7;0%
+05/04/2018;;Nexity;7 allée(s) des Aphleries;Le Perray en Yvelines;78610;Light Industrial;743;743;100,00%; Locaposte ;VLD;53125,3;71,5;71,5;53125,3;440000;592,2;33%
+29/03/2018;;BNPRE;Zone Industrielle Nord;Morangis;91420;Light Industrial;1309;1309;100,00%; CTL ;VLD;64109,1;49;49;64109,1;1000000;763,9;24%
+27/07/2018;;CBRE;61 rue Emile Zola;Corbeil Essonnes;91100;Light Industrial;1530;1530;100,00%; TME ;VLD;69500;45,4;45,4;69500;705000;460,8;4%
+18/07/2018;;BNPRE;16 rue Jean Jacques Rousseau ;Grigny;91350;Light Industrial;706;706;100,00%; Agence Proximité Services ;VLD;63230;89,6;89,6;63230;700000;991,5;32%
