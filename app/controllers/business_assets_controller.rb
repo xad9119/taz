@@ -76,18 +76,6 @@ class BusinessAssetsController < ApplicationController
       a.remote_file_url = url
       a.save!
 
-      # # add attachements
-      # attachment = Attachment.new
-      # attachment.business_asset = business_asset
-      # attachment.attachment_type = 'photo'
-      # loc = business_asset.geographical_location
-      # # url = "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=#{loc.latitude},#{loc.longitude}&fov=90&heading=235&pitch=10&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"
-      # url = params[:file]
-      # attachment.url = url
-      # attachment.remote_file_url = url
-      # attachment.save!
-
-
     else
       flash[:alert] = business_asset.errors.full_messages
       render :new
@@ -102,7 +90,6 @@ class BusinessAssetsController < ApplicationController
       render :new
     end
 
-
     transaction = Transaction.new
     transaction.define_attributes(my_hash['transactions'], business_asset)
     if transaction.valid?
@@ -115,9 +102,15 @@ class BusinessAssetsController < ApplicationController
       redirect_to business_asset_path(business_asset)
     end
 
+    attachment = Attachment.new(business_asset: business_asset)
+    file = my_hash[:attachment][:file]
+    attachment.file = file
+    attachment.save
+
     authorize business_asset
   end
 
+  # redirect_to business_assets_path
 
 
   def edit
@@ -159,6 +152,7 @@ class BusinessAssetsController < ApplicationController
   end
 
 private
+
   def set_business_asset
     @business_asset = policy_scope(BusinessAsset).find(params[:id])
     authorize @business_asset
