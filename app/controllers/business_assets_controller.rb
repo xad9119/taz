@@ -1,6 +1,6 @@
 class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
-  skip_after_action :verify_authorized, :only => :search
+  skip_after_action :verify_authorized, only:  [:search, :destroy]
 
 def search
     @business_assets = policy_scope(BusinessAsset)
@@ -106,7 +106,6 @@ end
   end
 
   def create
-    raise
     my_hash = params['search']
     categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
     business_asset = BusinessAsset.new
@@ -114,12 +113,12 @@ end
 
 
     if business_asset.valid?
+      business_asset.asset_type = AssetCategory.find(categories_array.first.to_i).name if !categories_array.empty?
       business_asset.save!
       categories_array.each do |cat|
         asset_category = AssetCategory.find(cat)
         BusinessAssetCategory.create(business_asset: business_asset, asset_category: asset_category)
       end
-
       # add a default picture that's the street view screenshot
       a = Attachment.new
       a.business_asset = business_asset
@@ -155,7 +154,6 @@ end
     if business_asset.valid?
       redirect_to business_asset_path(business_asset)
     end
-raise
 
     attachment = Attachment.new(business_asset: business_asset)
     file = my_hash[:attachment][:file]

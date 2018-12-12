@@ -154,21 +154,10 @@ var myStyle = [
 //   service = new google.maps.places.PlacesService(map);
 //   service.nearbySearch(request, callback);
 // };
-<<<<<<< HEAD
 const initMap = () => {
-=======
-
-
-
-
-
-
-
-
 var styledMapType = new google.maps.StyledMapType(myStyle)
 
 
->>>>>>> bd648d16ff8f9ecb981658efb43eefebef2e6632
 
 const mapElement = document.getElementById('map');
 if (mapElement) {
