@@ -8,8 +8,6 @@ def search
     # .joins(:business_asset_category)
     # .joins(:asset_category)
 
-
-    binding.pry
       my_hash = params["search"]
       categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
       .map{|cat| AssetCategory.find(cat).name}
@@ -156,8 +154,10 @@ end
     end
 
     attachment = Attachment.new(business_asset: business_asset)
+    if my_hash[:attachment]
     file = my_hash[:attachment][:file]
     attachment.file = file
+    end
     attachment.save
 
     authorize business_asset
