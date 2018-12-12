@@ -1,14 +1,9 @@
 <h3 class="form-section">Add attachments ?</h3>
 
-<%= f.fields_for :attachments do |att| %>
-  <%= att.label :file, "Photo" %>
-  <%= att.hidden_field(:file_cache) %>
-  <%= att.cl_image_upload(:file) %>
+<%= f.fields_for :attachment do |att| %>
+  <%= att.file_field :file %>
 <% end %>
 
-
-
-<div class="btn-section">
-  <%= f.submit "add an asset", class: "btn btn-primary btn-form" %>
-</div>
-
+  <div class="btn-section">
+    <%= f.submit "add an asset", class: "btn btn-primary btn-form" %>
+  </div>
