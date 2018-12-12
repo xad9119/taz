@@ -1,5 +1,55 @@
 class BusinessAssetsController < ApplicationController
   before_action :set_business_asset, only: [:show, :edit, :update, :destroy]
+  skip_after_action :verify_authorized, :only => :search
+
+def search
+    @business_assets = policy_scope(BusinessAsset)
+    .joins(:geographical_location)
+    # .joins(:business_asset_category)
+    # .joins(:asset_category)
+
+
+    binding.pry
+      my_hash = params["search"]
+      categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
+      .map{|cat| AssetCategory.find(cat).name}
+
+      if !my_hash["address"].empty?
+        sql_query = " \
+        geographical_locations.address ILIKE :query \
+        "
+        @business_assets = @business_assets
+        .where(sql_query, query: "%#{my_hash["address"] }%")
+
+      end
+      unless categories_array.empty?
+        @business_assets = @business_assets.where(asset_type: categories_array)
+
+        # .where("asset_type LIKE ?", "%#{params[:asset_category]}%")
+        # sql_query = " \
+        # business_assets.asset_type ILIKE :asset_category \
+        # "
+        # @business_assets = @business_assets
+        # .where(sql_query, query: "%#{params[:asset_category] }%")
+
+      end
+
+
+    @markers = @business_assets.map do |business_asset|
+      # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+      {
+        title: business_asset.geographical_location.address,
+        lng: business_asset.geographical_location.longitude,
+        lat: business_asset.geographical_location.latitude,
+        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+      }
+    end
+    @markers.select! { |x| !x.nil? }
+    respond_to do |format|
+      format.js
+    end
+
+end
 
   def index
     if params[:query].present?
@@ -144,6 +194,7 @@ raise
     last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
     buyer_last_transactions = last_transactions.select { |transaction| transaction.buyer == @buyer }
     @business_assets = buyer_last_transactions.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
+    @max_price = @business_assets.map { |bus| bus.transactions.last.price }.max()
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {

@@ -8,6 +8,7 @@
 }
 
 .main-container {
+  margin: 10px 0px 0px 10px;
   display: flex;
 }
 
@@ -47,5 +48,6 @@
 .infowindow {
   width: 130px;
   text-align: center;
-  margin-left: 22px
+  margin-left: 22px;
+  margin-right: 0px !important;
 }

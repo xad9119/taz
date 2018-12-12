@@ -203,7 +203,7 @@ CSV.foreach(filepath, csv_options) do |row|
   transaction.business_asset = asset
   transaction.seller = Company.first
   transaction.buyer = owner
-  transaction.date = DateTime.new(1000) unless transaction.date
+  transaction.date = rand(Date.civil(2008, 1, 1)..Date.civil(2018, 12, 10)) unless transaction.date
   transaction.price = 0 unless transaction.price
   transaction.save!
 

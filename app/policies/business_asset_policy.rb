@@ -8,4 +8,7 @@ class BusinessAssetPolicy < ApplicationPolicy
   def dashboard?
     true
   end
+  def search?
+    true
+  end
 end

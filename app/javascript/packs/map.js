@@ -2,6 +2,7 @@
 import GMaps from 'gmaps/gmaps.js';
 
 
+
 var myStyle = [
     {
         "featureType": "administrative",
@@ -131,6 +132,7 @@ var myStyle = [
 
 
 
+
 // function callback(results, status) {
 //   if (status == google.maps.places.PlacesServiceStatus.OK) {
 //     for (var i = 0; i < results.length; i++) {
@@ -159,8 +161,8 @@ var myStyle = [
 
 
 
-var styledMapType = new google.maps.StyledMapType(myStyle)
 
+var styledMapType = new google.maps.StyledMapType(myStyle)
 
 
 
@@ -192,4 +194,7 @@ if (mapElement) {
   }
 }
 
+initMap();
 
+
+window.initMap = initMap;
