@@ -76,11 +76,21 @@
             <% @business_assets.each do |ba| %>
             <tr>
               <th scope="row"><%= ba.geographical_location.address.split(',')[1].downcase.capitalize() %></th>
-              <td><%= format_number(ba.surface, currency_symbol: false) %> m²</td>
-              <td><%= format_number(ba.rentals.last.annual_rent) %></td>
-              <td><%= format_number((ba.rentals.last.annual_rent / ba.surface)) %></td>
-              <td><%= format_number(ba.transactions.last.price) %></td>
-              <td><%=  ((ba.rentals.last.annual_rent / ba.transactions.last.price) * 100).round(2) %> %</td>
+              <% if ba.surface %>
+                <td><%= format_number(ba.surface, currency_symbol: false) %> m²</td>
+              <% end %>
+              <% if ba.rentals.last %>
+                <td><%= format_number(ba.rentals.last.annual_rent) %></td>
+              <% end %>
+              <% if ba.rentals.last %>
+                <td><%= format_number((ba.rentals.last.annual_rent / ba.surface)) %></td>
+              <% end %>
+              <% if ba.transactions %>
+                <td><%= format_number(ba.transactions.last.price) %></td>
+              <% end %>
+              <% if ba.rentals.last %>
+                <td><%=  ((ba.rentals.last.annual_rent / ba.transactions.last.price) * 100).round(2) %> %</td>
+              <% end %>
             </tr>
             <% end %>
 
