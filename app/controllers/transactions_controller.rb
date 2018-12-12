@@ -18,13 +18,13 @@ class TransactionsController < ApplicationController
                     .select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }
                     .first
     @comparables = @transaction.ranked_comparables
-    raise
+
     if params[:query]
       @key_comparables = @comparables.select { |e| params[:query].split(' ').include?(e.id.to_s) }
     else
       @key_comparables = @comparables.first(5)
       query = @comparables.first(5).map(&:id).join(' ')
-      redirect_to compare_path(params[:id], query: query) and return
+      return redirect_to compare_path(params[:id], query: query)
     end
 
     @fair_price = @transaction.fair_price(@key_comparables)

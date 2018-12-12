@@ -51,34 +51,37 @@ def search
 
 end
 
-def index
-   if params[:query].present?
-    sql_query = " \
-    geographical_locations.address ILIKE :query \
-    "
-    @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
-    sql_query, query: "%#{params[:query]}%")
-    @markers = @business_assets.map do |business_asset|
-      # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
-      {
-        title: business_asset.geographical_location.address,
-        lng: business_asset.geographical_location.longitude,
-        lat: business_asset.geographical_location.latitude,
-        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
-      }
-    end
-    else
-      @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+  def index
+    if params[:query].present?
+      sql_query = " \
+      geographical_locations.address ILIKE :query \
+      "
+      @business_assets = policy_scope(BusinessAsset).joins(:geographical_location).where(
+      sql_query, query: "%#{params[:query]}%")
       @markers = @business_assets.map do |business_asset|
-        next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+        # next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {
           title: business_asset.geographical_location.address,
           lng: business_asset.geographical_location.longitude,
           lat: business_asset.geographical_location.latitude,
-          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+          infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })},
+          icon: ActionController::Base.helpers.image_path("#{business_asset.asset_type.downcase.delete(' ')}.png")
         }
       end
-      @markers.select! { |x| !x.nil? }
+    else
+        @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+        @markers = @business_assets.map do |business_asset|
+          next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
+          {
+            title: business_asset.geographical_location.address,
+            lng: business_asset.geographical_location.longitude,
+            lat: business_asset.geographical_location.latitude,
+            infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })},
+            # icon: image_tag("lynx.jpg", size: "10x10")
+            icon: ActionController::Base.helpers.image_path("#{business_asset.asset_type.downcase.delete(' ')}.png")
+          }
+        end
+        @markers.select! { |x| !x.nil? }
     end
     authorize @business_assets
   end
@@ -89,8 +92,12 @@ def index
         title: @business_asset.geographical_location.address,
         lng: @business_asset.geographical_location.longitude,
         lat: @business_asset.geographical_location.latitude,
-        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: @business_asset })}
+        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: @business_asset })},
+        icon: ActionController::Base.helpers.image_path("#{@business_asset.asset_type.downcase.delete(' ')}.png")
       }
+    ap @business_asset.attachments
+    @carroussel = @business_asset.attachments.sort_by { |file| file.id }
+    ap @carroussel
   end
 
   def new
@@ -136,7 +143,6 @@ def index
       render :new
     end
 
-
     transaction = Transaction.new
     transaction.define_attributes(my_hash['transactions'], business_asset)
     if transaction.valid?
@@ -149,8 +155,16 @@ def index
       redirect_to business_asset_path(business_asset)
     end
 
+    attachment = Attachment.new(business_asset: business_asset)
+    file = my_hash[:attachment][:file]
+    attachment.file = file
+    attachment.save
+
     authorize business_asset
   end
+
+  # redirect_to business_assets_path
+
 
   def edit
   end
@@ -163,7 +177,7 @@ def index
     format.html
     format.js
     end
-    @business_asset = BusinessAsset.find(params[:id])
+    # @business_asset = BusinessAsset.find(params[:id])
     @business_asset.destroy
     redirect_to business_assets_path
   end
@@ -172,13 +186,13 @@ def index
     authorize policy_scope(BusinessAsset)
     @buyers_unique = Company.joins(:bought_transactions).select(:name).distinct
     if params[:option].present?
-      @buyer = Company.find_by(name:params[:option])
+      @buyer = Company.find_by(name: params[:option])
     else
       @buyer = Company.find_by(name: "VLD")
     end
     last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
-    buyer_last_transaction = last_transactions.select { |last_transaction| last_transaction.buyer == @buyer }
-    @business_assets = buyer_last_transaction.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
+    buyer_last_transactions = last_transactions.select { |transaction| transaction.buyer == @buyer }
+    @business_assets = buyer_last_transactions.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
         {
@@ -191,6 +205,7 @@ def index
   end
 
 private
+
   def set_business_asset
     @business_asset = policy_scope(BusinessAsset).find(params[:id])
     authorize @business_asset

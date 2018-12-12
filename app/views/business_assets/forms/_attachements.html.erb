@@ -1,0 +1,9 @@
+<h3 class="form-section">Add attachments ?</h3>
+
+<%= f.fields_for :attachment do |att| %>
+  <%= att.file_field :file %>
+<% end %>
+
+  <div class="btn-section">
+    <%= f.submit "add an asset", class: "btn btn-primary btn-form" %>
+  </div>

@@ -1,0 +1,9 @@
+<canvas id="value_per_year"
+  data-years="<%= (2009..2018).to_a %>"
+  data-values="<%= (2009..2018).to_a
+                               .map { |y| @business_assets
+                                  .select { |b| b.transactions.last.date.year <= y}
+                                  .map { |b| b.transactions.last.price}
+                                  .sum } %>">
+
+</canvas>

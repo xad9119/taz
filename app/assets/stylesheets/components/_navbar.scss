@@ -115,8 +115,12 @@
   border-bottom: 3px solid $secondary-color;
 }
 
-.a:hover {
+.navbar {
+  a:hover, a:active{
   text-decoration: none;
+  color: $secondary-color;
+  border-bottom: 1px solid $secondary-color;
+  }
 }
 
 

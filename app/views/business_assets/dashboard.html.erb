@@ -2,10 +2,14 @@
   <div class="col-xs-12 col-sm-12">
     <div class="hr">
       <%= form_tag dashboard_path, method: :get do |f| %>
-        <label> Select View (Owner) :</label>
+        <label> Select Owner :</label>
         <%= select_tag "option", options_from_collection_for_select(@buyers_unique, "name", "name", @buyer.name) %>
       <% end %>
     </div>
+  </div>
+
+  <div class="dashboard-white-box" style="width: 400; height: 400;">
+    <%= render 'dash_valueperyear' %>
   </div>
 
   <div class="dashboard-white-box">
@@ -39,13 +43,38 @@
           <p><%= format_number(total_price) %></p>
         </div>
         <div class="col-xs-12 col-sm-4 green_box">
-          <p>Average profitability</p>
+          <p>Average yield</p>
           <p><%= ((total_rent / total_price) * 100).round(2) %> %</p>
         </div>
       </div>
-      <div>
-        <canvas id="myChart" width="400" height="400"></canvas>
-      </div>
+
+        <table class="tableau">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Address</th>
+              <th scope="col">Surface</th>
+              <th scope="col">Annual Rent</th>
+              <th scope="col">Annual Rent /m² </th>
+              <th scope="col">Price</th>
+              <th scope="col">Yield</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <% @business_assets.each do |ba| %>
+            <tr>
+              <th scope="row"><%= ba.geographical_location.address.split(',')[1].downcase.capitalize() %></th>
+              <td><%= format_number(ba.surface, currency_symbol: false) %> m²</td>
+              <td><%= format_number(ba.rentals.last.annual_rent) %></td>
+              <td><%= format_number((ba.rentals.last.annual_rent / ba.surface)) %></td>
+              <td><%= format_number(ba.transactions.last.price) %></td>
+              <td><%=  ((ba.rentals.last.annual_rent / ba.transactions.last.price) * 100).round(2) %> %</td>
+            </tr>
+            <% end %>
+
+          </tbody>
+        </table>
+
   </div>
 
   <div class= "dashboard-white-box-2" >

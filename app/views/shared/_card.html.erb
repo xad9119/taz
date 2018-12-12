@@ -38,7 +38,7 @@
 
       </div>
       <div class="rent">
-        <% if business_asset.transactions.first.price != 0 %>
+        <% unless business_asset.transactions.empty? %>
             <p><%= format_number(business_asset.transactions.first.price) %></p>
           <% else %>
           <p>-</p>
@@ -48,9 +48,9 @@
     <div class="profitability">
       <p><% business_asset.rentals.each do |r| %>
         <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
-          <p>Profitability: <%= (r.annual_rent / business_asset.transactions.first.price).round(2) * 100 %>%</p>
+          <p>Yield: <%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</p>
           <% else %>
-          <p>Profitability: na</p>
+          <p>Yield: na</p>
         <% end %>
         <% end %>
       </div>

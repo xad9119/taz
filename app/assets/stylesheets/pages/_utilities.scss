@@ -39,10 +39,10 @@ a {
 };
 
 a:hover, a:focus, a:active {
-  color: $secondary-color;
-  border-bottom: 1px solid $secondary-color;
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
+
 
 .ml {
   margin-left:15px;
