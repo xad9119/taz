@@ -48,7 +48,7 @@
     <div class="profitability">
       <p><% business_asset.rentals.each do |r| %>
         <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
-          <p>Yield: <%= (r.annual_rent / business_asset.transactions.first.price).round(2) * 100 %>%</p>
+          <p>Yield: <%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</p>
           <% else %>
           <p>Yield: na</p>
         <% end %>

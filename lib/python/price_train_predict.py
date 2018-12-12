@@ -134,9 +134,9 @@ X_ = feature_processing.transform(X_)
 estimate = int(model.predict(X_))
 kn = model.kneighbors(X_, n_neighbors=10, return_distance=True)
 
-ids = [x for x in kn[1][0]]
+ids = [df['id'].iloc[x] for x in kn[1][0]]
 distances = [x for x in kn[0][0]]
-estimates = [float(df.iloc[int(x)]['pricesqm']) for x in ids]
+estimates = [float(df.iloc[int(x)]['pricesqm']) for x in kn[1][0]]
 
 ids.insert(0,int(X['id']))
 distances.insert(0,np.mean(distances)) # average distance from 10 nearest --> confidence index

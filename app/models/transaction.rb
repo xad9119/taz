@@ -27,12 +27,24 @@ class Transaction < ApplicationRecord
   end
 
   def fair_price(comparables)
+    # if ENV['PRICE_PREDICTION_ENABLED']
+      # to be called after ranked_comparables
+    #   array = []
+    #   filepath = File.join(Rails.root, "lib/python/data/python_predicted.csv")
+    #   csv_options = { col_sep: ';', quote_char: '"', headers: :first_row }
+    #   CSV.foreach(filepath, csv_options) do |row|
+    #     array << row[1].to_f
+    #   end
+    #   result = array[0]
+    # else
     sum = 0
     comparables.each do |t|
       sum += (t.price + 0.0) / (t.business_asset.surface)
     end
-    average = !comparables.empty? ? sum / comparables.count : 0
-    return average * business_asset.surface
+    result = !comparables.empty? ? sum / comparables.count : 0
+    # end
+
+    return result * business_asset.surface
   end
 
   def define_attributes(my_hash, business_asset)
