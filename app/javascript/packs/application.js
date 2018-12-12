@@ -18,6 +18,7 @@ import { xxx } from '../components/checkbox_compare';
 
 
 
+
 if (document.querySelector("#asset_address")){
   autocomplete();
 }

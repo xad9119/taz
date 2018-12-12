@@ -1,7 +1,9 @@
-const refreshPage = (innerHTML) => {
-  const newPage = document.getElementById('main-display');
-  newPage.innerHTML = innerHTML;
-};
-
+function refreshPage(innerHTML) {
+  const newReviewPage = document.getElementById('main-display');
+  newReviewPage.innerHTML = innerHTML;
+}
 
 refreshPage('<%= j render "business_assets/cards_list_map", business_assets: @business_assets, markers: @markers %>');
+initMap();
+
+

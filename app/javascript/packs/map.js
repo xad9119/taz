@@ -1,6 +1,7 @@
 // app/javascript/packs/map.js
 import GMaps from 'gmaps/gmaps.js';
 
+
 // function callback(results, status) {
 //   if (status == google.maps.places.PlacesServiceStatus.OK) {
 //     for (var i = 0; i < results.length; i++) {
@@ -25,25 +26,31 @@ import GMaps from 'gmaps/gmaps.js';
 
 
 
-
-const mapElement = document.getElementById('map');
-if (mapElement) {
-  const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
-  const markers = JSON.parse(mapElement.dataset.markers);
-  map.addMarkers(markers);
-  if (markers.length === 0) {
-    map.setZoom(8);
-  } else if (markers.length === 1) {
-    map.setCenter(48.864716, 2.349014);
-    map.setZoom(8);
-  } else if (markers.length == undefined) {
-    map.addMarker(markers);
-    map.setCenter(markers.lat, markers.lng);
-    map.setZoom(14);
-    getNearPlaces(markers, 500, map);
-  } else {
-    map.fitLatLngBounds(markers);
+const initMap = () => {
+  const mapElement = document.getElementById('map');
+  if (mapElement) {
+    const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
+    const markers = JSON.parse(mapElement.dataset.markers);
+    // console.log(markers[0])
+    // console.log(markers.length)
+    map.addMarkers(markers);
+    if (markers.length === 0) {
+      map.setZoom(8);
+    } else if (markers.length === 1) {
+      map.setCenter(48.864716, 2.349014);
+      map.setZoom(8);
+    } else if (markers.length == undefined) {
+      map.addMarker(markers);
+      map.setCenter(markers.lat, markers.lng);
+      map.setZoom(14);
+      getNearPlaces(markers, 500, map);
+    } else {
+      map.fitLatLngBounds(markers);
+    }
   }
 }
 
+initMap();
 
+
+window.initMap = initMap;
