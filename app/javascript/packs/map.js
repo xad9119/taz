@@ -155,13 +155,6 @@ var myStyle = [
 //   service.nearbySearch(request, callback);
 // };
 
-
-
-
-
-
-
-
 var styledMapType = new google.maps.StyledMapType(myStyle)
 
 
