@@ -2,8 +2,16 @@ import 'nouislider';
 
 const initSearch = () => {
 
-  var slider = document.getElementById('slider-handles');
+  var searchForm = document.querySelector(".search_form")
 
+  if (searchForm) {
+    searchForm.addEventListener('change', (event) => {
+      document.querySelector(".test-apply").click();
+    })
+  };
+
+
+  var slider = document.getElementById('slider-handles');
   if (slider) {
     noUiSlider.create(slider, {
         start: [0, 10000000],
@@ -15,10 +23,13 @@ const initSearch = () => {
         step: 100000,
     });
     var rangeSliderValueElement = document.getElementById('slider-range-value');
+    var rangeSliderMinValue = document.querySelector('.slider-min-value');
+    var rangeSliderMaxValue = document.querySelector('.slider-max-value');
 
     slider.noUiSlider.on('update', function (values, handle) {
       rangeSliderValueElement.value = slider.noUiSlider.get();
-      console.log(slider.noUiSlider.get())
+      rangeSliderMinValue.innerHTML =  `min: €${parseInt(slider.noUiSlider.get()[0],10).toLocaleString()}`;
+      rangeSliderMaxValue.innerHTML =  `max: €${parseInt(slider.noUiSlider.get()[1],10).toLocaleString()}`;
     });
   }
 

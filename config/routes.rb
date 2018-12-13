@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
+
   resources :business_assets do
     collection do
       get 'search/', :action => 'search', :as => 'search'
