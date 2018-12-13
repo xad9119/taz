@@ -38,7 +38,7 @@
   <body>
     <div class="wrapper">
 <!-- ATTENTION - LAISSER LA RENDER DE NAVBAR ICI -->
-        <% unless request.env['PATH_INFO'] == "/business_assets/test" %>
+        <% unless request.env['PATH_INFO'] == "/business_assets" %>
           <div class="border" style="width: 100%; height: 70px"></div>
           <%= render 'shared/navbar' %>
         <% end %>

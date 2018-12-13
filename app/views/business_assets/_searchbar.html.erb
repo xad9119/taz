@@ -1,9 +1,0 @@
-<div class="search_bar">
-<%= form_tag search_business_assets_path, method: :get, remote: true do |form| %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Type a zipcode, city, or address"
-  %>
-  <%= form.button :submit %>
-<% end %>
