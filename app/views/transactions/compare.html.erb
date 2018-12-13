@@ -8,7 +8,6 @@
   <div class="container--row">
     <div class="comps-container">
       <div class="comparable-list">
-        <div id='first-tr'><%= render 'card_transaction' %></div>
         <% @comparables.each do |comparable| %>
           <%= render 'comparable_transactions', comparable: comparable, key_comparable: @key_comparables.include?(comparable) %>
         <% end %>

@@ -9,7 +9,7 @@ class Transaction < ApplicationRecord
 
   def ranked_comparables
     result = []
-    if ENV['PRICE_PREDICTION_ENABLED']
+    if ENV['PRICE_PREDICTION_ENABLED'] && false # to be removed to enable python
       create_csvs
       generate_predictions
 
