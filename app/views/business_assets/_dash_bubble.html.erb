@@ -1,5 +1,5 @@
 <canvas id="bubble"
-
+  data-assets="<%= @business_assets.map { |b| b.geographical_location.address.split(',')[1]} %>"
   data-points="<%= @business_assets.map { |b| {x: (((b.transactions.last.date - Date.today()).to_int + 12*365)/5)/30,
                                                y: b.current_rental.annual_rent / 1000,
                                                r: 20 } #*b.transactions.last.price / @max_price

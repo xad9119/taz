@@ -26,8 +26,9 @@ const initDashboard = () => {
   if (document.getElementById("bubble")) {
    const myId = document.getElementById("bubble");
    console.log(myId.dataset.points);
+   const assets = JSON.parse(myId.dataset.assets)
    const points = JSON.parse(myId.dataset.points);
-   chart_bubble(points);
+   chart_bubble(assets, points);
   };
 }
 

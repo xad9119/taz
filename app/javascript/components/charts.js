@@ -117,18 +117,26 @@ const chart_q_per_cat = (categories, prices) => {
   });
 };
 
-const chart_bubble = (points) => {
+const chart_bubble = (assets, points) => {
   var ctx = document.getElementById("bubble").getContext('2d');
   var scatterChart = new Chart(ctx, {
       type: 'bubble',
       data: {
+          labels: assets,
           datasets: [{
-              label:'',
               data: points,
               backgroundColor:'rgba(255, 99, 132, 0.5)',
           }]
       },
       options: {
+          tooltips: {
+                      callbacks: {
+                          label: function(tooltipItem, data) {
+                              var label = data.labels[tooltipItem.index];
+                              return label;
+                          }
+                      }
+                  },
           aspectRatio: 1.2,
           legend: {
                       display: false
