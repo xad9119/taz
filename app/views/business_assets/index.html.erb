@@ -25,7 +25,6 @@
 
       <button class="btn-filter" id="btn-asset-price">Price</button>
       <div class="options"id="filter-asset-price">
-        <div class="btn-options">
             <div class="slider-modal">
               <div class="slider-values">
                 <span class="slider-min-value"></span>
@@ -35,11 +34,10 @@
               <div id="slider-handles"></div>
               <!-- <div id="slider-range-value"></div> -->
               <input type="text" class="option-choice hidden" value="" name="post[price_range][]" id="slider-range-value">
-              <div>
-                <a href="#" class="apply-options" id="apply-options-price">Apply</a>
-              </div>
             </div>
-        </div>
+            <div class="btn-options">
+              <a href="#" class="apply-options" id="apply-options-price">Apply</a>
+            </div>
       </div>
 
       <%= f.submit 'Apply', class: "btn-filter test-apply" %>
