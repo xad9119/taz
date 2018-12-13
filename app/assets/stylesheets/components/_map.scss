@@ -42,10 +42,12 @@
 }
 
 .infowindow_image {
-  max-width: 70px;
+  margin-top: 1px;
+  width: 100%;
 }
 
 .infowindow {
+  height: 220px;
   width: 130px;
   text-align: center;
   margin-left: 22px;
