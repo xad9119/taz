@@ -116,28 +116,34 @@
   padding-left: 25px;
   margin: 0px;
   h2 {
-    font-size: 24px !important;
+    font-size: 18px !important;
     font-color: $main-color;
+    padding-right: 15px;
+    margin-top: 0px;
   }
   p {
     color: $main-color;
+    padding-top: 15px;
+    margin-bottom: 5px;
   }
 }
 .card2-other-info {
   padding-left: 25px;
   h2 {
-    margin-top: 10px;
+    margin-top: 2px;
     color: $main-color !important;
   }
   p {
     color: $main-color !important;
     margin-right: 15px;
+    margin-bottom: 0px;
+    margin-bottom: 5px;
   }
 }
 .surface-yield {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 50px;
   margin-right: 20px;
 }
 .price {

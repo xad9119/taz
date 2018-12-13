@@ -1,0 +1,275 @@
+<% content_for :navbar_links do %>
+    <div class= "navbar-taz-left">
+    <%= link_to "Edit", edit_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
+    <%= link_to "Compare", compare_path(@business_asset.last_transaction), class: "navbar-taz-item navbar-taz-link navbar-title " %>
+    <p data-toggle="modal" data-target="#delete-modal" class="navbar-taz-item navbar-taz-link navbar-title">Delete</p>
+     </div>
+<% end %>
+<%= render "modal" %>
+
+<div class= "container" >
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box height-line-1" >
+        <h3> Descriptif </h3>
+        <div class="descriptif">
+            <div class="row">
+              <div class="col-xs-4">
+                <p><strong> Address :</strong></p>
+              </div>
+              <div class="col-xs-8 text-left">
+                <p><%= @business_asset.geographical_location.address %></p>
+              </div>
+            </div>
+            <% if  @business_asset.construction_year%>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Construction Year :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.construction_year %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.asset_type %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Asset Type :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.asset_type %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.surface %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Surface :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.surface.round %> m²</p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.general_condition %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> General Condition :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.general_condition %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.land_surface %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Land Surface :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.land_surface.round %> m²</p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.description %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Description :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.description %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.height %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Height :</strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.height %>m</p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.office_area_share %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Office Area Share : </strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.office_area_share.round %>%</p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.occupancy_rate %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong> Occupancy Rate : </strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= @business_asset.occupancy_rate.round %>%</p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.transactions.last.price %>
+              <div class="row">
+               <div class="col-xs-4">
+                  <p><strong> Price : </strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= format_number(@business_asset.transactions.last.price) %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.rentals.last.annual_rent %>
+              <div class="row">
+               <div class="col-xs-4">
+                  <p><strong> Annual Rent : </strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= format_number(@business_asset.rentals.last.annual_rent) %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.has_icpe %>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p><strong>
+                    <% if @business_asset.has_icpe %>
+                      <i class="far fa-check-square"></i> <strong>    ICPE</strong>
+                    <% else %>
+                      <i class="far fa-square"></i> <strong>    ICPE</strong>
+                    <% end %> </strong></p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <div class= "white-box height-line-1" >
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <% @carroussel.each_with_index do |att, index| %>
+              <% if index == 0  %>
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <% else %>
+                <li data-target="#carousel-example-generic" data-slide-to="<% index %>""></li>
+              <% end %>
+            <% end %>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <% @carroussel.each_with_index do |att, index| %>
+              <% if index == 0  %>
+                <div class="item active">
+                  <%= cl_image_tag att.file, crop: :fit, :format => :png %>
+                </div>
+              <% else %>
+                <div class="item">
+                  <%= cl_image_tag att.file, crop: :fit, :format => :png %>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="col-xs-12 col-sm-12">
+      <div class= "white-box" >
+        <h3> Localisation </h3>
+        <div
+          id="map"
+          data-markers="<%= @markers.to_json %>"
+          style="height: 400px"
+        ></div>
+      </div>
+    </div>
+
+
+     <div class="col-xs-12 col-sm-12">
+      <div class= "white-box" >
+        <h3> Rentals </h3>
+         <table>
+          <% @business_asset.rentals.each do |r| %>
+            <tr>
+              <th>Tenant</th>
+              <th>Rent(y)</th>
+              <th>Rent(y)/m2</th>
+              <th>Entry</th>
+              <th>Brk 1</th>
+              <th>Brk 2</th>
+              <th>Brk 3</th>
+            </tr>
+            <tr>
+
+              <td><%= r.tenant.nil? ? '-' : r.tenant.name %></td>
+              <td><%= format_number(r.annual_rent) %></td>
+              <td><%= format_number(r.annual_rent_sqm) %></td>
+              <td><%= r.start_date.nil? ? "-" : r.start_date.strftime('%b-%y') %> </td>
+              <td><%= r.break_date_1.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
+              <td><%= r.break_date_2.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
+              <td><%= r.break_date_3.nil? ? "-" : r.break_date_1.strftime('%b-%y') %> </td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 ">
+      <div class="white-box">
+        <h3> Last Transactions </h3>
+        <table>
+          <% @business_asset.transactions.each do |t| %>
+            <tr>
+              <th>Buyer</th>
+              <th>Seller</th>
+              <th>Date</th>
+              <th>Price (M€)</th>
+            </tr>
+            <tr>
+              <td><%= t.buyer.nil? ? '-' : t.buyer.name %></td>
+              <td><%= t.seller.nil? ? '-' : t.seller.name %></td>
+              <td><%= t.date.nil? ? "-" : t.date.strftime('%b-%y') %> </td>
+              <td><%= format_number(t.price) %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <div class= "white-box" >
+        <h3> Data-room </h3>
+        <ul class="list-inline doc-attachment">
+          <% @carroussel.each do |a| %>
+             <li>
+                <%= link_to a.file_url, target: :_blank do %>
+                  <%= image_tag "file.svg" %>
+                <% end %>
+              </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+
+   </div>
+</div>

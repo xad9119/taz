@@ -12,6 +12,11 @@ import { initSteps } from '../components/form_steps';
 import { initSelect } from '../components/dashboard_select';
 import { xxx } from '../components/checkbox_compare';
 
+if (document.querySelector("#option")){
+  initSelect();
+}
+
+
 if (document.querySelector("#asset_address")){
   autocomplete();
 }
