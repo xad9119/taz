@@ -87,3 +87,60 @@
 .desc-1 {
   // width: 50%;
 }
+
+// * New Show *
+// * New Show *
+// * New Show *
+
+.wrapper-2 {
+  display: flex;
+}
+
+.show-left {
+  width: 50%;
+}
+
+.asset-info {
+  margin: 25px;
+  h2  {
+    margin-top: 0px;
+  }
+}
+.show-address {
+  margin-bottom: 15px;
+}
+
+.secondary-info {
+  display: flex;
+  color: $main-color;
+}
+
+.asset-info {
+  background: white;
+  border-radius: 4px;
+  color: $main-color;
+  p {
+    color: $main-color;
+  }
+  padding: 25px;
+}
+
+.show-left-1{
+  width: 50%;
+}
+
+.show-right-1 {
+  width: 50%;
+}
+
+.actions {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-show {
+  color: $main-color;
+  text-decoration: none;
+}
