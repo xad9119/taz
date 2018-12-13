@@ -190,7 +190,6 @@ const initMap = () => {
 var mapElement = document.getElementById('map');
 
 if (mapElement) {
-  console.log('hey');
   initMap();
   window.initMap = initMap;
 }

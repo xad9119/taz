@@ -11,7 +11,6 @@ def search
       my_hash = params["search"]
       categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
       .map{|cat| AssetCategory.find(cat).name}
-
       if !my_hash["address"].empty?
         sql_query = " \
         geographical_locations.address ILIKE :query \
@@ -20,6 +19,7 @@ def search
         .where(sql_query, query: "%#{my_hash["address"] }%")
 
       end
+
       unless categories_array.empty?
         @business_assets = @business_assets.where(asset_type: categories_array)
 
@@ -80,6 +80,7 @@ end
           }
         end
         @markers.select! { |x| !x.nil? }
+        @business_assets.limit(20)
     end
     authorize @business_assets
   end

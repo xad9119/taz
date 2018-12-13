@@ -1,7 +1,11 @@
+
+$navbar-font-color: white;
+$navbar-background-color: $main-color;
+
 /* Main navbar */
 .navbar-taz {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: $navbar-background-color;
   height: 70px;
   padding: 0px 30px;
   display: flex;
@@ -14,6 +18,7 @@
 /* Logo */
 .navbar-taz-brand img {
   height: 50px;
+  fill: $navbar-font-color;
 }
 
 /* Right section */
@@ -42,16 +47,7 @@
 /* Navbar link */
 
 .navbar-taz-link {
-  color: $main-color;
-  font-size: 18px;
-}
-.navbar-taz-link:hover {
-  color: #8acddd;
-  text-decoration: none;
-}
-
-.navbar-taz-link {
-  color: $main-color;
+  color: white;
   font-size: $text-font-size;
 }
 .navbar-taz-link:hover {
@@ -60,7 +56,11 @@
 }
 
 .navbar-taz-white {
-  background-color: white;
+  background-color: $navbar-background-color;
+}
+.navbar-taz-green {
+  background-color: $navbar-background-color;
+  color: $navbar-font-color;
 }
 
 /* Dropdown menu */
@@ -98,7 +98,7 @@
   font-weight: $title-font-weight;
   size: 18;
   font-family: $title-font-family;
-  color: $main-color;
+  color: $navbar-font-color;
   letter-spacing: 2px;
   padding-left: 0px;
   padding-right: 0px;
