@@ -1,61 +1,87 @@
 <%= link_to business_asset_path(business_asset) do %>
-<div class="card">
-  <div class="card-main" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path business_asset.attachments.where(attachment_type: 'photo').first.file%>);">
-  </div>
-
-
-    <div class="asset-category">
-      <%= image_tag("#{business_asset.asset_type.downcase.delete(' ')}.png") %>
+  <div class="card2">
+    <div class="card2-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path business_asset.attachments.where(attachment_type: 'photo').first.file%>);">
+      <div class="card2-asset-type">
+        <%= business_asset.asset_type %>
       </div>
-  <div class="card-information">
-    <div class="first-line">
-      <div class="address">
+      <div class="price">
+      <% unless business_asset.transactions.empty? %>
+        <h2><%= format_number(business_asset.transactions.first.price) %></h2>
+      </div>
+    </div>
+    <div class="card2-info">
+      <div class="card2-info-address">
+        <h2><strong>Address</strong></h2>
         <% if business_asset.geographical_location.address %>
-          <% address = business_asset.geographical_location.address.length > 28 ? "#{business_asset.geographical_location.address[0..28]}..." : business_asset.geographical_location.address %>
-          <p><%= address %></p>
-          <% else %>
+          <p><%= business_asset.geographical_location.address %></p>
+        <% else %>
           <p>No address</p>
         <% end %>
       </div>
-      <div class="occupancy">
-        <% if business_asset.occupancy_rate %>
-          <% if  %>
-            <% business_asset.occupancy_rate > 0.8 || business_asset.occupancy_rate == nil %>
-            <i class="fas fa-circle" style="color: green"></i>
+      <div class="card2-other-info">
+        <div class="surface-yield">
+          <div class="surface">
+            <h2><strong>Surface</strong></h2>
+            <% if business_asset.surface %>
+              <p><%= format_number(business_asset.surface, currency_symbol: false) %>m²</p>
             <% else %>
-              <i class="fas fa-circle" style="color: red"></i>
-          <% end %>
-          <% else %>
-          <p>no data</p>
-        <% end %>
-      </div>
+              <p>No surface</p>
+            <% end %>
+          </div>
+          <div class="yield">
+            <h2 style="margin-right: 15px"> <strong>Yield</strong></h2>
+            <% business_asset.rentals.each do |r| %>
+              <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
+                <p><%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</p>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
     </div>
-    <div class="rental-info">
-      <div class="surface">
-        <% if business_asset.surface %>
-          <p><strong>Surface: <%= format_number(business_asset.surface, currency_symbol: false) %>m²</strong></p>
-          <% else %>
-          <p>No surface</p>
-        <% end %>
-
-      </div>
-      <div class="rent">
-        <% unless business_asset.transactions.empty? %>
-            <p><%= format_number(business_asset.transactions.first.price) %></p>
-          <% else %>
-          <p>-</p>
-        <% end %>
-      </div>
-    </div>
-    <div class="profitability">
-      <p><% business_asset.rentals.each do |r| %>
-        <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
-          <p>Yield: <%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</p>
-          <% else %>
-          <p>Yield: na</p>
-        <% end %>
-        <% end %>
-      </div>
   </div>
 </div>
+  <% end %>
+<% end %><%= link_to business_asset_path(business_asset) do %>
+  <div class="card2">
+    <div class="card2-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path business_asset.attachments.where(attachment_type: 'photo').first.file%>);">
+      <div class="card2-asset-type">
+        <%= business_asset.asset_type %>
+      </div>
+      <div class="price">
+      <% unless business_asset.transactions.empty? %>
+        <h2><%= format_number(business_asset.transactions.first.price) %></h2>
+      </div>
+    </div>
+    <div class="card2-info">
+      <div class="card2-info-address">
+        <h2><strong>Address</strong></h2>
+        <% if business_asset.geographical_location.address %>
+          <p><%= business_asset.geographical_location.address %></p>
+        <% else %>
+          <p>No address</p>
+        <% end %>
+      </div>
+      <div class="card2-other-info">
+        <div class="surface-yield">
+          <div class="surface">
+            <h2><strong>Surface</strong></h2>
+            <% if business_asset.surface %>
+              <p><%= format_number(business_asset.surface, currency_symbol: false) %>m²</p>
+            <% else %>
+              <p>No surface</p>
+            <% end %>
+          </div>
+          <div class="yield">
+            <h2 style="margin-right: 15px"> <strong>Yield</strong></h2>
+            <% business_asset.rentals.each do |r| %>
+              <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
+                <p><%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</p>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <% end %>
 <% end %>

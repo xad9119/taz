@@ -70,3 +70,80 @@
   color: $third-color;
   font-weight: bold;
 }
+
+.card2 {
+  border-radius: 4px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  margin-bottom: -5Opx;
+}
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2-image {
+  background-size: cover !important;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+.card2-info {
+  margin: 0px;
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.card2-asset-type {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  font-weight: extra-bold;
+  border-radius: 4px;
+  background-color: #a43a2C;
+  font: Open Sans;
+  padding: 5px;
+}
+.card2-info-address {
+  padding-left: 25px;
+  margin: 0px;
+  h2 {
+    font-size: 24px !important;
+    font-color: $main-color;
+  }
+  p {
+    color: $main-color;
+  }
+}
+.card2-other-info {
+  padding-left: 25px;
+  h2 {
+    margin-top: 10px;
+    color: $main-color !important;
+  }
+  p {
+    color: $main-color !important;
+    margin-right: 15px;
+  }
+}
+.surface-yield {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+.price {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700 !important;
+  }
+}
+
+
