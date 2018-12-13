@@ -163,10 +163,10 @@ end
 
     attachment = Attachment.new(business_asset: business_asset)
     if my_hash[:attachment]
-    file = my_hash[:attachment][:file]
-    attachment.file = file
+      file = my_hash[:attachment][:file]
+      attachment.file = file
+      attachment.save
     end
-    attachment.save
 
     authorize business_asset
   end

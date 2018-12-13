@@ -186,5 +186,14 @@ $banner-font-color: $main-color;
 //   height: 35px !important;
 // }
 
+.slider-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  flex-wrap: wrap;
+}
 
 
