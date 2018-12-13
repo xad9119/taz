@@ -14,7 +14,7 @@ $banner-font-color: $main-color;
 .banner {
   color: $banner-font-color;
   text-align: center;
-  height: calc(100vh - 70px);
+  height: 100vh;
 
   background-size: cover !important;
   display: flex;
