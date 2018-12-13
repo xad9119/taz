@@ -26,7 +26,7 @@
           <% end %>
         <% end %>
         <h5><%= format_number(total_rent) %></h5>
-        <p>Total Rent </p>
+        <p>Total Revenues from Rentals</p>
       </div>
       <div class="col-xs-12 col-sm-4 green_box">
         <% total_price = 0 %>
@@ -36,7 +36,7 @@
           <% end %>
         <% end %>
         <h5><%= format_number(total_price) %></h5>
-        <p>Total Buying price</p>
+        <p>Total Value of the Park</p>
       </div>
       <div class="col-xs-12 col-sm-4 green_box">
         <h5><%= ((total_rent / total_price) * 100).round(2) %> %</h5>
@@ -62,7 +62,7 @@
       <%= render 'dash_priceperasset' %>
     </div>
     <div class="dashboard-white-box" style="position: relative; width:60vw">
-      <h3>Lease to renew : prioritization matrix</h3>
+      <h3>Lease renewals : prioritization matrix</h3>
       <%= render 'dash_bubble' %>
     </div>
   </div>
