@@ -1,12 +1,8 @@
-
 import "jquery-ui";
 import "bootstrap";
 import "../plugins/flatpickr";
 import "jquery";
 import 'mapbox-gl/dist/mapbox-gl.css';
-
-
-
 
 import { initFormStyle } from '../components/form';
 import { initSearch } from '../components/search';
