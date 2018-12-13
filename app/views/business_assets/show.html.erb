@@ -1,77 +1,70 @@
 <div class="wrapper-2">
   <div class="show-left">
     <div class="actions">
-      <% content_for :navbar_links do %>
-          <div class= "navbar-taz-left">
-          <%= link_to "Edit", edit_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title " %>
-          <%= link_to "Compare", compare_path(@business_asset.last_transaction), class: "navbar-taz-item navbar-taz-link navbar-title " %>
-          <p data-toggle="modal" data-target="#delete-modal" class="navbar-taz-item navbar-taz-link navbar-title">Delete</p>
-           </div>
-      <% end %>
+      <%= link_to "Compare", compare_path(@business_asset.last_transaction), class: "navbar-show" %>
+      <a data-toggle="modal" data-target="#delete-modal" class="navbar-show">Delete</a>
     </div>
     <div class="asset-info">
-      <h2>Asset Info</h2>
+      <% if @business_asset.asset_type %>
+          <h5><%= @business_asset.asset_type %></h5>
+      <% end %>
       <div class="show-address">
         <strong>Address : </strong>  <%= @business_asset.geographical_location.address %>
       </div>
       <div class="secondary-info">
         <div class="show-left-1">
           <% if @business_asset.surface %>
-            <div class="row">
-              <div class="col-sm-4">
-                <p><strong> Surface :</strong></p>
-              </div>
-              <div class="col-sm-8 text-left">
-                <p><%= @business_asset.surface.round %> m²</p>
-              </div>
-            </div>
+            <h5><%= @business_asset.surface.round %> m²</h5>
+          <% end %>
+          <% if @business_asset.rentals.last.annual_rent %>
+              <p><strong> Rent : </strong><%= format_number(@business_asset.rentals.last.annual_rent) %></p>
           <% end %>
           <% if @business_asset.land_surface %>
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-3">
                 <p><strong> Land Surface :</strong></p>
               </div>
-              <div class="col-sm-8 text-left">
+              <div class="col-sm-9 text-left">
                 <p><%= @business_asset.land_surface.round %> m²</p>
               </div>
             </div>
           <% end %>
           <% if  @business_asset.construction_year%>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                   <p><strong> Construction Year :</strong></p>
                 </div>
-                <div class="col-sm-8 text-left">
+                <div class="col-sm-9 text-left">
                   <p><%= @business_asset.construction_year %></p>
                 </div>
               </div>
             <% end %>
             <% if @business_asset.description %>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                   <p><strong> Description :</strong></p>
                 </div>
-                <div class="col-sm-8 text-left">
+                <div class="col-sm-9 text-left">
                   <p><%= @business_asset.description %></p>
                 </div>
               </div>
             <% end %>
             <% if @business_asset.general_condition %>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                   <p><strong> General Condition :</strong></p>
                 </div>
-                <div class="col-sm-8 text-left">
+                <div class="col-sm-9 text-left">
                   <p><%= @business_asset.general_condition %></p>
                 </div>
               </div>
             <% end %>
             <% if @business_asset.office_area_share %>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                   <p><strong> Office Area Share : </strong></p>
                 </div>
-                <div class="col-sm-8 text-left">
+                <div class="col-sm-9 text-left">
                   <p><%= @business_asset.office_area_share.round %>%</p>
                 </div>
               </div>
@@ -79,34 +72,13 @@
         </div>
       <div class="show-right-1">
         <% if @business_asset.transactions.last.price %>
-          <div class="row">
-           <div class="col-sm-4">
-              <p><strong> Price : </strong></p>
-            </div>
-            <div class="col-sm-8 text-left">
-              <p><%= format_number(@business_asset.transactions.last.price) %></p>
-            </div>
-          </div>
+            <h5><%= format_number(@business_asset.transactions.last.price) %></h5>
         <% end %>
-        <% if @business_asset.rentals.last.annual_rent %>
-          <div class="row">
-           <div class="col-sm-4">
-              <p><strong> Rent : </strong></p>
-            </div>
-            <div class="col-sm-8 text-left">
-              <p><%= format_number(@business_asset.rentals.last.annual_rent) %></p>
-            </div>
-          </div>
-        <% end %>
+
         <% @business_asset.rentals.each do |r| %>
           <% if r.annual_rent != 0 && @business_asset.transactions.first.price != 0 %>
             <div class="row">
-              <div class="col-sm-4">
-                <p><strong> Yield : </strong></p>
-              </div>
-              <div class="col-sm-8 text-left">
-                <p><%= ((r.annual_rent / @business_asset.transactions.first.price) * 100).round(2) %>%</p>
-              </div>
+                <p><strong> Yield : </strong><%= ((r.annual_rent / @business_asset.transactions.first.price) * 100).round(2) %>%</p>
             </div>
           <% end %>
         <% end %>

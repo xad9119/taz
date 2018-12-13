@@ -1,20 +1,28 @@
-<div class="tr-card" id="compared-tr">
-  <div class="tr-card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1524214786335-66456317bde6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81c0d1a541bf9c4857daa8b6c79bffda&auto=format&fit=crop&w=750&q=80');">
-  </div>
-  <div class="tr-card-info">
-    <div class="tr-card-address">
-      <%= @business_asset.geographical_location.address %>
-    </div>
-    <div class="tr-card-type">
-      <%= @business_asset.asset_type %>
-    </div>
-    <ul class="tr-card-feature-list">
-      <li> <strong> <%= format_number(@transaction.price, currency_symbol: false) %> € </strong></li>
-      <li><%= format_number(@business_asset.surface, currency_symbol: false) %> m2</li>
-    </ul>
-  </div>
-  <div class="tr-card-return">
-    <p><%= @rental ? (100 * (@rental.annual_rent + 0.0) / @transaction.price).round(1) : 0 %> %</p>
-  </div>
-</div>
 
+<div class="tr-card2 checkbox_equiped">
+  <div class="tr-card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path @business_asset.attachments.where(attachment_type: 'photo').first.file%>);">
+    <div class="tr-card2-asset-type">
+      <%= image_tag("#{@business_asset.asset_type.downcase.delete(' ')}.png")%>
+    </div>
+  </div>
+  <div class="tr-card2-middle">
+    <div class="tr-card2-middle-address">
+      <h5> <%= @business_asset.geographical_location.address %></h5>
+    </div>
+    <div class="tr-card2-middle-down-coucou">
+      <div class="tr-card2-middle-surface bite">
+        <h5> <%= format_number(@business_asset.surface, currency_symbol: false) %> m²</h5>
+      </div>
+      <div class="tr-card2-middle-price bite">
+        <h5><%= format_number(@business_asset.transactions.last.price) %></h5>
+      </div>
+    </div>
+  </div>
+  <div class="tr-card2-right">
+    <div class="tr-card2-yield coucou">
+      <% rental = @business_asset.rentals
+                    .select { |r| !r.end_date || (r.start_date <= Date.today && Date.today <= r.end_date) }
+                    .first %>
+      <h5><%= rental ? (100 * (rental.annual_rent + 0.0) / @business_asset.transactions.last.price).round(1) : 0 %> %</h5>
+    </div>
+</div>

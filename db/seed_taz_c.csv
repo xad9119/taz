@@ -20,7 +20,6 @@
 ;;Geoffroy d’ARCHE (Evolis);11 bis rue Rabelais;Montreuil;93100;Light Industrial;1400;1400;100%; Artana;;202149;144;130;182000;2500000;1786;
 ;EHB;Geoffroy D'Arche;27 Bouelvard Hippolyte Marques;Ivry-sur-Seine;94200;Light Industrial;3604;0;0%;;;;;142;510000;6300000;1748;
 ;CDU;Jérôme Mainguy;7 rue Erik Satie;Bobigny;93000;Office;5839;5839;100%; Centre des impôts; Cofidy;920523;158;150;920523;10000000;1713;
-;EHB;Charles Albert;15 route de Fontainebleau;Vitry sur seine;94400;Light Industrial;7620;4235;56%;;;595160;141;140;1066800;12000000;1575;
 ;ZK;Pascal Voisin;1 rue Heynen;Bois-Colombes;92270;Housing Promotion;1395;0;0%;; Privé;;;;;2180000;1563;
 ;EHB;Julien Badene;23 rue Emile Zola;Montreuil;93100;Light Industrial;2610;2610;100%; IDI; IDI;360000;138;130;339300;4000000;1533;
 ;EHB;Jérôme Mainguy;4 Square Newton ;Montigny le Bretonneux;78180;Office;7288;7288;100%;;;1497329;205;200;1497329;11120000;1526;
@@ -81,14 +80,12 @@
 ;EHB;Anthony Garcia (Groupe Babylone);39 rue Fessart ;Boulogne-Billancourt;92100;Office;350;0;0%;;;;;278;97440;2500000;7143;
 ;EHB;NS Property International;17 rue Mauconseil ;Fontenay sous bois;94120;Housing;445;390;#VALEUR!;;;84948;191;;;1700000;3829;
 ;EHB;Charles Albert (BNP) ;5 rue Maximilien Robespierre;Noisy le Sec;93130;Light Industrial;2105;2105;100%;" Aerologis; Bocker France";;149237;71;85;178925;2100000;998;
-;;Arthur Rodriguez (CBRE);rue de l'Ormeteau;Servon;77170;Light Industrial;9384;0;0%;;;;;;;3900000;;
 ;;Antoine guicheteau (Nexity);4 rue des Gardes;Verrières le Buisson;91370;Light Industrial;865;558;65%;;;19200;34;90;77850;885000;1023;
 ;;Jerôme Richard (JRPI);31-39 rue Saint Denis;Aubervilliers;93300;Light Industrial;5700;1000;18%;;;96000;96;90;513000;8000000;1404;
 ;;Olivier Yazdani (FdL);10 rue Joseph et Etienne Montgolfier ;Rosny-Sous-Bois;93110;Light Industrial;3247;0;0%;;;;;90;292194;2100000;647;
 ;;Arthur Rodriguez (CBRE);12 Avenue du Garigliano;Savigny sur Orge;91600;Light Industrial;7102;0;0%;;;;;45;319590;3700000;521;
 ;CDU;Charles Albert (BNPRE);27/29 et 32-34 rue du Ballon;Noisy-le-Grand;93160;Light Industrial;12720;12720;100%; CPI Global;;580000;46;46;578760;5937000;467;
 ;;Lucien Renaudin (COGIB);15 bis rue de Paris;Meudon;92190;Housing;565;0;0%;;;;;;;3120000;5522;
-;;Frédéric Bazil (DBX);14 avenue de l’Europe;Bussy-Saint-Georges;77600;Light Industrial;5069;2803;55%;;;141244;50;50;253450;3100000;612;
 ;EHB;Mathieu Fourdan (BNPRE);9/11 rue henri dunant;Bondoufle;91070;Light Industrial;3633;0;0%;;;;;65;236145;3200000;881;
 ;EHB;Jérôme Mainguy;1 place Copernic;Courcouronnes;91080;Office;5598;5598;100%; Carrefour Banque; Fonds Israélien;1142621;204;200;1142621;12000000;2144;
 ;EHB;Guilhem HUTTNER;103 Boulevard Chanzy;Montreuil;93100;Retail;280;280;100%; Kiloutou;;42960;153;150;42000;650000;2321;
@@ -153,8 +150,6 @@
 ;;Lucien Renaudin (COGIB), Pas de doc;59 rue Augustin Dumont;Malakoff;92240;Office;430;0;0%;;;;;;;1470000;3419;
 ;EHB;Charles Albert;16 rue Jean Jacque Rousseau;Grigny;91350;Light Industrial;706;706;100%;;;63000;89;90;63540;750000;1062;
 ;EHB;Michael HAGEGE (CW);85-87 avenue Jean-Jaurès;Montrouge;92120;Light Industrial;2212;0;0%;;;;;170;376040;6200000;2803;
-;EHB;Antoine GUICHETEAU (NEXITY);7 allées des Aphleries;Le Perray en Yvelynes;78610;Light Industrial;2150;742;#VALEUR!; LOCAPOSTE ;;51800;70;;;500000;674;
-;EHB;Olivier Lambin (CBRE);61 rue Emile Zola;Corbeil Essonnes;91100;Light Industrial;1530;1530;100%; TME;;88800;58;52;79560;850000;556;
 ;EHB;PE Maury (Cordell);1 rue des Bruyères;Asnières-sur-Seine;92600;Housing;576;576;100%;;;114000;198;;;2700000;4688;
 ;;Olivier Lambin (CBRE);64 allée des Champs Elysées;Courcouronnes;91080;Retail;2140;2140;100%; BNP - Annapurna - Evry Form;;349583;163;;349583;6200000;2897;
 01/04/2015;;BNPRE;11-15 Rue Léon Blum;Palaiseau;91120;Light Industrial;3828;3828;100,00%; Swiss Post ;VLD;196237,38;51,3;51,3;196237,38;1825000;476,8;10%

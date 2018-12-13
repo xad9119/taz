@@ -13,13 +13,7 @@
   padding: 5px;
 }
 
-.tr-card-picture {
-  background-size: cover;
-  background-position: center;
-  height: 110px;
-  width: 25%;
-  padding: 10px;
-}
+
 
 .tr-card-info {
   display: flex;
@@ -36,7 +30,8 @@
 
 .tr-card-address {
   text-transform: capitalize;
-  padding: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .tr-card-feature-list {
@@ -70,4 +65,86 @@
     color: white;
     font-weight: bold;
   }
+}
+
+//tr-card2//tr-card2//tr-card2//tr-card2//tr-card2
+
+.tr-card2 {
+  display: flex;
+  margin: 20px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+}
+
+.tr-card-picture {
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 200px;
+  padding: 10px;
+  position: relative;
+}
+
+.tr-card2-asset-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+.tr-card2-middle-down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tr-card2-middle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tr-card2-right {
+  width: 100px;
+}
+
+.tr-card2-yield {
+  height: 50%;
+}
+
+.tr-card2-middle-surface {
+  padding-left: 25px;
+  color: $main-color;
+}
+
+.tr-card2-middle-price {
+  padding-right: 25px;
+  color: $main-color;
+}
+
+.tr-card2-middle-address {
+  padding: 5px 25px;
+  text-transform: uppercase;
+}
+
+.checkbox_taz {
+  padding-left: 23px;
+  padding-top: 7px;
+}
+
+.coucou {
+  h5 {
+    margin-top: 25px;
+  }
+}
+
+.bite {
+  h5 {
+    padding-right: 300px;
+  }
+}
+
+.tr-card2-middle-down-coucou {
+  display: flex;
+  justify-content: space-between;
 }
