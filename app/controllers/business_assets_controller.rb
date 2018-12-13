@@ -86,14 +86,15 @@ end
   end
 
   def show
+
     @markers =
-      {
+      [{
         title: @business_asset.geographical_location.address,
         lng: @business_asset.geographical_location.longitude,
         lat: @business_asset.geographical_location.latitude,
         infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: @business_asset })},
         icon: ActionController::Base.helpers.image_path("#{@business_asset.asset_type.downcase.delete(' ')}.png")
-      }
+      }]
     ap @business_asset.attachments
     @carroussel = @business_asset.attachments.sort_by { |file| file.id }
     ap @carroussel
