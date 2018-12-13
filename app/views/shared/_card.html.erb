@@ -11,9 +11,9 @@
     </div>
     <div class="card2-info">
       <div class="card2-info-address">
-        <h2><strong>Address</strong></h2>
+        <p>Address</p>
         <% if business_asset.geographical_location.address %>
-          <p><%= business_asset.geographical_location.address %></p>
+          <h2><%= business_asset.geographical_location.address %></h2>
         <% else %>
           <p>No address</p>
         <% end %>
@@ -21,18 +21,18 @@
       <div class="card2-other-info">
         <div class="surface-yield">
           <div class="surface">
-            <h2><strong>Surface</strong></h2>
+            <p>Surface</p>
             <% if business_asset.surface %>
-              <p><%= format_number(business_asset.surface, currency_symbol: false) %>m²</p>
+              <h2><%= format_number(business_asset.surface, currency_symbol: false) %>m²</h2>
             <% else %>
               <p>No surface</p>
             <% end %>
           </div>
           <div class="yield">
-            <h2 style="margin-right: 15px"> <strong>Yield</strong></h2>
+            <p style="margin-right: 15px"> Yield</p>
             <% business_asset.rentals.each do |r| %>
               <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
-                <p><%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</p>
+                <h2><%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</h2>
               <% end %>
             <% end %>
           </div>
