@@ -22,7 +22,7 @@ $banner-font-color: $main-color;
   justify-content: center;
 }
 .banner h1 {
-  color: $banner-font-color;
+  color: white;
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
@@ -30,7 +30,7 @@ $banner-font-color: $main-color;
 .banner p {
   font-size: 25px;
   font-weight: lighter;
-  color: $banner-font-color;
+  color: white;
   opacity: 0.6;
   margin-bottom: 30px;
 }
