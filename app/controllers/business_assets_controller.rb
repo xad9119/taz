@@ -5,9 +5,6 @@ class BusinessAssetsController < ApplicationController
 def search
     @business_assets = policy_scope(BusinessAsset)
     .joins(:geographical_location)
-    # .joins(:business_asset_category)
-    # .joins(:asset_category)
-
       my_hash = params["search"]
       categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
       .map{|cat| AssetCategory.find(cat).name}
