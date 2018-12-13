@@ -357,15 +357,17 @@ const initMap = () => {
       const markers = JSON.parse(mapElement.dataset.markers);
       map.addMarkers(markers);
       if (markers.length === 0) {
-        map.setZoom(8);
-      } else if (markers.length === 1) {
         map.setCenter(48.864716, 2.349014);
-        map.setZoom(8);
+        map.setZoom(10);
       } else if (markers.length == undefined) {
-        map.addMarker(markers);
-        map.setCenter(markers.lat, markers.lng);
+        map.setCenter(48.864716, 2.349014);
         map.setZoom(14);
-        getNearPlaces(markers, 500, map);
+      } else if (markers.length == 1) {
+        map.setCenter(markers[0].lat, markers[0].lng);
+        map.setZoom(12);
+      } else if (markers.length > 50) {
+        map.setCenter(48.864716, 2.349014);
+        map.setZoom(12);
       } else {
         map.fitLatLngBounds(markers);
       }
