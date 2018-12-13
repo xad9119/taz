@@ -1,7 +1,7 @@
 <%= link_to business_asset_path(business_asset) do %>
   <div class="infowindow">
     <div class="infowindow_image">
-      <%= cl_image_tag business_asset.attachments.where(attachment_type: 'photo').first.file, width: 130, crop: :fit, alt:"Google view" %>
+      <%= cl_image_tag business_asset.attachments.where(attachment_type: 'photo').first.file, width: 150, crop: :fit, alt:"Google view" %>
     </div>
     <div class="infowindow_address">
       <p><strong> <%= business_asset.geographical_location.address.split(',')[0] %></strong></p>

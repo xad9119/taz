@@ -1,29 +1,42 @@
-<div class="index-banner">
-  <div class="search_bar">
-    <%= form_tag business_assets_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control",
-        placeholder: "Type a city or zipcode"
-      %>
-  <% end %>
-  </div>
-</div>
 
-<div class="main-container">
-  <div class="container">
-    <div class="row">
+<div class="container">
 
-
-      <% @business_assets.each do |business_asset| %>
-        <div class="col-xs-12 col-sm-6">
-          <%= render 'shared/card', business_asset: business_asset  %>
+  <div>
+    <div class="index-banner">
+        <div class="search_bar">
+          <%= form_tag business_assets_path, method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control",
+              placeholder: "Type a city or zipcode"
+            %>
+        <% end %>
         </div>
-      <% end %>
-    </div>
+      </div>
+
+      <div class="main-container">
+        <div class="container">
+          <div class="row">
+
+
+            <% @business_assets.each do |business_asset| %>
+              <div class="col-xs-12 col-sm-6">
+                <%= render 'shared/card', business_asset: business_asset  %>
+              </div>
+            <% end %>
+          </div>
+        </div>
   </div>
-  <div
-    id="map"
-    data-markers="<%= @markers.to_json %>"
-  ></div>
+
+  <div>
+     <div
+          id="map"
+          data-markers="<%= @markers.to_json %>"
+        ></div>
+      </div>
+
+  </div>
+
+
+
 </div>
