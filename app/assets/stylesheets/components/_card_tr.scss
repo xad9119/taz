@@ -3,9 +3,10 @@
   display: flex;
   color: black;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
+  border-bottom-width: 1px;
   transition: 0.3s;
-  border-color: $secondary-color;
+  border-color: $third-color;
   margin: 7px;
   background: #fafafa;
   border-radius: 10px;
@@ -64,7 +65,7 @@
   align-items: center;
   justify-content: space-around;
   width: 60px;
-  background-color: $secondary-color;
+  background-color: $third-color;
   p {
     color: white;
     font-weight: bold;
