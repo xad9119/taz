@@ -322,65 +322,38 @@ var myStyle = [
   }
 ]
 
-
-
-
-
-// function callback(results, status) {
-//   if (status == google.maps.places.PlacesServiceStatus.OK) {
-//     for (var i = 0; i < results.length; i++) {
-//       var place = results[i];
-//       createMarker(results[i]);
-//     }
-//   }
-// };
-
-// const getNearPlaces = (location,distance,map) => {
-//   const loc = {lat: location.lat, lng: location.lng};
-
-//   const request = {
-//     location: loc,
-//     radius: distance,
-//     type: ['restaurant']
-//   };
-
-//   service = new google.maps.places.PlacesService(map);
-//   service.nearbySearch(request, callback);
-// };
-
 const initMap = () => {
-  var styledMapType = new google.maps.StyledMapType(myStyle)
-  const mapElement = document.getElementById('map');
-  if (mapElement) {
-    const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
-    if (mapElement.dataset.markers !== "") {
-      const markers = JSON.parse(mapElement.dataset.markers);
-      map.addMarkers(markers);
-      if (markers.length === 0) {
-        map.setCenter(48.864716, 2.349014);
-        map.setZoom(10);
-      } else if (markers.length == undefined) {
-        map.setCenter(48.864716, 2.349014);
-        map.setZoom(14);
-      } else if (markers.length == 1) {
-        map.setCenter(markers[0].lat, markers[0].lng);
-        map.setZoom(12);
-      } else if (markers.length > 50) {
-        map.setCenter(48.864716, 2.349014);
-        map.setZoom(12);
-      } else {
-        map.fitLatLngBounds(markers);
-      }
-      map.addStyle({
-        styles: myStyle,
-        mapTypeId: 'map_style'
-      });
-      map.setStyle('map_style');
-      var styledMapType = new google.maps.StyledMapType(myStyle)
-    }
-  }
+ var styledMapType = new google.maps.StyledMapType(myStyle)
+ const mapElement = document.getElementById('map');
+ if (mapElement) {
+   const map = new GMaps({ el: '#map', lat: 48.864716, lng: 2.349014 });
+   if (mapElement.dataset.markers !== "") {
+     const markers = JSON.parse(mapElement.dataset.markers);
+     map.addMarkers(markers);
+     if (markers.length === 0) {
+       map.setCenter(48.864716, 2.349014);
+       map.setZoom(10);
+     } else if (markers.length == undefined) {
+       map.setCenter(48.864716, 2.349014);
+       map.setZoom(14);
+     } else if (markers.length == 1) {
+       map.setCenter(markers[0].lat, markers[0].lng);
+       map.setZoom(12);
+     } else if (markers.length > 50) {
+       map.setCenter(48.864716, 2.349014);
+       map.setZoom(12);
+     } else {
+       map.fitLatLngBounds(markers);
+     }
+     map.addStyle({
+       styles: myStyle,
+       mapTypeId: 'map_style'
+     });
+     map.setStyle('map_style');
+     var styledMapType = new google.maps.StyledMapType(myStyle)
+   }
+ }
 }
-
 
 var mapElement = document.getElementById('map');
 
