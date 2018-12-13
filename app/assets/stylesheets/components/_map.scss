@@ -31,6 +31,7 @@
   color: $main-color;
   font-size: strong;
   margin-top: 5px;
+
 }
 
 .infowindow_surface p {
@@ -42,10 +43,11 @@
 }
 
 .infowindow_image {
-  max-width: 70px;
+  margin-top: 3px;
 }
 
 .infowindow {
+  height: 230px;
   width: 130px;
   text-align: center;
   margin-left: 22px;

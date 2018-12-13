@@ -111,7 +111,27 @@
                 </div>
               </div>
             <% end %>
-            <% if  %>
+            <% if @business_asset.transactions.last.price %>
+              <div class="row">
+               <div class="col-xs-4">
+                  <p><strong> Price : </strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= format_number(@business_asset.transactions.last.price) %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.rentals.last.annual_rent %>
+              <div class="row">
+               <div class="col-xs-4">
+                  <p><strong> Annual Rent : </strong></p>
+                </div>
+                <div class="col-xs-8 text-left">
+                  <p><%= format_number(@business_asset.rentals.last.annual_rent) %></p>
+                </div>
+              </div>
+            <% end %>
+            <% if @business_asset.has_icpe %>
               <div class="row">
                 <div class="col-xs-4">
                   <p><strong>
