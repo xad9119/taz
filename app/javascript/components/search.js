@@ -1,3 +1,4 @@
+import 'nouislider';
 // if (formInput) {
 //   formInput.addEventListener('change', (event) => {
 //     document.querySelector(".simple_form.search").submit();
@@ -5,7 +6,28 @@
 //   });
 // };
 
+  var slider = document.getElementById('slider-handles');
+
+
+  noUiSlider.create(slider, {
+      start: [0, 10000000],
+      connect: true,
+      range: {
+          'min': 0,
+          'max': 10000000
+      },
+      step: 100000,
+  });
+  var rangeSliderValueElement = document.getElementById('slider-range-value');
+
+  slider.noUiSlider.on('update', function (values, handle) {
+    rangeSliderValueElement.value = slider.noUiSlider.get();
+    console.log(slider.noUiSlider.get())
+  });
+
+
 const initSearch = () => {
+
 
 
   var filterBtns = document.querySelectorAll(".filters")

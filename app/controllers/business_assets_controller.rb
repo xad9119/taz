@@ -11,6 +11,10 @@ def search
       my_hash = params["search"]
       categories_array = [params['post']['category_ids'].map {|cat| cat.to_i}.drop(1)].flatten
       .map{|cat| AssetCategory.find(cat).name}
+
+      price_array = params["post"]["price_range"][0].split(',').map{|x| x.to_i}
+
+
       if !my_hash["address"].empty?
         sql_query = " \
         geographical_locations.address ILIKE :query \
@@ -22,15 +26,17 @@ def search
 
       unless categories_array.empty?
         @business_assets = @business_assets.where(asset_type: categories_array)
-
-        # .where("asset_type LIKE ?", "%#{params[:asset_category]}%")
-        # sql_query = " \
-        # business_assets.asset_type ILIKE :asset_category \
-        # "
-        # @business_assets = @business_assets
-        # .where(sql_query, query: "%#{params[:asset_category] }%")
-
       end
+      unless price_array.empty?
+        @business_assets = @business_assets.select do |x|
+          if x.last_transaction == nil
+            false
+          else
+            x.last_transaction.price >= price_array[0] && x.last_transaction.price <= price_array[1]
+          end
+        end
+      end
+
 
 
     @markers = @business_assets.map do |business_asset|
@@ -67,7 +73,7 @@ end
         }
       end
     else
-        @business_assets = policy_scope(BusinessAsset).order(created_at: :desc)
+        @business_assets = policy_scope(BusinessAsset).order(created_at: :desc).limit(20)
         @markers = @business_assets.map do |business_asset|
           next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?
           {
