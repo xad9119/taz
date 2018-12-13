@@ -8,95 +8,63 @@
     </div>
   </div>
 
-  <div class="dashboard-white-box" style="width: 200; height: 200;">
-    <%= render 'dash_valueperyear' %>
-  </div>
-
-  <div class="dashboard-white-box" style="width: 200; height: 200;">
-    <%= render 'dash_priceperasset' %>
-  </div>
-
-  <div class="dashboard-white-box" style="width: 200; height: 200;">
-    <%= render 'dash_qpercat' %>
-  </div>
-
-  <div class="dashboard-white-box" style="width: 200; height: 200;">
-    <%= render 'dash_bubble' %>
-  </div>
-
   <div class="dashboard-white-box">
     <div class="row main-info">
       <div class="col-xs-12 col-sm-4 green_box">
-         <p>Total Surface</p>
           <%  surface = 0 %>
           <% @business_assets.each do |ba| %>
             <%  surface += ba.surface %>
           <% end %>
-          <p> <%= format_number(surface, currency_symbol: false) %> m² </p>
+          <h5> <%= format_number(surface, currency_symbol: false) %> m² </h5>
+          <p>Total Surface</p>
       </div>
-        <div class="col-xs-12 col-sm-4 green_box">
-         <p>Total Rent </p>
-          <% total_rent = 0 %>
-          <% @business_assets.each do |ba| %>
-            <% ba.rentals.each do |r| %>
-              <% total_rent += r.annual_rent %>
-            <% end %>
+      <div class="col-xs-12 col-sm-4 green_box">
+        <% total_rent = 0 %>
+        <% @business_assets.each do |ba| %>
+          <% ba.rentals.each do |r| %>
+            <% total_rent += r.annual_rent %>
           <% end %>
-          <p><%= format_number(total_rent) %></p>
-        </div>
-        <div class="col-xs-12 col-sm-4 green_box">
-          <p>Total Buying price</p>
-          <% total_price = 0 %>
-          <% @business_assets.each do |ba| %>
-            <% ba.transactions.each do |t| %>
-              <% total_price += t.price %>
-            <% end %>
-          <% end %>
-          <p><%= format_number(total_price) %></p>
-        </div>
-        <div class="col-xs-12 col-sm-4 green_box">
-          <p>Average yield</p>
-          <p><%= ((total_rent / total_price) * 100).round(2) %> %</p>
-        </div>
+        <% end %>
+        <h5><%= format_number(total_rent) %></h5>
+        <p>Total Rent </p>
       </div>
+      <div class="col-xs-12 col-sm-4 green_box">
+        <% total_price = 0 %>
+        <% @business_assets.each do |ba| %>
+          <% ba.transactions.each do |t| %>
+            <% total_price += t.price %>
+          <% end %>
+        <% end %>
+        <h5><%= format_number(total_price) %></h5>
+        <p>Total Buying price</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 green_box">
+        <h5><%= ((total_rent / total_price) * 100).round(2) %> %</h5>
+        <p>Average yield</p>
+      </div>
+    </div>
+  </div>
 
-        <table class="tableau">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Address</th>
-              <th scope="col">Surface</th>
-              <th scope="col">Annual Rent</th>
-              <th scope="col">Annual Rent /m² </th>
-              <th scope="col">Price</th>
-              <th scope="col">Yield</th>
+  <div style="display: flex;">
+    <div class="dashboard-white-box" style="position: relative; width:55vw">
+      <h3>Evolution of revenues from rentals (k€ / year)</h3>
+      <%= render 'dash_valueperyear' %>
+    </div>
+    <div class="dashboard-white-box" style="position: relative; width:45vw">
+      <h3>Revenues by asset type (k€ / year)</h3>
+      <%= render 'dash_qpercat' %>
+    </div>
+  </div>
 
-            </tr>
-          </thead>
-          <tbody>
-            <% @business_assets.each do |ba| %>
-            <tr>
-              <th scope="row"><%= ba.geographical_location.address.split(',')[1].downcase.capitalize() %></th>
-              <% if ba.surface %>
-                <td><%= format_number(ba.surface, currency_symbol: false) %> m²</td>
-              <% end %>
-              <% if ba.rentals.last %>
-                <td><%= format_number(ba.rentals.last.annual_rent) %></td>
-              <% end %>
-              <% if ba.rentals.last %>
-                <td><%= format_number((ba.rentals.last.annual_rent / ba.surface)) %></td>
-              <% end %>
-              <% if ba.transactions %>
-                <td><%= format_number(ba.transactions.last.price) %></td>
-              <% end %>
-              <% if ba.rentals.last %>
-                <td><%=  ((ba.rentals.last.annual_rent / ba.transactions.last.price) * 100).round(2) %> %</td>
-              <% end %>
-            </tr>
-            <% end %>
-
-          </tbody>
-        </table>
-
+  <div style="display: flex;">
+    <div class="dashboard-white-box" style="position: relative; width:40vw">
+      <h3>Revenues by asset (k€ / year)</h3>
+      <%= render 'dash_priceperasset' %>
+    </div>
+    <div class="dashboard-white-box" style="position: relative; width:60vw">
+      <h3>Lease to renew : prioritization matrix</h3>
+      <%= render 'dash_bubble' %>
+    </div>
   </div>
 
   <div class= "dashboard-white-box-2" >
@@ -107,4 +75,42 @@
         style="height: 400px"
       ></div>
   </div>
+
+  <div class="dashboard-white-box">
+    <table class="tableau">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Address</th>
+          <th scope="col">Surface</th>
+          <th scope="col">Annual Rent</th>
+          <th scope="col">Annual Rent /m² </th>
+          <th scope="col">Price</th>
+          <th scope="col">Yield</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @business_assets.each do |ba| %>
+          <tr>
+            <th scope="row"><%= ba.geographical_location.address.split(',')[1].downcase.capitalize() %></th>
+            <% if ba.surface %>
+              <td><%= format_number(ba.surface, currency_symbol: false) %> m²</td>
+            <% end %>
+            <% if ba.rentals.last %>
+              <td><%= format_number(ba.rentals.last.annual_rent) %></td>
+            <% end %>
+            <% if ba.rentals.last %>
+              <td><%= format_number((ba.rentals.last.annual_rent / ba.surface)) %></td>
+            <% end %>
+            <% if ba.transactions %>
+              <td><%= format_number(ba.transactions.last.price) %></td>
+            <% end %>
+            <% if ba.rentals.last %>
+              <td><%=  ((ba.rentals.last.annual_rent / ba.transactions.last.price) * 100).round(2) %> %</td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
 </div>

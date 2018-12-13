@@ -8,36 +8,46 @@
 }
 
 .green_box {
-  background-color: $main-color !important;
+  background-color: white !important;
   text-align: center;
   color: white !important;
   font-weight: bold !important;
-  padding: 20px;
-  border-radius: 3px;
+  padding-top: 10px;
+  border-radius: 0px;
+  margin: 10px;
   max-width: 250px;
+  h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: $main-color;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
   p {
     font-size: 15px;
-    font-weight: bold;
-    color: white;
+    color: $main-color;
+    margin-bottom: 5px;
   }
 }
 
 .dashboard-white-box {
   background-color: white;
   padding: 10px;
-  margin-top: 70px;
+  margin-top: 30px;
   h3 {
     margin-top: 0px !important;
     padding: 4px;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 4px;
     font-weight: bold;
-    background-color: $main-color;
-    color: white;
+    background-color: white;
+    color: $main-color;
     border-radius: 3px;
   }
   display: flex;
   flex-direction: column;
+  canvas {
+  }
 }
 
 .dashboard-white-box-2 {
@@ -57,19 +67,17 @@
   }
 }
 
-
-
 .main-info {
-  margin: 25px;
+  margin: 0px;
   display: flex;
   justify-content: space-around;
 }
 
 .tableau {
-  width: 700px;
+  width: 100%;
   justify-content: center;
   text-align: center;
-  margin-left: 35px;
+  margin-left: 0px;
   td, th {
     padding-top: 16px;
     padding-bottom: 16px;
