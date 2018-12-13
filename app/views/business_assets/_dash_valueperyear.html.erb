@@ -3,7 +3,7 @@
   data-values="<%= (2009..2018).to_a
                                .map { |y| @business_assets
                                   .select { |b| b.transactions.last.date.year <= y}
-                                  .map { |b| b.transactions.last.price}
-                                  .sum / 1000000 } %>">
+                                  .map { |b| b.rentals.last.annual_rent}
+                                  .sum / 1000 } %>">
 
 </canvas>

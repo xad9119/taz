@@ -194,6 +194,8 @@ end
     last_transactions = BusinessAsset.all.map { |business_asset| business_asset.last_transaction }
     buyer_last_transactions = last_transactions.select { |transaction| transaction.buyer == @buyer }
     @business_assets = buyer_last_transactions.map { |buyer_last_transaction| buyer_last_transaction.business_asset }
+                                              .sort_by {|b| b.rentals.last.annual_rent }
+                                              .reverse
     @max_price = @business_assets.map { |bus| bus.transactions.last.price }.max()
     @markers = @business_assets.map do |business_asset|
         next if business_asset.geographical_location.longitude.nil? || business_asset.geographical_location.latitude.nil?

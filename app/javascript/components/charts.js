@@ -8,7 +8,7 @@ const chart_value_per_year = (years, values) => {
       data: {
           labels: years,
           datasets: [{
-              label: 'Asset Under Management (M€)',
+              label: 'Rentals revenues (k€/y)',
               data: values,
               backgroundColor: 'rgba(75, 192, 192, 0.5)',
               // backgroundColor: [
@@ -27,6 +27,9 @@ const chart_value_per_year = (years, values) => {
           }]
       },
       options: {
+          legend: {
+                      display: false
+                  },
           scales: {
               yAxes: [{
                   ticks: {
@@ -41,11 +44,11 @@ const chart_value_per_year = (years, values) => {
 const chart_price_per_asset = (assets, prices) => {
   var ctx = document.getElementById("price_per_asset").getContext('2d');
   var myChart = new Chart(ctx, {
-      type: 'bar',
+      type: 'horizontalBar',
       data: {
           labels: assets,
           datasets: [{
-              label: 'Asset Under Management (M€)',
+              label: 'Rentals revenues (k€/y)',
               data: prices,
               backgroundColor: 'rgba(54, 162, 235, 0.5)',
               // backgroundColor: [
@@ -64,11 +67,21 @@ const chart_price_per_asset = (assets, prices) => {
           }]
       },
       options: {
+          aspectRatio: 0.8,
+          legend: {
+                      display: false
+                  },
           scales: {
               yAxes: [{
                   ticks: {
                       beginAtZero:true
                   }
+              }],
+              xAxes: [{
+                  scaleLabel: {
+                                            display: true,
+                                            labelString: 'k€/y'
+                                          }
               }]
           }
       }
@@ -89,6 +102,11 @@ const chart_q_per_cat = (categories, prices) => {
                           'rgba(255, 159, 64, 0.5)'
                       ]
       }],
+      options: {
+        legend: {
+                    display: true
+                },
+      },
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: categories
@@ -105,16 +123,39 @@ const chart_bubble = (points) => {
       type: 'bubble',
       data: {
           datasets: [{
-              label: 'Scatter Dataset',
+              label:'',
               data: points,
               backgroundColor:'rgba(255, 99, 132, 0.5)',
           }]
       },
       options: {
+          aspectRatio: 1.2,
+          legend: {
+                      display: false
+                  },
           scales: {
+              yAxes: [{
+                  type: 'linear',
+                  position: 'bottom',
+                  ticks: {
+                          min: 0
+                      },
+                  scaleLabel: {
+                          display: true,
+                          labelString: 'rentals revenues (k€/y)'
+                        }
+              }],
               xAxes: [{
                   type: 'linear',
-                  position: 'bottom'
+                  position: 'bottom',
+                  ticks: {
+                          min: 0,
+                          max: 30
+                      },
+                  scaleLabel: {
+                          display: true,
+                          labelString: '# months before end of current lease'
+                        }
               }]
           }
       }

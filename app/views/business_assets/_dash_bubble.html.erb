@@ -1,8 +1,8 @@
 <canvas id="bubble"
 
-  data-points="<%= @business_assets.map { |b| {x: (b.transactions.last.date - Date.today()).to_int + 9*365,
-                                               y: b.current_rental.annual_rent,
-                                               r: 30 * b.transactions.last.price / @max_price }
+  data-points="<%= @business_assets.map { |b| {x: (((b.transactions.last.date - Date.today()).to_int + 12*365)/5)/30,
+                                               y: b.current_rental.annual_rent / 1000,
+                                               r: 20 } #*b.transactions.last.price / @max_price
                                          }.to_json %>">
 
 </canvas>
