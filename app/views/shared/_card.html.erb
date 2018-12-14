@@ -7,6 +7,7 @@
       <div class="price">
       <% unless business_asset.transactions.empty? %>
         <h2><%= format_number(business_asset.transactions.first.price) %></h2>
+      <% end %>
       </div>
     </div>
     <div class="card2-info">
@@ -30,8 +31,10 @@
           <div class="yield">
             <p style="margin-right: 15px"> Yield</p>
             <% business_asset.rentals.each do |r| %>
-              <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
-                <h2><%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</h2>
+              <% unless business_asset.transactions.empty? %>
+                <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
+                  <h2><%= ((r.annual_rent / business_asset.transactions.first.price) * 100).round(2) %>%</h2>
+                <% end %>
               <% end %>
             <% end %>
           </div>
@@ -39,5 +42,4 @@
     </div>
   </div>
 </div>
-  <% end %>
 <% end %>
