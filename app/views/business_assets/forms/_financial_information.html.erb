@@ -1,21 +1,39 @@
-    <h3 class="form-section">Business data</h3>
-    <div class="form-input-title">Potential annual rent</div>
+
+  <h3  class="form-section">Transactions</h3>
+  <%= f.fields_for :transactions do |tr| %>
+    <div class="form-input-title">Price</div>
     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
       <div class="input-group-addon">€</div>
-      <%= f.input :potential_annual_rent, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
+      <%= tr.input :price, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
     </div>
+
+      <div class="form-input-title">Buyer</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <%= tr.input :buyer_name, as: :string, label: false %>
+      </div>
+      <div class="form-input-title">Seller</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <%= tr.input :seller_name, as: :string, label: false %>
+      </div>
+
+
+      <div class="form-input-title">Date</div>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <%= tr.input :date, as: :string, label:false, input_html: {class: "datepicker"} %>
+      </div>
+
+  <% end %>
 
     <h3 class="form-section">Rentals</h3>
       <%= f.fields_for :rentals do |re| %>
-          <div class="form-input-title">Tenant</div>
-          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-            <%= re.input :tenant_name, as: :string, label: false %>
-          </div>
-
           <div class="form-input-title">Annual rent</div>
           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
             <div class="input-group-addon">€</div>
             <%= re.input :annual_rent, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
+          </div>
+          <div class="form-input-title">Tenant</div>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <%= re.input :tenant_name, as: :string, label: false %>
           </div>
 
           <div class="form-input-title">Start date</div>
@@ -39,30 +57,11 @@
           </div>
       <% end %>
 
-    <h3  class="form-section">Transactions</h3>
-    <%= f.fields_for :transactions do |tr| %>
-        <div class="form-input-title">Buyer</div>
-        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-          <%= tr.input :buyer_name, as: :string, label: false %>
-        </div>
-        <div class="form-input-title">Seller</div>
-        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-          <%= tr.input :seller_name, as: :string, label: false %>
-        </div>
-
-        <div class="form-input-title">Price</div>
-        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-          <div class="input-group-addon">€</div>
-          <%= tr.input :price, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
-        </div>
-
-        <div class="form-input-title">Date</div>
-        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-          <%= tr.input :date, as: :string, label:false, input_html: {class: "datepicker"} %>
-        </div>
-
-
-
-    <% end %>
+    <h3 class="form-section">Business data</h3>
+    <div class="form-input-title">Potential annual rent</div>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon">€</div>
+      <%= f.input :potential_annual_rent, as: :string, label: false, input_html: {class: 'form-input-numeric'} %>
+    </div>
 
 
