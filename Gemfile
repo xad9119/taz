@@ -24,6 +24,7 @@ gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
 gem 'bootstrap'
 gem 'awesome_print'
+gem 'hamburger'
 
 gem 'pg_search'
 gem 'jquery-ui-rails'
