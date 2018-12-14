@@ -4,15 +4,15 @@
     <div class="index-banner">
       <div class="show-buttons">
 
-        <button class="btn-filter btn-show" id="btn-asset-category">Edit</button>
+        <%= link_to "Edit", business_assets_path, class: "btn-filter btn-show" %>
         <%= link_to "Compare", compare_path(@business_asset.last_transaction), class: "btn-filter btn-show" %>
-        <button class="btn-filter btn-show" id="btn-asset-category">Delete</button>
+        <%= link_to "Delete", business_assets_path, class: "btn-filter btn-show" %>
 
 
       </div>
     </div>
 
-    <div class="main-container" id="main-display">
+    <div class="main-show-container" id="main-display">
       <%= render 'show_card', business_asset: @business_asset  %>
     </div>
   </div>
@@ -38,7 +38,7 @@
           <% @carroussel.each_with_index do |att, index| %>
             <% if index == 0  %>
               <div class="item active">
-                <%= cl_image_tag att.file, crop: :fill, :format => :png %>
+                <%= cl_image_tag att.file, crop: :fill, :format => :png, class: "seed-pic" %>
               </div>
             <% else %>
               <div class="item">
