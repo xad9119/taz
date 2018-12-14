@@ -48,7 +48,7 @@ class Transaction < ApplicationRecord
   end
 
   def define_attributes(my_hash, business_asset)
-    buyer_name = my_hash['buyer_name'] if !my_hash['buyer_name'].empty?
+    buyer_name = my_hash['buyer_name'].empty? ? '-' : my_hash['buyer_name']
     buyer = Company.find_by(name: buyer_name)
 
     if buyer.nil? && !buyer_name.nil?
@@ -56,19 +56,20 @@ class Transaction < ApplicationRecord
       buyer.save!
     end
 
-    seller_name = my_hash['seller_name'] if !my_hash['seller_name'].empty?
+    seller_name = my_hash['seller_name'].empty? ? '-' : my_hash['seller_name']
 
     seller = Company.find_by(name: seller_name)
     if seller.nil? && !seller_name.nil?
       seller = Company.new(name: seller_name)
       seller.save!
     end
+    sell_date = my_hash['date'].empty? ? '2018-01-01'.to_date : my_hash['date'].to_date
 
     self.business_asset = business_asset
     self.buyer = buyer
     self.seller = seller
-    self.date = my_hash['date'].to_date
-    self.price = my_hash['price'].gsub(/[^\d^\.]/, '').to_f
+    self.date = sell_date
+    self.price = my_hash['price'].empty? ? 0 : my_hash['price'].gsub(/[^\d^\.]/, '').to_f
   end
 
   def generate_predictions

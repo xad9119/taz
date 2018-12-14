@@ -87,7 +87,6 @@ end
   end
 
   def show
-
     @markers =
       [{
         title: @business_asset.geographical_location.address,
