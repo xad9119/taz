@@ -3,9 +3,12 @@
     <%= render 'shared/navbar-short' %>
     <div class="index-banner">
       <div class="show-buttons">
+
         <button class="btn-filter btn-show" id="btn-asset-category">Edit</button>
-        <button class="btn-filter btn-show" id="btn-asset-category">Compare</button>
+        <%= link_to "Compare", compare_path(@business_asset.last_transaction), class: "btn-filter btn-show" %>
         <button class="btn-filter btn-show" id="btn-asset-category">Delete</button>
+
+
       </div>
     </div>
 

@@ -84,6 +84,7 @@ end
         @business_assets
     end
     authorize @business_assets
+    render layout: 'application_new'
   end
 
   def show
@@ -98,6 +99,7 @@ end
     ap @business_asset.attachments
     @carroussel = @business_asset.attachments.sort_by { |file| file.id }
     ap @carroussel
+    render layout: 'application_new'
   end
 
   def new
