@@ -20,7 +20,7 @@
       </div>
       <div class="card2-other-info">
         <div class="surface-yield">
-          <div class="surface">
+          <div class="card-surface">
             <p>Surface</p>
             <% if business_asset.surface %>
               <h2><%= format_number(business_asset.surface, currency_symbol: false) %>m²</h2>
@@ -28,7 +28,7 @@
               <p>No surface</p>
             <% end %>
           </div>
-          <div class="surface">
+          <div class="card-surface">
             <p> Yield</p>
             <% business_asset.rentals.each do |r| %>
               <% unless business_asset.transactions.empty? %>
