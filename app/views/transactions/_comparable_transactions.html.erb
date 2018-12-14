@@ -1,17 +1,17 @@
 <div class="tr-card checkbox_equiped">
   <div class="tr-card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path comparable.business_asset.attachments.where(attachment_type: 'photo').first.file%>);">
+    <div class="tr-card-picto">
+      <%= image_tag("#{@business_asset.asset_type.downcase.delete(' ')}.png")%>
+    </div>
   </div>
 
   <div class="tr-card-info">
     <div class="tr-card-address">
       <%= comparable.business_asset.geographical_location.address %>
     </div>
-    <div class="tr-card-type">
-      <%= comparable.business_asset.asset_type %>
-    </div>
     <ul class="tr-card-feature-list">
       <li><%= format_number(comparable.price, currency_symbol: false) %> €</li>
-      <li><%= format_number(comparable.business_asset.surface, currency_symbol: false) %> m2</li>
+      <li><%= format_number(comparable.business_asset.surface, currency_symbol: false) %> m²</li>
     </ul>
   </div>
   <div class="tr-card-return">

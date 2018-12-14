@@ -28,8 +28,8 @@
               <p>No surface</p>
             <% end %>
           </div>
-          <div class="yield">
-            <p style="margin-right: 15px"> Yield</p>
+          <div class="surface">
+            <p> Yield</p>
             <% business_asset.rentals.each do |r| %>
               <% unless business_asset.transactions.empty? %>
                 <% if r.annual_rent != 0 && business_asset.transactions.first.price != 0 %>
