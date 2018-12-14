@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".tr-card.checkbox_equiped");
+const cards = document.querySelectorAll(".tr-card2.checkbox_equiped");
 
 const urlParams = new URLSearchParams(window.location.search);
 let query = urlParams.get('query');
@@ -6,7 +6,9 @@ let query = urlParams.get('query');
 console.log(urlParams)
 
 cards.forEach((cb) => {
+  console.log(cb)
   cb.querySelector(".checkbox_c").addEventListener("click", (event) => {
+    console.log('hello')
     const id = event.currentTarget.dataset.id;
     if(query.includes(id)) {
       query_arr = query.split(' ');

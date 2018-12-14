@@ -37,10 +37,10 @@
     <div class="wrapper">
 <!-- ATTENTION - LAISSER LA RENDER DE NAVBAR ICI -->
         escape_pages = ["/business_assets","/"]
-        <% unless escape_pages.includes?(request.env['PATH_INFO'])  %>
+
           <div class="border" style="width: 100%; height: 70px"></div>
           <%= render 'shared/navbar' %>
-        <% end %>
+
         <% if notice %>
           <div class="alert alert-info alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

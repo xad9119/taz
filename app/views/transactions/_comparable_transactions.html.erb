@@ -26,7 +26,7 @@
                     .first %>
       <h5><%= rental ? (100 * (rental.annual_rent + 0.0) / comparable.price).round(1) : 0 %> %</h5>
     </div>
-    <div class="checkbox_c checkbox_taz" data-id="<%= comparable.id %>"><%= check_box_tag('', '1', key_comparable) %></div>
+    <div class="checkbox_c" data-id="<%= comparable.id %>"><%= check_box_tag('', '1', key_comparable) %></div>
 
   </div>
 </div>
