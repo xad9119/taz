@@ -38,5 +38,6 @@ class TransactionsController < ApplicationController
         icon: ActionController::Base.helpers.image_path("#{@business_asset.asset_type.downcase.delete(' ')}.png")
       }
     end
+   render layout: 'application_demo'
   end
 end
