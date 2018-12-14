@@ -37,9 +37,9 @@
   <body>
     <div class="wrapper">
 <!-- ATTENTION - LAISSER LA RENDER DE NAVBAR ICI -->
-
         <% escape_pages = ["/business_assets","/","/business_assets/:id(.:format)"]  %>
         <% unless escape_pages.include?(request.env['PATH_INFO'])  %>
+          <%= render 'shared/navbar' %>
         <% end %>
         <% if notice %>
           <div class="alert alert-info alert-dismissible" role="alert">
