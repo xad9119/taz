@@ -1,18 +1,21 @@
 
 $navbar-font-color: white;
-$navbar-background-color: blue;
+$navbar-background-color: $main-color;
 
 /* Main navbar */
 .navbar-short {
-  position: sticky;
+  position: fixed;
   top: 0px;
+  z-index: 11;
+  width:  45%;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: $navbar-background-color !important;
+  background: $navbar-background-color;
   height: 70px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
   transition: 0.5s background-color ease;
 }
 
@@ -40,8 +43,8 @@ $navbar-background-color: blue;
 /* Basic navbar item */
 .navbar-short-item {
   cursor: pointer;
-  padding: 3px 10px;
-  margin: 0px;
+  padding: 0 20px;
+  margin: 15px;
   color: $main-color;
 }
 
@@ -55,6 +58,15 @@ $navbar-background-color: blue;
   color: $main-color;
   text-decoration: none;
 }
+
+.navbar-short-white {
+  background-color: $navbar-background-color;
+}
+.navbar-short-green {
+  background-color: $navbar-background-color;
+  color: $navbar-font-color;
+}
+
 /* Dropdown menu */
 .navbar-short-dropdown-menu {
   margin-top: 15px;
