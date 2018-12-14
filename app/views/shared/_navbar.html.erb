@@ -1,49 +1,44 @@
-  <div class="virtual div" style="height: 70px; width: 100%"></div>
-  <div class="navbar-taz navbar-taz-green">
-    <!-- Logo -->
-    <%= link_to business_assets_path, class: "navbar-taz-brand" do %>
-      <%= image_tag "logo.svg", height: 50 %>
-    <% end %>
+<div class="navbar-taz navbar-fixed-top navbar-taz-white">
+  <!-- Logo -->
+  <%= link_to business_assets_path, class: "navbar-taz-brand" do %>
+    <%= image_tag "logo.svg", height: 50 %>
+  <% end %>
 
+  <!-- Left Navigation in asset show -->
+  <%= yield :navbar_links %>
 
-    <div class="navbar-taz-right hidden-xs hidden-sm">
-      <% if user_signed_in? %>
-        <div class="navbar-taz-item">
-          <div class="dropdown">
+  <!-- Right Navigation -->
+  <div class="navbar-taz-right hidden-xs hidden-sm">
 
-            <button class="hamburger hamburger--spin dropdown-toggle" type="button" data-toggle="dropdown">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-
-            <ul class="dropdown-menu dropdown-menu-right navbar-taz-dropdown-menu">
-              <li>
-                <%= link_to business_assets_path, class: "navbar-taz-item navbar-taz-link" do %>
-                  <i class="fa fa-user"></i> Profile
-                <% end %>
-              </li>
-              <li>
-                <%= link_to dashboard_path, class: "navbar-taz-item navbar-taz-link" do %>
-                  <i class="fas fa-tachometer-alt"></i> Dashboard
-                <% end %>
-              </li>
-              <li>
-                <%= link_to new_business_asset_path, class: "navbar-taz-item navbar-taz-link" do %>
-                  <i class="far fa-building"></i> Add asset
-                <% end %>
-              </li>
-              <li>
-                <%= link_to destroy_user_session_path, method: :delete, class: "navbar-taz-item navbar-taz-link" do %>
-                  <i class="fas fa-hand-peace"></i>  <%= t(".sign_out", default: "Log out") %>
-                <% end %>
-              </li>
-            </ul>
-          </div>
+    <!-- Links -->
+    <%= link_to "Home", business_assets_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <%= link_to "Add Asset", new_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <%= link_to "Dashboard", dashboard_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <% if user_signed_in? %>
+      <div class="navbar-taz-item">
+        <div class="dropdown">
+          <%= image_tag "admin_avatar.png", class: "main-avatar dropdown-toggle", id: "navbar-taz-menu", "data-toggle" => "dropdown", title: current_user.email %>
+          <ul class="dropdown-menu dropdown-menu-right navbar-taz-dropdown-menu">
+            <li>
+              <%= link_to business_assets_path do %>
+                <i class="fa fa-user"></i> Profile
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "#" do %>
+                <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <% end %>
+            </li>
+          </ul>
         </div>
-      <% else %>
-        <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
-      <% end %>
-    </div>
+      </div>
+    <% else %>
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+    <% end %>
   </div>
-
+</div>
