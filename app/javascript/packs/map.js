@@ -345,13 +345,16 @@ const initMap = () => {
      } else {
        map.fitLatLngBounds(markers);
      }
-     map.addStyle({
-       styles: myStyle,
-       mapTypeId: 'map_style'
-     });
-     map.setStyle('map_style');
-     var styledMapType = new google.maps.StyledMapType(myStyle)
+   } else {
+      map.setCenter(48.864716, 2.349014);
+      map.setZoom(12);
    }
+   map.addStyle({
+     styles: myStyle,
+     mapTypeId: 'map_style'
+   });
+   map.setStyle('map_style');
+   var styledMapType = new google.maps.StyledMapType(myStyle)
  }
 }
 

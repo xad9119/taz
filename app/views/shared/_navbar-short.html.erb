@@ -5,38 +5,54 @@
   <% end %>
 
   <!-- Left Navigation in asset show -->
-  <%= yield :navbar_links %>
+  <%= yield :navbar_short_links %>
 
   <!-- Right Navigation -->
-  <div class="navbar-taz-right hidden-xs hidden-sm">
+  <div class="navbar-short-right hidden-xs hidden-sm">
+
 
     <!-- Links -->
     <% if user_signed_in? %>
       <div class="navbar-short-item">
         <div class="dropdown">
-          <%= image_tag "admin_avatar.png", class: "main-avatar dropdown-toggle", id: "navbar-taz-menu", "data-toggle" => "dropdown", title: current_user.email %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-taz-dropdown-menu">
+
+          <button class="hamburger hamburger--spin dropdown-toggle" type="button" data-toggle="dropdown">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+
+
+
+
+
+          <ul class="dropdown-menu dropdown-menu-right navbar-short-dropdown-menu">
             <li>
-              <%= link_to business_assets_path do %>
+              <%= link_to business_assets_path, class: "navbar-short-item navbar-short-link" do %>
                 <i class="fa fa-user"></i> Profile
               <% end %>
             </li>
             <li>
-              <%= link_to "Add Asset", new_business_asset_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+              <%= link_to dashboard_path, class: "navbar-short-item navbar-short-link" do %>
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+              <% end %>
             </li>
             <li>
-              <%= link_to "Dashboard", dashboard_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+              <%= link_to new_business_asset_path, class: "navbar-short-item navbar-short-link" do %>
+                <i class="far fa-building"></i> Add asset
+              <% end %>
             </li>
             <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <%= link_to destroy_user_session_path, method: :delete, class: "navbar-short-item navbar-short-link" do %>
+                <i class="fas fa-hand-peace"></i>  <%= t(".sign_out", default: "Log out") %>
               <% end %>
             </li>
           </ul>
         </div>
       </div>
     <% else %>
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-taz-item navbar-taz-link navbar-title" %>
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-short-item navbar-short-link navbar-title" %>
     <% end %>
   </div>
 </div>
