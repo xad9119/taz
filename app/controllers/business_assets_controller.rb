@@ -105,6 +105,7 @@ end
   def new
     @business_asset = BusinessAsset.new
     authorize @business_asset
+    render layout: 'application_new'
   end
 
   def create
