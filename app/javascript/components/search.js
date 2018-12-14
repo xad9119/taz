@@ -35,7 +35,18 @@ const checkFilterStatus = (filter) => {
         activeOptions.push(option);
       };
     });
-    return [activeOptions.length > 0, activeOptions]
+    return [activeOptions.length > 0, activeOptions[0].innerText]
+  } else if (filter == "Price") {
+      var slider = document.getElementById('slider-handles-price');
+      var rangeSliderVal = slider.noUiSlider.get();
+      var minSlider = parseInt(rangeSliderVal[0],10)
+      var maxSlider = parseInt(rangeSliderVal[1],10)
+      if (minSlider != 0 || maxSlider != 15000000) {
+        return [true, [`m€${minSlider/1000000} - m€${maxSlider/1000000}`]]
+      } else{
+        return [false, [filter]]
+      }
+
   } else {
     return [false, []]
   }
@@ -51,7 +62,7 @@ const applyBtn = (btnType, btnId, parentBtnId, submitBtn) => {
       var filterStatus = checkFilterStatus(btnType);
       if (filterStatus[0]) {
         parentBtn.className += " btn-filter-active";
-        parentBtn.innerHTML = filterStatus[1][0].innerText;
+        parentBtn.innerHTML = filterStatus[1];
         submitBtn.click();
       } else {
         parentBtn.classList.remove("btn-filter-active");;
