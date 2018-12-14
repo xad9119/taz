@@ -1,57 +1,55 @@
 
 
-<div class="left-size">
-  <div class="asset-info">
-    <div class="row">
-       <div class="col-sm-12 address">
-        <%= image_tag("#{@business_asset.asset_type.downcase.delete(' ')}.png")%>
-        <h2> <%= @business_asset.geographical_location.address %></h2>
-      </div>
-    </div>
-    <div class="block1">
-
-
-      <div class="row">
-        <div class="col-sm-6 surface">
-          <% if @business_asset.surface %>
-              <h2><%= @business_asset.surface.round %> m²</h2>
-              <p><strong> Surface </strong></p>
-              <% end %>
-        </div>
-        <div class="col-sm-6 surface">
-           <% if @business_asset.land_surface %>
-                <h2><%= @business_asset.surface.round %> m²</h2>
-                <% else %>
-                <h2> - m²</h2>
-                <% end %>
-                <p><strong> Land Surface </strong></p>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-sm-6 surface">
-          <% if @business_asset.transactions.last.price %>
-              <h2><%= format_number(@business_asset.transactions.last.price) %></h2>
-              <p><strong> Price </strong></p>
-              <% end %>
-        </div>
-        <div class="col-sm-6 surface">
-           <% if @business_asset.rentals.last.annual_rent %>
-                <h2><%= format_number(@business_asset.rentals.last.annual_rent) %></h2>
-                <% else %>
-                <h2> - </h2>
-                <% end %>
-                <p><strong> Rent </strong></p>
-        </div>
-      </div>
-
-
-
-
-
+<div class="asset-info">
+  <div class="row">
+     <div class="col-sm-12 address">
+      <%= image_tag("#{business_asset.asset_type.downcase.delete(' ')}.png")%>
+      <h2> <%= business_asset.geographical_location.address %></h2>
     </div>
   </div>
+  <div class="block1">
+
+
+    <div class="row">
+      <div class="col-sm-6 surface">
+        <% if business_asset.surface %>
+            <h2><%= business_asset.surface.round %> m²</h2>
+            <p><strong> Surface </strong></p>
+            <% end %>
+      </div>
+      <div class="col-sm-6 surface">
+         <% if business_asset.land_surface %>
+              <h2><%= business_asset.surface.round %> m²</h2>
+              <% else %>
+              <h2> - m²</h2>
+              <% end %>
+              <p><strong> Land Surface </strong></p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-6 surface">
+        <% if business_asset.transactions.last.price %>
+            <h2><%= format_number(business_asset.transactions.last.price) %></h2>
+            <p><strong> Price </strong></p>
+            <% end %>
+      </div>
+      <div class="col-sm-6 surface">
+         <% if business_asset.rentals.last.annual_rent %>
+              <h2><%= format_number(business_asset.rentals.last.annual_rent) %></h2>
+              <% else %>
+              <h2> - </h2>
+              <% end %>
+              <p><strong> Rent </strong></p>
+      </div>
+
+
+
+
+
+  </div>
+</div>
 
 </div>
 
