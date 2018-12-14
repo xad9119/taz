@@ -41,10 +41,12 @@
 
 .comps-container {
   display: flex;
+  border: none;
 }
 
 .comparable-list {
   width: 60%;
+  background-color: #f2f3f4;
 }
 
 .comparable-map {
