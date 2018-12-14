@@ -1,7 +1,18 @@
+  <% if @business_asset.asset_type == "Housing" %>
+    <% card_color=  "#167AB2"  %>
+  <% elsif @business_asset.asset_type == "Office" %>
+    <% card_color=  "#a43a2C"  %>
+  <% elsif @business_asset.asset_type == "Light Industrial" %>
+    <% card_color=  "#4B6A69"  %>
+  <% elsif @business_asset.asset_type == "Retail" %>
+    <% card_color=  "#F7C259"  %>
+  <% else %>
+    <% card_color=  "#a43a2C"  %>
+  <% end %>
 
 
 <div class="asset-info">
-     <label for="post_category_ids_<%= @business_asset.asset_category_id %>" class="option-choice assetview1 hardcolor">
+     <label for="post_category_ids_<%= @business_asset.asset_category_id %>" class="option-choice assetview1 hardcolor" style= "background-color: <%= card_color  %>;">
         <div class="category-name ">
           <%= @business_asset.asset_type %>
         </div>
