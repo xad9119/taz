@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed" rel="stylesheet">
+
     <title>Lynx Asset Management platform for a specific class of assets </title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
@@ -36,11 +37,12 @@
   <body>
     <div class="wrapper">
 <!-- ATTENTION - LAISSER LA RENDER DE NAVBAR ICI -->
-        escape_pages = ["/business_assets","/"]
-       <!--  -->
+
+        <% escape_pages = ["/business_assets","/"]  %>
+        <% unless escape_pages.include?(request.env['PATH_INFO'])  %>
           <div class="border" style="width: 100%; height: 70px"></div>
           <%= render 'shared/navbar' %>
-
+        <% end %>
         <% if notice %>
           <div class="alert alert-info alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -54,9 +56,9 @@
           </div>
         <% end %>
         <%= yield %>
-
+        <% unless request.env['PATH_INFO'] == "/" %>
           <%= render 'shared/footer' %>
-
+        <% end %>
         <%= javascript_include_tag 'application' %>
         <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
         <%= javascript_pack_tag 'application' %>

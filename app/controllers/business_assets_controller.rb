@@ -10,8 +10,6 @@ def search
       .map{|cat| AssetCategory.find(cat).name}
 
       price_array = params["post"]["price_range"][0].split(',').map{|x| x.to_i}
-
-
       if !my_hash["address"].empty?
         sql_query = " \
         geographical_locations.address ILIKE :query \
@@ -24,6 +22,7 @@ def search
       unless categories_array.empty?
         @business_assets = @business_assets.where(asset_type: categories_array)
       end
+
       unless price_array.empty?
         @business_assets = @business_assets.select do |x|
           if x.last_transaction == nil
@@ -42,7 +41,7 @@ def search
         title: business_asset.geographical_location.address,
         lng: business_asset.geographical_location.longitude,
         lat: business_asset.geographical_location.latitude,
-        infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })}
+        icon: ActionController::Base.helpers.image_path("#{business_asset.asset_type.downcase.delete(' ')}.png")
       }
     end
     @markers.select! { |x| !x.nil? }
@@ -78,7 +77,6 @@ end
             lng: business_asset.geographical_location.longitude,
             lat: business_asset.geographical_location.latitude,
             infoWindow: {content: render_to_string(partial: "/business_assets/infowindow", locals: { business_asset: business_asset })},
-            # icon: image_tag("lynx.jpg", size: "10x10")
             icon: ActionController::Base.helpers.image_path("#{business_asset.asset_type.downcase.delete(' ')}.png")
           }
         end

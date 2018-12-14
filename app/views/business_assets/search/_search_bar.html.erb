@@ -3,24 +3,27 @@
     <%= f.input :address, label: false, placeholder: "Enter address", input_html: {class: "btn-filter"} %>
   </div>
   <button class="btn-filter" id="btn-asset-category">Category</button>
-  <div class="options"id="filter-asset-category">
-      <input type="hidden" name="post[category_ids][]" value="">
-      <div class="option-choices">
-        <% AssetCategory.all.sort_by {|x| x.name}.each do |category| %>
-          <input type="checkbox" class="option-choice hidden" value="<%= category.id %>" name="post[category_ids][]" id="post_category_ids_<%= category.id %>">
-          <label for="post_category_ids_<%= category.id %>" class="option-choice">
-            <div class="category-name">
-              <%= category.name %>
-            </div>
-          </label>
-      <% end %>
-      </div>
-      <div class="btn-options">
-        <a href="#" class="apply-options" id="apply-options-category">Apply</a>
-      </div>
+  <div id="modal-category" class="modal">
+    <div class="options"id="filter-asset-category">
+        <input type="hidden" name="post[category_ids][]" value="">
+        <div class="option-choices">
+          <% AssetCategory.all.sort_by {|x| x.name}.each do |category| %>
+            <input type="checkbox" class="option-choice hidden" value="<%= category.id %>" name="post[category_ids][]" id="post_category_ids_<%= category.id %>">
+            <label for="post_category_ids_<%= category.id %>" class="option-choice">
+              <div class="category-name">
+                <%= category.name %>
+              </div>
+            </label>
+        <% end %>
+        </div>
+        <div class="btn-options">
+          <a href="#" class="reset-options" id="reset-options-category">Reset</a>
+          <a href="#" class="apply-options" id="apply-options-category">Apply</a>
+        </div>
+    </div>
   </div>
 
-  <button class="btn-filter" id="btn-asset-price">Price</button>
+<!--   <button class="btn-filter" id="btn-asset-price">Price</button>
   <div class="options"id="filter-asset-price">
         <div class="slider-modal">
           <div class="slider-values">
@@ -28,14 +31,17 @@
             <span class="slider-max-value"></span>
           </div>
 
-          <div id="slider-handles"></div>
-          <!-- <div id="slider-range-value"></div> -->
+          <div id="slider-handles-price" class="slider-handles"></div>
+          <div id="slider-range-value"></div>
           <input type="text" class="option-choice hidden" value="" name="post[price_range][]" id="slider-range-value">
         </div>
         <div class="btn-options">
+          <a href="#" class="reset-options" id="reset-options-price">Reset</a>
           <a href="#" class="apply-options" id="apply-options-price">Apply</a>
         </div>
   </div>
-
-  <%= f.submit 'Apply', class: "btn-filter test-apply" %>
+ -->
 </div>
+
+
+      <%= render 'business_assets/search/search_bar', f:f   %>

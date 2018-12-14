@@ -109,11 +109,11 @@ p "----------- Creating Business Assets Categories -----------"
 
 asset_categories_array = [
   {
-    name: "Stock warehouse",
+    name: "Stock Warehouse",
     pictogram: "fas fa-warehouse"
   },
   {
-    name:"logistics warehouse",
+    name:"logistics Warehouse",
     pictogram: "fas fa-truck"
   },
   {
@@ -125,15 +125,15 @@ asset_categories_array = [
     pictogram: "fas fa-building"
   },
   {
-    name:"HousiNg",
+    name:"Housing",
     pictogram: "fas fa-home"
   },
   {
-    name:"lIght Industrial",
+    name:"Light Industrial",
     pictogram: "fas fa-industry"
   },
   {
-    name:"hotel",
+    name:"Hotel",
     pictogram: "fas fa-hotel"
   },
   {
@@ -141,13 +141,6 @@ asset_categories_array = [
     pictogram: "fas fa-industry"
   }
 ]
-
-
-
-
-asset_categories_array.map! { |x| {name: x[:name].capitalize, pictogram: x[:pictogram]} }
-
-
 
 asset_categories_array.each do |a|
   AssetCategory.create!(

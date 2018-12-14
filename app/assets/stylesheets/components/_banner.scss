@@ -72,6 +72,23 @@ $banner-font-color: $main-color;
     background-color: $light-gray;
   }
 }
+
+  .btn-filter-active{
+  padding: 3px 7px 3px 7px;
+  margin: 0px 10px 0px 0px ;
+  border-radius: 5px;
+  width: auto;
+  border: 1px solid $secondary-color;
+  background-color: $secondary-color;
+  color: white;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+
+
+
 .clicked {
   border: 2px solid $banner-background-color;
   background-color: $banner-font-color;
@@ -88,25 +105,30 @@ $banner-font-color: $main-color;
   justify-content: flex-start;
 
 }
-// modal
-.filter-options {
+
+
+.modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  // top: 150px;
+  top: 0px;
   left: 0px !important;
   z-index: 1; /* Sit on top */
   width: 100vw; /* Full width */
   height: 100vh; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgba(255,255,255,0.6); /* Fallback color */
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .options {
-  // NEED TO CHANGE IF BACKGROUND
-  display: none; /* Hidden by default */
-  position: absolute !important; /* Stay in place */
-  top: 48px !important;
-  left: 0px !important;
+  // display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  top: 150px !important;
+  left: 100px !important;
   border: 1px solid #888;
   padding: 5px 10px 5px 10px;
   box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
@@ -133,7 +155,7 @@ $banner-font-color: $main-color;
 .btn-options {
   display: flex;
   padding: 2px 3px 2px 3px;
-  justify-content: flex-end;
+  justify-content: space-between;
   a {
     padding: 3px;
     text-decoration: none;
