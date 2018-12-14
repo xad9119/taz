@@ -25,39 +25,44 @@ const initSlider = () => {
 }
 
 
-const checkBtnStatus = () => {
-  var optionsArray = document.querySelectorAll(".option-choice")
-  var count = 0
-  optionsArray.forEach( (option) => {
-    if (option.className == "option-choice active") {
-      count = count + 1
-    };
-  });
-
-  if (count > 0) {
-    return true
+const checkFilterStatus = (filter) => {
+  if (filter == "Category") {
+    var optionsArray = document.querySelectorAll(".option-choice")
+    var count = 0
+    var activeOptions = []
+    optionsArray.forEach( (option) => {
+      if (option.className == "option-choice active") {
+        activeOptions.push(option);
+      };
+    });
+    return [activeOptions.length > 0, activeOptions]
   } else {
-    return false
-  };
+    return [false, []]
+  }
+
 };
 
-const applyBtn = (btnId, parentBtnId, submitBtn) => {
+
+const applyBtn = (btnType, btnId, parentBtnId, submitBtn) => {
   let parentBtn = document.getElementById(parentBtnId)
   let btn = document.getElementById(btnId)
   if (btn) {
     btn.addEventListener("click",(event) => {
-      if (checkBtnStatus()){
-        submitBtn.click();
+      var filterStatus = checkFilterStatus(btnType);
+      if (filterStatus[0]) {
         parentBtn.className += " btn-filter-active";
+        parentBtn.innerHTML = filterStatus[1][0].innerText;
+        submitBtn.click();
       } else {
         parentBtn.classList.remove("btn-filter-active");;
+        parentBtn.innerHTML = btnType;
       };
     });
   };
 };
 
 const resetFilters = (filter) => {
-  if (filter == "category" || filter == "all") {
+  if (filter == "Category" || filter == "all") {
     var optionsArray = document.querySelectorAll(".option-choice")
     optionsArray.forEach((option) => {
       option.classList.remove("active")
@@ -65,13 +70,14 @@ const resetFilters = (filter) => {
   }
 };
 
-const resetBtn = (btnId, parentBtnId, submitBtn) => {
+const resetBtn = (btnType, btnId, parentBtnId, submitBtn) => {
   let parentBtn = document.getElementById(parentBtnId)
   let btn = document.getElementById(btnId)
   if (btn) {
     btn.addEventListener("click",(event) => {
-      resetFilters("category");
+      resetFilters(btnType);
       parentBtn.classList.remove("btn-filter-active");;
+      parentBtn.innerHTML = btnType;
       submitBtn.click();
     });
   };
@@ -85,10 +91,16 @@ const toggleCategoryButtons = () => {
   });
 };
 
-const displayModal = (button, modal, apply, reset) => {
+const displayModal = (btnType, button, modal, apply, reset) => {
   var btn = document.getElementById(button);
   btn.addEventListener('click',(event) => {
     event.preventDefault();
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      applyBtn.click();
+    }
+  }
   });
 
   var modal = document.getElementById(modal);
@@ -117,21 +129,27 @@ const displayModal = (button, modal, apply, reset) => {
 
 const initSearch = () => {
 
-  const searchForm = document.querySelector(".search_form");
   const submitBtn = document.querySelector(".apply-search-form");
+  const initSearchBarBtn = (cat) => {
+    const category =   cat.charAt(0).toUpperCase() + cat.substr(1).toLowerCase()
+    applyBtn(category,`apply-options-${cat}`,`btn-asset-${cat}`, submitBtn);
+    resetBtn(category,`reset-options-${cat}`,`btn-asset-${cat}`, submitBtn);
+    displayModal(category,`btn-asset-${cat}`, `modal-${cat}`,`apply-options-${cat}`,`reset-options-${cat}`);
 
-  applyBtn("apply-options-category","btn-asset-category", submitBtn);
-  resetBtn("reset-options-category","btn-asset-category", submitBtn);
+  }
+  const searchBtns = ['category','price']
+
+  searchBtns.forEach ((btn) => {
+    initSearchBarBtn(btn);
+  });
+
   initSlider();
   toggleCategoryButtons();
 
-
-  displayModal("btn-asset-category", "modal-category","apply-options-category","reset-options-category");
-  // displayModal("btn-asset-price", "filter-asset-price","apply-options-price");
-
-  if (searchForm) {
-    searchForm.addEventListener('change', (event) => {
-      // submitBtn.click();
+  const searchAddress = document.getElementById("search_address");
+  if (searchAddress) {
+    searchAddress.addEventListener('change', (event) => {
+      submitBtn.click();
     })
   };
 

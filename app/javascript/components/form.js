@@ -94,7 +94,6 @@ const formatNumericInputs = () => {
 
 const checkKey = () => {
   window.addEventListener('keydown', function (e) {
-      console.log(e.keyCode);
       if (e.keyCode === 39) {
           nextPrev(1);
       } else if (e.keyCode === 37) {
