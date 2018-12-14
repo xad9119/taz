@@ -25,7 +25,6 @@ gem 'carrierwave', '~> 1.2'
 gem 'bootstrap'
 gem 'awesome_print'
 gem 'hamburgers'
-
 gem 'pg_search'
 gem 'jquery-ui-rails'
 
