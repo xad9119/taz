@@ -1,6 +1,11 @@
 
 
 <div class="asset-info">
+     <label for="post_category_ids_<%= @business_asset.asset_category_id %>" class="option-choice assetview1 hardcolor">
+        <div class="category-name ">
+          <%= @business_asset.asset_type %>
+        </div>
+    </label>
   <div class="row">
      <div class="col-sm-12 address">
       <%= image_tag("#{business_asset.asset_type.downcase.delete(' ')}.png")%>
@@ -8,6 +13,7 @@
     </div>
   </div>
   <div class="block1">
+
 
 
     <div class="row">
